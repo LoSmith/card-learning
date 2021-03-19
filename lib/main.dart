@@ -39,7 +39,16 @@ class _LearnCardsPageState extends State<LearnCardsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: SingleCardPage(currentCard: cards[0],),
+      body: GestureDetector(
+          onPanUpdate: (details) {
+            if (details.delta.dx > 0) {
+              // swiping in right direction
+              print(Text('test'));
+            }
+          },
+          child: SingleCardPage(
+            currentCard: cards[0],
+          )),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
@@ -75,16 +84,22 @@ class _SingleCardPageState extends State<SingleCardPage>
         backgroundColor: Colors.blue.shade100,
         body: Center(
           child: GestureDetector(
-            onTap: () => setState(() => _isFlipped = !_isFlipped),
+            onTap: () => _flipCard(),
             child: FlippableBox(
-              front: _buildCard("Front!", 500, 250, Colors.green),
-              back: _buildCard("Back...", 500, 250, Colors.red),
+              front: _buildCard(
+                  this.widget.currentCard.front, 500, 250, Colors.green),
+              back: _buildCard(
+                  this.widget.currentCard.back, 500, 250, Colors.red),
               flipVt: true,
               isFlipped: _isFlipped,
               duration: 0.25,
             ),
           ),
         ));
+  }
+
+  void _flipCard() {
+    setState(() => _isFlipped = !_isFlipped);
   }
 
   Widget _buildCard(String label, double width, double height, Color color) {
