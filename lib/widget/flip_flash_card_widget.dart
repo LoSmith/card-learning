@@ -3,40 +3,40 @@ import 'package:flippable_box/flippable_box.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FlipFlashCardWidget extends StatefulWidget {
-  final FlashCard currentCard;
+class FlipFlashCard extends StatefulWidget {
+  FlashCard flashCard;
 
-  const FlipFlashCardWidget({this.currentCard});
+  FlipFlashCard({this.flashCard});
 
   @override
-  _FlipFlashCardWidgetState createState() => _FlipFlashCardWidgetState();
+  _FlipFlashCardState createState() => _FlipFlashCardState();
 }
 
-class _FlipFlashCardWidgetState extends State<FlipFlashCardWidget>
+class _FlipFlashCardState extends State<FlipFlashCard>
     with SingleTickerProviderStateMixin {
-  bool _isFlipped = false;
-
+  // bool _isFlipped = false;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-      child: GestureDetector(
-        onTap: () => _flipCard(),
-        child: FlippableBox(
-          front: _buildCard(
-              this.widget.currentCard.question, 500, 250, Colors.green),
-          back: _buildCard(
-              this.widget.currentCard.solution, 500, 250, Colors.red),
-          flipVt: true,
-          isFlipped: _isFlipped,
-          duration: 0.25,
-        ),
-      ),
-    ));
+    return Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        child: GestureDetector(
+          onTap: () => _flipCard(),
+          child: FlippableBox(
+            front: _buildCard(
+                this.widget.flashCard.question, 500, 250, Colors.green),
+            back: _buildCard(
+                this.widget.flashCard.solution, 500, 250, Colors.red),
+            flipVt: true,
+            isFlipped: this.widget.flashCard.isFlipped,
+            duration: 0.25,
+          ),
+        ));
   }
 
   void _flipCard() {
-    setState(() => _isFlipped = !_isFlipped);
+    setState(() =>
+        this.widget.flashCard.isFlipped = !this.widget.flashCard.isFlipped);
   }
 
   Widget _buildCard(String label, double width, double height, Color color) {
