@@ -23,7 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flippable_box: ^1.0.6 
+  flippable_box: ^1.0.6
+  flutter_tindercard: 0.2.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

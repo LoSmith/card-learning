@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flippable_box/flippable_box.dart';
+import 'page/card_learning_page.dart';
 
 class LearningCard {
   String front;
@@ -16,100 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FlipCard',
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       home: LearnCardsPage(),
-    );
-  }
-}
-
-class LearnCardsPage extends StatefulWidget {
-  @override
-  _LearnCardsPageState createState() => _LearnCardsPageState();
-}
-
-class _LearnCardsPageState extends State<LearnCardsPage> {
-  List<LearningCard> cards = [
-    new LearningCard(front: 'front1', back: 'back1'),
-    new LearningCard(front: 'front2', back: 'back2'),
-    new LearningCard(front: 'front3', back: 'back3'),
-    new LearningCard(front: 'front4', back: 'back4'),
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: GestureDetector(
-          onPanUpdate: (details) {
-            if (details.delta.dx > 0) {
-              // swiping in right direction
-              print(Text('test'));
-            }
-          },
-          child: SingleCardPage(
-            currentCard: cards[0],
-          )),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: new Icon(Icons.arrow_left_rounded),
-            label: 'Wrong',
-          ),
-          BottomNavigationBarItem(
-            icon: new Icon(Icons.arrow_right_rounded),
-            label: 'Right',
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class SingleCardPage extends StatefulWidget {
-  final LearningCard currentCard;
-
-  const SingleCardPage({this.currentCard});
-
-  @override
-  _SingleCardPageState createState() => _SingleCardPageState();
-}
-
-class _SingleCardPageState extends State<SingleCardPage>
-    with SingleTickerProviderStateMixin {
-  bool _isFlipped = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.blue.shade100,
-        body: Center(
-          child: GestureDetector(
-            onTap: () => _flipCard(),
-            child: FlippableBox(
-              front: _buildCard(
-                  this.widget.currentCard.front, 500, 250, Colors.green),
-              back: _buildCard(
-                  this.widget.currentCard.back, 500, 250, Colors.red),
-              flipVt: true,
-              isFlipped: _isFlipped,
-              duration: 0.25,
-            ),
-          ),
-        ));
-  }
-
-  void _flipCard() {
-    setState(() => _isFlipped = !_isFlipped);
-  }
-
-  Widget _buildCard(String label, double width, double height, Color color) {
-    return Container(
-      color: color,
-      width: width,
-      height: height,
-      child: Center(
-        child: Text(label, style: TextStyle(fontSize: 32)),
-      ),
     );
   }
 }
