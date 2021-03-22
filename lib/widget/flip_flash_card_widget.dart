@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 class FlipFlashCard extends StatefulWidget {
   FlashCard flashCard;
-
   FlipFlashCard({this.flashCard});
   bool _isFlipped = false;
 
@@ -97,4 +96,60 @@ class _FlipFlashCardState extends State<FlipFlashCard> {
       ),
     );
   }
+
+//   Widget _buildCard(
+//     String primaryTitle,
+//     String supportingText,
+//     double width,
+//     double height,
+//     Color color,
+//     bool isFront,
+//     String imagePath,
+//   ) {
+//     bool _renderRichMedia = imagePath != '' && imagePath != null;
+
+//     return Container(
+//       width: width,
+//       height: height,
+//       child: Card(
+//         elevation: 8,
+//         margin: EdgeInsets.all(10),
+//         shape: RoundedRectangleBorder(
+//           borderRadius: BorderRadius.circular(10.0),
+//         ),
+//         child: Padding(
+//           padding: EdgeInsets.all(12.0),
+//           child: Column(
+//             children: [
+//               // rich media
+//               if (_renderRichMedia) Image.asset(imagePath), Spacer(),
+//               if (!_renderRichMedia) Spacer(),
+//               // primary title
+//               Text(
+//                 primaryTitle,
+//                 style: DefaultTextStyle.of(context)
+//                     .style
+//                     .apply(fontSizeFactor: 3.0),
+//               ),
+//               const Divider(
+//                 height: 20,
+//                 thickness: 5,
+//                 indent: 20,
+//                 endIndent: 20,
+//                 color: Color.fromARGB(0, 1, 1, 1),
+//               ),
+//               // supporting text
+//               Text(
+//                 supportingText,
+//                 style: DefaultTextStyle.of(context)
+//                     .style
+//                     .apply(fontSizeFactor: 1.0),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 }
