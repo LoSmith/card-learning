@@ -10,10 +10,10 @@ class LearnCardsPage extends StatefulWidget {
 
 class _LearnCardsPageState extends State<LearnCardsPage> {
   List<FlashCard> cards = [
-    FlashCard(question: 'como', solution: 'as'),
-    FlashCard(question: 'I', solution: 'i'),
-    FlashCard(question: 'su', solution: 'his'),
-    FlashCard(question: 'que', solution: 'that'),
+    FlashCard(question: 'Front Text', solution: 'Back Text'),
+    FlashCard(question: 'I', solution: 'Ich '),
+    FlashCard(question: 'su', solution: 'sein'),
+    FlashCard(question: 'que', solution: 'das'),
   ];
 
   @override

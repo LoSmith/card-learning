@@ -7,14 +7,13 @@ class FlipFlashCard extends StatefulWidget {
   FlashCard flashCard;
 
   FlipFlashCard({this.flashCard});
+  bool _isFlipped = false;
 
   @override
   _FlipFlashCardState createState() => _FlipFlashCardState();
 }
 
-class _FlipFlashCardState extends State<FlipFlashCard>
-    with SingleTickerProviderStateMixin {
-  // bool _isFlipped = false;
+class _FlipFlashCardState extends State<FlipFlashCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,25 +27,42 @@ class _FlipFlashCardState extends State<FlipFlashCard>
             back: _buildCard(
                 this.widget.flashCard.solution, 500, 250, Colors.red),
             flipVt: true,
-            isFlipped: this.widget.flashCard.isFlipped,
+            isFlipped: this.widget._isFlipped,
             duration: 0.25,
           ),
         ));
   }
 
   void _flipCard() {
-    setState(() =>
-        this.widget.flashCard.isFlipped = !this.widget.flashCard.isFlipped);
+    setState(() => this.widget._isFlipped = !this.widget._isFlipped);
   }
 
   Widget _buildCard(String label, double width, double height, Color color) {
     return Container(
-      color: color,
-      width: width,
-      height: height,
-      child: Center(
-        child: Text(label, style: TextStyle(fontSize: 32)),
-      ),
-    );
+        width: width,
+        height: height,
+        child: Card(
+          semanticContainer: true,
+          clipBehavior: Clip.antiAliasWithSaveLayer,
+          child: Image.asset(
+            'assets/bg.jpg',
+            fit: BoxFit.cover,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          elevation: 5,
+          margin: EdgeInsets.all(10),
+        ));
+
+    // Container(
+    //   decoration: ,
+    //   // color: color,
+    //   width: width,
+    //   height: height,
+    //   child: Center(
+    //     child: Text(label, style: TextStyle(fontSize: 32)),
+    //   ),
+    // );
   }
 }
