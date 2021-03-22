@@ -14,6 +14,21 @@ class _LearnCardsPageState extends State<LearnCardsPage> {
     FlashCard(question: 'I', solution: 'Ich '),
     FlashCard(question: 'su', solution: 'sein'),
     FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
+    FlashCard(question: 'que', solution: 'das'),
   ];
 
   @override
@@ -29,7 +44,7 @@ class _LearnCardsPageState extends State<LearnCardsPage> {
           child: TinderSwapCard(
             orientation: AmassOrientation.BOTTOM,
             totalNum: this.cards.length,
-            stackNum: 2,
+            stackNum: 4,
             swipeEdge: 4.0,
             maxWidth: MediaQuery.of(context).size.width * 0.9,
             maxHeight: MediaQuery.of(context).size.width * 0.9,
@@ -52,18 +67,18 @@ class _LearnCardsPageState extends State<LearnCardsPage> {
               }
             },
             swipeUp: false,
-            allowVerticalMovement: false,
             swipeDown: false,
+            allowVerticalMovement: true,
           )),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            label: 'Account',
-            icon: Icon(
-              Icons.person,
-              size: 30.0,
+            icon: new Icon(
+              Icons.home,
+              size: 30,
               color: Colors.grey,
             ),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             label: 'Work',
