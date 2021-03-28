@@ -53,9 +53,14 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
             ElevatedButton(
-              child: Text('Fetch User'),
+              child: Text('Add Cards'),
               onPressed: () =>
                   this._bloc.add(CardLearningEventFetchNextFlashCard()),
+            ),
+            ElevatedButton(
+              child: Text('Add Cards'),
+              onPressed: () => this._bloc.add(CardLearningEventAddNewCard(
+                  "id test", "question", "solution fdjsiofs")),
             ),
             SizedBox(height: 15),
             Expanded(
@@ -79,10 +84,22 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
                   return ListView(
                     children: [
                       for (final flashCard in state.flashCards)
-                        Text(
-                          flashCard.question,
-                          textAlign: TextAlign.center,
-                        ),
+                        Column(
+                          children: [
+                            Text(
+                              flashCard.id,
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              flashCard.question,
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              flashCard.solution,
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        )
                     ],
                   );
                 },
@@ -90,41 +107,42 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
             ),
           ]),
         ),
-        // body: Container(
-        //     height: MediaQuery.of(context).size.height * 0.7,
-        //     child: TinderSwapCard(
-        //       orientation: AmassOrientation.BOTTOM,
-        //       totalNum: this.cards.length,
-        //       stackNum: 4,
-        //       swipeEdge: 4.0,
-        //       maxWidth: MediaQuery.of(context).size.width * 0.9,
-        //       maxHeight: MediaQuery.of(context).size.width * 0.9,
-        //       minWidth: MediaQuery.of(context).size.width * 0.8,
-        //       minHeight: MediaQuery.of(context).size.width * 0.8,
-        //       cardBuilder: (context, index) => SimpleFlashCardWidget(
-        //         flashCard: this.cards[index],
-        //       ),
-        //       // cardController: controller = CardController(),
-        //       swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-        //         if (align.x < 0) {
-        //         } else if (align.x > 0) {}
-        //       },
-        //       swipeCompleteCallback:
-        //           (CardSwipeOrientation orientaion, int index) {
-        //         if (orientaion == CardSwipeOrientation.RIGHT) {
-        //           print('swiped right');
-        //         } else {
-        //           print('swiped left');
-        //         }
-        //       },
-        //       swipeUp: false,
-        //       swipeDown: false,
-        //       allowVerticalMovement: true,
-        //     )),
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: () => this._bloc.add(CardLearningEventFetchNextFlashCard()),
-        // ),
       ),
     );
   }
 }
+
+// body: Container(
+//     height: MediaQuery.of(context).size.height * 0.7,
+//     child: TinderSwapCard(
+//       orientation: AmassOrientation.BOTTOM,
+//       totalNum: this.cards.length,
+//       stackNum: 4,
+//       swipeEdge: 4.0,
+//       maxWidth: MediaQuery.of(context).size.width * 0.9,
+//       maxHeight: MediaQuery.of(context).size.width * 0.9,
+//       minWidth: MediaQuery.of(context).size.width * 0.8,
+//       minHeight: MediaQuery.of(context).size.width * 0.8,
+//       cardBuilder: (context, index) => SimpleFlashCardWidget(
+//         flashCard: this.cards[index],
+//       ),
+//       // cardController: controller = CardController(),
+//       swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
+//         if (align.x < 0) {
+//         } else if (align.x > 0) {}
+//       },
+//       swipeCompleteCallback:
+//           (CardSwipeOrientation orientaion, int index) {
+//         if (orientaion == CardSwipeOrientation.RIGHT) {
+//           print('swiped right');
+//         } else {
+//           print('swiped left');
+//         }
+//       },
+//       swipeUp: false,
+//       swipeDown: false,
+//       allowVerticalMovement: true,
+//     )),
+// floatingActionButton: FloatingActionButton(
+//   onPressed: () => this._bloc.add(CardLearningEventFetchNextFlashCard()),
+// ),

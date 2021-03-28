@@ -16,20 +16,20 @@ class FlashCardRepository implements IRepository<FlashCard> {
 
   @override
   Future<FlashCard> get(dynamic id) async {
-    final cachedUser = await this.cache.get(id);
+    final cachedFlashCard = await this.cache.get(id);
 
-    if (cachedUser != null) {
-      return cachedUser;
+    if (cachedFlashCard != null) {
+      return cachedFlashCard;
     }
 
     if (!this.hasConnection()) {
       throw NoConnectionException();
     }
 
-    final remoteUser = await this.source.get(id);
-    this.cache.add(remoteUser);
+    final remoteFlashCard = await this.source.get(id);
+    this.cache.add(remoteFlashCard);
 
-    return remoteUser;
+    return remoteFlashCard;
   }
 
   @override
