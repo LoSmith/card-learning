@@ -24,15 +24,15 @@ class CardLearningBloc extends Bloc<CardLearningEvent, CardLearningState> {
     }
   }
 
-  Stream<CardLearningState> _createNewCardInRepository(
-      CardLearningEventCreateCard e) async* {
+  // create new card
+  Stream<CardLearningState> _createNewCardInRepository(CardLearningEventCreateCard e) async* {
     yield CardLearningState(isFetching: true);
 
     var newFlashCard;
 
     try {
       await this.repository.create(FlashCard(e.id, e.question, e.solution));
-      newFlashCard = await this.repository.read(e.id);
+      newFlashCard = await this.repository.read(_currentFlashCardIndex);
     } on NoConnectionException {
       print("something went wrong");
       yield CardLearningState(hasNetworkError: true);

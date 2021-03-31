@@ -1,16 +1,16 @@
 # card_learning
 
-A new Flutter project.
+An app for learning a set of flash cards
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Install all dependencies with dart pub get
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## TODO List
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Implement local data persistence with shared pref
+* implement streams for blocs
+* implement remote input retrival .. eg. on github a file .. seems like a good option
+* improve visuals
+* implement settings

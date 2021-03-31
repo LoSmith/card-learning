@@ -13,8 +13,8 @@ class HiveRepository<T> implements IRepository<T> {
     if (this.boxIsClosed) {
       return null;
     }
-
-    return this._box.get(id);
+    var result = this._box.get(id);
+    return result;
   }
 
   @override
@@ -23,7 +23,8 @@ class HiveRepository<T> implements IRepository<T> {
       return;
     }
 
-    await this._box.add(object);
+    var result = await this._box.add(object);
+    result = 5;
   }
 
   bool get boxIsClosed => !(this._box?.isOpen ?? false);

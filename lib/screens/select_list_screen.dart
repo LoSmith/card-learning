@@ -10,17 +10,20 @@ class SelectListScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => AddEditScreen(
-                  isEditing: false,
-                  onSave: (id, question, solution) {
-                    BlocProvider.of<CardLearningBloc>(context).add(
-                        CardLearningEventCreateCard(id, question, solution));
-                  },
-                ),
-              ));
+          BlocProvider.of<CardLearningBloc>(context).add(
+              CardLearningEventCreateCard(
+                  "id", "manual button question", 'manual button solution'));
+          // Navigator.push(
+          //     context,
+          //     MaterialPageRoute(
+          //       builder: (context) => AddEditScreen(
+          //         isEditing: false,
+          //         onSave: (id, question, solution) {
+          //           BlocProvider.of<CardLearningBloc>(context).add(
+          //               CardLearningEventCreateCard(id, question, solution));
+          //         },
+          //       ),
+          //     ));
         },
       ),
     );
