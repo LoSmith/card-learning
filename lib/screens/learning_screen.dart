@@ -1,43 +1,15 @@
 import 'package:card_learning/blocs/cardLearning/cardLearning.dart';
 import 'package:card_learning/blocs/cardLearning/cardLearning_bloc.dart';
-import 'package:card_learning/data/flashCard_repository/flashCard_repository.dart';
-import 'package:card_learning/models/flashCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CardLearningScreen extends StatefulWidget {
+class LearningScreen extends StatefulWidget {
   @override
-  _CardLearningScreenState createState() => _CardLearningScreenState();
+  _LearningScreenState createState() => _LearningScreenState();
 }
 
-class _CardLearningScreenState extends State<CardLearningScreen> {
+class _LearningScreenState extends State<LearningScreen> {
   CardLearningBloc _bloc;
-
-  List<FlashCard> cards = [
-    FlashCard("1", 'Front Text', 'Back Text'),
-    FlashCard("2", 'I', 'Ich '),
-    FlashCard("3", 'su', 'sein'),
-    FlashCard("4", 'que', 'das'),
-    FlashCard("5", 'que', 'das'),
-    FlashCard("6", 'que', 'das'),
-    FlashCard("7", 'que', 'das'),
-  ];
-
-  @override
-  void didChangeDependencies() {
-    if (this._bloc == null) {
-      final flashCardRepository =
-          RepositoryProvider.of<FlashCardRepository>(context);
-      this._bloc = CardLearningBloc(flashCardRepository);
-    }
-    super.didChangeDependencies();
-  }
-
-  @override
-  void dispose() {
-    _bloc.close();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {

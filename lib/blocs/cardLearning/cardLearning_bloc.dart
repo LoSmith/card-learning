@@ -7,9 +7,9 @@ import 'cardLearning_event.dart';
 import 'cardLearning_state.dart';
 
 class CardLearningBloc extends Bloc<CardLearningEvent, CardLearningState> {
-  final IRepository<FlashCard> _flashCardRepository;
+  final IRepository<FlashCard> repository;
 
-  CardLearningBloc(this._flashCardRepository) : super(CardLearningState());
+  CardLearningBloc({this.repository}) : super(CardLearningState());
 
   final List<FlashCard> _flashCards = [];
   int _currentFlashCardIndex = 0;
@@ -17,34 +17,33 @@ class CardLearningBloc extends Bloc<CardLearningEvent, CardLearningState> {
   @override
   Stream<CardLearningState> mapEventToState(CardLearningEvent event) async* {
     if (event is CardLearningEventCreateCard) {
+      print('create new card');
       yield* _createNewCardInRepository(event);
     } else if (event is CardLearningEventDeleteCard) {
       yield* _deleteCardInRespository(event);
-          }
-        }
-      
-        Stream<CardLearningState> _createNewCardInRepository(
-            CardLearningEventCreateCard e) async* {
-          yield CardLearningState(isFetching: true);
-      
-          var newFlashCard;
-      
-          try {
-            await this
-                ._flashCardRepository
-                .create(FlashCard(e.id, e.question, e.solution));
-            newFlashCard = await this._flashCardRepository.read(e.id);
-          } on NoConnectionException {
-            print("something went wrong");
-            yield CardLearningState(hasNetworkError: true);
-            return;
-          }
-      
-          this._currentFlashCardIndex++;
-          this._flashCards.add(newFlashCard);
-      
-          yield CardLearningState(flashCards: this._flashCards);
-        }
-          
-        _deleteCardInRespository(CardLearningEventDeleteCard event) {}
+    }
+  }
+
+  Stream<CardLearningState> _createNewCardInRepository(
+      CardLearningEventCreateCard e) async* {
+    yield CardLearningState(isFetching: true);
+
+    var newFlashCard;
+
+    try {
+      await this.repository.create(FlashCard(e.id, e.question, e.solution));
+      newFlashCard = await this.repository.read(e.id);
+    } on NoConnectionException {
+      print("something went wrong");
+      yield CardLearningState(hasNetworkError: true);
+      return;
+    }
+
+    this._currentFlashCardIndex++;
+    this._flashCards.add(newFlashCard);
+
+    yield CardLearningState(flashCards: this._flashCards);
+  }
+
+  _deleteCardInRespository(CardLearningEventDeleteCard event) {}
 }

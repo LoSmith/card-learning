@@ -32,7 +32,7 @@ dependencies:
   hive: ^2.0.0
   hive_flutter: ^1.0.0
 
-  logger: ^0.8.3
+  equatable: ^2.0.0
 
   uuid: 3.0.2
 
