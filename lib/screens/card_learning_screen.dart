@@ -1,13 +1,9 @@
-import 'package:card_learning/blocs/cardLearning_bloc.dart';
-import 'package:card_learning/blocs/events/cardLearning_event.dart';
-import 'package:card_learning/blocs/states/cardLearning_state.dart';
+import 'package:card_learning/blocs/cardLearning/cardLearning.dart';
+import 'package:card_learning/blocs/cardLearning/cardLearning_bloc.dart';
 import 'package:card_learning/data/flashCard_repository/flashCard_repository.dart';
-import 'package:card_learning/data/irepository.dart';
-import 'package:card_learning/domain/models/flashCard.dart';
-import 'package:card_learning/widgets/simple_flash_card_widget.dart';
+import 'package:card_learning/models/flashCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_tindercard/flutter_tindercard.dart';
 
 class CardLearningScreen extends StatefulWidget {
   @override
@@ -54,12 +50,7 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
             ElevatedButton(
               child: Text('Add Cards'),
-              onPressed: () =>
-                  this._bloc.add(CardLearningEventFetchNextFlashCard()),
-            ),
-            ElevatedButton(
-              child: Text('Add Cards'),
-              onPressed: () => this._bloc.add(CardLearningEventAddNewCard(
+              onPressed: () => this._bloc.add(CardLearningEventCreateCard(
                   "id test", "question", "solution fdjsiofs")),
             ),
             SizedBox(height: 15),
@@ -111,38 +102,3 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
     );
   }
 }
-
-// body: Container(
-//     height: MediaQuery.of(context).size.height * 0.7,
-//     child: TinderSwapCard(
-//       orientation: AmassOrientation.BOTTOM,
-//       totalNum: this.cards.length,
-//       stackNum: 4,
-//       swipeEdge: 4.0,
-//       maxWidth: MediaQuery.of(context).size.width * 0.9,
-//       maxHeight: MediaQuery.of(context).size.width * 0.9,
-//       minWidth: MediaQuery.of(context).size.width * 0.8,
-//       minHeight: MediaQuery.of(context).size.width * 0.8,
-//       cardBuilder: (context, index) => SimpleFlashCardWidget(
-//         flashCard: this.cards[index],
-//       ),
-//       // cardController: controller = CardController(),
-//       swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-//         if (align.x < 0) {
-//         } else if (align.x > 0) {}
-//       },
-//       swipeCompleteCallback:
-//           (CardSwipeOrientation orientaion, int index) {
-//         if (orientaion == CardSwipeOrientation.RIGHT) {
-//           print('swiped right');
-//         } else {
-//           print('swiped left');
-//         }
-//       },
-//       swipeUp: false,
-//       swipeDown: false,
-//       allowVerticalMovement: true,
-//     )),
-// floatingActionButton: FloatingActionButton(
-//   onPressed: () => this._bloc.add(CardLearningEventFetchNextFlashCard()),
-// ),

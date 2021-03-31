@@ -1,4 +1,4 @@
-import 'package:card_learning/domain/models/flashCard.dart';
+import 'package:card_learning/models/flashCard.dart';
 
 class CardLearningState {
   final Iterable<FlashCard> flashCards;

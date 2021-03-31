@@ -1,5 +1,5 @@
-import 'package:card_learning/domain/models/flashCard.dart';
 import 'package:card_learning/exceptions/no_connection_exception.dart';
+import 'package:card_learning/models/flashCard.dart';
 import 'package:flutter/foundation.dart';
 
 import '../irepository.dart';
@@ -15,8 +15,8 @@ class FlashCardRepository implements IRepository<FlashCard> {
   });
 
   @override
-  Future<FlashCard> get(dynamic id) async {
-    final cachedFlashCard = await this.cache.get(id);
+  Future<FlashCard> read(dynamic id) async {
+    final cachedFlashCard = await this.cache.read(id);
 
     if (cachedFlashCard != null) {
       return cachedFlashCard;
@@ -26,19 +26,31 @@ class FlashCardRepository implements IRepository<FlashCard> {
       throw NoConnectionException();
     }
 
-    final remoteFlashCard = await this.source.get(id);
-    this.cache.add(remoteFlashCard);
+    final remoteFlashCard = await this.source.read(id);
+    this.cache.create(remoteFlashCard);
 
     return remoteFlashCard;
   }
 
   @override
-  Future<void> add(FlashCard object) async {
+  Future<void> create(FlashCard object) async {
     if (!this.hasConnection()) {
       throw NoConnectionException();
     }
 
-    await this.source.add(object);
-    await this.cache.add(object);
+    await this.source.create(object);
+    await this.cache.create(object);
   }
+
+  @override
+  Future<void> delete(dynamic id) {
+    // TODO: implement delete
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> update(dynamic id, FlashCard object) {
+    // TODO: implement update
+    throw UnimplementedError();
+  } 
 }

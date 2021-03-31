@@ -1,0 +1,1 @@
+class ItemNotExistentException implements Exception {}

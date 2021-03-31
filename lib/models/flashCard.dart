@@ -1,4 +1,5 @@
 import 'package:hive/hive.dart';
+import 'package:uuid/uuid.dart';
 
 part 'flashCard.g.dart';
 
@@ -13,5 +14,5 @@ class FlashCard {
   @HiveField(2)
   final String solution;
 
-  FlashCard(this.id, this.question, this.solution);
+  FlashCard(id, this.question, this.solution): this.id = id ?? Uuid().v4();
 }

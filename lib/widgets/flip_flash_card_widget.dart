@@ -1,8 +1,9 @@
-import 'package:card_learning/domain/models/flashCard.dart';
+import 'package:card_learning/models/flashCard.dart';
 import 'package:flippable_box/flippable_box.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class FlipFlashCard extends StatefulWidget {
   final FlashCard flashCard;
   // needs to be not final
