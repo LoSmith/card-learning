@@ -29,8 +29,11 @@ dependencies:
 
   flutter_bloc: 7.0.0
 
+# database
   hive: ^2.0.0
   hive_flutter: ^1.0.0
+
+  shared_preferences: ^2.0.5
 
   equatable: ^2.0.0
 

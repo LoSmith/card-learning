@@ -14,5 +14,5 @@ class FlashCard {
   @HiveField(2)
   final String solution;
 
-  FlashCard(id, this.question, this.solution): this.id = id ?? Uuid().v4();
+  FlashCard(id, this.question, this.solution) : this.id = id ?? Uuid().v4();
 }

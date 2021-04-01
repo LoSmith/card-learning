@@ -1,12 +1,14 @@
 import 'package:card_learning/exceptions/item_not_existent_exception.dart';
 import 'package:hive/hive.dart';
 
-import '../irepository.dart';
+import 'irepository.dart';
 
 class HiveRepository<T> implements IRepository<T> {
   final Box _box;
 
   HiveRepository(this._box);
+
+  bool get boxIsClosed => !(this._box?.isOpen ?? false);
 
   @override
   Future<T> read(dynamic id) async {
@@ -23,11 +25,8 @@ class HiveRepository<T> implements IRepository<T> {
       return;
     }
 
-    var result = await this._box.add(object);
-    result = 5;
+    await this._box.add(object);
   }
-
-  bool get boxIsClosed => !(this._box?.isOpen ?? false);
 
   @override
   Future<void> delete(dynamic id) async {
@@ -40,14 +39,6 @@ class HiveRepository<T> implements IRepository<T> {
 
   @override
   Future<void> update(dynamic id, T object) async {
-    if (this.boxIsClosed) {
-      return;
-    }
-
-    try {
-      this._box.put(id, object);
-    } catch (e) {
-      throw new ItemNotExistentException();
-    }
+    // TODO implement update
   }
 }
