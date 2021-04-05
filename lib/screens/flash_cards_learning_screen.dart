@@ -24,6 +24,10 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
                   return Center(child: CircularProgressIndicator());
                   break;
 
+                case FlashCardsStatus.hasNetworkError:
+                  return Text('Network error');
+                  break;
+
                 case FlashCardsStatus.success:
                   if (state.items?.isEmpty ?? true) {
                     return Text('No flashCards');
@@ -31,14 +35,9 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
                   return _flashCardListView(state);
                   break;
 
-                case FlashCardsStatus.hasNetworkError:
-                  return Text('Network error');
-                  break;
-
                 default:
                   return Column(
-                      children: [Center(child: CircularProgressIndicator()), Text('test')]
-                      );
+                      children: [Center(child: CircularProgressIndicator()), Text('test')]);
               }
             },
           ),
@@ -50,6 +49,7 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
   ListView _flashCardListView(FlashCardsState state) {
     return ListView(
       children: [
+        Text(state.items.length.toString()),
         for (final flashCard in state.items)
           Column(
             children: [

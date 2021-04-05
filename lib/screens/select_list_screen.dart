@@ -11,7 +11,9 @@ class SelectListScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.read<FlashCardsCubit>().importJsonDataFromRemoteUrl('someurl');
+          final listUrl =
+              "https://raw.githubusercontent.com/LoSmith/card-learning/main/assets/flashCardsLists/ES_EN.json";
+          context.read<FlashCardsCubit>().importJsonDataFromRemoteUrl(listUrl);
           // Navigator.push(
           //     context,
           //     MaterialPageRoute(

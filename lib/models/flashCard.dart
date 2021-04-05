@@ -15,4 +15,9 @@ class FlashCard {
   final String solution;
 
   FlashCard(id, this.question, this.solution) : this.id = id ?? Uuid().v4();
+
+  FlashCard.fromJson(Map<String, dynamic> jsonMap)
+      : id = jsonMap['id'].toString(),
+        question = jsonMap['question'],
+        solution = jsonMap['solution'];
 }
