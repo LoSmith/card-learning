@@ -1,0 +1,751 @@
+{
+    "name": "ES_EN",
+    "version": "0.1",
+    "data": [
+        {
+          "id": 1,
+          "question": "de",
+          "solution": "of, from"
+        },
+        {
+          "id": 2,
+          "question": "el",
+          "solution": "the"
+        },
+        {
+          "id": 3,
+          "question": "lo",
+          "solution": "the, for, it"
+        },
+        {
+          "id": 4,
+          "question": "que",
+          "solution": "that"
+        },
+        {
+          "id": 5,
+          "question": "y",
+          "solution": "and"
+        },
+        {
+          "id": 6,
+          "question": "Ã©l",
+          "solution": "he, him"
+        },
+        {
+          "id": 7,
+          "question": "en",
+          "solution": "in, into, inside, on"
+        },
+        {
+          "id": 8,
+          "question": "el",
+          "solution": "the"
+        },
+        {
+          "id": 9,
+          "question": "a",
+          "solution": "a, to"
+        },
+        {
+          "id": 10,
+          "question": "un",
+          "solution": "a, an"
+        },
+        {
+          "id": 11,
+          "question": "ser",
+          "solution": "to be"
+        },
+        {
+          "id": 12,
+          "question": "no",
+          "solution": "no"
+        },
+        {
+          "id": 13,
+          "question": "su",
+          "solution": "his"
+        },
+        {
+          "id": 14,
+          "question": "haber",
+          "solution": "to have, has"
+        },
+        {
+          "id": 15,
+          "question": "del",
+          "solution": "of, from"
+        },
+        {
+          "id": 16,
+          "question": "con",
+          "solution": "with"
+        },
+        {
+          "id": 17,
+          "question": "por",
+          "solution": "by, for, per"
+        },
+        {
+          "id": 18,
+          "question": "yo",
+          "solution": "I"
+        },
+        {
+          "id": 19,
+          "question": "uno",
+          "solution": "one"
+        },
+        {
+          "id": 20,
+          "question": "al",
+          "solution": "to, to the"
+        },
+        {
+          "id": 21,
+          "question": "para",
+          "solution": "for, towards, stop"
+        },
+        {
+          "id": 22,
+          "question": "como",
+          "solution": "as, since, like"
+        },
+        {
+          "id": 23,
+          "question": "mÃ¡s",
+          "solution": "more"
+        },
+        {
+          "id": 24,
+          "question": "estar",
+          "solution": "to be, stay"
+        },
+        {
+          "id": 25,
+          "question": "todo",
+          "solution": "everything"
+        },
+        {
+          "id": 26,
+          "question": "tener",
+          "solution": "to have"
+        },
+        {
+          "id": 27,
+          "question": "poder",
+          "solution": "to be able to, can, might, may"
+        },
+        {
+          "id": 28,
+          "question": "pero",
+          "solution": "but"
+        },
+        {
+          "id": 29,
+          "question": "este",
+          "solution": "this"
+        },
+        {
+          "id": 30,
+          "question": "o",
+          "solution": "or"
+        },
+        {
+          "id": 31,
+          "question": "hacer",
+          "solution": "to do, make"
+        },
+        {
+          "id": 32,
+          "question": "decir",
+          "solution": "to say, tell"
+        },
+        {
+          "id": 33,
+          "question": "otro",
+          "solution": "another, other"
+        },
+        {
+          "id": 34,
+          "question": "si",
+          "solution": "if, yes"
+        },
+        {
+          "id": 35,
+          "question": "sin",
+          "solution": "without"
+        },
+        {
+          "id": 36,
+          "question": "mi",
+          "solution": "my, not me"
+        },
+        {
+          "id": 37,
+          "question": "ese",
+          "solution": "that"
+        },
+        {
+          "id": 38,
+          "question": "ir",
+          "solution": "to go"
+        },
+        {
+          "id": 39,
+          "question": "dar",
+          "solution": "to give"
+        },
+        {
+          "id": 40,
+          "question": "cuando",
+          "solution": "when"
+        },
+        {
+          "id": 41,
+          "question": "ya",
+          "solution": "already"
+        },
+        {
+          "id": 42,
+          "question": "ver",
+          "solution": "to see"
+        },
+        {
+          "id": 43,
+          "question": "sobre",
+          "solution": "envelope, on"
+        },
+        {
+          "id": 44,
+          "question": "saber",
+          "solution": "to know"
+        },
+        {
+          "id": 45,
+          "question": "aÃ±o",
+          "solution": "year"
+        },
+        {
+          "id": 46,
+          "question": "entre",
+          "solution": "between, among"
+        },
+        {
+          "id": 47,
+          "question": "muy",
+          "solution": "very, highly"
+        },
+        {
+          "id": 48,
+          "question": "mismo",
+          "solution": "same"
+        },
+        {
+          "id": 49,
+          "question": "quÃ©",
+          "solution": "what"
+        },
+        {
+          "id": 50,
+          "question": "mucho",
+          "solution": "much"
+        },
+        {
+          "id": 51,
+          "question": "dos",
+          "solution": "two"
+        },
+        {
+          "id": 52,
+          "question": "porque",
+          "solution": "because, why"
+        },
+        {
+          "id": 53,
+          "question": "sÃ³lo",
+          "solution": "only"
+        },
+        {
+          "id": 54,
+          "question": "tambiÃ©n",
+          "solution": "also, too"
+        },
+        {
+          "id": 55,
+          "question": "vez",
+          "solution": "time"
+        },
+        {
+          "id": 56,
+          "question": "dÃ­a",
+          "solution": "day"
+        },
+        {
+          "id": 57,
+          "question": "aquel",
+          "solution": "that"
+        },
+        {
+          "id": 58,
+          "question": "parecer",
+          "solution": "to seem"
+        },
+        {
+          "id": 59,
+          "question": "querer",
+          "solution": "to want"
+        },
+        {
+          "id": 60,
+          "question": "ni",
+          "solution": "nor, neither"
+        },
+        {
+          "id": 61,
+          "question": "pasar",
+          "solution": "to happen, pass"
+        },
+        {
+          "id": 62,
+          "question": "hasta",
+          "solution": "until, even"
+        },
+        {
+          "id": 63,
+          "question": "llegar",
+          "solution": "to arrive, come"
+        },
+        {
+          "id": 64,
+          "question": "tan",
+          "solution": "so"
+        },
+        {
+          "id": 65,
+          "question": "deber",
+          "solution": "to owe"
+        },
+        {
+          "id": 66,
+          "question": "hombre",
+          "solution": "man"
+        },
+        {
+          "id": 67,
+          "question": "tiempo",
+          "solution": "time"
+        },
+        {
+          "id": 68,
+          "question": "desde",
+          "solution": "from, since"
+        },
+        {
+          "id": 69,
+          "question": "nuestro",
+          "solution": "ours"
+        },
+        {
+          "id": 70,
+          "question": "poner",
+          "solution": "to put"
+        },
+        {
+          "id": 71,
+          "question": "primero",
+          "solution": "first"
+        },
+        {
+          "id": 72,
+          "question": "dejar",
+          "solution": "to leave, to leave behind"
+        },
+        {
+          "id": 73,
+          "question": "vida",
+          "solution": "life"
+        },
+        {
+          "id": 74,
+          "question": "ahora",
+          "solution": "now"
+        },
+        {
+          "id": 75,
+          "question": "tanto",
+          "solution": "so much"
+        },
+        {
+          "id": 76,
+          "question": "poco",
+          "solution": "little, few"
+        },
+        {
+          "id": 77,
+          "question": "siempre",
+          "solution": "always"
+        },
+        {
+          "id": 78,
+          "question": "eso",
+          "solution": "that"
+        },
+        {
+          "id": 79,
+          "question": "llevar",
+          "solution": "to take, carry"
+        },
+        {
+          "id": 80,
+          "question": "nuevo",
+          "solution": "new"
+        },
+        {
+          "id": 81,
+          "question": "quedar",
+          "solution": "to stay"
+        },
+        {
+          "id": 82,
+          "question": "cosa",
+          "solution": "thing"
+        },
+        {
+          "id": 83,
+          "question": "nada",
+          "solution": "nothing"
+        },
+        {
+          "id": 84,
+          "question": "parte",
+          "solution": "part"
+        },
+        {
+          "id": 85,
+          "question": "mujer",
+          "solution": "woman, women"
+        },
+        {
+          "id": 86,
+          "question": "aunque",
+          "solution": "though, although"
+        },
+        {
+          "id": 87,
+          "question": "cada",
+          "solution": "each"
+        },
+        {
+          "id": 88,
+          "question": "bien",
+          "solution": "well, good"
+        },
+        {
+          "id": 89,
+          "question": "seguir",
+          "solution": "to follow"
+        },
+        {
+          "id": 90,
+          "question": "asÃ­",
+          "solution": "like this"
+        },
+        {
+          "id": 91,
+          "question": "buen",
+          "solution": "good, well"
+        },
+        {
+          "id": 92,
+          "question": "algo",
+          "solution": "something"
+        },
+        {
+          "id": 93,
+          "question": "hablar",
+          "solution": "to speak, talk"
+        },
+        {
+          "id": 94,
+          "question": "donde",
+          "solution": "where"
+        },
+        {
+          "id": 95,
+          "question": "volver",
+          "solution": "to return"
+        },
+        {
+          "id": 96,
+          "question": "encontrar",
+          "solution": "to find"
+        },
+        {
+          "id": 97,
+          "question": "pensar",
+          "solution": "to think"
+        },
+        {
+          "id": 98,
+          "question": "casa",
+          "solution": "house"
+        },
+        {
+          "id": 99,
+          "question": "mundo",
+          "solution": "world"
+        },
+        {
+          "id": 100,
+          "question": "Ãºltimo",
+          "solution": "last"
+        },
+        {
+          "id": 101,
+          "question": "mano",
+          "solution": "hand"
+        },
+        {
+          "id": 102,
+          "question": "sido",
+          "solution": "been"
+        },
+        {
+          "id": 103,
+          "question": "algÃºn",
+          "solution": "some, any"
+        },
+        {
+          "id": 104,
+          "question": "propio",
+          "solution": "own"
+        },
+        {
+          "id": 105,
+          "question": "conocer",
+          "solution": "to know, meet"
+        },
+        {
+          "id": 106,
+          "question": "momento",
+          "solution": "moment"
+        },
+        {
+          "id": 107,
+          "question": "llamar",
+          "solution": "to call, phone"
+        },
+        {
+          "id": 108,
+          "question": "sÃ­",
+          "solution": "yes"
+        },
+        {
+          "id": 109,
+          "question": "quien",
+          "solution": "who"
+        },
+        {
+          "id": 110,
+          "question": "menos",
+          "solution": "less"
+        },
+        {
+          "id": 111,
+          "question": "salir",
+          "solution": "to leave, go out"
+        },
+        {
+          "id": 112,
+          "question": "alguno",
+          "solution": "some, any"
+        },
+        {
+          "id": 113,
+          "question": "mirar",
+          "solution": "to watch"
+        },
+        {
+          "id": 114,
+          "question": "casi",
+          "solution": "almost"
+        },
+        {
+          "id": 115,
+          "question": "medio",
+          "solution": "means"
+        },
+        {
+          "id": 116,
+          "question": "e",
+          "solution": "and"
+        },
+        {
+          "id": 117,
+          "question": "caso",
+          "solution": "case"
+        },
+        {
+          "id": 118,
+          "question": "hacia",
+          "solution": "towards"
+        },
+        {
+          "id": 119,
+          "question": "mejor",
+          "solution": "better"
+        },
+        {
+          "id": 120,
+          "question": "tres",
+          "solution": "three"
+        },
+        {
+          "id": 121,
+          "question": "nunca",
+          "solution": "never"
+        },
+        {
+          "id": 122,
+          "question": "hora",
+          "solution": "hour"
+        },
+        {
+          "id": 123,
+          "question": "venir",
+          "solution": "to come"
+        },
+        {
+          "id": 124,
+          "question": "forma",
+          "solution": "shape"
+        },
+        {
+          "id": 125,
+          "question": "contra",
+          "solution": "against"
+        },
+        {
+          "id": 126,
+          "question": "sino",
+          "solution": "but, rather"
+        },
+        {
+          "id": 127,
+          "question": "ante",
+          "solution": "before"
+        },
+        {
+          "id": 128,
+          "question": "ante",
+          "solution": "before, in front of"
+        },
+        {
+          "id": 129,
+          "question": "ojo",
+          "solution": "eye"
+        },
+        {
+          "id": 130,
+          "question": "tratar",
+          "solution": "to try (to do something), to behave towards"
+        },
+        {
+          "id": 131,
+          "question": "creer",
+          "solution": "to believe"
+        },
+        {
+          "id": 132,
+          "question": "cierto",
+          "solution": "TRUE"
+        },
+        {
+          "id": 133,
+          "question": "pues",
+          "solution": "then, since, because"
+        },
+        {
+          "id": 134,
+          "question": "tu",
+          "solution": "your, you"
+        },
+        {
+          "id": 135,
+          "question": "vivir",
+          "solution": "to live"
+        },
+        {
+          "id": 136,
+          "question": "durante",
+          "solution": "during"
+        },
+        {
+          "id": 137,
+          "question": "gran",
+          "solution": "big"
+        },
+        {
+          "id": 138,
+          "question": "cÃ³mo",
+          "solution": "how"
+        },
+        {
+          "id": 139,
+          "question": "seÃ±or",
+          "solution": "sir"
+        },
+        {
+          "id": 140,
+          "question": "entonces",
+          "solution": "then"
+        },
+        {
+          "id": 141,
+          "question": "padre",
+          "solution": "father"
+        },
+        {
+          "id": 142,
+          "question": "sentir",
+          "solution": "to feel"
+        },
+        {
+          "id": 143,
+          "question": "mientras",
+          "solution": "while"
+        },
+        {
+          "id": 144,
+          "question": "segÃºn",
+          "solution": "according to"
+        },
+        {
+          "id": 145,
+          "question": "noche",
+          "solution": "night"
+        },
+        {
+          "id": 146,
+          "question": "perder",
+          "solution": "to lose, miss"
+        },
+        {
+          "id": 147,
+          "question": "esto",
+          "solution": "this"
+        },
+        {
+          "id": 148,
+          "question": "tomar",
+          "solution": "to take, to drink"
+        },
+        {
+          "id": 149,
+          "question": "mayor",
+          "solution": "greater"
+        }
+      ]
+}

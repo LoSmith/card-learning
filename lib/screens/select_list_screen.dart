@@ -11,15 +11,14 @@ class SelectListScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // final tmpFlashCard = new FlashCard('id', 'question', 'solution text');
-          // context.read<FlashCardsCubit>().createFlashCard(tmpFlashCard);
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => FetchRemoteCardsListScreen(
-                  onSave: (fetchUrl) {},
-                ),
-              ));
+          context.read<FlashCardsCubit>().importJsonDataFromRemoteUrl('someurl');
+          // Navigator.push(
+          //     context,
+          //     MaterialPageRoute(
+          //       builder: (context) => FetchRemoteCardsListScreen(
+          //         onSave: (fetchUrl) {},
+          //       ),
+          //     ));
         },
       ),
     );

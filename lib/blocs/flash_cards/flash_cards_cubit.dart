@@ -4,6 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:card_learning/data/irepository.dart';
 import 'package:card_learning/exceptions/no_connection_exception.dart';
 import 'package:card_learning/models/flashCard.dart';
+import 'package:card_learning/services/fetch_remote_data_from_json.dart';
 
 import 'flash_cards_state.dart';
 
@@ -19,6 +20,34 @@ class FlashCardsCubit extends Cubit<FlashCardsState> {
     try {
       final items = this._flashCards;
       emit(FlashCardsState.success(items));
+    } on Exception {
+      emit(const FlashCardsState.failure());
+    }
+  }
+
+  Future<void> importJsonDataFromRemoteUrl(String url) async {
+    try {
+      final remoteFlashCards = await FetchGsheetsService().fetchRemoteDataFromJson(url);
+      this.createFlashCardsFromList(remoteFlashCards);
+
+      final items = this._flashCards;
+      emit(FlashCardsState.success(items));
+
+      //   Future<Stream<Beer>> getBeers() async {
+      //   final String url = 'https://api.punkapi.com/v2/beers';
+
+      //   final client = new http.Client();
+      //   final streamedRest = await client.send(
+      //       http.Request('get', Uri.parse(url))
+      //   );
+
+      //   return streamedRest.stream
+      //       .transform(utf8.decoder)
+      //       .transform(json.decoder)
+      //       .expand((data) => (data as List))
+      //       .map((data) => Beer.fromJSON(data));
+      // }
+
     } on Exception {
       emit(const FlashCardsState.failure());
     }
