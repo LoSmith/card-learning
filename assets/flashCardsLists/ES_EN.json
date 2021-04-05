@@ -2,750 +2,6004 @@
     "name": "ES_EN",
     "version": "0.1",
     "data": [
-        {
-          "id": 1,
+      {
+          "id": "1",
           "question": "de",
-          "solution": "of, from"
-        },
-        {
-          "id": 2,
-          "question": "el",
-          "solution": "the"
-        },
-        {
-          "id": 3,
-          "question": "lo",
-          "solution": "the, for, it"
-        },
-        {
-          "id": 4,
+          "solution": "from",
+          "additionText": "of"
+      },
+      {
+          "id": "2",
+          "question": "la",
+          "solution": "the",
+          "additionText": "the"
+      },
+      {
+          "id": "3",
           "question": "que",
-          "solution": "that"
-        },
-        {
-          "id": 5,
-          "question": "y",
-          "solution": "and"
-        },
-        {
-          "id": 6,
-          "question": "Ã©l",
-          "solution": "he, him"
-        },
-        {
-          "id": 7,
-          "question": "en",
-          "solution": "in, into, inside, on"
-        },
-        {
-          "id": 8,
+          "solution": "that",
+          "additionText": "which"
+      },
+      {
+          "id": "4",
           "question": "el",
-          "solution": "the"
-        },
-        {
-          "id": 9,
+          "solution": "the",
+          "additionText": "the"
+      },
+      {
+          "id": "5",
+          "question": "en",
+          "solution": "in",
+          "additionText": "at"
+      },
+      {
+          "id": "6",
+          "question": "y",
+          "solution": "and",
+          "additionText": "y"
+      },
+      {
+          "id": "7",
           "question": "a",
-          "solution": "a, to"
-        },
-        {
-          "id": 10,
-          "question": "un",
-          "solution": "a, an"
-        },
-        {
-          "id": 11,
-          "question": "ser",
-          "solution": "to be"
-        },
-        {
-          "id": 12,
-          "question": "no",
-          "solution": "no"
-        },
-        {
-          "id": 13,
-          "question": "su",
-          "solution": "his"
-        },
-        {
-          "id": 14,
-          "question": "haber",
-          "solution": "to have, has"
-        },
-        {
-          "id": 15,
+          "solution": "to",
+          "additionText": "a"
+      },
+      {
+          "id": "8",
+          "question": "los",
+          "solution": "the",
+          "additionText": "the"
+      },
+      {
+          "id": "9",
+          "question": "se",
+          "solution": "I know",
+          "additionText": "se"
+      },
+      {
+          "id": "10",
           "question": "del",
-          "solution": "of, from"
-        },
-        {
-          "id": 16,
-          "question": "con",
-          "solution": "with"
-        },
-        {
-          "id": 17,
+          "solution": "of the",
+          "additionText": "from"
+      },
+      {
+          "id": "11",
+          "question": "las",
+          "solution": "the",
+          "additionText": "the"
+      },
+      {
+          "id": "12",
+          "question": "un",
+          "solution": "a",
+          "additionText": "a"
+      },
+      {
+          "id": "13",
           "question": "por",
-          "solution": "by, for, per"
-        },
-        {
-          "id": 18,
-          "question": "yo",
-          "solution": "I"
-        },
-        {
-          "id": 19,
-          "question": "uno",
-          "solution": "one"
-        },
-        {
-          "id": 20,
-          "question": "al",
-          "solution": "to, to the"
-        },
-        {
-          "id": 21,
+          "solution": "by",
+          "additionText": "by"
+      },
+      {
+          "id": "14",
+          "question": "con",
+          "solution": "with",
+          "additionText": "with"
+      },
+      {
+          "id": "15",
+          "question": "no",
+          "solution": "no",
+          "additionText": "no"
+      },
+      {
+          "id": "16",
+          "question": "una",
+          "solution": "a",
+          "additionText": "a"
+      },
+      {
+          "id": "17",
+          "question": "su",
+          "solution": "its",
+          "additionText": "your"
+      },
+      {
+          "id": "18",
           "question": "para",
-          "solution": "for, towards, stop"
-        },
-        {
-          "id": 22,
+          "solution": "for",
+          "additionText": "for"
+      },
+      {
+          "id": "19",
+          "question": "es",
+          "solution": "is",
+          "additionText": "es"
+      },
+      {
+          "id": "20",
+          "question": "al",
+          "solution": "to the",
+          "additionText": "at"
+      },
+      {
+          "id": "21",
+          "question": "lo",
+          "solution": "it",
+          "additionText": "lo"
+      },
+      {
+          "id": "22",
           "question": "como",
-          "solution": "as, since, like"
-        },
-        {
-          "id": 23,
-          "question": "mÃ¡s",
-          "solution": "more"
-        },
-        {
-          "id": 24,
-          "question": "estar",
-          "solution": "to be, stay"
-        },
-        {
-          "id": 25,
-          "question": "todo",
-          "solution": "everything"
-        },
-        {
-          "id": 26,
-          "question": "tener",
-          "solution": "to have"
-        },
-        {
-          "id": 27,
-          "question": "poder",
-          "solution": "to be able to, can, might, may"
-        },
-        {
-          "id": 28,
-          "question": "pero",
-          "solution": "but"
-        },
-        {
-          "id": 29,
-          "question": "este",
-          "solution": "this"
-        },
-        {
-          "id": 30,
+          "solution": "What",
+          "additionText": "as"
+      },
+      {
+          "id": "23",
+          "question": "más",
+          "solution": "plus",
+          "additionText": "more"
+      },
+      {
+          "id": "24",
           "question": "o",
-          "solution": "or"
-        },
-        {
-          "id": 31,
-          "question": "hacer",
-          "solution": "to do, make"
-        },
-        {
-          "id": 32,
-          "question": "decir",
-          "solution": "to say, tell"
-        },
-        {
-          "id": 33,
-          "question": "otro",
-          "solution": "another, other"
-        },
-        {
-          "id": 34,
+          "solution": "or",
+          "additionText": "o"
+      },
+      {
+          "id": "25",
+          "question": "pero",
+          "solution": "but",
+          "additionText": "but"
+      },
+      {
+          "id": "26",
+          "question": "sus",
+          "solution": "their",
+          "additionText": "your"
+      },
+      {
+          "id": "27",
+          "question": "le",
+          "solution": "you",
+          "additionText": "le"
+      },
+      {
+          "id": "28",
+          "question": "ha",
+          "solution": "ha",
+          "additionText": "has"
+      },
+      {
+          "id": "29",
+          "question": "me",
+          "solution": "I",
+          "additionText": "me"
+      },
+      {
+          "id": "30",
           "question": "si",
-          "solution": "if, yes"
-        },
-        {
-          "id": 35,
+          "solution": "Yes",
+          "additionText": "if"
+      },
+      {
+          "id": "31",
           "question": "sin",
-          "solution": "without"
-        },
-        {
-          "id": 36,
-          "question": "mi",
-          "solution": "my, not me"
-        },
-        {
-          "id": 37,
-          "question": "ese",
-          "solution": "that"
-        },
-        {
-          "id": 38,
-          "question": "ir",
-          "solution": "to go"
-        },
-        {
-          "id": 39,
-          "question": "dar",
-          "solution": "to give"
-        },
-        {
-          "id": 40,
-          "question": "cuando",
-          "solution": "when"
-        },
-        {
-          "id": 41,
-          "question": "ya",
-          "solution": "already"
-        },
-        {
-          "id": 42,
-          "question": "ver",
-          "solution": "to see"
-        },
-        {
-          "id": 43,
+          "solution": "without",
+          "additionText": "without"
+      },
+      {
+          "id": "32",
           "question": "sobre",
-          "solution": "envelope, on"
-        },
-        {
-          "id": 44,
-          "question": "saber",
-          "solution": "to know"
-        },
-        {
-          "id": 45,
-          "question": "aÃ±o",
-          "solution": "year"
-        },
-        {
-          "id": 46,
+          "solution": "on",
+          "additionText": "about"
+      },
+      {
+          "id": "33",
+          "question": "este",
+          "solution": "East",
+          "additionText": "this"
+      },
+      {
+          "id": "34",
+          "question": "ya",
+          "solution": "already",
+          "additionText": "already"
+      },
+      {
+          "id": "35",
           "question": "entre",
-          "solution": "between, among"
-        },
-        {
-          "id": 47,
-          "question": "muy",
-          "solution": "very, highly"
-        },
-        {
-          "id": 48,
-          "question": "mismo",
-          "solution": "same"
-        },
-        {
-          "id": 49,
-          "question": "quÃ©",
-          "solution": "what"
-        },
-        {
-          "id": 50,
-          "question": "mucho",
-          "solution": "much"
-        },
-        {
-          "id": 51,
+          "solution": "Come in",
+          "additionText": "between"
+      },
+      {
+          "id": "36",
+          "question": "cuando",
+          "solution": "when",
+          "additionText": "when"
+      },
+      {
+          "id": "37",
+          "question": "todo",
+          "solution": "all",
+          "additionText": "all"
+      },
+      {
+          "id": "38",
+          "question": "esta",
+          "solution": "is",
+          "additionText": "is"
+      },
+      {
+          "id": "39",
+          "question": "ser",
+          "solution": "be",
+          "additionText": "be"
+      },
+      {
+          "id": "40",
+          "question": "son",
+          "solution": "are",
+          "additionText": "are"
+      },
+      {
+          "id": "41",
           "question": "dos",
-          "solution": "two"
-        },
-        {
-          "id": 52,
-          "question": "porque",
-          "solution": "because, why"
-        },
-        {
-          "id": 53,
-          "question": "sÃ³lo",
-          "solution": "only"
-        },
-        {
-          "id": 54,
-          "question": "tambiÃ©n",
-          "solution": "also, too"
-        },
-        {
-          "id": 55,
-          "question": "vez",
-          "solution": "time"
-        },
-        {
-          "id": 56,
-          "question": "dÃ­a",
-          "solution": "day"
-        },
-        {
-          "id": 57,
-          "question": "aquel",
-          "solution": "that"
-        },
-        {
-          "id": 58,
-          "question": "parecer",
-          "solution": "to seem"
-        },
-        {
-          "id": 59,
-          "question": "querer",
-          "solution": "to want"
-        },
-        {
-          "id": 60,
-          "question": "ni",
-          "solution": "nor, neither"
-        },
-        {
-          "id": 61,
-          "question": "pasar",
-          "solution": "to happen, pass"
-        },
-        {
-          "id": 62,
+          "solution": "two",
+          "additionText": "two"
+      },
+      {
+          "id": "42",
+          "question": "también",
+          "solution": "too",
+          "additionText": "also"
+      },
+      {
+          "id": "43",
+          "question": "fue",
+          "solution": "it was",
+          "additionText": "was"
+      },
+      {
+          "id": "44",
+          "question": "había",
+          "solution": "there was",
+          "additionText": "there was"
+      },
+      {
+          "id": "45",
+          "question": "era",
+          "solution": "it was",
+          "additionText": "was"
+      },
+      {
+          "id": "46",
+          "question": "muy",
+          "solution": "very",
+          "additionText": "very"
+      },
+      {
+          "id": "47",
+          "question": "años",
+          "solution": "years",
+          "additionText": "years"
+      },
+      {
+          "id": "48",
           "question": "hasta",
-          "solution": "until, even"
-        },
-        {
-          "id": 63,
-          "question": "llegar",
-          "solution": "to arrive, come"
-        },
-        {
-          "id": 64,
-          "question": "tan",
-          "solution": "so"
-        },
-        {
-          "id": 65,
-          "question": "deber",
-          "solution": "to owe"
-        },
-        {
-          "id": 66,
-          "question": "hombre",
-          "solution": "man"
-        },
-        {
-          "id": 67,
-          "question": "tiempo",
-          "solution": "time"
-        },
-        {
-          "id": 68,
+          "solution": "until",
+          "additionText": "to"
+      },
+      {
+          "id": "49",
           "question": "desde",
-          "solution": "from, since"
-        },
-        {
-          "id": 69,
-          "question": "nuestro",
-          "solution": "ours"
-        },
-        {
-          "id": 70,
-          "question": "poner",
-          "solution": "to put"
-        },
-        {
-          "id": 71,
-          "question": "primero",
-          "solution": "first"
-        },
-        {
-          "id": 72,
-          "question": "dejar",
-          "solution": "to leave, to leave behind"
-        },
-        {
-          "id": 73,
-          "question": "vida",
-          "solution": "life"
-        },
-        {
-          "id": 74,
-          "question": "ahora",
-          "solution": "now"
-        },
-        {
-          "id": 75,
-          "question": "tanto",
-          "solution": "so much"
-        },
-        {
-          "id": 76,
-          "question": "poco",
-          "solution": "little, few"
-        },
-        {
-          "id": 77,
-          "question": "siempre",
-          "solution": "always"
-        },
-        {
-          "id": 78,
-          "question": "eso",
-          "solution": "that"
-        },
-        {
-          "id": 79,
-          "question": "llevar",
-          "solution": "to take, carry"
-        },
-        {
-          "id": 80,
-          "question": "nuevo",
-          "solution": "new"
-        },
-        {
-          "id": 81,
-          "question": "quedar",
-          "solution": "to stay"
-        },
-        {
-          "id": 82,
-          "question": "cosa",
-          "solution": "thing"
-        },
-        {
-          "id": 83,
-          "question": "nada",
-          "solution": "nothing"
-        },
-        {
-          "id": 84,
+          "solution": "since",
+          "additionText": "since"
+      },
+      {
+          "id": "50",
+          "question": "está",
+          "solution": "this",
+          "additionText": "is"
+      },
+      {
+          "id": "51",
+          "question": "mi",
+          "solution": "me",
+          "additionText": "my"
+      },
+      {
+          "id": "52",
+          "question": "porque",
+          "solution": "because",
+          "additionText": "because"
+      },
+      {
+          "id": "53",
+          "question": "qué",
+          "solution": "that",
+          "additionText": "what"
+      },
+      {
+          "id": "54",
+          "question": "sólo",
+          "solution": "alone",
+          "additionText": "only"
+      },
+      {
+          "id": "55",
+          "question": "han",
+          "solution": "they have",
+          "additionText": "have"
+      },
+      {
+          "id": "56",
+          "question": "yo",
+          "solution": "I",
+          "additionText": "me"
+      },
+      {
+          "id": "57",
+          "question": "hay",
+          "solution": "there are",
+          "additionText": "there is"
+      },
+      {
+          "id": "58",
+          "question": "vez",
+          "solution": "time",
+          "additionText": "time"
+      },
+      {
+          "id": "59",
+          "question": "puede",
+          "solution": "can",
+          "additionText": "can"
+      },
+      {
+          "id": "60",
+          "question": "todos",
+          "solution": "everybody",
+          "additionText": "all"
+      },
+      {
+          "id": "61",
+          "question": "así",
+          "solution": "So",
+          "additionText": "so"
+      },
+      {
+          "id": "62",
+          "question": "nos",
+          "solution": "us",
+          "additionText": "us"
+      },
+      {
+          "id": "63",
+          "question": "ni",
+          "solution": "neither",
+          "additionText": "nor"
+      },
+      {
+          "id": "64",
           "question": "parte",
-          "solution": "part"
-        },
-        {
-          "id": 85,
-          "question": "mujer",
-          "solution": "woman, women"
-        },
-        {
-          "id": 86,
-          "question": "aunque",
-          "solution": "though, although"
-        },
-        {
-          "id": 87,
-          "question": "cada",
-          "solution": "each"
-        },
-        {
-          "id": 88,
-          "question": "bien",
-          "solution": "well, good"
-        },
-        {
-          "id": 89,
-          "question": "seguir",
-          "solution": "to follow"
-        },
-        {
-          "id": 90,
-          "question": "asÃ­",
-          "solution": "like this"
-        },
-        {
-          "id": 91,
-          "question": "buen",
-          "solution": "good, well"
-        },
-        {
-          "id": 92,
-          "question": "algo",
-          "solution": "something"
-        },
-        {
-          "id": 93,
-          "question": "hablar",
-          "solution": "to speak, talk"
-        },
-        {
-          "id": 94,
+          "solution": "part",
+          "additionText": "part"
+      },
+      {
+          "id": "65",
+          "question": "tiene",
+          "solution": "It has",
+          "additionText": "has"
+      },
+      {
+          "id": "66",
+          "question": "él",
+          "solution": "he",
+          "additionText": "he"
+      },
+      {
+          "id": "67",
+          "question": "uno",
+          "solution": "one",
+          "additionText": "one"
+      },
+      {
+          "id": "68",
           "question": "donde",
-          "solution": "where"
-        },
-        {
-          "id": 95,
-          "question": "volver",
-          "solution": "to return"
-        },
-        {
-          "id": 96,
-          "question": "encontrar",
-          "solution": "to find"
-        },
-        {
-          "id": 97,
-          "question": "pensar",
-          "solution": "to think"
-        },
-        {
-          "id": 98,
-          "question": "casa",
-          "solution": "house"
-        },
-        {
-          "id": 99,
-          "question": "mundo",
-          "solution": "world"
-        },
-        {
-          "id": 100,
-          "question": "Ãºltimo",
-          "solution": "last"
-        },
-        {
-          "id": 101,
-          "question": "mano",
-          "solution": "hand"
-        },
-        {
-          "id": 102,
-          "question": "sido",
-          "solution": "been"
-        },
-        {
-          "id": 103,
-          "question": "algÃºn",
-          "solution": "some, any"
-        },
-        {
-          "id": 104,
-          "question": "propio",
-          "solution": "own"
-        },
-        {
-          "id": 105,
-          "question": "conocer",
-          "solution": "to know, meet"
-        },
-        {
-          "id": 106,
-          "question": "momento",
-          "solution": "moment"
-        },
-        {
-          "id": 107,
-          "question": "llamar",
-          "solution": "to call, phone"
-        },
-        {
-          "id": 108,
-          "question": "sÃ­",
-          "solution": "yes"
-        },
-        {
-          "id": 109,
-          "question": "quien",
-          "solution": "who"
-        },
-        {
-          "id": 110,
-          "question": "menos",
-          "solution": "less"
-        },
-        {
-          "id": 111,
-          "question": "salir",
-          "solution": "to leave, go out"
-        },
-        {
-          "id": 112,
-          "question": "alguno",
-          "solution": "some, any"
-        },
-        {
-          "id": 113,
-          "question": "mirar",
-          "solution": "to watch"
-        },
-        {
-          "id": 114,
-          "question": "casi",
-          "solution": "almost"
-        },
-        {
-          "id": 115,
-          "question": "medio",
-          "solution": "means"
-        },
-        {
-          "id": 116,
+          "solution": "where",
+          "additionText": "where"
+      },
+      {
+          "id": "69",
+          "question": "bien",
+          "solution": "all right",
+          "additionText": "well"
+      },
+      {
+          "id": "70",
+          "question": "tiempo",
+          "solution": "weather",
+          "additionText": "time"
+      },
+      {
+          "id": "71",
+          "question": "mismo",
+          "solution": "same",
+          "additionText": "itself"
+      },
+      {
+          "id": "72",
+          "question": "ese",
+          "solution": "that",
+          "additionText": "that"
+      },
+      {
+          "id": "73",
+          "question": "ahora",
+          "solution": "now",
+          "additionText": "now"
+      },
+      {
+          "id": "74",
+          "question": "cada",
+          "solution": "each",
+          "additionText": "each"
+      },
+      {
+          "id": "75",
           "question": "e",
-          "solution": "and"
-        },
-        {
-          "id": 117,
-          "question": "caso",
-          "solution": "case"
-        },
-        {
-          "id": 118,
-          "question": "hacia",
-          "solution": "towards"
-        },
-        {
-          "id": 119,
-          "question": "mejor",
-          "solution": "better"
-        },
-        {
-          "id": 120,
-          "question": "tres",
-          "solution": "three"
-        },
-        {
-          "id": 121,
-          "question": "nunca",
-          "solution": "never"
-        },
-        {
-          "id": 122,
-          "question": "hora",
-          "solution": "hour"
-        },
-        {
-          "id": 123,
-          "question": "venir",
-          "solution": "to come"
-        },
-        {
-          "id": 124,
-          "question": "forma",
-          "solution": "shape"
-        },
-        {
-          "id": 125,
-          "question": "contra",
-          "solution": "against"
-        },
-        {
-          "id": 126,
-          "question": "sino",
-          "solution": "but, rather"
-        },
-        {
-          "id": 127,
-          "question": "ante",
-          "solution": "before"
-        },
-        {
-          "id": 128,
-          "question": "ante",
-          "solution": "before, in front of"
-        },
-        {
-          "id": 129,
-          "question": "ojo",
-          "solution": "eye"
-        },
-        {
-          "id": 130,
-          "question": "tratar",
-          "solution": "to try (to do something), to behave towards"
-        },
-        {
-          "id": 131,
-          "question": "creer",
-          "solution": "to believe"
-        },
-        {
-          "id": 132,
-          "question": "cierto",
-          "solution": "TRUE"
-        },
-        {
-          "id": 133,
-          "question": "pues",
-          "solution": "then, since, because"
-        },
-        {
-          "id": 134,
-          "question": "tu",
-          "solution": "your, you"
-        },
-        {
-          "id": 135,
-          "question": "vivir",
-          "solution": "to live"
-        },
-        {
-          "id": 136,
+          "solution": "and",
+          "additionText": "e"
+      },
+      {
+          "id": "76",
+          "question": "vida",
+          "solution": "life",
+          "additionText": "life"
+      },
+      {
+          "id": "77",
+          "question": "otro",
+          "solution": "other",
+          "additionText": "another"
+      },
+      {
+          "id": "78",
+          "question": "después",
+          "solution": "after",
+          "additionText": "then"
+      },
+      {
+          "id": "79",
+          "question": "te",
+          "solution": "tea",
+          "additionText": "you"
+      },
+      {
+          "id": "80",
+          "question": "otros",
+          "solution": "others",
+          "additionText": "others"
+      },
+      {
+          "id": "81",
+          "question": "aunque",
+          "solution": "even though",
+          "additionText": "even if"
+      },
+      {
+          "id": "82",
+          "question": "esa",
+          "solution": "that",
+          "additionText": "that"
+      },
+      {
+          "id": "83",
+          "question": "eso",
+          "solution": "that",
+          "additionText": "that"
+      },
+      {
+          "id": "84",
+          "question": "hace",
+          "solution": "make",
+          "additionText": "makes"
+      },
+      {
+          "id": "85",
+          "question": "otra",
+          "solution": "other",
+          "additionText": "another"
+      },
+      {
+          "id": "86",
+          "question": "gobierno",
+          "solution": "government",
+          "additionText": "government"
+      },
+      {
+          "id": "87",
+          "question": "tan",
+          "solution": "so",
+          "additionText": "so"
+      },
+      {
+          "id": "88",
           "question": "durante",
-          "solution": "during"
-        },
-        {
-          "id": 137,
+          "solution": "during",
+          "additionText": "during"
+      },
+      {
+          "id": "89",
+          "question": "siempre",
+          "solution": "forever",
+          "additionText": "always"
+      },
+      {
+          "id": "90",
+          "question": "día",
+          "solution": "day",
+          "additionText": "day"
+      },
+      {
+          "id": "91",
+          "question": "tanto",
+          "solution": "so much",
+          "additionText": "so much"
+      },
+      {
+          "id": "92",
+          "question": "ella",
+          "solution": "she",
+          "additionText": "she"
+      },
+      {
+          "id": "93",
+          "question": "tres",
+          "solution": "three",
+          "additionText": "three"
+      },
+      {
+          "id": "94",
+          "question": "sí",
+          "solution": "Yes",
+          "additionText": "yes"
+      },
+      {
+          "id": "95",
+          "question": "dijo",
+          "solution": "He said",
+          "additionText": "said"
+      },
+      {
+          "id": "96",
+          "question": "sido",
+          "solution": "been",
+          "additionText": "been"
+      },
+      {
+          "id": "97",
           "question": "gran",
-          "solution": "big"
-        },
-        {
-          "id": 138,
-          "question": "cÃ³mo",
-          "solution": "how"
-        },
-        {
-          "id": 139,
-          "question": "seÃ±or",
-          "solution": "sir"
-        },
-        {
-          "id": 140,
-          "question": "entonces",
-          "solution": "then"
-        },
-        {
-          "id": 141,
-          "question": "padre",
-          "solution": "father"
-        },
-        {
-          "id": 142,
-          "question": "sentir",
-          "solution": "to feel"
-        },
-        {
-          "id": 143,
-          "question": "mientras",
-          "solution": "while"
-        },
-        {
-          "id": 144,
-          "question": "segÃºn",
-          "solution": "according to"
-        },
-        {
-          "id": 145,
-          "question": "noche",
-          "solution": "night"
-        },
-        {
-          "id": 146,
-          "question": "perder",
-          "solution": "to lose, miss"
-        },
-        {
-          "id": 147,
-          "question": "esto",
-          "solution": "this"
-        },
-        {
-          "id": 148,
-          "question": "tomar",
-          "solution": "to take, to drink"
-        },
-        {
-          "id": 149,
+          "solution": "big",
+          "additionText": "great"
+      },
+      {
+          "id": "98",
+          "question": "país",
+          "solution": "country",
+          "additionText": "country"
+      },
+      {
+          "id": "99",
+          "question": "según",
+          "solution": "according to",
+          "additionText": "according to"
+      },
+      {
+          "id": "100",
+          "question": "menos",
+          "solution": "less",
+          "additionText": "less"
+      },
+      {
+          "id": "101",
+          "question": "mundo",
+          "solution": "world",
+          "additionText": "world"
+      },
+      {
+          "id": "102",
+          "question": "año",
+          "solution": "year",
+          "additionText": "year"
+      },
+      {
+          "id": "103",
+          "question": "antes",
+          "solution": "before",
+          "additionText": "before"
+      },
+      {
+          "id": "104",
+          "question": "estado",
+          "solution": "condition",
+          "additionText": "state"
+      },
+      {
+          "id": "105",
+          "question": "contra",
+          "solution": "against",
+          "additionText": "against"
+      },
+      {
+          "id": "106",
+          "question": "sino",
+          "solution": "otherwise",
+          "additionText": "but"
+      },
+      {
+          "id": "107",
+          "question": "forma",
+          "solution": "form",
+          "additionText": "form"
+      },
+      {
+          "id": "108",
+          "question": "caso",
+          "solution": "case",
+          "additionText": "case"
+      },
+      {
+          "id": "109",
+          "question": "nada",
+          "solution": "nothing",
+          "additionText": "nothing"
+      },
+      {
+          "id": "110",
+          "question": "hacer",
+          "solution": "do",
+          "additionText": "do"
+      },
+      {
+          "id": "111",
+          "question": "general",
+          "solution": "general",
+          "additionText": "general"
+      },
+      {
+          "id": "112",
+          "question": "estaba",
+          "solution": "I was",
+          "additionText": "was"
+      },
+      {
+          "id": "113",
+          "question": "poco",
+          "solution": "little bit",
+          "additionText": "little"
+      },
+      {
+          "id": "114",
+          "question": "estos",
+          "solution": "these",
+          "additionText": "these"
+      },
+      {
+          "id": "115",
+          "question": "presidente",
+          "solution": "President",
+          "additionText": "president"
+      },
+      {
+          "id": "116",
           "question": "mayor",
-          "solution": "greater"
-        }
-      ]
+          "solution": "higher",
+          "additionText": "major"
+      },
+      {
+          "id": "117",
+          "question": "ante",
+          "solution": "in view of",
+          "additionText": "to"
+      },
+      {
+          "id": "118",
+          "question": "unos",
+          "solution": "some",
+          "additionText": "some"
+      },
+      {
+          "id": "119",
+          "question": "les",
+          "solution": "them",
+          "additionText": "them"
+      },
+      {
+          "id": "120",
+          "question": "algo",
+          "solution": "something",
+          "additionText": "somewhat"
+      },
+      {
+          "id": "121",
+          "question": "hacia",
+          "solution": "toward",
+          "additionText": "to"
+      },
+      {
+          "id": "122",
+          "question": "casa",
+          "solution": "home",
+          "additionText": "home"
+      },
+      {
+          "id": "123",
+          "question": "ellos",
+          "solution": "they",
+          "additionText": "they"
+      },
+      {
+          "id": "124",
+          "question": "ayer",
+          "solution": "Yesterday",
+          "additionText": "yesterday"
+      },
+      {
+          "id": "125",
+          "question": "hecho",
+          "solution": "done",
+          "additionText": "fact"
+      },
+      {
+          "id": "126",
+          "question": "primera",
+          "solution": "first",
+          "additionText": "first"
+      },
+      {
+          "id": "127",
+          "question": "mucho",
+          "solution": "a lot",
+          "additionText": "much"
+      },
+      {
+          "id": "128",
+          "question": "mientras",
+          "solution": "While",
+          "additionText": "while"
+      },
+      {
+          "id": "129",
+          "question": "además",
+          "solution": "what's more",
+          "additionText": "moreover"
+      },
+      {
+          "id": "130",
+          "question": "quien",
+          "solution": "who",
+          "additionText": "who"
+      },
+      {
+          "id": "131",
+          "question": "momento",
+          "solution": "moment",
+          "additionText": "time"
+      },
+      {
+          "id": "132",
+          "question": "millones",
+          "solution": "millions",
+          "additionText": "millions"
+      },
+      {
+          "id": "133",
+          "question": "esto",
+          "solution": "this",
+          "additionText": "this"
+      },
+      {
+          "id": "134",
+          "question": "españa",
+          "solution": "Spain",
+          "additionText": "spain"
+      },
+      {
+          "id": "135",
+          "question": "hombre",
+          "solution": "man",
+          "additionText": "man"
+      },
+      {
+          "id": "136",
+          "question": "están",
+          "solution": "is it so",
+          "additionText": "are"
+      },
+      {
+          "id": "137",
+          "question": "pues",
+          "solution": "well",
+          "additionText": "because"
+      },
+      {
+          "id": "138",
+          "question": "hoy",
+          "solution": "today",
+          "additionText": "today"
+      },
+      {
+          "id": "139",
+          "question": "lugar",
+          "solution": "place",
+          "additionText": "place"
+      },
+      {
+          "id": "140",
+          "question": "madrid",
+          "solution": "Madrid",
+          "additionText": "madrid"
+      },
+      {
+          "id": "141",
+          "question": "nacional",
+          "solution": "national",
+          "additionText": "national"
+      },
+      {
+          "id": "142",
+          "question": "trabajo",
+          "solution": "job",
+          "additionText": "job"
+      },
+      {
+          "id": "143",
+          "question": "otras",
+          "solution": "other",
+          "additionText": "other"
+      },
+      {
+          "id": "144",
+          "question": "mejor",
+          "solution": "better",
+          "additionText": "best"
+      },
+      {
+          "id": "145",
+          "question": "nuevo",
+          "solution": "new",
+          "additionText": "new"
+      },
+      {
+          "id": "146",
+          "question": "decir",
+          "solution": "tell",
+          "additionText": "say"
+      },
+      {
+          "id": "147",
+          "question": "algunos",
+          "solution": "Some",
+          "additionText": "some"
+      },
+      {
+          "id": "148",
+          "question": "entonces",
+          "solution": "then",
+          "additionText": "then"
+      },
+      {
+          "id": "149",
+          "question": "todas",
+          "solution": "all",
+          "additionText": "all"
+      },
+      {
+          "id": "150",
+          "question": "días",
+          "solution": "days",
+          "additionText": "days"
+      },
+      {
+          "id": "151",
+          "question": "debe",
+          "solution": "has to",
+          "additionText": "should"
+      },
+      {
+          "id": "152",
+          "question": "política",
+          "solution": "politics",
+          "additionText": "policy"
+      },
+      {
+          "id": "153",
+          "question": "cómo",
+          "solution": "excuse me",
+          "additionText": "how"
+      },
+      {
+          "id": "154",
+          "question": "casi",
+          "solution": "almost",
+          "additionText": "almost"
+      },
+      {
+          "id": "155",
+          "question": "toda",
+          "solution": "all",
+          "additionText": "all"
+      },
+      {
+          "id": "156",
+          "question": "tal",
+          "solution": "such",
+          "additionText": "such"
+      },
+      {
+          "id": "157",
+          "question": "luego",
+          "solution": "later",
+          "additionText": "then"
+      },
+      {
+          "id": "158",
+          "question": "pasado",
+          "solution": "last",
+          "additionText": "past"
+      },
+      {
+          "id": "159",
+          "question": "primer",
+          "solution": "first",
+          "additionText": "first"
+      },
+      {
+          "id": "160",
+          "question": "medio",
+          "solution": "half",
+          "additionText": "half"
+      },
+      {
+          "id": "161",
+          "question": "va",
+          "solution": "he",
+          "additionText": "goes"
+      },
+      {
+          "id": "162",
+          "question": "estas",
+          "solution": "are",
+          "additionText": "these"
+      },
+      {
+          "id": "163",
+          "question": "sea",
+          "solution": "be",
+          "additionText": "be"
+      },
+      {
+          "id": "164",
+          "question": "tenía",
+          "solution": "I had",
+          "additionText": "had"
+      },
+      {
+          "id": "165",
+          "question": "nunca",
+          "solution": "never",
+          "additionText": "never"
+      },
+      {
+          "id": "166",
+          "question": "poder",
+          "solution": "can",
+          "additionText": "power"
+      },
+      {
+          "id": "167",
+          "question": "aquí",
+          "solution": "here",
+          "additionText": "here"
+      },
+      {
+          "id": "168",
+          "question": "ver",
+          "solution": "watch",
+          "additionText": "see"
+      },
+      {
+          "id": "169",
+          "question": "veces",
+          "solution": "times",
+          "additionText": "times"
+      },
+      {
+          "id": "170",
+          "question": "embargo",
+          "solution": "embargo",
+          "additionText": "embargo"
+      },
+      {
+          "id": "171",
+          "question": "partido",
+          "solution": "match",
+          "additionText": "party"
+      },
+      {
+          "id": "172",
+          "question": "personas",
+          "solution": "persons",
+          "additionText": "people"
+      },
+      {
+          "id": "173",
+          "question": "grupo",
+          "solution": "group",
+          "additionText": "group"
+      },
+      {
+          "id": "174",
+          "question": "cuenta",
+          "solution": "bill",
+          "additionText": "account"
+      },
+      {
+          "id": "175",
+          "question": "pueden",
+          "solution": "they can",
+          "additionText": "can"
+      },
+      {
+          "id": "176",
+          "question": "tienen",
+          "solution": "have",
+          "additionText": "have"
+      },
+      {
+          "id": "177",
+          "question": "misma",
+          "solution": "same",
+          "additionText": "same"
+      },
+      {
+          "id": "178",
+          "question": "nueva",
+          "solution": "new",
+          "additionText": "new"
+      },
+      {
+          "id": "179",
+          "question": "cual",
+          "solution": "which",
+          "additionText": "which"
+      },
+      {
+          "id": "180",
+          "question": "fueron",
+          "solution": "They were",
+          "additionText": "were"
+      },
+      {
+          "id": "181",
+          "question": "mujer",
+          "solution": "woman",
+          "additionText": "woman"
+      },
+      {
+          "id": "182",
+          "question": "frente",
+          "solution": "forehead",
+          "additionText": "front"
+      },
+      {
+          "id": "183",
+          "question": "josé",
+          "solution": "Joseph",
+          "additionText": "joseph"
+      },
+      {
+          "id": "184",
+          "question": "tras",
+          "solution": "after",
+          "additionText": "behind"
+      },
+      {
+          "id": "185",
+          "question": "cosas",
+          "solution": "things",
+          "additionText": "things"
+      },
+      {
+          "id": "186",
+          "question": "fin",
+          "solution": "finish",
+          "additionText": "end"
+      },
+      {
+          "id": "187",
+          "question": "ciudad",
+          "solution": "city",
+          "additionText": "city"
+      },
+      {
+          "id": "188",
+          "question": "he",
+          "solution": "I",
+          "additionText": "he"
+      },
+      {
+          "id": "189",
+          "question": "social",
+          "solution": "Social",
+          "additionText": "social"
+      },
+      {
+          "id": "190",
+          "question": "manera",
+          "solution": "way",
+          "additionText": "way"
+      },
+      {
+          "id": "191",
+          "question": "tener",
+          "solution": "have",
+          "additionText": "have"
+      },
+      {
+          "id": "192",
+          "question": "sistema",
+          "solution": "system",
+          "additionText": "system"
+      },
+      {
+          "id": "193",
+          "question": "será",
+          "solution": "be",
+          "additionText": "will be"
+      },
+      {
+          "id": "194",
+          "question": "historia",
+          "solution": "history",
+          "additionText": "history"
+      },
+      {
+          "id": "195",
+          "question": "muchos",
+          "solution": "Many",
+          "additionText": "many"
+      },
+      {
+          "id": "196",
+          "question": "juan",
+          "solution": "John",
+          "additionText": "juan"
+      },
+      {
+          "id": "197",
+          "question": "tipo",
+          "solution": "kind",
+          "additionText": "type"
+      },
+      {
+          "id": "198",
+          "question": "cuatro",
+          "solution": "four",
+          "additionText": "four"
+      },
+      {
+          "id": "199",
+          "question": "dentro",
+          "solution": "inside",
+          "additionText": "inside"
+      },
+      {
+          "id": "200",
+          "question": "nuestro",
+          "solution": "our",
+          "additionText": "our"
+      },
+      {
+          "id": "201",
+          "question": "punto",
+          "solution": "point",
+          "additionText": "dot"
+      },
+      {
+          "id": "202",
+          "question": "dice",
+          "solution": "He says",
+          "additionText": "it says"
+      },
+      {
+          "id": "203",
+          "question": "ello",
+          "solution": "it",
+          "additionText": "it"
+      },
+      {
+          "id": "204",
+          "question": "cualquier",
+          "solution": "any",
+          "additionText": "any"
+      },
+      {
+          "id": "205",
+          "question": "noche",
+          "solution": "night",
+          "additionText": "night"
+      },
+      {
+          "id": "206",
+          "question": "aún",
+          "solution": "still",
+          "additionText": "even"
+      },
+      {
+          "id": "207",
+          "question": "agua",
+          "solution": "Water",
+          "additionText": "water"
+      },
+      {
+          "id": "208",
+          "question": "parece",
+          "solution": "It seems",
+          "additionText": "it seems"
+      },
+      {
+          "id": "209",
+          "question": "haber",
+          "solution": "to have",
+          "additionText": "to have"
+      },
+      {
+          "id": "210",
+          "question": "situación",
+          "solution": "situation",
+          "additionText": "situation"
+      },
+      {
+          "id": "211",
+          "question": "fuera",
+          "solution": "outside",
+          "additionText": "outside"
+      },
+      {
+          "id": "212",
+          "question": "bajo",
+          "solution": "under",
+          "additionText": "under"
+      },
+      {
+          "id": "213",
+          "question": "grandes",
+          "solution": "big",
+          "additionText": "great"
+      },
+      {
+          "id": "214",
+          "question": "nuestra",
+          "solution": "our",
+          "additionText": "our"
+      },
+      {
+          "id": "215",
+          "question": "ejemplo",
+          "solution": "example",
+          "additionText": "example"
+      },
+      {
+          "id": "216",
+          "question": "acuerdo",
+          "solution": "agreement",
+          "additionText": "agreement"
+      },
+      {
+          "id": "217",
+          "question": "habían",
+          "solution": "they had",
+          "additionText": "you had"
+      },
+      {
+          "id": "218",
+          "question": "usted",
+          "solution": "you",
+          "additionText": "you"
+      },
+      {
+          "id": "219",
+          "question": "estados",
+          "solution": "state",
+          "additionText": "states"
+      },
+      {
+          "id": "220",
+          "question": "hizo",
+          "solution": "made",
+          "additionText": "made"
+      },
+      {
+          "id": "221",
+          "question": "nadie",
+          "solution": "nobody",
+          "additionText": "no one"
+      },
+      {
+          "id": "222",
+          "question": "países",
+          "solution": "countries",
+          "additionText": "countries"
+      },
+      {
+          "id": "223",
+          "question": "horas",
+          "solution": "hours",
+          "additionText": "hours"
+      },
+      {
+          "id": "224",
+          "question": "posible",
+          "solution": "possible",
+          "additionText": "possible"
+      },
+      {
+          "id": "225",
+          "question": "tarde",
+          "solution": "late",
+          "additionText": "afternoon"
+      },
+      {
+          "id": "226",
+          "question": "ley",
+          "solution": "law",
+          "additionText": "law"
+      },
+      {
+          "id": "227",
+          "question": "importante",
+          "solution": "important",
+          "additionText": "important"
+      },
+      {
+          "id": "228",
+          "question": "guerra",
+          "solution": "war",
+          "additionText": "war"
+      },
+      {
+          "id": "229",
+          "question": "desarrollo",
+          "solution": "developing",
+          "additionText": "development"
+      },
+      {
+          "id": "230",
+          "question": "proceso",
+          "solution": "process",
+          "additionText": "process"
+      },
+      {
+          "id": "231",
+          "question": "realidad",
+          "solution": "reality",
+          "additionText": "reality"
+      },
+      {
+          "id": "232",
+          "question": "sentido",
+          "solution": "sense",
+          "additionText": "meaning"
+      },
+      {
+          "id": "233",
+          "question": "lado",
+          "solution": "side",
+          "additionText": "side"
+      },
+      {
+          "id": "234",
+          "question": "mí",
+          "solution": "my",
+          "additionText": "me"
+      },
+      {
+          "id": "235",
+          "question": "tu",
+          "solution": "you",
+          "additionText": "your"
+      },
+      {
+          "id": "236",
+          "question": "cambio",
+          "solution": "change",
+          "additionText": "change"
+      },
+      {
+          "id": "237",
+          "question": "allí",
+          "solution": "there",
+          "additionText": "there"
+      },
+      {
+          "id": "238",
+          "question": "mano",
+          "solution": "hand",
+          "additionText": "hand"
+      },
+      {
+          "id": "239",
+          "question": "eran",
+          "solution": "were",
+          "additionText": "were"
+      },
+      {
+          "id": "240",
+          "question": "estar",
+          "solution": "to be",
+          "additionText": "be"
+      },
+      {
+          "id": "241",
+          "question": "san",
+          "solution": "saint",
+          "additionText": "saint"
+      },
+      {
+          "id": "242",
+          "question": "número",
+          "solution": "number",
+          "additionText": "number"
+      },
+      {
+          "id": "243",
+          "question": "sociedad",
+          "solution": "society",
+          "additionText": "company"
+      },
+      {
+          "id": "244",
+          "question": "unas",
+          "solution": "nails",
+          "additionText": "about"
+      },
+      {
+          "id": "245",
+          "question": "centro",
+          "solution": "center",
+          "additionText": "center"
+      },
+      {
+          "id": "246",
+          "question": "padre",
+          "solution": "dad",
+          "additionText": "father"
+      },
+      {
+          "id": "247",
+          "question": "gente",
+          "solution": "people",
+          "additionText": "people"
+      },
+      {
+          "id": "248",
+          "question": "final",
+          "solution": "final",
+          "additionText": "end"
+      },
+      {
+          "id": "249",
+          "question": "relación",
+          "solution": "relationship",
+          "additionText": "relationship"
+      },
+      {
+          "id": "250",
+          "question": "cuerpo",
+          "solution": "body",
+          "additionText": "body"
+      },
+      {
+          "id": "251",
+          "question": "obra",
+          "solution": "construction site",
+          "additionText": "work"
+      },
+      {
+          "id": "252",
+          "question": "incluso",
+          "solution": "even",
+          "additionText": "including"
+      },
+      {
+          "id": "253",
+          "question": "través",
+          "solution": "through",
+          "additionText": "through"
+      },
+      {
+          "id": "254",
+          "question": "último",
+          "solution": "latest",
+          "additionText": "last"
+      },
+      {
+          "id": "255",
+          "question": "madre",
+          "solution": "mother",
+          "additionText": "mother"
+      },
+      {
+          "id": "256",
+          "question": "mis",
+          "solution": "my",
+          "additionText": "my"
+      },
+      {
+          "id": "257",
+          "question": "modo",
+          "solution": "mode",
+          "additionText": "mode"
+      },
+      {
+          "id": "258",
+          "question": "problemas",
+          "solution": "problems",
+          "additionText": "problems"
+      },
+      {
+          "id": "259",
+          "question": "cinco",
+          "solution": "five",
+          "additionText": "five"
+      },
+      {
+          "id": "260",
+          "question": "carlos",
+          "solution": "Carlos",
+          "additionText": "carlos"
+      },
+      {
+          "id": "261",
+          "question": "hombres",
+          "solution": "mens",
+          "additionText": "men"
+      },
+      {
+          "id": "262",
+          "question": "información",
+          "solution": "information",
+          "additionText": "information"
+      },
+      {
+          "id": "263",
+          "question": "ojos",
+          "solution": "eyes",
+          "additionText": "eyes"
+      },
+      {
+          "id": "264",
+          "question": "muerte",
+          "solution": "death",
+          "additionText": "death"
+      },
+      {
+          "id": "265",
+          "question": "nombre",
+          "solution": "Name",
+          "additionText": "name"
+      },
+      {
+          "id": "266",
+          "question": "algunas",
+          "solution": "some",
+          "additionText": "some"
+      },
+      {
+          "id": "267",
+          "question": "público",
+          "solution": "public",
+          "additionText": "public"
+      },
+      {
+          "id": "268",
+          "question": "mujeres",
+          "solution": "women",
+          "additionText": "women"
+      },
+      {
+          "id": "269",
+          "question": "siglo",
+          "solution": "century",
+          "additionText": "century"
+      },
+      {
+          "id": "270",
+          "question": "todavía",
+          "solution": "yet",
+          "additionText": "still"
+      },
+      {
+          "id": "271",
+          "question": "meses",
+          "solution": "months",
+          "additionText": "months"
+      },
+      {
+          "id": "272",
+          "question": "mañana",
+          "solution": "morning",
+          "additionText": "tomorrow"
+      },
+      {
+          "id": "273",
+          "question": "esos",
+          "solution": "those",
+          "additionText": "those"
+      },
+      {
+          "id": "274",
+          "question": "nosotros",
+          "solution": "We",
+          "additionText": "we"
+      },
+      {
+          "id": "275",
+          "question": "hora",
+          "solution": "hour",
+          "additionText": "time"
+      },
+      {
+          "id": "276",
+          "question": "muchas",
+          "solution": "many",
+          "additionText": "many"
+      },
+      {
+          "id": "277",
+          "question": "pueblo",
+          "solution": "town",
+          "additionText": "people"
+      },
+      {
+          "id": "278",
+          "question": "alguna",
+          "solution": "some",
+          "additionText": "some"
+      },
+      {
+          "id": "279",
+          "question": "dar",
+          "solution": "give",
+          "additionText": "give"
+      },
+      {
+          "id": "280",
+          "question": "problema",
+          "solution": "issue",
+          "additionText": "problem"
+      },
+      {
+          "id": "281",
+          "question": "don",
+          "solution": "Don",
+          "additionText": "don"
+      },
+      {
+          "id": "282",
+          "question": "da",
+          "solution": "gives",
+          "additionText": "da"
+      },
+      {
+          "id": "283",
+          "question": "tú",
+          "solution": "your",
+          "additionText": "you"
+      },
+      {
+          "id": "284",
+          "question": "derecho",
+          "solution": "right",
+          "additionText": "right"
+      },
+      {
+          "id": "285",
+          "question": "verdad",
+          "solution": "truth",
+          "additionText": "truth"
+      },
+      {
+          "id": "286",
+          "question": "maría",
+          "solution": "Mary",
+          "additionText": "mary"
+      },
+      {
+          "id": "287",
+          "question": "unidos",
+          "solution": "joined",
+          "additionText": "united"
+      },
+      {
+          "id": "288",
+          "question": "podría",
+          "solution": "might",
+          "additionText": "could"
+      },
+      {
+          "id": "289",
+          "question": "sería",
+          "solution": "would",
+          "additionText": "would be"
+      },
+      {
+          "id": "290",
+          "question": "junto",
+          "solution": "together",
+          "additionText": "together"
+      },
+      {
+          "id": "291",
+          "question": "cabeza",
+          "solution": "head",
+          "additionText": "head"
+      },
+      {
+          "id": "292",
+          "question": "aquel",
+          "solution": "that",
+          "additionText": "that"
+      },
+      {
+          "id": "293",
+          "question": "luis",
+          "solution": "Lewis",
+          "additionText": "luis"
+      },
+      {
+          "id": "294",
+          "question": "cuanto",
+          "solution": "how much",
+          "additionText": "how much"
+      },
+      {
+          "id": "295",
+          "question": "tierra",
+          "solution": "land",
+          "additionText": "earth"
+      },
+      {
+          "id": "296",
+          "question": "equipo",
+          "solution": "team",
+          "additionText": "team"
+      },
+      {
+          "id": "297",
+          "question": "segundo",
+          "solution": "second",
+          "additionText": "second"
+      },
+      {
+          "id": "298",
+          "question": "director",
+          "solution": "director",
+          "additionText": "director"
+      },
+      {
+          "id": "299",
+          "question": "dicho",
+          "solution": "saying",
+          "additionText": "said"
+      },
+      {
+          "id": "300",
+          "question": "cierto",
+          "solution": "certain",
+          "additionText": "TRUE"
+      },
+      {
+          "id": "301",
+          "question": "casos",
+          "solution": "cases",
+          "additionText": "cases"
+      },
+      {
+          "id": "302",
+          "question": "manos",
+          "solution": "hands",
+          "additionText": "hands"
+      },
+      {
+          "id": "303",
+          "question": "nivel",
+          "solution": "level",
+          "additionText": "level"
+      },
+      {
+          "id": "304",
+          "question": "podía",
+          "solution": "I could",
+          "additionText": "could"
+      },
+      {
+          "id": "305",
+          "question": "familia",
+          "solution": "family",
+          "additionText": "family"
+      },
+      {
+          "id": "306",
+          "question": "largo",
+          "solution": "length",
+          "additionText": "long"
+      },
+      {
+          "id": "307",
+          "question": "partir",
+          "solution": "from",
+          "additionText": "split"
+      },
+      {
+          "id": "308",
+          "question": "falta",
+          "solution": "lack",
+          "additionText": "missing"
+      },
+      {
+          "id": "309",
+          "question": "llegar",
+          "solution": "reach",
+          "additionText": "arrive"
+      },
+      {
+          "id": "310",
+          "question": "propio",
+          "solution": "own",
+          "additionText": "own"
+      },
+      {
+          "id": "311",
+          "question": "ministro",
+          "solution": "Minister",
+          "additionText": "minister"
+      },
+      {
+          "id": "312",
+          "question": "cosa",
+          "solution": "thing",
+          "additionText": "thing"
+      },
+      {
+          "id": "313",
+          "question": "primero",
+          "solution": "first",
+          "additionText": "first"
+      },
+      {
+          "id": "314",
+          "question": "seguridad",
+          "solution": "security",
+          "additionText": "security"
+      },
+      {
+          "id": "315",
+          "question": "hemos",
+          "solution": "we have",
+          "additionText": "we have"
+      },
+      {
+          "id": "316",
+          "question": "mal",
+          "solution": "wrong",
+          "additionText": "wrong"
+      },
+      {
+          "id": "317",
+          "question": "trata",
+          "solution": "about",
+          "additionText": "try"
+      },
+      {
+          "id": "318",
+          "question": "algún",
+          "solution": "some",
+          "additionText": "some"
+      },
+      {
+          "id": "319",
+          "question": "tuvo",
+          "solution": "had",
+          "additionText": "had"
+      },
+      {
+          "id": "320",
+          "question": "respecto",
+          "solution": "respect",
+          "additionText": "about"
+      },
+      {
+          "id": "321",
+          "question": "semana",
+          "solution": "week",
+          "additionText": "week"
+      },
+      {
+          "id": "322",
+          "question": "varios",
+          "solution": "several",
+          "additionText": "several"
+      },
+      {
+          "id": "323",
+          "question": "real",
+          "solution": "real",
+          "additionText": "real"
+      },
+      {
+          "id": "324",
+          "question": "sé",
+          "solution": "he",
+          "additionText": "I know"
+      },
+      {
+          "id": "325",
+          "question": "voz",
+          "solution": "voice",
+          "additionText": "voice"
+      },
+      {
+          "id": "326",
+          "question": "paso",
+          "solution": "He passed",
+          "additionText": "step"
+      },
+      {
+          "id": "327",
+          "question": "señor",
+          "solution": "Sir",
+          "additionText": "Mr."
+      },
+      {
+          "id": "328",
+          "question": "mil",
+          "solution": "one thousand",
+          "additionText": "one thousand"
+      },
+      {
+          "id": "329",
+          "question": "quienes",
+          "solution": "Who",
+          "additionText": "who"
+      },
+      {
+          "id": "330",
+          "question": "proyecto",
+          "solution": "draft",
+          "additionText": "project"
+      },
+      {
+          "id": "331",
+          "question": "mercado",
+          "solution": "market",
+          "additionText": "market"
+      },
+      {
+          "id": "332",
+          "question": "mayoría",
+          "solution": "most",
+          "additionText": "majority"
+      },
+      {
+          "id": "333",
+          "question": "luz",
+          "solution": "light",
+          "additionText": "light"
+      },
+      {
+          "id": "334",
+          "question": "claro",
+          "solution": "Sure",
+          "additionText": "clear"
+      },
+      {
+          "id": "335",
+          "question": "iba",
+          "solution": "I was going",
+          "additionText": "iba"
+      },
+      {
+          "id": "336",
+          "question": "éste",
+          "solution": "East",
+          "additionText": "this one"
+      },
+      {
+          "id": "337",
+          "question": "pesetas",
+          "solution": "pesetas",
+          "additionText": "pesetas"
+      },
+      {
+          "id": "338",
+          "question": "orden",
+          "solution": "order",
+          "additionText": "order"
+      },
+      {
+          "id": "339",
+          "question": "español",
+          "solution": "Spanish",
+          "additionText": "Spanish"
+      },
+      {
+          "id": "340",
+          "question": "buena",
+          "solution": "good",
+          "additionText": "good"
+      },
+      {
+          "id": "341",
+          "question": "quiere",
+          "solution": "wants",
+          "additionText": "wants"
+      },
+      {
+          "id": "342",
+          "question": "aquella",
+          "solution": "that",
+          "additionText": "that"
+      },
+      {
+          "id": "343",
+          "question": "programa",
+          "solution": "Program",
+          "additionText": "program"
+      },
+      {
+          "id": "344",
+          "question": "palabras",
+          "solution": "words",
+          "additionText": "words"
+      },
+      {
+          "id": "345",
+          "question": "internacional",
+          "solution": "international",
+          "additionText": "international"
+      },
+      {
+          "id": "346",
+          "question": "van",
+          "solution": "go",
+          "additionText": "go"
+      },
+      {
+          "id": "347",
+          "question": "esas",
+          "solution": "those",
+          "additionText": "those"
+      },
+      {
+          "id": "348",
+          "question": "segunda",
+          "solution": "second",
+          "additionText": "second"
+      },
+      {
+          "id": "349",
+          "question": "empresa",
+          "solution": "business",
+          "additionText": "company"
+      },
+      {
+          "id": "350",
+          "question": "puesto",
+          "solution": "Market Stall"
+      },
+      {
+          "id": "351",
+          "question": "ahí",
+          "solution": "there",
+          "additionText": "there"
+      },
+      {
+          "id": "352",
+          "question": "propia",
+          "solution": "own",
+          "additionText": "own"
+      },
+      {
+          "id": "353",
+          "question": "m",
+          "solution": "m",
+          "additionText": "m"
+      },
+      {
+          "id": "354",
+          "question": "libro",
+          "solution": "book",
+          "additionText": "book"
+      },
+      {
+          "id": "355",
+          "question": "igual",
+          "solution": "same",
+          "additionText": "same"
+      },
+      {
+          "id": "356",
+          "question": "político",
+          "solution": "politician",
+          "additionText": "politician"
+      },
+      {
+          "id": "357",
+          "question": "persona",
+          "solution": "person",
+          "additionText": "person"
+      },
+      {
+          "id": "358",
+          "question": "últimos",
+          "solution": "latest",
+          "additionText": "last"
+      },
+      {
+          "id": "359",
+          "question": "ellas",
+          "solution": "they",
+          "additionText": "they"
+      },
+      {
+          "id": "360",
+          "question": "total",
+          "solution": "total",
+          "additionText": "total"
+      },
+      {
+          "id": "361",
+          "question": "creo",
+          "solution": "I think",
+          "additionText": "I think"
+      },
+      {
+          "id": "362",
+          "question": "tengo",
+          "solution": "have",
+          "additionText": "I have"
+      },
+      {
+          "id": "363",
+          "question": "dios",
+          "solution": "God",
+          "additionText": "god"
+      },
+      {
+          "id": "364",
+          "question": "c",
+          "solution": "c",
+          "additionText": "c"
+      },
+      {
+          "id": "365",
+          "question": "española",
+          "solution": "Spanish",
+          "additionText": "spanish"
+      },
+      {
+          "id": "366",
+          "question": "condiciones",
+          "solution": "terms",
+          "additionText": "conditions"
+      },
+      {
+          "id": "367",
+          "question": "méxico",
+          "solution": "Mexico",
+          "additionText": "mexico"
+      },
+      {
+          "id": "368",
+          "question": "fuerza",
+          "solution": "force",
+          "additionText": "force"
+      },
+      {
+          "id": "369",
+          "question": "solo",
+          "solution": "only",
+          "additionText": "only"
+      },
+      {
+          "id": "370",
+          "question": "único",
+          "solution": "unique",
+          "additionText": "only"
+      },
+      {
+          "id": "371",
+          "question": "acción",
+          "solution": "action",
+          "additionText": "action"
+      },
+      {
+          "id": "372",
+          "question": "amor",
+          "solution": "love",
+          "additionText": "love"
+      },
+      {
+          "id": "373",
+          "question": "policía",
+          "solution": "policeman",
+          "additionText": "police"
+      },
+      {
+          "id": "374",
+          "question": "puerta",
+          "solution": "door",
+          "additionText": "door"
+      },
+      {
+          "id": "375",
+          "question": "pesar",
+          "solution": "to weigh",
+          "additionText": "regret"
+      },
+      {
+          "id": "376",
+          "question": "zona",
+          "solution": "zone",
+          "additionText": "zone"
+      },
+      {
+          "id": "377",
+          "question": "sabe",
+          "solution": "knows",
+          "additionText": "you know"
+      },
+      {
+          "id": "378",
+          "question": "calle",
+          "solution": "Street",
+          "additionText": "street"
+      },
+      {
+          "id": "379",
+          "question": "interior",
+          "solution": "inside",
+          "additionText": "inside"
+      },
+      {
+          "id": "380",
+          "question": "tampoco",
+          "solution": "either",
+          "additionText": "also"
+      },
+      {
+          "id": "381",
+          "question": "música",
+          "solution": "music",
+          "additionText": "music"
+      },
+      {
+          "id": "382",
+          "question": "ningún",
+          "solution": "any",
+          "additionText": "no"
+      },
+      {
+          "id": "383",
+          "question": "vista",
+          "solution": "sight",
+          "additionText": "view"
+      },
+      {
+          "id": "384",
+          "question": "campo",
+          "solution": "countryside",
+          "additionText": "field"
+      },
+      {
+          "id": "385",
+          "question": "buen",
+          "solution": "good",
+          "additionText": "good"
+      },
+      {
+          "id": "386",
+          "question": "hubiera",
+          "solution": "had",
+          "additionText": "would have"
+      },
+      {
+          "id": "387",
+          "question": "saber",
+          "solution": "to know",
+          "additionText": "know"
+      },
+      {
+          "id": "388",
+          "question": "obras",
+          "solution": "plays",
+          "additionText": "works"
+      },
+      {
+          "id": "389",
+          "question": "razón",
+          "solution": "reason",
+          "additionText": "reason"
+      },
+      {
+          "id": "390",
+          "question": "ex",
+          "solution": "former",
+          "additionText": "ex"
+      },
+      {
+          "id": "391",
+          "question": "niños",
+          "solution": "children",
+          "additionText": "children"
+      },
+      {
+          "id": "392",
+          "question": "presencia",
+          "solution": "presence",
+          "additionText": "presence"
+      },
+      {
+          "id": "393",
+          "question": "tema",
+          "solution": "theme",
+          "additionText": "theme"
+      },
+      {
+          "id": "394",
+          "question": "dinero",
+          "solution": "money",
+          "additionText": "money"
+      },
+      {
+          "id": "395",
+          "question": "comisión",
+          "solution": "commission",
+          "additionText": "commission"
+      },
+      {
+          "id": "396",
+          "question": "antonio",
+          "solution": "Anthony",
+          "additionText": "antonio"
+      },
+      {
+          "id": "397",
+          "question": "servicio",
+          "solution": "service",
+          "additionText": "service"
+      },
+      {
+          "id": "398",
+          "question": "hijo",
+          "solution": "son",
+          "additionText": "son"
+      },
+      {
+          "id": "399",
+          "question": "última",
+          "solution": "last",
+          "additionText": "last"
+      },
+      {
+          "id": "400",
+          "question": "ciento",
+          "solution": "hundred",
+          "additionText": "one hundred"
+      },
+      {
+          "id": "401",
+          "question": "estoy",
+          "solution": "I'm",
+          "additionText": "I am"
+      },
+      {
+          "id": "402",
+          "question": "hablar",
+          "solution": "speak",
+          "additionText": "speak"
+      },
+      {
+          "id": "403",
+          "question": "dio",
+          "solution": "it gave",
+          "additionText": "gave"
+      },
+      {
+          "id": "404",
+          "question": "minutos",
+          "solution": "minutes",
+          "additionText": "minutes"
+      },
+      {
+          "id": "405",
+          "question": "producción",
+          "solution": "production",
+          "additionText": "production"
+      },
+      {
+          "id": "406",
+          "question": "camino",
+          "solution": "road",
+          "additionText": "way"
+      },
+      {
+          "id": "407",
+          "question": "seis",
+          "solution": "six",
+          "additionText": "six"
+      },
+      {
+          "id": "408",
+          "question": "quién",
+          "solution": "who",
+          "additionText": "who"
+      },
+      {
+          "id": "409",
+          "question": "fondo",
+          "solution": "background",
+          "additionText": "background"
+      },
+      {
+          "id": "410",
+          "question": "dirección",
+          "solution": "address",
+          "additionText": "address"
+      },
+      {
+          "id": "411",
+          "question": "papel",
+          "solution": "paper",
+          "additionText": "role"
+      },
+      {
+          "id": "412",
+          "question": "demás",
+          "solution": "the rest",
+          "additionText": "other"
+      },
+      {
+          "id": "413",
+          "question": "barcelona",
+          "solution": "Barcelona",
+          "additionText": "barcelona"
+      },
+      {
+          "id": "414",
+          "question": "idea",
+          "solution": "idea",
+          "additionText": "idea"
+      },
+      {
+          "id": "415",
+          "question": "especial",
+          "solution": "special",
+          "additionText": "special"
+      },
+      {
+          "id": "416",
+          "question": "diferentes",
+          "solution": "different",
+          "additionText": "different"
+      },
+      {
+          "id": "417",
+          "question": "dado",
+          "solution": "dice",
+          "additionText": "die"
+      },
+      {
+          "id": "418",
+          "question": "base",
+          "solution": "base",
+          "additionText": "base"
+      },
+      {
+          "id": "419",
+          "question": "capital",
+          "solution": "capital",
+          "additionText": "capital"
+      },
+      {
+          "id": "420",
+          "question": "ambos",
+          "solution": "both of them",
+          "additionText": "both"
+      },
+      {
+          "id": "421",
+          "question": "europa",
+          "solution": "Europe",
+          "additionText": "europe"
+      },
+      {
+          "id": "422",
+          "question": "libertad",
+          "solution": "freedom",
+          "additionText": "freedom"
+      },
+      {
+          "id": "423",
+          "question": "relaciones",
+          "solution": "relations",
+          "additionText": "relations"
+      },
+      {
+          "id": "424",
+          "question": "espacio",
+          "solution": "space",
+          "additionText": "space"
+      },
+      {
+          "id": "425",
+          "question": "medios",
+          "solution": "media",
+          "additionText": "media"
+      },
+      {
+          "id": "426",
+          "question": "ir",
+          "solution": "to go",
+          "additionText": "go"
+      },
+      {
+          "id": "427",
+          "question": "actual",
+          "solution": "current",
+          "additionText": "current"
+      },
+      {
+          "id": "428",
+          "question": "población",
+          "solution": "population",
+          "additionText": "population"
+      },
+      {
+          "id": "429",
+          "question": "empresas",
+          "solution": "Business",
+          "additionText": "companies"
+      },
+      {
+          "id": "430",
+          "question": "estudio",
+          "solution": "study",
+          "additionText": "study"
+      },
+      {
+          "id": "431",
+          "question": "salud",
+          "solution": "Health",
+          "additionText": "health"
+      },
+      {
+          "id": "432",
+          "question": "servicios",
+          "solution": "services",
+          "additionText": "services"
+      },
+      {
+          "id": "433",
+          "question": "haya",
+          "solution": "is",
+          "additionText": "beech"
+      },
+      {
+          "id": "434",
+          "question": "principio",
+          "solution": "beginning",
+          "additionText": "principle"
+      },
+      {
+          "id": "435",
+          "question": "siendo",
+          "solution": "being",
+          "additionText": "being"
+      },
+      {
+          "id": "436",
+          "question": "cultura",
+          "solution": "culture",
+          "additionText": "culture"
+      },
+      {
+          "id": "437",
+          "question": "anterior",
+          "solution": "previous",
+          "additionText": "previous"
+      },
+      {
+          "id": "438",
+          "question": "alto",
+          "solution": "high",
+          "additionText": "high"
+      },
+      {
+          "id": "439",
+          "question": "media",
+          "solution": "half",
+          "additionText": "average"
+      },
+      {
+          "id": "440",
+          "question": "mediante",
+          "solution": "through",
+          "additionText": "via"
+      },
+      {
+          "id": "441",
+          "question": "primeros",
+          "solution": "first",
+          "additionText": "early"
+      },
+      {
+          "id": "442",
+          "question": "arte",
+          "solution": "art",
+          "additionText": "art"
+      },
+      {
+          "id": "443",
+          "question": "paz",
+          "solution": "peace",
+          "additionText": "peace"
+      },
+      {
+          "id": "444",
+          "question": "sector",
+          "solution": "sector",
+          "additionText": "sector"
+      },
+      {
+          "id": "445",
+          "question": "imagen",
+          "solution": "image",
+          "additionText": "image"
+      },
+      {
+          "id": "446",
+          "question": "medida",
+          "solution": "measure",
+          "additionText": "measure"
+      },
+      {
+          "id": "447",
+          "question": "deben",
+          "solution": "should",
+          "additionText": "you must"
+      },
+      {
+          "id": "448",
+          "question": "datos",
+          "solution": "data",
+          "additionText": "data"
+      },
+      {
+          "id": "449",
+          "question": "consejo",
+          "solution": "tip",
+          "additionText": "board"
+      },
+      {
+          "id": "450",
+          "question": "personal",
+          "solution": "personal",
+          "additionText": "staff"
+      },
+      {
+          "id": "451",
+          "question": "interés",
+          "solution": "interest",
+          "additionText": "interest"
+      },
+      {
+          "id": "452",
+          "question": "julio",
+          "solution": "July",
+          "additionText": "july"
+      },
+      {
+          "id": "453",
+          "question": "grupos",
+          "solution": "groups",
+          "additionText": "groups"
+      },
+      {
+          "id": "454",
+          "question": "miembros",
+          "solution": "members",
+          "additionText": "members"
+      },
+      {
+          "id": "455",
+          "question": "ninguna",
+          "solution": "none",
+          "additionText": "none"
+      },
+      {
+          "id": "456",
+          "question": "existe",
+          "solution": "exists",
+          "additionText": "exists"
+      },
+      {
+          "id": "457",
+          "question": "cara",
+          "solution": "face",
+          "additionText": "face"
+      },
+      {
+          "id": "458",
+          "question": "edad",
+          "solution": "age",
+          "additionText": "age"
+      },
+      {
+          "id": "459",
+          "question": "etc",
+          "solution": "etc",
+          "additionText": "etc"
+      },
+      {
+          "id": "460",
+          "question": "movimiento",
+          "solution": "movement",
+          "additionText": "movement"
+      },
+      {
+          "id": "461",
+          "question": "visto",
+          "solution": "viewed",
+          "additionText": "seen"
+      },
+      {
+          "id": "462",
+          "question": "llegó",
+          "solution": "arrive",
+          "additionText": "reached"
+      },
+      {
+          "id": "463",
+          "question": "puntos",
+          "solution": "points",
+          "additionText": "points"
+      },
+      {
+          "id": "464",
+          "question": "actividad",
+          "solution": "activity",
+          "additionText": "activity"
+      },
+      {
+          "id": "465",
+          "question": "bueno",
+          "solution": "Okay",
+          "additionText": "good"
+      },
+      {
+          "id": "466",
+          "question": "uso",
+          "solution": "use",
+          "additionText": "use"
+      },
+      {
+          "id": "467",
+          "question": "niño",
+          "solution": "kid",
+          "additionText": "child"
+      },
+      {
+          "id": "468",
+          "question": "difícil",
+          "solution": "hard",
+          "additionText": "difficult"
+      },
+      {
+          "id": "469",
+          "question": "joven",
+          "solution": "young man",
+          "additionText": "young"
+      },
+      {
+          "id": "470",
+          "question": "futuro",
+          "solution": "future",
+          "additionText": "future"
+      },
+      {
+          "id": "471",
+          "question": "aquellos",
+          "solution": "those",
+          "additionText": "those"
+      },
+      {
+          "id": "472",
+          "question": "mes",
+          "solution": "month",
+          "additionText": "month"
+      },
+      {
+          "id": "473",
+          "question": "pronto",
+          "solution": "early",
+          "additionText": "soon"
+      },
+      {
+          "id": "474",
+          "question": "soy",
+          "solution": "am",
+          "additionText": "I am"
+      },
+      {
+          "id": "475",
+          "question": "hacía",
+          "solution": "toward",
+          "additionText": "to"
+      },
+      {
+          "id": "476",
+          "question": "nuevos",
+          "solution": "new",
+          "additionText": "new"
+      },
+      {
+          "id": "477",
+          "question": "nuestros",
+          "solution": "our",
+          "additionText": "our"
+      },
+      {
+          "id": "478",
+          "question": "estaban",
+          "solution": "were",
+          "additionText": "were"
+      },
+      {
+          "id": "479",
+          "question": "posibilidad",
+          "solution": "possibility",
+          "additionText": "possibility"
+      },
+      {
+          "id": "480",
+          "question": "sigue",
+          "solution": "go on",
+          "additionText": "follow"
+      },
+      {
+          "id": "481",
+          "question": "cerca",
+          "solution": "near",
+          "additionText": "close"
+      },
+      {
+          "id": "482",
+          "question": "resultados",
+          "solution": "results",
+          "additionText": "results"
+      },
+      {
+          "id": "483",
+          "question": "educación",
+          "solution": "education",
+          "additionText": "education"
+      },
+      {
+          "id": "484",
+          "question": "atención",
+          "solution": "attention",
+          "additionText": "attention"
+      },
+      {
+          "id": "485",
+          "question": "gonzález",
+          "solution": "gonzález",
+          "additionText": "gonzalez"
+      },
+      {
+          "id": "486",
+          "question": "capacidad",
+          "solution": "capacity",
+          "additionText": "capacity"
+      },
+      {
+          "id": "487",
+          "question": "efecto",
+          "solution": "effect",
+          "additionText": "effect"
+      },
+      {
+          "id": "488",
+          "question": "necesario",
+          "solution": "necessary",
+          "additionText": "necessary"
+      },
+      {
+          "id": "489",
+          "question": "valor",
+          "solution": "value",
+          "additionText": "value"
+      },
+      {
+          "id": "490",
+          "question": "aire",
+          "solution": "air",
+          "additionText": "air"
+      },
+      {
+          "id": "491",
+          "question": "investigación",
+          "solution": "investigation",
+          "additionText": "research"
+      },
+      {
+          "id": "492",
+          "question": "siguiente",
+          "solution": "following",
+          "additionText": "next"
+      },
+      {
+          "id": "493",
+          "question": "figura",
+          "solution": "figure",
+          "additionText": "figure"
+      },
+      {
+          "id": "494",
+          "question": "central",
+          "solution": "central",
+          "additionText": "plant"
+      },
+      {
+          "id": "495",
+          "question": "comunidad",
+          "solution": "community",
+          "additionText": "community"
+      },
+      {
+          "id": "496",
+          "question": "necesidad",
+          "solution": "need",
+          "additionText": "need"
+      },
+      {
+          "id": "497",
+          "question": "serie",
+          "solution": "Serie",
+          "additionText": "series"
+      },
+      {
+          "id": "498",
+          "question": "organización",
+          "solution": "organization",
+          "additionText": "organization"
+      },
+      {
+          "id": "499",
+          "question": "nuevas",
+          "solution": "news",
+          "additionText": "new"
+      },
+      {
+          "id": "500",
+          "question": "calidad",
+          "solution": "quality",
+          "additionText": "quality"
+      },
+      {
+          "id": "501",
+          "question": "economía",
+          "solution": "economy",
+          "additionText": "economy"
+      },
+      {
+          "id": "502",
+          "question": "carácter",
+          "solution": "character",
+          "additionText": "character"
+      },
+      {
+          "id": "503",
+          "question": "jefe",
+          "solution": "boss",
+          "additionText": "boss"
+      },
+      {
+          "id": "504",
+          "question": "estamos",
+          "solution": "we're",
+          "additionText": "we are"
+      },
+      {
+          "id": "505",
+          "question": "prensa",
+          "solution": "press",
+          "additionText": "press"
+      },
+      {
+          "id": "506",
+          "question": "control",
+          "solution": "control",
+          "additionText": "control"
+      },
+      {
+          "id": "507",
+          "question": "sociales",
+          "solution": "social",
+          "additionText": "social"
+      },
+      {
+          "id": "508",
+          "question": "universidad",
+          "solution": "college",
+          "additionText": "university"
+      },
+      {
+          "id": "509",
+          "question": "militar",
+          "solution": "military",
+          "additionText": "military"
+      },
+      {
+          "id": "510",
+          "question": "cabo",
+          "solution": "cape",
+          "additionText": "corporal"
+      },
+      {
+          "id": "511",
+          "question": "diez",
+          "solution": "ten",
+          "additionText": "ten"
+      },
+      {
+          "id": "512",
+          "question": "fuerzas",
+          "solution": "forces",
+          "additionText": "forces"
+      },
+      {
+          "id": "513",
+          "question": "congreso",
+          "solution": "congress",
+          "additionText": "congress"
+      },
+      {
+          "id": "514",
+          "question": "ésta",
+          "solution": "is",
+          "additionText": "this"
+      },
+      {
+          "id": "515",
+          "question": "hijos",
+          "solution": "sons",
+          "additionText": "children"
+      },
+      {
+          "id": "516",
+          "question": "justicia",
+          "solution": "Justice",
+          "additionText": "justice"
+      },
+      {
+          "id": "517",
+          "question": "mundial",
+          "solution": "world",
+          "additionText": "world"
+      },
+      {
+          "id": "518",
+          "question": "dólares",
+          "solution": "Dollars",
+          "additionText": "dollars"
+      },
+      {
+          "id": "519",
+          "question": "juego",
+          "solution": "play",
+          "additionText": "gambling"
+      },
+      {
+          "id": "520",
+          "question": "económica",
+          "solution": "economic",
+          "additionText": "economic"
+      },
+      {
+          "id": "521",
+          "question": "políticos",
+          "solution": "politicians",
+          "additionText": "politicians"
+      },
+      {
+          "id": "522",
+          "question": "duda",
+          "solution": "doubt",
+          "additionText": "doubt"
+      },
+      {
+          "id": "523",
+          "question": "recursos",
+          "solution": "resources",
+          "additionText": "resources"
+      },
+      {
+          "id": "524",
+          "question": "pública",
+          "solution": "public",
+          "additionText": "public"
+      },
+      {
+          "id": "525",
+          "question": "crisis",
+          "solution": "crisis",
+          "additionText": "crisis"
+      },
+      {
+          "id": "526",
+          "question": "próximo",
+          "solution": "next",
+          "additionText": "next"
+      },
+      {
+          "id": "527",
+          "question": "tenemos",
+          "solution": "we have",
+          "additionText": "we have"
+      },
+      {
+          "id": "528",
+          "question": "decisión",
+          "solution": "decision",
+          "additionText": "decision"
+      },
+      {
+          "id": "529",
+          "question": "varias",
+          "solution": "several",
+          "additionText": "several"
+      },
+      {
+          "id": "530",
+          "question": "popular",
+          "solution": "popular",
+          "additionText": "popular"
+      },
+      {
+          "id": "531",
+          "question": "tenido",
+          "solution": "Dyed",
+          "additionText": "had"
+      },
+      {
+          "id": "532",
+          "question": "apenas",
+          "solution": "barely",
+          "additionText": "just"
+      },
+      {
+          "id": "533",
+          "question": "época",
+          "solution": "epoch",
+          "additionText": "time"
+      },
+      {
+          "id": "534",
+          "question": "banco",
+          "solution": "Bank",
+          "additionText": "bank"
+      },
+      {
+          "id": "535",
+          "question": "presente",
+          "solution": "Present",
+          "additionText": "present"
+      },
+      {
+          "id": "536",
+          "question": "menor",
+          "solution": "less",
+          "additionText": "minor"
+      },
+      {
+          "id": "537",
+          "question": "quiero",
+          "solution": "I want",
+          "additionText": "I want"
+      },
+      {
+          "id": "538",
+          "question": "pasar",
+          "solution": "happen",
+          "additionText": "pass"
+      },
+      {
+          "id": "539",
+          "question": "resultado",
+          "solution": "result",
+          "additionText": "result"
+      },
+      {
+          "id": "540",
+          "question": "televisión",
+          "solution": "TV",
+          "additionText": "television"
+      },
+      {
+          "id": "541",
+          "question": "encuentra",
+          "solution": "finds",
+          "additionText": "find"
+      },
+      {
+          "id": "542",
+          "question": "gracias",
+          "solution": "Thank you",
+          "additionText": "thank you"
+      },
+      {
+          "id": "543",
+          "question": "ministerio",
+          "solution": "ministry",
+          "additionText": "ministry"
+      },
+      {
+          "id": "544",
+          "question": "conjunto",
+          "solution": "set",
+          "additionText": "set"
+      },
+      {
+          "id": "545",
+          "question": "defensa",
+          "solution": "defending",
+          "additionText": "defense"
+      },
+      {
+          "id": "546",
+          "question": "alguien",
+          "solution": "someone",
+          "additionText": "someone"
+      },
+      {
+          "id": "547",
+          "question": "queda",
+          "solution": "remains",
+          "additionText": "is"
+      },
+      {
+          "id": "548",
+          "question": "hacen",
+          "solution": "make",
+          "additionText": "make"
+      },
+      {
+          "id": "549",
+          "question": "pasa",
+          "solution": "happens",
+          "additionText": "pass"
+      },
+      {
+          "id": "550",
+          "question": "resto",
+          "solution": "rest",
+          "additionText": "rest"
+      },
+      {
+          "id": "551",
+          "question": "causa",
+          "solution": "cause",
+          "additionText": "cause"
+      },
+      {
+          "id": "552",
+          "question": "seguir",
+          "solution": "follow, continue",
+          "additionText": "follow"
+      },
+      {
+          "id": "553",
+          "question": "allá",
+          "solution": "there",
+          "additionText": "there"
+      },
+      {
+          "id": "554",
+          "question": "palabra",
+          "solution": "word",
+          "additionText": "word"
+      },
+      {
+          "id": "555",
+          "question": "voy",
+          "solution": "go",
+          "additionText": "go"
+      },
+      {
+          "id": "556",
+          "question": "cuya",
+          "solution": "which",
+          "additionText": "whose"
+      },
+      {
+          "id": "557",
+          "question": "vamos",
+          "solution": "come on",
+          "additionText": "go"
+      },
+      {
+          "id": "558",
+          "question": "mar",
+          "solution": "sea",
+          "additionText": "sea"
+      },
+      {
+          "id": "559",
+          "question": "estudios",
+          "solution": "studies",
+          "additionText": "studies"
+      },
+      {
+          "id": "560",
+          "question": "derechos",
+          "solution": "Rights",
+          "additionText": "rights"
+      },
+      {
+          "id": "561",
+          "question": "importancia",
+          "solution": "importance",
+          "additionText": "importance"
+      },
+      {
+          "id": "562",
+          "question": "cuales",
+          "solution": "which",
+          "additionText": "which"
+      },
+      {
+          "id": "563",
+          "question": "contrario",
+          "solution": "contrary",
+          "additionText": "contrary"
+      },
+      {
+          "id": "564",
+          "question": "manuel",
+          "solution": "Manuel",
+          "additionText": "manuel"
+      },
+      {
+          "id": "565",
+          "question": "garcía",
+          "solution": "garcía",
+          "additionText": "garcia"
+      },
+      {
+          "id": "566",
+          "question": "fuerte",
+          "solution": "strong",
+          "additionText": "strong"
+      },
+      {
+          "id": "567",
+          "question": "sol",
+          "solution": "Sun",
+          "additionText": "sun"
+      },
+      {
+          "id": "568",
+          "question": "jóvenes",
+          "solution": "youths",
+          "additionText": "young people"
+      },
+      {
+          "id": "569",
+          "question": "apoyo",
+          "solution": "support for",
+          "additionText": "support"
+      },
+      {
+          "id": "570",
+          "question": "habría",
+          "solution": "there would be",
+          "additionText": "there would be"
+      },
+      {
+          "id": "571",
+          "question": "civil",
+          "solution": "civil",
+          "additionText": "civil"
+      },
+      {
+          "id": "572",
+          "question": "miguel",
+          "solution": "Michael",
+          "additionText": "miguel"
+      },
+      {
+          "id": "573",
+          "question": "pedro",
+          "solution": "Peter",
+          "additionText": "pedro"
+      },
+      {
+          "id": "574",
+          "question": "partidos",
+          "solution": "matches",
+          "additionText": "parties"
+      },
+      {
+          "id": "575",
+          "question": "libre",
+          "solution": "free",
+          "additionText": "free"
+      },
+      {
+          "id": "576",
+          "question": "fuentes",
+          "solution": "sources",
+          "additionText": "sources"
+      },
+      {
+          "id": "577",
+          "question": "administración",
+          "solution": "management",
+          "additionText": "administration"
+      },
+      {
+          "id": "578",
+          "question": "común",
+          "solution": "common",
+          "additionText": "common"
+      },
+      {
+          "id": "579",
+          "question": "dejar",
+          "solution": "let",
+          "additionText": "leave"
+      },
+      {
+          "id": "580",
+          "question": "cine",
+          "solution": "movies",
+          "additionText": "cinema"
+      },
+      {
+          "id": "581",
+          "question": "salir",
+          "solution": "get out",
+          "additionText": "leave"
+      },
+      {
+          "id": "582",
+          "question": "comunicación",
+          "solution": "communication",
+          "additionText": "communication"
+      },
+      {
+          "id": "583",
+          "question": "b",
+          "solution": "b",
+          "additionText": "b"
+      },
+      {
+          "id": "584",
+          "question": "experiencia",
+          "solution": "experience",
+          "additionText": "experience"
+      },
+      {
+          "id": "585",
+          "question": "demasiado",
+          "solution": "too",
+          "additionText": "too much"
+      },
+      {
+          "id": "586",
+          "question": "plan",
+          "solution": "plan",
+          "additionText": "plan"
+      },
+      {
+          "id": "587",
+          "question": "respuesta",
+          "solution": "answer",
+          "additionText": "response"
+      },
+      {
+          "id": "588",
+          "question": "energía",
+          "solution": "Energy",
+          "additionText": "energy"
+      },
+      {
+          "id": "589",
+          "question": "izquierda",
+          "solution": "left",
+          "additionText": "left"
+      },
+      {
+          "id": "590",
+          "question": "función",
+          "solution": "function",
+          "additionText": "function"
+      },
+      {
+          "id": "591",
+          "question": "principal",
+          "solution": "principal",
+          "additionText": "main"
+      },
+      {
+          "id": "592",
+          "question": "superior",
+          "solution": "higher",
+          "additionText": "top"
+      },
+      {
+          "id": "593",
+          "question": "naturaleza",
+          "solution": "nature",
+          "additionText": "nature"
+      },
+      {
+          "id": "594",
+          "question": "podemos",
+          "solution": "we can",
+          "additionText": "we can"
+      },
+      {
+          "id": "595",
+          "question": "unión",
+          "solution": "Union",
+          "additionText": "link"
+      },
+      {
+          "id": "596",
+          "question": "especialmente",
+          "solution": "especially",
+          "additionText": "especially"
+      },
+      {
+          "id": "597",
+          "question": "rey",
+          "solution": "King",
+          "additionText": "king"
+      },
+      {
+          "id": "598",
+          "question": "domingo",
+          "solution": "Sunday",
+          "additionText": "Sunday"
+      },
+      {
+          "id": "599",
+          "question": "favor",
+          "solution": "favor",
+          "additionText": "please"
+      },
+      {
+          "id": "600",
+          "question": "cantidad",
+          "solution": "amount",
+          "additionText": "amount"
+      },
+      {
+          "id": "601",
+          "question": "elecciones",
+          "solution": "elections",
+          "additionText": "elections"
+      },
+      {
+          "id": "602",
+          "question": "clase",
+          "solution": "class",
+          "additionText": "class"
+      },
+      {
+          "id": "603",
+          "question": "productos",
+          "solution": "products",
+          "additionText": "products"
+      },
+      {
+          "id": "604",
+          "question": "españoles",
+          "solution": "Spanish people",
+          "additionText": "Spanish"
+      },
+      {
+          "id": "605",
+          "question": "conocer",
+          "solution": "know",
+          "additionText": "visit"
+      },
+      {
+          "id": "606",
+          "question": "teatro",
+          "solution": "theater",
+          "additionText": "theater"
+      },
+      {
+          "id": "607",
+          "question": "importantes",
+          "solution": "important",
+          "additionText": "important"
+      },
+      {
+          "id": "608",
+          "question": "evitar",
+          "solution": "to avoid",
+          "additionText": "avoid"
+      },
+      {
+          "id": "609",
+          "question": "color",
+          "solution": "colour",
+          "additionText": "color"
+      },
+      {
+          "id": "610",
+          "question": "actividades",
+          "solution": "activities",
+          "additionText": "activities"
+      },
+      {
+          "id": "611",
+          "question": "mesa",
+          "solution": "desk",
+          "additionText": "table"
+      },
+      {
+          "id": "612",
+          "question": "p",
+          "solution": "p",
+          "additionText": "p"
+      },
+      {
+          "id": "613",
+          "question": "decía",
+          "solution": "He said",
+          "additionText": "said"
+      },
+      {
+          "id": "614",
+          "question": "cuyo",
+          "solution": "whose",
+          "additionText": "whose"
+      },
+      {
+          "id": "615",
+          "question": "debido",
+          "solution": "due",
+          "additionText": "due"
+      },
+      {
+          "id": "616",
+          "question": "alta",
+          "solution": "high",
+          "additionText": "high"
+      },
+      {
+          "id": "617",
+          "question": "francisco",
+          "solution": "Francisco",
+          "additionText": "francisco"
+      },
+      {
+          "id": "618",
+          "question": "secretario",
+          "solution": "secretary",
+          "additionText": "secretary"
+      },
+      {
+          "id": "619",
+          "question": "objeto",
+          "solution": "object",
+          "additionText": "object"
+      },
+      {
+          "id": "620",
+          "question": "quizá",
+          "solution": "maybe",
+          "additionText": "maybe"
+      },
+      {
+          "id": "621",
+          "question": "posición",
+          "solution": "position",
+          "additionText": "position"
+      },
+      {
+          "id": "622",
+          "question": "parecía",
+          "solution": "looked like",
+          "additionText": "it seemed"
+      },
+      {
+          "id": "623",
+          "question": "natural",
+          "solution": "natural",
+          "additionText": "natural"
+      },
+      {
+          "id": "624",
+          "question": "elementos",
+          "solution": "elements",
+          "additionText": "elements"
+      },
+      {
+          "id": "625",
+          "question": "hubo",
+          "solution": "was",
+          "additionText": "there was"
+      },
+      {
+          "id": "626",
+          "question": "objetivo",
+          "solution": "target",
+          "additionText": "target"
+      },
+      {
+          "id": "627",
+          "question": "formas",
+          "solution": "shapes",
+          "additionText": "forms"
+      },
+      {
+          "id": "628",
+          "question": "única",
+          "solution": "only",
+          "additionText": "only"
+      },
+      {
+          "id": "629",
+          "question": "pueda",
+          "solution": "can",
+          "additionText": "can"
+      },
+      {
+          "id": "630",
+          "question": "origen",
+          "solution": "source",
+          "additionText": "origin"
+      },
+      {
+          "id": "631",
+          "question": "blanco",
+          "solution": "White",
+          "additionText": "target"
+      },
+      {
+          "id": "632",
+          "question": "mismos",
+          "solution": "same",
+          "additionText": "same"
+      },
+      {
+          "id": "633",
+          "question": "lleva",
+          "solution": "carries",
+          "additionText": "carries"
+      },
+      {
+          "id": "634",
+          "question": "económico",
+          "solution": "economic",
+          "additionText": "economic"
+      },
+      {
+          "id": "635",
+          "question": "opinión",
+          "solution": "opinion",
+          "additionText": "opinion"
+      },
+      {
+          "id": "636",
+          "question": "ayuda",
+          "solution": "help",
+          "additionText": "help"
+      },
+      {
+          "id": "637",
+          "question": "oficial",
+          "solution": "official",
+          "additionText": "official"
+      },
+      {
+          "id": "638",
+          "question": "silencio",
+          "solution": "silence",
+          "additionText": "silence"
+      },
+      {
+          "id": "639",
+          "question": "buenos",
+          "solution": "good",
+          "additionText": "good"
+      },
+      {
+          "id": "640",
+          "question": "pensar",
+          "solution": "to think",
+          "additionText": "think"
+      },
+      {
+          "id": "641",
+          "question": "república",
+          "solution": "republic",
+          "additionText": "republic"
+      },
+      {
+          "id": "642",
+          "question": "dónde",
+          "solution": "where",
+          "additionText": "where"
+      },
+      {
+          "id": "643",
+          "question": "sangre",
+          "solution": "blood",
+          "additionText": "blood"
+      },
+      {
+          "id": "644",
+          "question": "encuentro",
+          "solution": "meeting",
+          "additionText": "I find"
+      },
+      {
+          "id": "645",
+          "question": "siquiera",
+          "solution": "at least",
+          "additionText": "even"
+      },
+      {
+          "id": "646",
+          "question": "autor",
+          "solution": "Author",
+          "additionText": "author"
+      },
+      {
+          "id": "647",
+          "question": "reunión",
+          "solution": "meeting",
+          "additionText": "meeting"
+      },
+      {
+          "id": "648",
+          "question": "haciendo",
+          "solution": "doing",
+          "additionText": "making"
+      },
+      {
+          "id": "649",
+          "question": "suelo",
+          "solution": "floor",
+          "additionText": "ground"
+      },
+      {
+          "id": "650",
+          "question": "muestra",
+          "solution": "sample",
+          "additionText": "sample"
+      },
+      {
+          "id": "651",
+          "question": "viejo",
+          "solution": "old",
+          "additionText": "old"
+      },
+      {
+          "id": "652",
+          "question": "encima",
+          "solution": "above",
+          "additionText": "over"
+      },
+      {
+          "id": "653",
+          "question": "resulta",
+          "solution": "result",
+          "additionText": "turns out"
+      },
+      {
+          "id": "654",
+          "question": "tomar",
+          "solution": "take",
+          "additionText": "take"
+      },
+      {
+          "id": "655",
+          "question": "bastante",
+          "solution": "Quite",
+          "additionText": "quite a lot"
+      },
+      {
+          "id": "656",
+          "question": "siete",
+          "solution": "seven",
+          "additionText": "seven"
+      },
+      {
+          "id": "657",
+          "question": "lucha",
+          "solution": "struggle",
+          "additionText": "fight"
+      },
+      {
+          "id": "658",
+          "question": "pudo",
+          "solution": "could",
+          "additionText": "could"
+      },
+      {
+          "id": "659",
+          "question": "amigos",
+          "solution": "friends",
+          "additionText": "friends"
+      },
+      {
+          "id": "660",
+          "question": "línea",
+          "solution": "line",
+          "additionText": "line"
+      },
+      {
+          "id": "661",
+          "question": "sur",
+          "solution": "south",
+          "additionText": "south"
+      },
+      {
+          "id": "662",
+          "question": "pocos",
+          "solution": "few",
+          "additionText": "few"
+      },
+      {
+          "id": "663",
+          "question": "medidas",
+          "solution": "measures",
+          "additionText": "measures"
+      },
+      {
+          "id": "664",
+          "question": "norte",
+          "solution": "North",
+          "additionText": "north"
+      },
+      {
+          "id": "665",
+          "question": "partes",
+          "solution": "parts",
+          "additionText": "parts"
+      },
+      {
+          "id": "666",
+          "question": "iglesia",
+          "solution": "church",
+          "additionText": "church"
+      },
+      {
+          "id": "667",
+          "question": "tratamiento",
+          "solution": "treatment",
+          "additionText": "treatment"
+      },
+      {
+          "id": "668",
+          "question": "existencia",
+          "solution": "existence",
+          "additionText": "existence"
+      },
+      {
+          "id": "669",
+          "question": "cargo",
+          "solution": "position",
+          "additionText": "charge"
+      },
+      {
+          "id": "670",
+          "question": "grande",
+          "solution": "big",
+          "additionText": "grande"
+      },
+      {
+          "id": "671",
+          "question": "américa",
+          "solution": "America",
+          "additionText": "america"
+      },
+      {
+          "id": "672",
+          "question": "boca",
+          "solution": "mouth",
+          "additionText": "boca"
+      },
+      {
+          "id": "673",
+          "question": "plaza",
+          "solution": "Plaza",
+          "additionText": "plaza"
+      },
+      {
+          "id": "674",
+          "question": "pie",
+          "solution": "foot",
+          "additionText": "pie"
+      },
+      {
+          "id": "675",
+          "question": "trabajadores",
+          "solution": "workers",
+          "additionText": "workers"
+      },
+      {
+          "id": "676",
+          "question": "poner",
+          "solution": "put",
+          "additionText": "put"
+      },
+      {
+          "id": "677",
+          "question": "existen",
+          "solution": "exist",
+          "additionText": "there are"
+      },
+      {
+          "id": "678",
+          "question": "viene",
+          "solution": "comes",
+          "additionText": "comes"
+      },
+      {
+          "id": "679",
+          "question": "permite",
+          "solution": "It allows",
+          "additionText": "allows"
+      },
+      {
+          "id": "680",
+          "question": "análisis",
+          "solution": "analysis",
+          "additionText": "analysis"
+      },
+      {
+          "id": "681",
+          "question": "argentina",
+          "solution": "Argentina",
+          "additionText": "argentina"
+      },
+      {
+          "id": "682",
+          "question": "acto",
+          "solution": "act",
+          "additionText": "act"
+      },
+      {
+          "id": "683",
+          "question": "hechos",
+          "solution": "facts",
+          "additionText": "facts"
+      },
+      {
+          "id": "684",
+          "question": "tiempos",
+          "solution": "time",
+          "additionText": "times"
+      },
+      {
+          "id": "685",
+          "question": "políticas",
+          "solution": "policies",
+          "additionText": "policies"
+      },
+      {
+          "id": "686",
+          "question": "radio",
+          "solution": "radio",
+          "additionText": "radio"
+      },
+      {
+          "id": "687",
+          "question": "puedo",
+          "solution": "may l",
+          "additionText": "I can"
+      },
+      {
+          "id": "688",
+          "question": "crecimiento",
+          "solution": "growth",
+          "additionText": "growth"
+      },
+      {
+          "id": "689",
+          "question": "francia",
+          "solution": "France",
+          "additionText": "france"
+      },
+      {
+          "id": "690",
+          "question": "compañía",
+          "solution": "company",
+          "additionText": "company"
+      },
+      {
+          "id": "691",
+          "question": "amigo",
+          "solution": "friend",
+          "additionText": "friend"
+      },
+      {
+          "id": "692",
+          "question": "autoridades",
+          "solution": "authorities",
+          "additionText": "authorities"
+      },
+      {
+          "id": "693",
+          "question": "realizar",
+          "solution": "perform",
+          "additionText": "conduct"
+      },
+      {
+          "id": "694",
+          "question": "acciones",
+          "solution": "Actions",
+          "additionText": "actions"
+      },
+      {
+          "id": "695",
+          "question": "padres",
+          "solution": "fathers",
+          "additionText": "parents"
+      },
+      {
+          "id": "696",
+          "question": "diario",
+          "solution": "daily",
+          "additionText": "diary"
+      },
+      {
+          "id": "697",
+          "question": "ve",
+          "solution": "go",
+          "additionText": "see"
+      },
+      {
+          "id": "698",
+          "question": "derecha",
+          "solution": "right",
+          "additionText": "right"
+      },
+      {
+          "id": "699",
+          "question": "ambiente",
+          "solution": "ambient",
+          "additionText": "environment"
+      },
+      {
+          "id": "700",
+          "question": "i",
+          "solution": "i",
+          "additionText": "i"
+      },
+      {
+          "id": "701",
+          "question": "habrá",
+          "solution": "there will be",
+          "additionText": "there will be"
+      },
+      {
+          "id": "702",
+          "question": "precisamente",
+          "solution": "precisely",
+          "additionText": "precisely"
+      },
+      {
+          "id": "703",
+          "question": "enfermedad",
+          "solution": "disease",
+          "additionText": "disease"
+      },
+      {
+          "id": "704",
+          "question": "especie",
+          "solution": "species",
+          "additionText": "species"
+      },
+      {
+          "id": "705",
+          "question": "ejército",
+          "solution": "army",
+          "additionText": "army"
+      },
+      {
+          "id": "706",
+          "question": "santa",
+          "solution": "St.",
+          "additionText": "holy"
+      },
+      {
+          "id": "707",
+          "question": "cambios",
+          "solution": "changes",
+          "additionText": "changes"
+      },
+      {
+          "id": "708",
+          "question": "río",
+          "solution": "River",
+          "additionText": "river"
+      },
+      {
+          "id": "709",
+          "question": "sabía",
+          "solution": "I knew",
+          "additionText": "knew"
+      },
+      {
+          "id": "710",
+          "question": "seguro",
+          "solution": "insurance",
+          "additionText": "insurance"
+      },
+      {
+          "id": "711",
+          "question": "espera",
+          "solution": "waiting",
+          "additionText": "wait"
+      },
+      {
+          "id": "712",
+          "question": "momentos",
+          "solution": "moments",
+          "additionText": "moments"
+      },
+      {
+          "id": "713",
+          "question": "viaje",
+          "solution": "travel",
+          "additionText": "trip"
+      },
+      {
+          "id": "714",
+          "question": "quería",
+          "solution": "wanted",
+          "additionText": "wanted"
+      },
+      {
+          "id": "715",
+          "question": "ocho",
+          "solution": "eight",
+          "additionText": "eight"
+      },
+      {
+          "id": "716",
+          "question": "vivir",
+          "solution": "to live",
+          "additionText": "live"
+      },
+      {
+          "id": "717",
+          "question": "región",
+          "solution": "region",
+          "additionText": "region"
+      },
+      {
+          "id": "718",
+          "question": "formación",
+          "solution": "training",
+          "additionText": "training"
+      },
+      {
+          "id": "719",
+          "question": "escuela",
+          "solution": "school",
+          "additionText": "school"
+      },
+      {
+          "id": "720",
+          "question": "cuarto",
+          "solution": "room",
+          "additionText": "fourth"
+      },
+      {
+          "id": "721",
+          "question": "valores",
+          "solution": "values",
+          "additionText": "values"
+      },
+      {
+          "id": "722",
+          "question": "quedó",
+          "solution": "it was",
+          "additionText": "remained"
+      },
+      {
+          "id": "723",
+          "question": "participación",
+          "solution": "participation",
+          "additionText": "participation"
+      },
+      {
+          "id": "724",
+          "question": "éxito",
+          "solution": "success",
+          "additionText": "success"
+      },
+      {
+          "id": "725",
+          "question": "baja",
+          "solution": "low",
+          "additionText": "low"
+      },
+      {
+          "id": "726",
+          "question": "artículo",
+          "solution": "Article",
+          "additionText": "article"
+      },
+      {
+          "id": "727",
+          "question": "principales",
+          "solution": "main",
+          "additionText": "main"
+      },
+      {
+          "id": "728",
+          "question": "fernando",
+          "solution": "fernando",
+          "additionText": "fernando"
+      },
+      {
+          "id": "729",
+          "question": "metros",
+          "solution": "meters",
+          "additionText": "meters"
+      },
+      {
+          "id": "730",
+          "question": "marcha",
+          "solution": "March",
+          "additionText": "march"
+      },
+      {
+          "id": "731",
+          "question": "régimen",
+          "solution": "regime",
+          "additionText": "regime"
+      },
+      {
+          "id": "732",
+          "question": "consecuencia",
+          "solution": "consequence",
+          "additionText": "consequence"
+      },
+      {
+          "id": "733",
+          "question": "conocimiento",
+          "solution": "knowledge",
+          "additionText": "awareness"
+      },
+      {
+          "id": "734",
+          "question": "corazón",
+          "solution": "heart",
+          "additionText": "heart"
+      },
+      {
+          "id": "735",
+          "question": "campaña",
+          "solution": "Bell",
+          "additionText": "campaign"
+      },
+      {
+          "id": "736",
+          "question": "estructura",
+          "solution": "structure",
+          "additionText": "structure"
+      },
+      {
+          "id": "737",
+          "question": "efectos",
+          "solution": "effects",
+          "additionText": "effects"
+      },
+      {
+          "id": "738",
+          "question": "finalmente",
+          "solution": "Finally",
+          "additionText": "finally"
+      },
+      {
+          "id": "739",
+          "question": "modelo",
+          "solution": "model",
+          "additionText": "template"
+      },
+      {
+          "id": "740",
+          "question": "carta",
+          "solution": "letter",
+          "additionText": "charter"
+      },
+      {
+          "id": "741",
+          "question": "construcción",
+          "solution": "construction",
+          "additionText": "constr"
+      },
+      {
+          "id": "742",
+          "question": "médico",
+          "solution": "doctor",
+          "additionText": "doctor"
+      },
+      {
+          "id": "743",
+          "question": "miedo",
+          "solution": "afraid",
+          "additionText": "fear"
+      },
+      {
+          "id": "744",
+          "question": "mayores",
+          "solution": "greater",
+          "additionText": "seniors"
+      },
+      {
+          "id": "745",
+          "question": "entrada",
+          "solution": "entrance",
+          "additionText": "entry"
+      },
+      {
+          "id": "746",
+          "question": "humanos",
+          "solution": "humans",
+          "additionText": "humans"
+      },
+      {
+          "id": "747",
+          "question": "sean",
+          "solution": "are",
+          "additionText": "be"
+      },
+      {
+          "id": "748",
+          "question": "actitud",
+          "solution": "attitude",
+          "additionText": "attitude"
+      },
+      {
+          "id": "749",
+          "question": "deja",
+          "solution": "leaves",
+          "additionText": "leave"
+      },
+      {
+          "id": "750",
+          "question": "dejó",
+          "solution": "let",
+          "additionText": "let"
+      },
+      {
+          "id": "751",
+          "question": "d",
+          "solution": "d",
+          "additionText": "d"
+      },
+      {
+          "id": "752",
+          "question": "llevar",
+          "solution": "bring",
+          "additionText": "wear"
+      },
+      {
+          "id": "753",
+          "question": "negro",
+          "solution": "black",
+          "additionText": "black"
+      },
+      {
+          "id": "754",
+          "question": "texto",
+          "solution": "text",
+          "additionText": "text"
+      },
+      {
+          "id": "755",
+          "question": "mitad",
+          "solution": "half",
+          "additionText": "half"
+      },
+      {
+          "id": "756",
+          "question": "estuvo",
+          "solution": "he was",
+          "additionText": "was"
+      },
+      {
+          "id": "757",
+          "question": "alrededor",
+          "solution": "around",
+          "additionText": "about"
+      },
+      {
+          "id": "758",
+          "question": "acerca",
+          "solution": "about",
+          "additionText": "about"
+      },
+      {
+          "id": "759",
+          "question": "peso",
+          "solution": "weight",
+          "additionText": "weight"
+      },
+      {
+          "id": "760",
+          "question": "humano",
+          "solution": "human",
+          "additionText": "human"
+      },
+      {
+          "id": "761",
+          "question": "pequeño",
+          "solution": "little",
+          "additionText": "small"
+      },
+      {
+          "id": "762",
+          "question": "fecha",
+          "solution": "date",
+          "additionText": "date"
+      },
+      {
+          "id": "763",
+          "question": "serán",
+          "solution": "will be",
+          "additionText": "will be"
+      },
+      {
+          "id": "764",
+          "question": "doctor",
+          "solution": "doctor",
+          "additionText": "doctor"
+      },
+      {
+          "id": "765",
+          "question": "ideas",
+          "solution": "Ideas",
+          "additionText": "ideas"
+      },
+      {
+          "id": "766",
+          "question": "vino",
+          "solution": "wine",
+          "additionText": "wine"
+      },
+      {
+          "id": "767",
+          "question": "materia",
+          "solution": "subject",
+          "additionText": "matter"
+      },
+      {
+          "id": "768",
+          "question": "llega",
+          "solution": "arrives",
+          "additionText": "arrives"
+      },
+      {
+          "id": "769",
+          "question": "carrera",
+          "solution": "career",
+          "additionText": "career"
+      },
+      {
+          "id": "770",
+          "question": "cierta",
+          "solution": "some",
+          "additionText": "certain"
+      },
+      {
+          "id": "771",
+          "question": "sola",
+          "solution": "alone",
+          "additionText": "only"
+      },
+      {
+          "id": "772",
+          "question": "psoe",
+          "solution": "psoe",
+          "additionText": "psoe"
+      },
+      {
+          "id": "773",
+          "question": "lejos",
+          "solution": "far",
+          "additionText": "far"
+      },
+      {
+          "id": "774",
+          "question": "juez",
+          "solution": "judge",
+          "additionText": "judge"
+      },
+      {
+          "id": "775",
+          "question": "características",
+          "solution": "characteristics",
+          "additionText": "characteristics"
+      },
+      {
+          "id": "776",
+          "question": "riesgo",
+          "solution": "risk",
+          "additionText": "risk"
+      },
+      {
+          "id": "777",
+          "question": "fácil",
+          "solution": "easy",
+          "additionText": "easy"
+      },
+      {
+          "id": "778",
+          "question": "diferencia",
+          "solution": "difference",
+          "additionText": "difference"
+      },
+      {
+          "id": "779",
+          "question": "cultural",
+          "solution": "cultural",
+          "additionText": "cultural"
+      },
+      {
+          "id": "780",
+          "question": "libros",
+          "solution": "books",
+          "additionText": "books"
+      },
+      {
+          "id": "781",
+          "question": "práctica",
+          "solution": "practice",
+          "additionText": "practice"
+      },
+      {
+          "id": "782",
+          "question": "mayo",
+          "solution": "May",
+          "additionText": "may"
+      },
+      {
+          "id": "783",
+          "question": "nuestras",
+          "solution": "our",
+          "additionText": "our"
+      },
+      {
+          "id": "784",
+          "question": "programas",
+          "solution": "programs",
+          "additionText": "programs"
+      },
+      {
+          "id": "785",
+          "question": "memoria",
+          "solution": "memory",
+          "additionText": "memory"
+      },
+      {
+          "id": "786",
+          "question": "llegado",
+          "solution": "arrived",
+          "additionText": "arrived"
+      },
+      {
+          "id": "787",
+          "question": "plazo",
+          "solution": "term",
+          "additionText": "deadline"
+      },
+      {
+          "id": "788",
+          "question": "expresión",
+          "solution": "expression",
+          "additionText": "expression"
+      },
+      {
+          "id": "789",
+          "question": "diciembre",
+          "solution": "December",
+          "additionText": "december"
+      },
+      {
+          "id": "790",
+          "question": "mantener",
+          "solution": "keep",
+          "additionText": "maintain"
+      },
+      {
+          "id": "791",
+          "question": "enero",
+          "solution": "January",
+          "additionText": "January"
+      },
+      {
+          "id": "792",
+          "question": "volver",
+          "solution": "return",
+          "additionText": "go back to"
+      },
+      {
+          "id": "793",
+          "question": "cuadro",
+          "solution": "picture",
+          "additionText": "table"
+      },
+      {
+          "id": "794",
+          "question": "producto",
+          "solution": "product",
+          "additionText": "product"
+      },
+      {
+          "id": "795",
+          "question": "produce",
+          "solution": "produces",
+          "additionText": "produced"
+      },
+      {
+          "id": "796",
+          "question": "europea",
+          "solution": "European",
+          "additionText": "european"
+      },
+      {
+          "id": "797",
+          "question": "conciencia",
+          "solution": "conscience",
+          "additionText": "conscience"
+      },
+      {
+          "id": "798",
+          "question": "tenían",
+          "solution": "They had",
+          "additionText": "had"
+      },
+      {
+          "id": "799",
+          "question": "atrás",
+          "solution": "behind",
+          "additionText": "back"
+      },
+      {
+          "id": "800",
+          "question": "felipe",
+          "solution": "felipe",
+          "additionText": "Philip"
+      },
+      {
+          "id": "801",
+          "question": "creación",
+          "solution": "creation",
+          "additionText": "creation"
+      },
+      {
+          "id": "802",
+          "question": "chile",
+          "solution": "Chile",
+          "additionText": "chile"
+      },
+      {
+          "id": "803",
+          "question": "precio",
+          "solution": "price",
+          "additionText": "price"
+      },
+      {
+          "id": "804",
+          "question": "película",
+          "solution": "movie",
+          "additionText": "film"
+      },
+      {
+          "id": "805",
+          "question": "puerto",
+          "solution": "port",
+          "additionText": "port"
+      },
+      {
+          "id": "806",
+          "question": "fuego",
+          "solution": "fire",
+          "additionText": "fire"
+      },
+      {
+          "id": "807",
+          "question": "cuestión",
+          "solution": "question",
+          "additionText": "issue"
+      },
+      {
+          "id": "808",
+          "question": "pasó",
+          "solution": "I pass",
+          "additionText": "happened"
+      },
+      {
+          "id": "809",
+          "question": "costa",
+          "solution": "coast",
+          "additionText": "coast"
+      },
+      {
+          "id": "810",
+          "question": "supuesto",
+          "solution": "supposed",
+          "additionText": "alleged"
+      },
+      {
+          "id": "811",
+          "question": "local",
+          "solution": "local",
+          "additionText": "local"
+      },
+      {
+          "id": "812",
+          "question": "habla",
+          "solution": "speaks",
+          "additionText": "speech"
+      },
+      {
+          "id": "813",
+          "question": "aspectos",
+          "solution": "aspects",
+          "additionText": "aspects"
+      },
+      {
+          "id": "814",
+          "question": "cuba",
+          "solution": "Cuba",
+          "additionText": "cuba"
+      },
+      {
+          "id": "815",
+          "question": "sala",
+          "solution": "living room",
+          "additionText": "room"
+      },
+      {
+          "id": "816",
+          "question": "cámara",
+          "solution": "camera",
+          "additionText": "camera"
+      },
+      {
+          "id": "817",
+          "question": "vuelta",
+          "solution": "return",
+          "additionText": "return"
+      },
+      {
+          "id": "818",
+          "question": "vía",
+          "solution": "via",
+          "additionText": "via"
+      },
+      {
+          "id": "819",
+          "question": "mirada",
+          "solution": "look",
+          "additionText": "look"
+      },
+      {
+          "id": "820",
+          "question": "mejores",
+          "solution": "top",
+          "additionText": "best"
+      },
+      {
+          "id": "821",
+          "question": "informe",
+          "solution": "report",
+          "additionText": "report"
+      },
+      {
+          "id": "822",
+          "question": "unidad",
+          "solution": "Unit",
+          "additionText": "unit"
+      },
+      {
+          "id": "823",
+          "question": "distintos",
+          "solution": "different",
+          "additionText": "different"
+      },
+      {
+          "id": "824",
+          "question": "suerte",
+          "solution": "lucky",
+          "additionText": "luck"
+      },
+      {
+          "id": "825",
+          "question": "tales",
+          "solution": "such",
+          "additionText": "such"
+      },
+      {
+          "id": "826",
+          "question": "mira",
+          "solution": "sight",
+          "additionText": "see"
+      },
+      {
+          "id": "827",
+          "question": "llamado",
+          "solution": "called",
+          "additionText": "called"
+      },
+      {
+          "id": "828",
+          "question": "técnica",
+          "solution": "technique",
+          "additionText": "technique"
+      },
+      {
+          "id": "829",
+          "question": "título",
+          "solution": "qualification",
+          "additionText": "title"
+      },
+      {
+          "id": "830",
+          "question": "s",
+          "solution": "s",
+          "additionText": "s"
+      },
+      {
+          "id": "831",
+          "question": "principios",
+          "solution": "beginning",
+          "additionText": "principles"
+      },
+      {
+          "id": "832",
+          "question": "octubre",
+          "solution": "October",
+          "additionText": "October"
+      },
+      {
+          "id": "833",
+          "question": "volvió",
+          "solution": "went back",
+          "additionText": "returned"
+      },
+      {
+          "id": "834",
+          "question": "período",
+          "solution": "period",
+          "additionText": "period"
+      },
+      {
+          "id": "835",
+          "question": "g",
+          "solution": "g",
+          "additionText": "g"
+      },
+      {
+          "id": "836",
+          "question": "encontrar",
+          "solution": "meet",
+          "additionText": "find"
+      },
+      {
+          "id": "837",
+          "question": "democracia",
+          "solution": "democracy",
+          "additionText": "democracy"
+      },
+      {
+          "id": "838",
+          "question": "aumento",
+          "solution": "increase",
+          "additionText": "increase"
+      },
+      {
+          "id": "839",
+          "question": "fútbol",
+          "solution": "soccer",
+          "additionText": "soccer"
+      },
+      {
+          "id": "840",
+          "question": "prueba",
+          "solution": "proof",
+          "additionText": "test"
+      },
+      {
+          "id": "841",
+          "question": "consumo",
+          "solution": "consumption",
+          "additionText": "consumption"
+      },
+      {
+          "id": "842",
+          "question": "pese",
+          "solution": "I weighed",
+          "additionText": "despite"
+      },
+      {
+          "id": "843",
+          "question": "ocasiones",
+          "solution": "occasions",
+          "additionText": "occasions"
+      },
+      {
+          "id": "844",
+          "question": "exterior",
+          "solution": "Exterior",
+          "additionText": "outside"
+      },
+      {
+          "id": "845",
+          "question": "solución",
+          "solution": "solution",
+          "additionText": "solution"
+      },
+      {
+          "id": "846",
+          "question": "u",
+          "solution": "or",
+          "additionText": "u"
+      },
+      {
+          "id": "847",
+          "question": "hija",
+          "solution": "daughter",
+          "additionText": "daughter"
+      },
+      {
+          "id": "848",
+          "question": "sueño",
+          "solution": "dream",
+          "additionText": "dream"
+      },
+      {
+          "id": "849",
+          "question": "parís",
+          "solution": "Paris",
+          "additionText": "paris"
+      },
+      {
+          "id": "850",
+          "question": "capaz",
+          "solution": "capable",
+          "additionText": "able"
+      },
+      {
+          "id": "851",
+          "question": "ocasión",
+          "solution": "chance",
+          "additionText": "occasion"
+      },
+      {
+          "id": "852",
+          "question": "industria",
+          "solution": "industry",
+          "additionText": "industry"
+      },
+      {
+          "id": "853",
+          "question": "adelante",
+          "solution": "ahead",
+          "additionText": "forward"
+      },
+      {
+          "id": "854",
+          "question": "salida",
+          "solution": "Exit",
+          "additionText": "exit"
+      },
+      {
+          "id": "855",
+          "question": "ciencia",
+          "solution": "science",
+          "additionText": "science"
+      },
+      {
+          "id": "856",
+          "question": "asunto",
+          "solution": "business",
+          "additionText": "subject"
+      },
+      {
+          "id": "857",
+          "question": "asociación",
+          "solution": "association",
+          "additionText": "association"
+      },
+      {
+          "id": "858",
+          "question": "puso",
+          "solution": "put",
+          "additionText": "put"
+      },
+      {
+          "id": "859",
+          "question": "intereses",
+          "solution": "interests",
+          "additionText": "interests"
+      },
+      {
+          "id": "860",
+          "question": "oro",
+          "solution": "gold",
+          "additionText": "gold"
+      },
+      {
+          "id": "861",
+          "question": "podrá",
+          "solution": "you can",
+          "additionText": "you may"
+      },
+      {
+          "id": "862",
+          "question": "pregunta",
+          "solution": "question",
+          "additionText": "question"
+      },
+      {
+          "id": "863",
+          "question": "oposición",
+          "solution": "opposition",
+          "additionText": "opposition"
+      },
+      {
+          "id": "864",
+          "question": "entrar",
+          "solution": "get in",
+          "additionText": "enter"
+      },
+      {
+          "id": "865",
+          "question": "señora",
+          "solution": "Lady",
+          "additionText": "Mrs."
+      },
+      {
+          "id": "866",
+          "question": "señaló",
+          "solution": "he pointed",
+          "additionText": "pointed out"
+      },
+      {
+          "id": "867",
+          "question": "santiago",
+          "solution": "Santiago",
+          "additionText": "santiago"
+      },
+      {
+          "id": "868",
+          "question": "dolor",
+          "solution": "pain",
+          "additionText": "pain"
+      },
+      {
+          "id": "869",
+          "question": "zonas",
+          "solution": "areas",
+          "additionText": "zones"
+      },
+      {
+          "id": "870",
+          "question": "comercio",
+          "solution": "trade",
+          "additionText": "commerce"
+      },
+      {
+          "id": "871",
+          "question": "operación",
+          "solution": "operation",
+          "additionText": "operation"
+      },
+      {
+          "id": "872",
+          "question": "tribunal",
+          "solution": "court",
+          "additionText": "court"
+      },
+      {
+          "id": "873",
+          "question": "instituciones",
+          "solution": "institutions",
+          "additionText": "institutions"
+      },
+      {
+          "id": "874",
+          "question": "temas",
+          "solution": "topics",
+          "additionText": "issues"
+      },
+      {
+          "id": "875",
+          "question": "militares",
+          "solution": "military",
+          "additionText": "military"
+      },
+      {
+          "id": "876",
+          "question": "junio",
+          "solution": "June",
+          "additionText": "June"
+      },
+      {
+          "id": "877",
+          "question": "marco",
+          "solution": "framework",
+          "additionText": "framework"
+      },
+      {
+          "id": "878",
+          "question": "sectores",
+          "solution": "sectors",
+          "additionText": "sectors"
+      },
+      {
+          "id": "879",
+          "question": "hacerlo",
+          "solution": "do it",
+          "additionText": "make it"
+      },
+      {
+          "id": "880",
+          "question": "aspecto",
+          "solution": "appearance",
+          "additionText": "aspect"
+      },
+      {
+          "id": "881",
+          "question": "razones",
+          "solution": "reasons",
+          "additionText": "reasons"
+      },
+      {
+          "id": "882",
+          "question": "contenido",
+          "solution": "contents",
+          "additionText": "content"
+      },
+      {
+          "id": "883",
+          "question": "juicio",
+          "solution": "judgment",
+          "additionText": "judgment"
+      },
+      {
+          "id": "884",
+          "question": "electoral",
+          "solution": "electoral",
+          "additionText": "electoral"
+      },
+      {
+          "id": "885",
+          "question": "considera",
+          "solution": "considers",
+          "additionText": "considers"
+      },
+      {
+          "id": "886",
+          "question": "tendrá",
+          "solution": "will have",
+          "additionText": "will have"
+      },
+      {
+          "id": "887",
+          "question": "mucha",
+          "solution": "a lot",
+          "additionText": "much"
+      },
+      {
+          "id": "888",
+          "question": "voluntad",
+          "solution": "Will",
+          "additionText": "will"
+      },
+      {
+          "id": "889",
+          "question": "dicen",
+          "solution": "say",
+          "additionText": "say"
+      },
+      {
+          "id": "890",
+          "question": "recuerdo",
+          "solution": "memory",
+          "additionText": "reminder"
+      },
+      {
+          "id": "891",
+          "question": "socialista",
+          "solution": "socialist",
+          "additionText": "socialist"
+      },
+      {
+          "id": "892",
+          "question": "área",
+          "solution": "area",
+          "additionText": "area"
+      },
+      {
+          "id": "893",
+          "question": "aparece",
+          "solution": "appear",
+          "additionText": "appears"
+      },
+      {
+          "id": "894",
+          "question": "vio",
+          "solution": "saw",
+          "additionText": "saw"
+      },
+      {
+          "id": "895",
+          "question": "cama",
+          "solution": "bed",
+          "additionText": "bed"
+      },
+      {
+          "id": "896",
+          "question": "aun",
+          "solution": "yet",
+          "additionText": "even"
+      },
+      {
+          "id": "897",
+          "question": "presenta",
+          "solution": "presents",
+          "additionText": "presents"
+      },
+      {
+          "id": "898",
+          "question": "pp",
+          "solution": "pp",
+          "additionText": "pp"
+      },
+      {
+          "id": "899",
+          "question": "revolución",
+          "solution": "revolution",
+          "additionText": "revolution"
+      },
+      {
+          "id": "900",
+          "question": "busca",
+          "solution": "search",
+          "additionText": "search"
+      },
+      {
+          "id": "901",
+          "question": "abril",
+          "solution": "April",
+          "additionText": "april"
+      },
+      {
+          "id": "902",
+          "question": "rodríguez",
+          "solution": "rodríguez",
+          "additionText": "rodriguez"
+      },
+      {
+          "id": "903",
+          "question": "fiscal",
+          "solution": "fiscal",
+          "additionText": "prosecutor"
+      },
+      {
+          "id": "904",
+          "question": "lópez",
+          "solution": "lópez",
+          "additionText": "lópez"
+      },
+      {
+          "id": "905",
+          "question": "victoria",
+          "solution": "victory",
+          "additionText": "victoria"
+      },
+      {
+          "id": "906",
+          "question": "violencia",
+          "solution": "violence",
+          "additionText": "violence"
+      },
+      {
+          "id": "907",
+          "question": "primeras",
+          "solution": "first",
+          "additionText": "first"
+      },
+      {
+          "id": "908",
+          "question": "pequeña",
+          "solution": "little",
+          "additionText": "small"
+      },
+      {
+          "id": "909",
+          "question": "armas",
+          "solution": "weapons",
+          "additionText": "weapons"
+      },
+      {
+          "id": "910",
+          "question": "debía",
+          "solution": "should",
+          "additionText": "should"
+      },
+      {
+          "id": "911",
+          "question": "ii",
+          "solution": "ii",
+          "additionText": "ii"
+      },
+      {
+          "id": "912",
+          "question": "esfuerzo",
+          "solution": "effort",
+          "additionText": "effort"
+      },
+      {
+          "id": "913",
+          "question": "humana",
+          "solution": "human",
+          "additionText": "human"
+      },
+      {
+          "id": "914",
+          "question": "posibilidades",
+          "solution": "possibilities",
+          "additionText": "possibilities"
+      },
+      {
+          "id": "915",
+          "question": "centros",
+          "solution": "centers",
+          "additionText": "centers"
+      },
+      {
+          "id": "916",
+          "question": "profesional",
+          "solution": "professional",
+          "additionText": "professional"
+      },
+      {
+          "id": "917",
+          "question": "asimismo",
+          "solution": "in addition",
+          "additionText": "also"
+      },
+      {
+          "id": "918",
+          "question": "grado",
+          "solution": "grade",
+          "additionText": "degree"
+      },
+      {
+          "id": "919",
+          "question": "has",
+          "solution": "you",
+          "additionText": "has"
+      },
+      {
+          "id": "920",
+          "question": "toma",
+          "solution": "taking",
+          "additionText": "take"
+      },
+      {
+          "id": "921",
+          "question": "distintas",
+          "solution": "different",
+          "additionText": "different"
+      },
+      {
+          "id": "922",
+          "question": "material",
+          "solution": "material",
+          "additionText": "material"
+      },
+      {
+          "id": "923",
+          "question": "carne",
+          "solution": "meat",
+          "additionText": "meat"
+      },
+      {
+          "id": "924",
+          "question": "llama",
+          "solution": "call",
+          "additionText": "flame"
+      },
+      {
+          "id": "925",
+          "question": "particular",
+          "solution": "particular",
+          "additionText": "particular"
+      },
+      {
+          "id": "926",
+          "question": "jorge",
+          "solution": "Jorge",
+          "additionText": "jorge"
+      },
+      {
+          "id": "927",
+          "question": "trabajar",
+          "solution": "to work",
+          "additionText": "work"
+      },
+      {
+          "id": "928",
+          "question": "propuesta",
+          "solution": "proposal",
+          "additionText": "proposal"
+      },
+      {
+          "id": "929",
+          "question": "muerto",
+          "solution": "dead",
+          "additionText": "dead"
+      },
+      {
+          "id": "930",
+          "question": "precios",
+          "solution": "prices",
+          "additionText": "prices"
+      },
+      {
+          "id": "931",
+          "question": "reforma",
+          "solution": "reform",
+          "additionText": "reform"
+      },
+      {
+          "id": "932",
+          "question": "hermano",
+          "solution": "brother",
+          "additionText": "brother"
+      },
+      {
+          "id": "933",
+          "question": "corte",
+          "solution": "court",
+          "additionText": "court"
+      },
+      {
+          "id": "934",
+          "question": "comenzó",
+          "solution": "started",
+          "additionText": "started"
+      },
+      {
+          "id": "935",
+          "question": "etapa",
+          "solution": "stage",
+          "additionText": "stage"
+      },
+      {
+          "id": "936",
+          "question": "obstante",
+          "solution": "However",
+          "additionText": "however"
+      },
+      {
+          "id": "937",
+          "question": "pone",
+          "solution": "places",
+          "additionText": "put"
+      },
+      {
+          "id": "938",
+          "question": "diversos",
+          "solution": "different",
+          "additionText": "various"
+      },
+      {
+          "id": "939",
+          "question": "visita",
+          "solution": "visit",
+          "additionText": "visit"
+      },
+      {
+          "id": "940",
+          "question": "concepto",
+          "solution": "concept",
+          "additionText": "concept"
+      },
+      {
+          "id": "941",
+          "question": "pacientes",
+          "solution": "patients",
+          "additionText": "patients"
+      },
+      {
+          "id": "942",
+          "question": "semanas",
+          "solution": "weeks",
+          "additionText": "weeks"
+      },
+      {
+          "id": "943",
+          "question": "tipos",
+          "solution": "types",
+          "additionText": "types"
+      },
+      {
+          "id": "944",
+          "question": "solamente",
+          "solution": "only",
+          "additionText": "only"
+      },
+      {
+          "id": "945",
+          "question": "deseo",
+          "solution": "desire",
+          "additionText": "wish"
+      },
+      {
+          "id": "946",
+          "question": "sistemas",
+          "solution": "systems",
+          "additionText": "systems"
+      },
+      {
+          "id": "947",
+          "question": "encuentran",
+          "solution": "found",
+          "additionText": "find"
+      },
+      {
+          "id": "948",
+          "question": "siguientes",
+          "solution": "following",
+          "additionText": "following"
+      },
+      {
+          "id": "949",
+          "question": "martín",
+          "solution": "Martin",
+          "additionText": "martin"
+      },
+      {
+          "id": "950",
+          "question": "suficiente",
+          "solution": "enough",
+          "additionText": "enough"
+      },
+      {
+          "id": "951",
+          "question": "marzo",
+          "solution": "March",
+          "additionText": "March"
+      },
+      {
+          "id": "952",
+          "question": "propios",
+          "solution": "own",
+          "additionText": "own"
+      },
+      {
+          "id": "953",
+          "question": "jamás",
+          "solution": "Never",
+          "additionText": "never"
+      },
+      {
+          "id": "954",
+          "question": "dan",
+          "solution": "give",
+          "additionText": "give"
+      },
+      {
+          "id": "955",
+          "question": "club",
+          "solution": "club",
+          "additionText": "club"
+      },
+      {
+          "id": "956",
+          "question": "instituto",
+          "solution": "Institute",
+          "additionText": "institute"
+      },
+      {
+          "id": "957",
+          "question": "constitución",
+          "solution": "Constitution",
+          "additionText": "constitution"
+      },
+      {
+          "id": "958",
+          "question": "curso",
+          "solution": "course",
+          "additionText": "course"
+      },
+      {
+          "id": "959",
+          "question": "lenguaje",
+          "solution": "language",
+          "additionText": "language"
+      },
+      {
+          "id": "960",
+          "question": "estilo",
+          "solution": "style",
+          "additionText": "style"
+      },
+      {
+          "id": "961",
+          "question": "rosa",
+          "solution": "rose",
+          "additionText": "rose"
+      },
+      {
+          "id": "962",
+          "question": "imposible",
+          "solution": "impossible",
+          "additionText": "impossible"
+      },
+      {
+          "id": "963",
+          "question": "pablo",
+          "solution": "Pablo",
+          "additionText": "pablo"
+      },
+      {
+          "id": "964",
+          "question": "buscar",
+          "solution": "search",
+          "additionText": "search"
+      },
+      {
+          "id": "965",
+          "question": "peor",
+          "solution": "worse",
+          "additionText": "worst"
+      },
+      {
+          "id": "966",
+          "question": "piel",
+          "solution": "skin",
+          "additionText": "skin"
+      },
+      {
+          "id": "967",
+          "question": "arriba",
+          "solution": "above",
+          "additionText": "up"
+      },
+      {
+          "id": "968",
+          "question": "generales",
+          "solution": "general",
+          "additionText": "generals"
+      },
+      {
+          "id": "969",
+          "question": "septiembre",
+          "solution": "September",
+          "additionText": "september"
+      },
+      {
+          "id": "970",
+          "question": "blanca",
+          "solution": "White",
+          "additionText": "white"
+      },
+      {
+          "id": "971",
+          "question": "r",
+          "solution": "r",
+          "additionText": "r"
+      },
+      {
+          "id": "972",
+          "question": "aquellas",
+          "solution": "those",
+          "additionText": "those"
+      },
+      {
+          "id": "973",
+          "question": "teoría",
+          "solution": "theory",
+          "additionText": "theory"
+      },
+      {
+          "id": "974",
+          "question": "animales",
+          "solution": "animals",
+          "additionText": "animals"
+      },
+      {
+          "id": "975",
+          "question": "hicieron",
+          "solution": "they made",
+          "additionText": "made"
+      },
+      {
+          "id": "976",
+          "question": "larga",
+          "solution": "long",
+          "additionText": "long"
+      },
+      {
+          "id": "977",
+          "question": "perdido",
+          "solution": "lost",
+          "additionText": "lost"
+      },
+      {
+          "id": "978",
+          "question": "imágenes",
+          "solution": "images",
+          "additionText": "images"
+      },
+      {
+          "id": "979",
+          "question": "paciente",
+          "solution": "patient",
+          "additionText": "patient"
+      },
+      {
+          "id": "980",
+          "question": "conseguir",
+          "solution": "to get",
+          "additionText": "get"
+      },
+      {
+          "id": "981",
+          "question": "máximo",
+          "solution": "maximum",
+          "additionText": "maximum"
+      },
+      {
+          "id": "982",
+          "question": "noviembre",
+          "solution": "November",
+          "additionText": "November"
+      },
+      {
+          "id": "983",
+          "question": "j",
+          "solution": "j",
+          "additionText": "j"
+      },
+      {
+          "id": "984",
+          "question": "líder",
+          "solution": "Leader",
+          "additionText": "leader"
+      },
+      {
+          "id": "985",
+          "question": "hospital",
+          "solution": "hospital",
+          "additionText": "hospital"
+      },
+      {
+          "id": "986",
+          "question": "diversas",
+          "solution": "different",
+          "additionText": "various"
+      },
+      {
+          "id": "987",
+          "question": "rafael",
+          "solution": "rafael",
+          "additionText": "rafael"
+      },
+      {
+          "id": "988",
+          "question": "vuelve",
+          "solution": "returns",
+          "additionText": "return"
+      },
+      {
+          "id": "989",
+          "question": "destino",
+          "solution": "destination",
+          "additionText": "destination"
+      },
+      {
+          "id": "990",
+          "question": "torno",
+          "solution": "turnstile",
+          "additionText": "lathe"
+      },
+      {
+          "id": "991",
+          "question": "proyectos",
+          "solution": "Projects",
+          "additionText": "projects"
+      },
+      {
+          "id": "992",
+          "question": "flores",
+          "solution": "flowers",
+          "additionText": "flowers"
+      },
+      {
+          "id": "993",
+          "question": "niveles",
+          "solution": "levels",
+          "additionText": "levels"
+      },
+      {
+          "id": "994",
+          "question": "afirmó",
+          "solution": "he claimed",
+          "additionText": "stated"
+      },
+      {
+          "id": "995",
+          "question": "explicó",
+          "solution": "he explained",
+          "additionText": "explained"
+      },
+      {
+          "id": "996",
+          "question": "n",
+          "solution": "n",
+          "additionText": "n"
+      },
+      {
+          "id": "997",
+          "question": "somos",
+          "solution": "are",
+          "additionText": "we are"
+      },
+      {
+          "id": "998",
+          "question": "términos",
+          "solution": "Terms",
+          "additionText": "terms"
+      },
+      {
+          "id": "999",
+          "question": "premio",
+          "solution": "prize",
+          "additionText": "award"
+      },
+      {
+          "id": "1000",
+          "question": "tercera",
+          "solution": "third",
+          "additionText": "third"
+      }
+  ]
 }

@@ -25,9 +25,7 @@ class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
               MaterialPageRoute(
                 builder: (context) => FetchRemoteCardsListScreen(
                   onSave: (fetchUrl) {
-                    final listUrl =
-                        "https://raw.githubusercontent.com/LoSmith/card-learning/main/assets/flashCardsLists/ES_EN.json";
-                    context.read<FlashCardsCubit>().importJsonDataFromRemoteUrl(listUrl);
+                    context.read<FlashCardsCubit>().importJsonDataFromRemoteUrl(fetchUrl);
                   },
                 ),
               ));
@@ -85,7 +83,8 @@ class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
                 textAlign: TextAlign.center,
               ),
             ],
-          )
+          ),
+        Spacer(),
       ],
     );
   }

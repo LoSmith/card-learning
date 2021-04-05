@@ -56,7 +56,7 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
         child: TinderSwapCard(
           orientation: AmassOrientation.BOTTOM,
           totalNum: cards.length,
-          stackNum: 4,
+          stackNum: 3,
           swipeEdge: 4.0,
           maxWidth: MediaQuery.of(context).size.width * 0.9,
           maxHeight: MediaQuery.of(context).size.width * 0.9,
@@ -80,6 +80,7 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
           swipeUp: false,
           swipeDown: false,
           allowVerticalMovement: true,
+          animDuration: 10,
         ));
   }
 }
