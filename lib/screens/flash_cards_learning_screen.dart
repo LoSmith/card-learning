@@ -1,7 +1,11 @@
 import 'package:card_learning/blocs/flash_cards/flash_cards_cubit.dart';
 import 'package:card_learning/blocs/flash_cards/flash_cards_state.dart';
+import 'package:card_learning/models/flashCard.dart';
+import 'package:card_learning/widgets/flip_flash_card_widget.dart';
+import 'package:card_learning/widgets/simple_flash_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_tindercard/flutter_tindercard.dart';
 
 class FlashCardsLearningScreen extends StatefulWidget {
   @override
@@ -32,7 +36,7 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
                   if (state.items?.isEmpty ?? true) {
                     return Text('No flashCards');
                   }
-                  return _flashCardListView(state);
+                  return _tinderFlashCards(state.items);
                   break;
 
                 default:
@@ -46,28 +50,36 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
     );
   }
 
-  ListView _flashCardListView(FlashCardsState state) {
-    return ListView(
-      children: [
-        Text(state.items.length.toString()),
-        for (final flashCard in state.items)
-          Column(
-            children: [
-              Text(
-                flashCard.id,
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                flashCard.question,
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                flashCard.solution,
-                textAlign: TextAlign.center,
-              ),
-            ],
-          )
-      ],
-    );
+  Widget _tinderFlashCards(List<FlashCard> cards) {
+    return Container(
+        height: MediaQuery.of(context).size.height * 0.7,
+        child: TinderSwapCard(
+          orientation: AmassOrientation.BOTTOM,
+          totalNum: cards.length,
+          stackNum: 4,
+          swipeEdge: 4.0,
+          maxWidth: MediaQuery.of(context).size.width * 0.9,
+          maxHeight: MediaQuery.of(context).size.width * 0.9,
+          minWidth: MediaQuery.of(context).size.width * 0.8,
+          minHeight: MediaQuery.of(context).size.width * 0.8,
+          cardBuilder: (context, index) => FlipFlashCard(
+            flashCard: cards[index],
+          ),
+          // cardController: controller = CardController(),
+          swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
+            if (align.x < 0) {
+            } else if (align.x > 0) {}
+          },
+          swipeCompleteCallback: (CardSwipeOrientation orientaion, int index) {
+            if (orientaion == CardSwipeOrientation.RIGHT) {
+              print('swiped right');
+            } else {
+              print('swiped left');
+            }
+          },
+          swipeUp: false,
+          swipeDown: false,
+          allowVerticalMovement: true,
+        ));
   }
 }

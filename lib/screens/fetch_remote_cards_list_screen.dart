@@ -38,7 +38,8 @@ class _FetchRemoteCardsListScreenState extends State<FetchRemoteCardsListScreen>
           child: ListView(
             children: [
               TextFormField(
-                initialValue: '',
+                initialValue:
+                    'https://raw.githubusercontent.com/LoSmith/card-learning/main/assets/flashCardsLists/ES_EN.json',
                 key: Keys.questionField,
                 style: textTheme.headline5,
                 decoration: InputDecoration(

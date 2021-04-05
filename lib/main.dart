@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'blocs/flash_cards/flash_cards_cubit.dart';
 import 'blocs/simple_bloc_observer.dart';
 import 'data/hive_repository.dart';
-import 'data/local_shared_prefs_repository/local_repository.dart';
+import 'data/local_only_repository/local_repository.dart';
 import 'models/flashCard.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';

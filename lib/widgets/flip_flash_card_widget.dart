@@ -24,16 +24,10 @@ class _FlipFlashCardState extends State<FlipFlashCard> {
         child: GestureDetector(
           onTap: () => _flipCard(),
           child: FlippableBox(
-            front: _buildCard(
-                this.widget.flashCard.question,
-                'front supporting text',
-                500,
-                250,
-                Colors.green,
-                true,
-                'images/bg.png'),
-            back: _buildCard(this.widget.flashCard.solution,
-                'back supporting text', 500, 250, Colors.red, false, ''),
+            front: _buildCard(this.widget.flashCard.question, 'front supporting text', 500, 250,
+                Colors.green, true, ''),
+            back: _buildCard(this.widget.flashCard.solution, 'back supporting text', 500, 250,
+                Colors.red, false, ''),
             flipVt: false,
             isFlipped: this.widget._isFlipped,
             duration: 0.5,
@@ -76,9 +70,7 @@ class _FlipFlashCardState extends State<FlipFlashCard> {
                 // primary title
                 Text(
                   primaryTitle,
-                  style: DefaultTextStyle.of(context)
-                      .style
-                      .apply(fontSizeFactor: 3.0),
+                  style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 3.0),
                 ),
                 const Divider(
                   height: 20,
@@ -90,9 +82,7 @@ class _FlipFlashCardState extends State<FlipFlashCard> {
                 // supporting text
                 Text(
                   supportingText,
-                  style: DefaultTextStyle.of(context)
-                      .style
-                      .apply(fontSizeFactor: 1.0),
+                  style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0),
                 ),
               ],
             ),

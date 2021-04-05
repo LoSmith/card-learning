@@ -1,9 +1,9 @@
-
 import 'package:card_learning/screens/select_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../keys.dart';
 import 'flash_cards_learning_screen.dart';
+import 'flash_cards_list_screen.dart';
 
 class FlashCardLearningApp extends StatelessWidget {
   @override
@@ -12,12 +12,13 @@ class FlashCardLearningApp extends StatelessWidget {
       // color: Colors.yellow,
       home: DefaultTabController(
         initialIndex: 1,
-        length: 3,
+        length: 4,
         child: Scaffold(
           body: TabBarView(
             physics: NeverScrollableScrollPhysics(),
             children: [
               SelectListScreen(),
+              FlashCardsListScreen(),
               FlashCardsLearningScreen(),
               Container(
                 child: Text('statsTab'),
@@ -29,12 +30,17 @@ class FlashCardLearningApp extends StatelessWidget {
             tabs: [
               Tab(
                 key: Keys.listSelectionTab,
-                text: 'Select List',
+                text: 'Select',
+                icon: Icon(Icons.ac_unit),
+              ),
+              Tab(
+                key: Keys.flashCardsListTab,
+                text: 'CardList',
                 icon: Icon(Icons.list),
               ),
               Tab(
                 key: Keys.learningTab,
-                text: 'Learn Cards',
+                text: 'Learn',
                 icon: Icon(Icons.inventory),
               ),
               Tab(

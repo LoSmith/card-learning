@@ -5,6 +5,7 @@ class Keys {
   static final tabs = const Key('__tabs__');
   static final listSelectionTab = const Key('__listSelectionTab__');
   static final learningTab = const Key('__learningTab__');
+  static final flashCardsListTab = const Key('__flashCardsListTab__');
   static final statsTab = const Key('__statsTab__');
 
   // Add Screen
