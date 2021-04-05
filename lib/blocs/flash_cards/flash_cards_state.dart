@@ -1,12 +1,12 @@
 import 'package:card_learning/models/flashCard.dart';
 
-class CardLearningState {
-  final Iterable<FlashCard> flashCards;
+class FlashCardState {
+  final Iterable<FlashCard> cards;
   final bool isFetching;
   final bool hasNetworkError;
 
-  CardLearningState({
-    this.flashCards,
+  FlashCardState({
+    this.cards,
     this.isFetching: false,
     this.hasNetworkError: false,
   });

@@ -1,6 +1,6 @@
+import 'package:card_learning/blocs/flash_cards/flash_cards.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'blocs/cardLearning/cardLearning_bloc.dart';
 import 'blocs/simple_bloc_observer.dart';
 import 'data/hive_repository.dart';
 import 'data/local_shared_prefs_repository/local_repository.dart';
@@ -22,12 +22,12 @@ void main() async {
   runApp(
     BlocProvider(
       create: (context) {
-        return CardLearningBloc(
+        return FlashCardBloc(
             repository: LocalFlashCardRepository(
           source: HiveRepository<FlashCard>(flashCardBox),
         ));
       },
-      child: TabContainer(),
+      child: FlashCardLearningApp(),
     ),
   );
 }

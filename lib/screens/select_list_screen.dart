@@ -1,8 +1,5 @@
-import 'package:card_learning/blocs/cardLearning/cardLearning_bloc.dart';
-import 'package:card_learning/blocs/cardLearning/cardLearning_event.dart';
-import 'package:card_learning/screens/add_edit_screen.dart';
+import 'package:card_learning/screens/fetch_remote_cards_list_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SelectListScreen extends StatelessWidget {
   @override
@@ -10,20 +7,16 @@ class SelectListScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          BlocProvider.of<CardLearningBloc>(context).add(
-              CardLearningEventCreateCard(
-                  "id", "manual button question", 'manual button solution'));
-          // Navigator.push(
-          //     context,
-          //     MaterialPageRoute(
-          //       builder: (context) => AddEditScreen(
-          //         isEditing: false,
-          //         onSave: (id, question, solution) {
-          //           BlocProvider.of<CardLearningBloc>(context).add(
-          //               CardLearningEventCreateCard(id, question, solution));
-          //         },
-          //       ),
-          //     ));
+          // BlocProvider.of<CardLearningBloc>(context).add(
+          //     CardLearningEventCreateCard(
+          //         "id", "manual button question", 'manual button solution'));
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FetchRemoteCardsListScreen(
+                  onSave: (fetchUrl) {},
+                ),
+              ));
         },
       ),
     );

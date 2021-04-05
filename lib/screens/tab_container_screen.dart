@@ -3,9 +3,9 @@ import 'package:card_learning/screens/select_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../keys.dart';
-import 'learning_screen.dart';
+import 'flash_cards_learning_screen.dart';
 
-class TabContainer extends StatelessWidget {
+class FlashCardLearningApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -18,7 +18,7 @@ class TabContainer extends StatelessWidget {
             physics: NeverScrollableScrollPhysics(),
             children: [
               SelectListScreen(),
-              LearningScreen(),
+              FlashCardsLearningScreen(),
               Container(
                 child: Text('statsTab'),
                 color: Colors.lightGreen,

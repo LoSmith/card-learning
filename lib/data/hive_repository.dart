@@ -1,4 +1,3 @@
-import 'package:card_learning/exceptions/item_not_existent_exception.dart';
 import 'package:hive/hive.dart';
 
 import 'irepository.dart';

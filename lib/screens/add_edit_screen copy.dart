@@ -78,7 +78,7 @@ class _AddEditScreenState extends State<AddEditScreen> {
           if (_formKey.currentState.validate()) {
             _formKey.currentState.save();
             // TODO add uuid for the new flashcard
-            widget.onSave("id", _question, _solution);
+            widget.onSave("sdsdid", _question, _solution);
             Navigator.pop(context);
           }
         },

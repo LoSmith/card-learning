@@ -16,4 +16,7 @@ class Keys {
   // Edit Screen
   static final editTodoScreen = const Key('__editTodoScreen__');
   static final saveTodoFab = const Key('__saveTodoFab__');
+
+  // Fetch new Data Screen
+  static final fetchNewData = const Key('__fetchNewData__');
 }
