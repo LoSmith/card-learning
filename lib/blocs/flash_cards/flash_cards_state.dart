@@ -1,13 +1,20 @@
 import 'package:card_learning/models/flashCard.dart';
 
-class FlashCardState {
-  final Iterable<FlashCard> cards;
-  final bool isFetching;
-  final bool hasNetworkError;
+enum FlashCardsStatus { loading, success, failure, hasNetworkError }
 
-  FlashCardState({
-    this.cards,
-    this.isFetching: false,
-    this.hasNetworkError: false,
+class FlashCardsState {
+  const FlashCardsState._({
+    this.status = FlashCardsStatus.loading,
+    this.items = const <FlashCard>[],
   });
+
+  const FlashCardsState.loading() : this._();
+
+  const FlashCardsState.success(List<FlashCard> items)
+      : this._(status: FlashCardsStatus.success, items: items);
+
+  const FlashCardsState.failure() : this._(status: FlashCardsStatus.failure);
+
+  final FlashCardsStatus status;
+  final List<FlashCard> items;
 }

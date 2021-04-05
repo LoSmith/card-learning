@@ -1,6 +1,6 @@
-import 'package:card_learning/blocs/flash_cards/flash_cards.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'blocs/flash_cards/flash_cards_cubit.dart';
 import 'blocs/simple_bloc_observer.dart';
 import 'data/hive_repository.dart';
 import 'data/local_shared_prefs_repository/local_repository.dart';
@@ -13,19 +13,20 @@ import 'screens/tab_container_screen.dart';
 const cardBoxName = 'spanish_flashCards';
 
 void main() async {
+  Bloc.observer = SimpleBlocObserver();
+
   await Hive.initFlutter();
   Hive.registerAdapter(FlashCardAdapter());
   final flashCardBox = await Hive.openBox<FlashCard>(cardBoxName);
 
-  Bloc.observer = SimpleBlocObserver();
-
   runApp(
     BlocProvider(
       create: (context) {
-        return FlashCardBloc(
+        return FlashCardsCubit(
             repository: LocalFlashCardRepository(
           source: HiveRepository<FlashCard>(flashCardBox),
-        ));
+        ))
+          ..fetchList();
       },
       child: FlashCardLearningApp(),
     ),

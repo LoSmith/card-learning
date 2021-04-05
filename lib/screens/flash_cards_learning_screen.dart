@@ -1,4 +1,4 @@
-import 'package:card_learning/blocs/flash_cards/flash_cards_bloc.dart';
+import 'package:card_learning/blocs/flash_cards/flash_cards_cubit.dart';
 import 'package:card_learning/blocs/flash_cards/flash_cards_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,23 +17,29 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
       body: Column(children: [
         SizedBox(height: 15),
         Expanded(
-          child: BlocBuilder<FlashCardBloc, FlashCardState>(
+          child: BlocBuilder<FlashCardsCubit, FlashCardsState>(
             builder: (context, state) {
-              if (state.isFetching) {
-                return Center(
-                  child: CircularProgressIndicator(),
-                );
-              }
+              switch (state.status) {
+                case FlashCardsStatus.loading:
+                  return Center(child: CircularProgressIndicator());
+                  break;
 
-              if (state.hasNetworkError) {
-                return Text('Network error');
-              }
+                case FlashCardsStatus.success:
+                  if (state.items?.isEmpty ?? true) {
+                    return Text('No flashCards');
+                  }
+                  return _flashCardListView(state);
+                  break;
 
-              if (state.cards?.isEmpty ?? true) {
-                return Text('No flashCards');
-              }
+                case FlashCardsStatus.hasNetworkError:
+                  return Text('Network error');
+                  break;
 
-              return _flashCardListView(state);
+                default:
+                  return Column(
+                      children: [Center(child: CircularProgressIndicator()), Text('test')]
+                      );
+              }
             },
           ),
         ),
@@ -41,10 +47,10 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
     );
   }
 
-  ListView _flashCardListView(FlashCardState state) {
+  ListView _flashCardListView(FlashCardsState state) {
     return ListView(
       children: [
-        for (final flashCard in state.cards)
+        for (final flashCard in state.items)
           Column(
             children: [
               Text(
