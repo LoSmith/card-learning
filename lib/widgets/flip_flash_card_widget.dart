@@ -1,4 +1,4 @@
-import 'package:card_learning/models/flashCard.dart';
+import 'package:card_learning/models/flash_card.dart';
 import 'package:flippable_box/flippable_box.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

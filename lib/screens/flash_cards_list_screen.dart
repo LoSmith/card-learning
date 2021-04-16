@@ -1,8 +1,11 @@
-import 'package:card_learning/blocs/flash_cards/flash_cards_cubit.dart';
-import 'package:card_learning/blocs/flash_cards/flash_cards_state.dart';
-import 'package:card_learning/screens/fetch_remote_cards_list_screen.dart';
+import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
+import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
+import 'package:card_learning/blocs/learning_card_boxes/learning_card_boxes_cubit.dart';
+import 'package:card_learning/models/learning_card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'fetch_remote_cards_list_screen.dart';
 
 class FlashCardsListScreen extends StatefulWidget {
   @override
@@ -15,37 +18,21 @@ class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
     // CardController controller; //Use this to trigger swap.
 
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // final listUrl =
-          //     "https://raw.githubusercontent.com/LoSmith/card-learning/main/assets/flashCardsLists/ES_EN.json";
-          // context.read<FlashCardsCubit>().importJsonDataFromRemoteUrl(listUrl);
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => FetchRemoteCardsListScreen(
-                  onSave: (fetchUrl) {
-                    context.read<FlashCardsCubit>().importJsonDataFromRemoteUrl(fetchUrl);
-                  },
-                ),
-              ));
-        },
-      ),
       body: Column(children: [
         SizedBox(height: 15),
         Expanded(
-          child: BlocBuilder<FlashCardsCubit, FlashCardsState>(
+          child: BlocBuilder<FlashCardRepositoryCubit, FlashCardRepositoryState>(
             builder: (context, state) {
               switch (state.status) {
-                case FlashCardsStatus.loading:
+                case FlashCardRepositoryStatus.loading:
                   return Center(child: CircularProgressIndicator());
                   break;
 
-                case FlashCardsStatus.hasNetworkError:
+                case FlashCardRepositoryStatus.hasNetworkError:
                   return Text('Network error');
                   break;
 
-                case FlashCardsStatus.success:
+                case FlashCardRepositoryStatus.success:
                   if (state.items?.isEmpty ?? true) {
                     return Text('No flashCards');
                   }
@@ -59,11 +46,43 @@ class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
             },
           ),
         ),
+        Wrap(children: [
+          ElevatedButton(
+            child: const Text('deleteCards'),
+            onPressed: () {
+              context.read<FlashCardRepositoryCubit>().deleteAllCards();
+            },
+          ),
+          ElevatedButton(
+            child: const Text('pushDummyBox'),
+            onPressed: () {
+              context
+                  .read<LearningCardBoxesCubit>()
+                  .createLearningCardBox(LearningCardBox('newId', []));
+            },
+          ),
+          ElevatedButton(
+            child: const Text('loadRemoteCards'),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FetchRemoteCardsListScreen(
+                      onSave: (fetchUrl) {
+                        context
+                            .read<FlashCardRepositoryCubit>()
+                            .importJsonDataFromRemoteUrl(fetchUrl);
+                      },
+                    ),
+                  ));
+            },
+          ),
+        ]),
       ]),
     );
   }
 
-  ListView _flashCardListView(FlashCardsState state) {
+  ListView _flashCardListView(FlashCardRepositoryState state) {
     return ListView(
       children: [
         Text(state.items.length.toString()),

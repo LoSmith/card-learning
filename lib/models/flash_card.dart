@@ -1,8 +1,11 @@
 import 'package:hive/hive.dart';
 import 'package:uuid/uuid.dart';
 
-part 'flashCard.g.dart';
+part 'flash_card.g.dart';
 
+// build with:
+// flutter packages pub run build_runner build
+//
 @HiveType(typeId: 0)
 class FlashCard {
   @HiveField(0)

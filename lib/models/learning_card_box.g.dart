@@ -1,38 +1,35 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'flashCard.dart';
+part of 'learning_card_box.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
 // **************************************************************************
 
-class FlashCardAdapter extends TypeAdapter<FlashCard> {
+class LearningCardBoxAdapter extends TypeAdapter<LearningCardBox> {
   @override
-  final int typeId = 0;
+  final int typeId = 1;
 
   @override
-  FlashCard read(BinaryReader reader) {
+  LearningCardBox read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return FlashCard(
+    return LearningCardBox(
       fields[0] as String,
-      fields[1] as String,
-      fields[2] as String,
+      (fields[1] as List)?.cast<FlashCard>(),
     );
   }
 
   @override
-  void write(BinaryWriter writer, FlashCard obj) {
+  void write(BinaryWriter writer, LearningCardBox obj) {
     writer
-      ..writeByte(3)
+      ..writeByte(2)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
-      ..write(obj.question)
-      ..writeByte(2)
-      ..write(obj.solution);
+      ..write(obj.cards);
   }
 
   @override
@@ -41,7 +38,7 @@ class FlashCardAdapter extends TypeAdapter<FlashCard> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is FlashCardAdapter &&
+      other is LearningCardBoxAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }

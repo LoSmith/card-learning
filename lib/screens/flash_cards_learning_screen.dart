@@ -1,6 +1,6 @@
-import 'package:card_learning/blocs/flash_cards/flash_cards_cubit.dart';
-import 'package:card_learning/blocs/flash_cards/flash_cards_state.dart';
-import 'package:card_learning/models/flashCard.dart';
+import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
+import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
+import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/widgets/flip_flash_card_widget.dart';
 import 'package:card_learning/widgets/simple_flash_card_widget.dart';
 import 'package:flutter/material.dart';
@@ -21,18 +21,18 @@ class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
       body: Column(children: [
         SizedBox(height: 15),
         Expanded(
-          child: BlocBuilder<FlashCardsCubit, FlashCardsState>(
+          child: BlocBuilder<FlashCardRepositoryCubit, FlashCardRepositoryState>(
             builder: (context, state) {
               switch (state.status) {
-                case FlashCardsStatus.loading:
+                case FlashCardRepositoryStatus.loading:
                   return Center(child: CircularProgressIndicator());
                   break;
 
-                case FlashCardsStatus.hasNetworkError:
+                case FlashCardRepositoryStatus.hasNetworkError:
                   return Text('Network error');
                   break;
 
-                case FlashCardsStatus.success:
+                case FlashCardRepositoryStatus.success:
                   if (state.items?.isEmpty ?? true) {
                     return Text('No flashCards');
                   }

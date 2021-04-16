@@ -1,34 +1,28 @@
+import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
+import 'package:card_learning/blocs/learning_card_boxes/learning_card_boxes_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'blocs/flash_cards/flash_cards_cubit.dart';
 import 'blocs/simple_bloc_observer.dart';
-import 'data/hive_repository.dart';
-import 'data/local_only_repository/local_repository.dart';
-import 'models/flashCard.dart';
+import 'data/database.dart';
 import 'package:hive/hive.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 
 import 'screens/tab_container_screen.dart';
 
-const cardBoxName = 'spanish_flashCards';
-
 void main() async {
   Bloc.observer = SimpleBlocObserver();
-
-  await Hive.initFlutter();
-  Hive.registerAdapter(FlashCardAdapter());
-  final flashCardBox = await Hive.openBox<FlashCard>(cardBoxName);
+  var db = Database()..init();
 
   runApp(
-    BlocProvider(
-      create: (context) {
-        return FlashCardsCubit(
-            repository: LocalFlashCardRepository(
-          source: HiveRepository<FlashCard>(flashCardBox),
-        ))
-          ..fetchList();
-      },
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (BuildContext context) => LearningCardBoxesCubit(db)),
+        BlocProvider(create: (BuildContext context) => FlashCardRepositoryCubit(db))
+      ],
       child: FlashCardLearningApp(),
     ),
   );
+
+  Hive.close();
 }
+
+class BlockProvider {}

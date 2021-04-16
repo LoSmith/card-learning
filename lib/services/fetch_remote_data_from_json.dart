@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:card_learning/models/flashCard.dart';
+import 'package:card_learning/models/flash_card.dart';
 import 'package:http/http.dart' as http;
 
 class FetchGsheetsService {

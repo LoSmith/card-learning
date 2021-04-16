@@ -1,17 +1,17 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:card_learning/data/irepository.dart';
+import 'package:card_learning/data/database.dart';
 import 'package:card_learning/exceptions/no_connection_exception.dart';
-import 'package:card_learning/models/flashCard.dart';
+import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/services/fetch_remote_data_from_json.dart';
 
-import 'flash_cards_state.dart';
+import 'flash_card_repository_state.dart';
 
-class FlashCardsCubit extends Cubit<FlashCardsState> {
-  final IRepository<FlashCard> repository;
+class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
+  final Database repository;
 
-  FlashCardsCubit({this.repository}) : super(const FlashCardsState.loading());
+  FlashCardRepositoryCubit(this.repository) : super(const FlashCardRepositoryState.loading());
 
   final List<FlashCard> _flashCards = [];
   int _currentFlashCardIndex = 0;
@@ -19,9 +19,9 @@ class FlashCardsCubit extends Cubit<FlashCardsState> {
   Future<void> fetchList() async {
     try {
       final items = this._flashCards;
-      emit(FlashCardsState.success(items));
+      emit(FlashCardRepositoryState.success(items));
     } on Exception {
-      emit(const FlashCardsState.failure());
+      emit(const FlashCardRepositoryState.failure());
     }
   }
 
@@ -31,25 +31,9 @@ class FlashCardsCubit extends Cubit<FlashCardsState> {
       this.createFlashCardsFromList(remoteFlashCards);
 
       final items = this._flashCards;
-      emit(FlashCardsState.success(items));
-
-      //   Future<Stream<Beer>> getBeers() async {
-      //   final String url = 'https://api.punkapi.com/v2/beers';
-
-      //   final client = new http.Client();
-      //   final streamedRest = await client.send(
-      //       http.Request('get', Uri.parse(url))
-      //   );
-
-      //   return streamedRest.stream
-      //       .transform(utf8.decoder)
-      //       .transform(json.decoder)
-      //       .expand((data) => (data as List))
-      //       .map((data) => Beer.fromJSON(data));
-      // }
-
+      emit(FlashCardRepositoryState.success(items));
     } on Exception {
-      emit(const FlashCardsState.failure());
+      emit(const FlashCardRepositoryState.failure());
     }
   }
 
@@ -57,9 +41,9 @@ class FlashCardsCubit extends Cubit<FlashCardsState> {
     try {
       await this._saveNewCard(flashCard);
       final items = this._flashCards;
-      emit(FlashCardsState.success(items));
+      emit(FlashCardRepositoryState.success(items));
     } on Exception {
-      emit(const FlashCardsState.failure());
+      emit(const FlashCardRepositoryState.failure());
     }
   }
 
@@ -69,18 +53,22 @@ class FlashCardsCubit extends Cubit<FlashCardsState> {
         await this._saveNewCard(card);
       }
       final items = this._flashCards;
-      emit(FlashCardsState.success(items));
+      emit(FlashCardRepositoryState.success(items));
     } on Exception {
-      emit(const FlashCardsState.failure());
+      emit(const FlashCardRepositoryState.failure());
     }
+  }
+
+  Future<void> deleteAllCards() async {
+    print('test');
   }
 
   Future<void> _saveNewCard(FlashCard flashCard) async {
     var newFlashCard;
 
     try {
-      await this.repository.create(flashCard);
-      newFlashCard = await this.repository.read(_currentFlashCardIndex);
+      // await this.repository.create(flashCard);
+      // newFlashCard = await this.repository.read(_currentFlashCardIndex);
     } on NoConnectionException {
       print("something went wrong");
       return;
