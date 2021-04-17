@@ -74,7 +74,7 @@ class SelectListScreen extends StatelessWidget {
             if (state.items?.isEmpty ?? true) {
               return Text('no card boxes');
             }
-            return _flashCardListView(state);
+            return _dismissibleListView(state);
             break;
 
           default:
@@ -84,24 +84,35 @@ class SelectListScreen extends StatelessWidget {
     );
   }
 
-  ListView _flashCardListView(LearningCardBoxesState state) {
-    return ListView(
-      children: [
-        for (final LearningCardBox learningCardBox in state.items)
-          Column(
-            children: [
-              Text(
-                learningCardBox.id,
-                textAlign: TextAlign.center,
+  ListView _dismissibleListView(LearningCardBoxesState state) {
+    return ListView.builder(
+      itemCount: state.items.length,
+      itemBuilder: (context, index) {
+        final item = state.items[index];
+        return Dismissible(
+          // Each Dismissible must contain a Key. Keys allow Flutter to
+          // uniquely identify widgets.
+          key: Key(item.id),
+          // Provide a function that tells the app
+          // what to do after an item has been swiped away.
+          onDismissed: (direction) {
+            // Remove the item from the data source.
+            context.read<LearningCardBoxesCubit>().deleteCardBox(item.id);
+            // Then show a snackbar.
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text("Deleted ${item.id}"),
+                action: SnackBarAction(
+                    label: "UNDO",
+                    onPressed: () => {context.read<LearningCardBoxesCubit>().createCardBox(item)}),
               ),
-              Text(
-                'elements in box:' + learningCardBox.cards.length.toString(),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        Spacer(),
-      ],
+            );
+          },
+          // Show a red background as the item is swiped away.
+          background: Container(color: Colors.red),
+          child: ListTile(title: Text('CardBox: ${item.id}')),
+        );
+      },
     );
   }
 }
