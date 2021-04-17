@@ -10,7 +10,8 @@ import 'screens/tab_container_screen.dart';
 
 void main() async {
   Bloc.observer = SimpleBlocObserver();
-  var db = Database()..init();
+  DatabaseConfig dbConfig = DatabaseConfig(true);
+  var db = Database()..init(dbConfig);
 
   runApp(
     MultiBlocProvider(

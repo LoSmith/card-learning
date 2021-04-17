@@ -7,28 +7,64 @@ import 'learning_card_boxes_state.dart';
 class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
   final Database _db;
 
-  LearningCardBoxesCubit(this._db) : super(const LearningCardBoxesState.loading());
+  LearningCardBoxesCubit(this._db) : super(const LearningCardBoxesState.loading()) {
+    this.fetchList();
+  }
 
-  final List<LearningCardBox> _learningCardBoxes = [];
+  List<LearningCardBox> _learningCardBoxes = [];
 
   Future<void> fetchList() async {
     try {
-      final items = this._learningCardBoxes;
-      emit(LearningCardBoxesState.success(items));
+      this._learningCardBoxes = this._db.values;
+      emit(LearningCardBoxesState.success(this._learningCardBoxes));
     } on Exception {
       emit(const LearningCardBoxesState.failure());
     }
   }
 
-  Future<void> createLearningCardBox(LearningCardBox learningCardBox) async {
-    if (_db.read(learningCardBox.id) == null) {
-      throw new Error();
-    }
-
+  Future<void> createCardBox(LearningCardBox learningCardBox) async {
     try {
-      // TODO: implement create
-      final items = this._learningCardBoxes;
-      emit(LearningCardBoxesState.success(items));
+      await this._db.create(learningCardBox.id, learningCardBox);
+      await this.fetchList();
+
+      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+    } on Exception {
+      emit(const LearningCardBoxesState.failure());
+    }
+  }
+
+  Future<void> updateCardBox(String id, LearningCardBox learningCardBox) async {
+    try {
+      this._db.update(id, learningCardBox);
+      this.fetchList();
+
+      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+    } on Exception {
+      emit(const LearningCardBoxesState.failure());
+    }
+  }
+
+  Future<void> deleteCardBox(String id) async {
+    try {
+      var allCardBoxNames = this._db.keys;
+      if (allCardBoxNames.contains(id)) {
+        await this._db.delete(id);
+      }
+      await this.fetchList();
+      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+    } on Exception {
+      emit(const LearningCardBoxesState.failure());
+    }
+  }
+
+  Future<void> deleteAllCardBoxes() async {
+    try {
+      var allCardBoxNames = this._db.keys;
+      for (var boxName in allCardBoxNames) {
+        await this._db.delete(boxName);
+      }
+      await this.fetchList();
+      emit(LearningCardBoxesState.success(this._learningCardBoxes));
     } on Exception {
       emit(const LearningCardBoxesState.failure());
     }

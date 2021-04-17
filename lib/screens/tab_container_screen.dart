@@ -11,7 +11,7 @@ class FlashCardLearningApp extends StatelessWidget {
     return new MaterialApp(
       // color: Colors.yellow,
       home: DefaultTabController(
-        initialIndex: 1,
+        initialIndex: 0,
         length: 4,
         child: Scaffold(
           body: TabBarView(

@@ -1,7 +1,5 @@
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
-import 'package:card_learning/blocs/learning_card_boxes/learning_card_boxes_cubit.dart';
-import 'package:card_learning/models/learning_card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -51,14 +49,6 @@ class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
             child: const Text('deleteCards'),
             onPressed: () {
               context.read<FlashCardRepositoryCubit>().deleteAllCards();
-            },
-          ),
-          ElevatedButton(
-            child: const Text('pushDummyBox'),
-            onPressed: () {
-              context
-                  .read<LearningCardBoxesCubit>()
-                  .createLearningCardBox(LearningCardBox('newId', []));
             },
           ),
           ElevatedButton(

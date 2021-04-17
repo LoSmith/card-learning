@@ -2,7 +2,6 @@ import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/widgets/flip_flash_card_widget.dart';
-import 'package:card_learning/widgets/simple_flash_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';

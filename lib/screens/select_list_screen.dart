@@ -1,5 +1,6 @@
 import 'package:card_learning/blocs/learning_card_boxes/learning_card_boxes_cubit.dart';
 import 'package:card_learning/blocs/learning_card_boxes/learning_card_boxes_state.dart';
+import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -38,11 +39,26 @@ class SelectListScreen extends StatelessWidget {
         ),
         Wrap(children: [
           ElevatedButton(
-            child: const Text('pushDummyBox'),
+            child: const Text('create new box'),
             onPressed: () {
               context
                   .read<LearningCardBoxesCubit>()
-                  .createLearningCardBox(LearningCardBox('newId', []));
+                  .createCardBox(LearningCardBox('spanish_english', []));
+            },
+          ),
+          ElevatedButton(
+            child: const Text('updateList'),
+            onPressed: () {
+              FlashCard tmp = new FlashCard('id', 'question', 'solution');
+              context
+                  .read<LearningCardBoxesCubit>()
+                  .updateCardBox('bla', LearningCardBox('spanish_english2', [tmp, tmp]));
+            },
+          ),
+          ElevatedButton(
+            child: const Text('deleteAllBoxes'),
+            onPressed: () {
+              context.read<LearningCardBoxesCubit>().deleteAllCardBoxes();
             },
           ),
         ]),
@@ -62,7 +78,7 @@ class SelectListScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               Text(
-                learningCardBox.cards.length.toString(),
+                'elements in box:' + learningCardBox.cards.length.toString(),
                 textAlign: TextAlign.center,
               ),
             ],
