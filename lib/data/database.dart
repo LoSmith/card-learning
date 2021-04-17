@@ -14,8 +14,8 @@ class Database {
   Box _box;
 
   bool get boxIsClosed => !(this._box?.isOpen ?? false);
-  List<String> get keys => this._box.keys.toList().cast<String>();
-  List<LearningCardBox> get values => this._box.values.toList().cast<LearningCardBox>();
+  List<String> get keys => List<String>.from(this._box.keys.toList());
+  List<LearningCardBox> get values => List<LearningCardBox>.from(this._box.values.toList());
 
   Future<Database> init(DatabaseConfig config) async {
     this._cfg = config;

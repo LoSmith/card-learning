@@ -35,8 +35,8 @@ class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
 
   Future<void> updateCardBox(String id, LearningCardBox learningCardBox) async {
     try {
-      this._db.update(id, learningCardBox);
-      this.fetchList();
+      await this._db.update(id, learningCardBox);
+      await this.fetchList();
 
       emit(LearningCardBoxesState.success(this._learningCardBoxes));
     } on Exception {
