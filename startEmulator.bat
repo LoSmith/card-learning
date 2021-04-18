@@ -1,0 +1,1 @@
+start C:\Users\schmida\AppData\Local\Android\Sdk\tools\emulator.exe -avd AndroidEmulator
