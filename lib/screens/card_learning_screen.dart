@@ -6,12 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
 
-class FlashCardsLearningScreen extends StatefulWidget {
+class CardLearningScreen extends StatefulWidget {
   @override
-  _FlashCardsLearningScreenState createState() => _FlashCardsLearningScreenState();
+  _CardLearningScreenState createState() => _CardLearningScreenState();
 }
 
-class _FlashCardsLearningScreenState extends State<FlashCardsLearningScreen> {
+class _CardLearningScreenState extends State<CardLearningScreen> {
   @override
   Widget build(BuildContext context) {
     // CardController controller; //Use this to trigger swap.

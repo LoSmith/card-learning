@@ -1,16 +1,18 @@
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
+import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
+import 'package:card_learning/models/flash_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'fetch_remote_cards_list_screen.dart';
+import 'fetch_remote_cards_screen.dart';
 
-class FlashCardsListScreen extends StatefulWidget {
+class CardListScreen extends StatefulWidget {
   @override
-  _FlashCardsListScreenState createState() => _FlashCardsListScreenState();
+  _CardListScreenState createState() => _CardListScreenState();
 }
 
-class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
+class _CardListScreenState extends State<CardListScreen> {
   @override
   Widget build(BuildContext context) {
     // CardController controller; //Use this to trigger swap.
@@ -46,9 +48,17 @@ class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
         ),
         Wrap(children: [
           ElevatedButton(
+            child: const Text('createRandomCard'),
+            onPressed: () {
+              String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
+              context.read<FlashCardRepositoryCubit>().createFlashCardInCardBox(
+                  selectedBoxId, new FlashCard('id', 'question', 'solution'));
+            },
+          ),
+          ElevatedButton(
             child: const Text('deleteCards'),
             onPressed: () {
-              context.read<FlashCardRepositoryCubit>().deleteAllCards();
+              // context.read<FlashCardRepositoryCubit>().deleteAllCards();
             },
           ),
           ElevatedButton(
@@ -57,11 +67,11 @@ class _FlashCardsListScreenState extends State<FlashCardsListScreen> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => FetchRemoteCardsListScreen(
+                    builder: (context) => FetchRemoteCardsScreen(
                       onSave: (fetchUrl) {
-                        context
-                            .read<FlashCardRepositoryCubit>()
-                            .importJsonDataFromRemoteUrl(fetchUrl);
+                        // context
+                        //     .read<FlashCardRepositoryCubit>()
+                        //     .importJsonDataFromRemoteUrl(fetchUrl);
                       },
                     ),
                   ));

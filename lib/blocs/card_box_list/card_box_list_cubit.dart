@@ -2,12 +2,12 @@ import 'package:bloc/bloc.dart';
 import 'package:card_learning/data/database.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 
-import 'learning_card_boxes_state.dart';
+import 'card_box_list_state.dart';
 
-class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
+class CardBoxListCubit extends Cubit<CardBoxListState> {
   final Database _db;
 
-  LearningCardBoxesCubit(this._db) : super(const LearningCardBoxesState.loading()) {
+  CardBoxListCubit(this._db) : super(const CardBoxListState.loading()) {
     this.fetchList();
   }
 
@@ -16,9 +16,9 @@ class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
   Future<void> fetchList() async {
     try {
       this._learningCardBoxes = this._db.values;
-      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+      emit(CardBoxListState.success(this._learningCardBoxes));
     } on Exception {
-      emit(const LearningCardBoxesState.failure());
+      emit(const CardBoxListState.failure());
     }
   }
 
@@ -27,9 +27,9 @@ class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
       await this._db.create(learningCardBox.id, learningCardBox);
       await this.fetchList();
 
-      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+      emit(CardBoxListState.success(this._learningCardBoxes));
     } on Exception {
-      emit(const LearningCardBoxesState.failure());
+      emit(const CardBoxListState.failure());
     }
   }
 
@@ -38,9 +38,9 @@ class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
       await this._db.update(id, learningCardBox);
       await this.fetchList();
 
-      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+      emit(CardBoxListState.success(this._learningCardBoxes));
     } on Exception {
-      emit(const LearningCardBoxesState.failure());
+      emit(const CardBoxListState.failure());
     }
   }
 
@@ -51,9 +51,9 @@ class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
         await this._db.delete(id);
       }
       await this.fetchList();
-      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+      emit(CardBoxListState.success(this._learningCardBoxes));
     } on Exception {
-      emit(const LearningCardBoxesState.failure());
+      emit(const CardBoxListState.failure());
     }
   }
 
@@ -64,9 +64,9 @@ class LearningCardBoxesCubit extends Cubit<LearningCardBoxesState> {
         await this._db.delete(boxName);
       }
       await this.fetchList();
-      emit(LearningCardBoxesState.success(this._learningCardBoxes));
+      emit(CardBoxListState.success(this._learningCardBoxes));
     } on Exception {
-      emit(const LearningCardBoxesState.failure());
+      emit(const CardBoxListState.failure());
     }
   }
 }

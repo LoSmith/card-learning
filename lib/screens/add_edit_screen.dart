@@ -2,6 +2,7 @@ import 'package:card_learning/keys.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:uuid/uuid.dart';
 
 typedef OnSaveCallback = Function(String id, String question, String solution);
 
@@ -22,6 +23,7 @@ class AddEditScreen extends StatefulWidget {
 }
 
 class _AddEditScreenState extends State<AddEditScreen> {
+  final _uuid = Uuid();
   static final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   String _question;
@@ -77,8 +79,8 @@ class _AddEditScreenState extends State<AddEditScreen> {
         onPressed: () {
           if (_formKey.currentState.validate()) {
             _formKey.currentState.save();
-            // TODO add uuid for the new flashcard
-            widget.onSave("sdsdid", _question, _solution);
+
+            widget.onSave(_uuid.v1(), _question, _solution);
             Navigator.pop(context);
           }
         },

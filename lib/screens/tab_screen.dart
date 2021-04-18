@@ -1,11 +1,11 @@
-import 'package:card_learning/screens/select_list_screen.dart';
+import 'package:card_learning/screens/card_box_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../keys.dart';
-import 'flash_cards_learning_screen.dart';
-import 'flash_cards_list_screen.dart';
+import 'card_learning_screen.dart';
+import 'card_list_screen.dart';
 
-class FlashCardLearningApp extends StatelessWidget {
+class TabScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -17,9 +17,9 @@ class FlashCardLearningApp extends StatelessWidget {
           body: TabBarView(
             physics: NeverScrollableScrollPhysics(),
             children: [
-              SelectListScreen(),
-              FlashCardsListScreen(),
-              FlashCardsLearningScreen(),
+              CardBoxListScreen(),
+              CardListScreen(),
+              CardLearningScreen(),
               Container(
                 child: Text('statsTab'),
                 color: Colors.lightGreen,

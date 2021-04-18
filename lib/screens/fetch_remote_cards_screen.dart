@@ -5,21 +5,21 @@ import 'package:flutter/material.dart';
 
 typedef OnSaveCallback = Function(String fetchUrl);
 
-class FetchRemoteCardsListScreen extends StatefulWidget {
+class FetchRemoteCardsScreen extends StatefulWidget {
   final List<FlashCard> flashCard;
   final OnSaveCallback onSave;
 
-  FetchRemoteCardsListScreen({
+  FetchRemoteCardsScreen({
     Key key,
     this.onSave,
     this.flashCard,
   });
 
   @override
-  _FetchRemoteCardsListScreenState createState() => _FetchRemoteCardsListScreenState();
+  _FetchRemoteCardsScreenState createState() => _FetchRemoteCardsScreenState();
 }
 
-class _FetchRemoteCardsListScreenState extends State<FetchRemoteCardsListScreen> {
+class _FetchRemoteCardsScreenState extends State<FetchRemoteCardsScreen> {
   static final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String _fetchUrl;
 

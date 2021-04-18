@@ -2,79 +2,75 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:card_learning/data/database.dart';
-import 'package:card_learning/exceptions/no_connection_exception.dart';
 import 'package:card_learning/models/flash_card.dart';
-import 'package:card_learning/services/fetch_remote_data_from_json.dart';
+import 'package:card_learning/models/learning_card_box.dart';
 
 import 'flash_card_repository_state.dart';
 
 class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
-  final Database repository;
+  final Database _db;
+  List<FlashCard> _flashCards = [];
 
-  FlashCardRepositoryCubit(this.repository) : super(const FlashCardRepositoryState.loading());
+  FlashCardRepositoryCubit(this._db) : super(const FlashCardRepositoryState.loading());
 
-  final List<FlashCard> _flashCards = [];
-  int _currentFlashCardIndex = 0;
-
-  Future<void> fetchList() async {
+  Future<void> createFlashCardInCardBox(String boxId, FlashCard flashCard) async {
     try {
-      final items = this._flashCards;
-      emit(FlashCardRepositoryState.success(items));
+      LearningCardBox box = await this._db.read(boxId);
+      box.cards.add(flashCard);
+
+      await this._db.create(boxId, box);
+      emit(FlashCardRepositoryState.success(box.cards));
     } on Exception {
       emit(const FlashCardRepositoryState.failure());
     }
   }
 
-  Future<void> importJsonDataFromRemoteUrl(String url) async {
+  Future<void> fetchLatestFlashCardsFromCardBox(String boxId) async {
+    if (boxId.isEmpty) {
+      throw new Error();
+    }
     try {
-      final remoteFlashCards = await FetchGsheetsService().fetchRemoteDataFromJson(url);
-      this.createFlashCardsFromList(remoteFlashCards);
-
-      final items = this._flashCards;
-      emit(FlashCardRepositoryState.success(items));
+      LearningCardBox box = await this._db.read(boxId);
+      this._flashCards = box.cards;
+      emit(FlashCardRepositoryState.success(this._flashCards));
     } on Exception {
       emit(const FlashCardRepositoryState.failure());
     }
   }
 
-  Future<void> createFlashCard(FlashCard flashCard) async {
+  Future<void> updateFlashCardInCardBox(String boxId, FlashCard flashCard) async {
     try {
-      await this._saveNewCard(flashCard);
-      final items = this._flashCards;
-      emit(FlashCardRepositoryState.success(items));
+      LearningCardBox box = await this._db.read(boxId);
+      int oldFlashCardIndex = box.cards.indexWhere((element) => element.id == flashCard.id);
+      box.cards.removeAt(oldFlashCardIndex);
+      box.cards.add(flashCard);
+
+      emit(FlashCardRepositoryState.success(box.cards));
     } on Exception {
       emit(const FlashCardRepositoryState.failure());
     }
   }
 
-  Future<void> createFlashCardsFromList(List<FlashCard> flashCardsList) async {
+  Future<void> deleteFlashCardInCardBox(String boxId, FlashCard flashCard) async {
     try {
-      for (var card in flashCardsList) {
-        await this._saveNewCard(card);
-      }
-      final items = this._flashCards;
-      emit(FlashCardRepositoryState.success(items));
+      LearningCardBox box = await this._db.read(boxId);
+      int oldFlashCardIndex = box.cards.indexWhere((element) => element.id == flashCard.id);
+      box.cards.removeAt(oldFlashCardIndex);
+
+      emit(FlashCardRepositoryState.success(box.cards));
     } on Exception {
       emit(const FlashCardRepositoryState.failure());
     }
   }
 
-  Future<void> deleteAllCards() async {
-    print('test');
-  }
-
-  Future<void> _saveNewCard(FlashCard flashCard) async {
-    var newFlashCard;
-
+  Future<void> deleteAllFlashCardsInCardBox(String boxId, FlashCard flashCard) async {
     try {
-      // await this.repository.create(flashCard);
-      // newFlashCard = await this.repository.read(_currentFlashCardIndex);
-    } on NoConnectionException {
-      print("something went wrong");
-      return;
-    }
+      LearningCardBox box = await this._db.read(boxId);
+      box.cards.removeRange(0, box.cards.length);
 
-    this._currentFlashCardIndex++;
-    this._flashCards.add(newFlashCard);
+      emit(FlashCardRepositoryState.success(box.cards));
+    } on Exception {
+      emit(const FlashCardRepositoryState.failure());
+    }
   }
 }

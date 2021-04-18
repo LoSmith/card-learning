@@ -12,7 +12,7 @@ class LearningCardBox {
   final String id;
 
   @HiveField(1)
-  final List<FlashCard> cards;
+  List<FlashCard> cards;
 
   LearningCardBox(
     this.id,

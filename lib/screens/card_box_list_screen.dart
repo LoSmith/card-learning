@@ -1,13 +1,13 @@
 import 'dart:math';
-
-import 'package:card_learning/blocs/learning_card_boxes/learning_card_boxes_cubit.dart';
-import 'package:card_learning/blocs/learning_card_boxes/learning_card_boxes_state.dart';
+import 'package:card_learning/blocs/card_box_list/card_box_list_cubit.dart';
+import 'package:card_learning/blocs/card_box_list/card_box_list_state.dart';
+import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class SelectListScreen extends StatelessWidget {
+class CardBoxListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +25,7 @@ class SelectListScreen extends StatelessWidget {
             onPressed: () {
               var randomId = Random().nextDouble().toString();
               context
-                  .read<LearningCardBoxesCubit>()
+                  .read<CardBoxListCubit>()
                   .createCardBox(LearningCardBox(randomId.toString(), []));
             },
           ),
@@ -33,24 +33,24 @@ class SelectListScreen extends StatelessWidget {
             child: const Text('updateList'),
             onPressed: () {
               var randomId = Random().nextDouble().toString();
-              var firstItem = context.read<LearningCardBoxesCubit>().state.items.first;
+              var firstItem = context.read<CardBoxListCubit>().state.items.first;
               FlashCard tmp = new FlashCard('id', randomId.toString(), 'solution');
               context
-                  .read<LearningCardBoxesCubit>()
+                  .read<CardBoxListCubit>()
                   .updateCardBox(firstItem.id, LearningCardBox(firstItem.id, [tmp, tmp]));
             },
           ),
           ElevatedButton(
             child: const Text('delete first box'),
             onPressed: () {
-              var firstItem = context.read<LearningCardBoxesCubit>().state.items.first;
-              context.read<LearningCardBoxesCubit>().deleteCardBox(firstItem.id);
+              var firstItem = context.read<CardBoxListCubit>().state.items.first;
+              context.read<CardBoxListCubit>().deleteCardBox(firstItem.id);
             },
           ),
           ElevatedButton(
             child: const Text('deleteAllBoxes'),
             onPressed: () {
-              context.read<LearningCardBoxesCubit>().deleteAllCardBoxes();
+              context.read<CardBoxListCubit>().deleteAllCardBoxes();
             },
           ),
         ]),
@@ -59,18 +59,18 @@ class SelectListScreen extends StatelessWidget {
   }
 
   Widget _cardBoxList(BuildContext context) {
-    return BlocBuilder<LearningCardBoxesCubit, LearningCardBoxesState>(
+    return BlocBuilder<CardBoxListCubit, CardBoxListState>(
       builder: (context, state) {
         switch (state.status) {
-          case LearningCardBoxesStatus.loading:
+          case CardBoxListStatus.loading:
             return Center(child: CircularProgressIndicator());
             break;
 
-          case LearningCardBoxesStatus.hasNetworkError:
+          case CardBoxListStatus.hasNetworkError:
             return Text('Network error');
             break;
 
-          case LearningCardBoxesStatus.success:
+          case CardBoxListStatus.success:
             if (state.items?.isEmpty ?? true) {
               return Text('no card boxes');
             }
@@ -84,16 +84,21 @@ class SelectListScreen extends StatelessWidget {
     );
   }
 
-  ListView _dismissibleListView(LearningCardBoxesState state) {
+  ListView _dismissibleListView(CardBoxListState state) {
     return ListView.separated(
       itemCount: state.items.length,
       separatorBuilder: (BuildContext context, int index) {
         return Divider();
       },
       itemBuilder: (context, index) {
+        final int cardListTab = 1;
         final item = state.items[index];
         return InkWell(
-          onTap: () => {print("Tapped ${item.id}")},
+          onTap: () => {
+            context.read<SelectedCardBoxCubit>().setSelectedCardBox(item.id),
+            print(context.read<SelectedCardBoxCubit>().selectedCardBoxId),
+            DefaultTabController.of(context).animateTo(cardListTab)
+          },
           child: Dismissible(
             // Each Dismissible must contain a Key. Keys allow Flutter to
             // uniquely identify widgets.
@@ -102,15 +107,14 @@ class SelectListScreen extends StatelessWidget {
             // what to do after an item has been swiped away.
             onDismissed: (direction) {
               // Remove the item from the data source.
-              context.read<LearningCardBoxesCubit>().deleteCardBox(item.id);
+              context.read<CardBoxListCubit>().deleteCardBox(item.id);
               // Then show a snackbar.
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text("Deleted ${item.id}"),
                   action: SnackBarAction(
                       label: "UNDO",
-                      onPressed: () =>
-                          {context.read<LearningCardBoxesCubit>().createCardBox(item)}),
+                      onPressed: () => {context.read<CardBoxListCubit>().createCardBox(item)}),
                 ),
               );
             },
@@ -124,6 +128,6 @@ class SelectListScreen extends StatelessWidget {
   }
 }
 
-ListTile _cardBoxListTile(BuildContext context, item) {
-  return ListTile(title: Text('CardBox: ${item.id}'));
+ListTile _cardBoxListTile(BuildContext context, LearningCardBox item) {
+  return ListTile(title: Text('CardBox: ${item.id} - NoItems: ${item.cards.length}'));
 }
