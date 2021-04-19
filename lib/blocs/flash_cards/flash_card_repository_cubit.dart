@@ -9,7 +9,6 @@ import 'flash_card_repository_state.dart';
 
 class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
   final Database _db;
-  List<FlashCard> _flashCards = [];
 
   FlashCardRepositoryCubit(this._db) : super(const FlashCardRepositoryState.loading());
 
@@ -31,8 +30,7 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
     }
     try {
       LearningCardBox box = await this._db.read(boxId);
-      this._flashCards = box.cards;
-      emit(FlashCardRepositoryState.success(this._flashCards));
+      emit(FlashCardRepositoryState.success(box.cards));
     } on Exception {
       emit(const FlashCardRepositoryState.failure());
     }

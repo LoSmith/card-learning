@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:math';
 import 'package:card_learning/blocs/card_box_list/card_box_list_cubit.dart';
 import 'package:card_learning/blocs/card_box_list/card_box_list_state.dart';
@@ -7,7 +8,12 @@ import 'package:card_learning/models/learning_card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CardBoxListScreen extends StatelessWidget {
+class CardBoxListScreen extends StatefulWidget {
+  @override
+  _CardBoxListScreenState createState() => _CardBoxListScreenState();
+}
+
+class _CardBoxListScreenState extends State<CardBoxListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +80,7 @@ class CardBoxListScreen extends StatelessWidget {
             if (state.items?.isEmpty ?? true) {
               return Text('no card boxes');
             }
-            return _dismissibleListView(state);
+            return _dismissibleListView(context, state);
             break;
 
           default:
@@ -84,7 +90,7 @@ class CardBoxListScreen extends StatelessWidget {
     );
   }
 
-  ListView _dismissibleListView(CardBoxListState state) {
+  ListView _dismissibleListView(context, CardBoxListState state) {
     return ListView.separated(
       itemCount: state.items.length,
       separatorBuilder: (BuildContext context, int index) {
@@ -96,8 +102,8 @@ class CardBoxListScreen extends StatelessWidget {
         return InkWell(
           onTap: () => {
             context.read<SelectedCardBoxCubit>().setSelectedCardBox(item.id),
-            print(context.read<SelectedCardBoxCubit>().selectedCardBoxId),
-            DefaultTabController.of(context).animateTo(cardListTab)
+            setState(() {}),
+            // DefaultTabController.of(context).animateTo(cardListTab)
           },
           child: Dismissible(
             // Each Dismissible must contain a Key. Keys allow Flutter to
@@ -129,5 +135,16 @@ class CardBoxListScreen extends StatelessWidget {
 }
 
 ListTile _cardBoxListTile(BuildContext context, LearningCardBox item) {
-  return ListTile(title: Text('CardBox: ${item.id} - NoItems: ${item.cards.length}'));
+  final isSelectedBox = context.read<SelectedCardBoxCubit>().selectedCardBoxId == item.id;
+  final selectedTileColor = Colors.redAccent;
+  if (!isSelectedBox) {
+    return ListTile(
+      title: Text('CardBox: ${item.id} - NoItems: ${item.cards.length}'),
+    );
+  } else {
+    return ListTile(
+      title: Text('CardBox: ${item.id} - NoItems: ${item.cards.length}'),
+      tileColor: selectedTileColor,
+    );
+  }
 }
