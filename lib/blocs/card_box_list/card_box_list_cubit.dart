@@ -15,7 +15,7 @@ class CardBoxListCubit extends Cubit<CardBoxListState> {
 
   Future<void> fetchList() async {
     try {
-      this._learningCardBoxes = this._db.values;
+      this._learningCardBoxes = await this._db.values();
       emit(CardBoxListState.success(this._learningCardBoxes));
     } on Exception {
       emit(const CardBoxListState.failure());
@@ -46,7 +46,7 @@ class CardBoxListCubit extends Cubit<CardBoxListState> {
 
   Future<void> deleteCardBox(String id) async {
     try {
-      var allCardBoxNames = this._db.keys;
+      var allCardBoxNames = await this._db.keys();
       if (allCardBoxNames.contains(id)) {
         await this._db.delete(id);
       }
@@ -59,7 +59,7 @@ class CardBoxListCubit extends Cubit<CardBoxListState> {
 
   Future<void> deleteAllCardBoxes() async {
     try {
-      var allCardBoxNames = this._db.keys;
+      var allCardBoxNames = await this._db.keys();
       for (var boxName in allCardBoxNames) {
         await this._db.delete(boxName);
       }

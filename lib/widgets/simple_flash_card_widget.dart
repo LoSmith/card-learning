@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class SimpleFlashCardWidget extends StatelessWidget {
   final FlashCard flashCard;
-  SimpleFlashCardWidget({this.flashCard});
+  SimpleFlashCardWidget({required this.flashCard});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Card(
         child: Column(
-          children: [Text(flashCard.question), Text(flashCard.solution)],
+          children: [Text(flashCard.questionText), Text(flashCard.solutionText)],
         ),
       ),
     );

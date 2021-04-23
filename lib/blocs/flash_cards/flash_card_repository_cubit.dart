@@ -52,8 +52,9 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
   Future<void> deleteFlashCardInCardBox(String boxId, FlashCard flashCard) async {
     try {
       LearningCardBox box = await this._db.read(boxId);
-      int oldFlashCardIndex = box.cards.indexWhere((element) => element.id == flashCard.id);
-      box.cards.removeAt(oldFlashCardIndex);
+      int cardIndex = box.cards.indexWhere((element) => element.id == flashCard.id);
+      box.cards.removeAt(cardIndex);
+      this._db.update(boxId, box);
 
       emit(FlashCardRepositoryState.success(box.cards));
     } on Exception {
@@ -65,6 +66,7 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
     try {
       LearningCardBox box = await this._db.read(boxId);
       box.cards.removeRange(0, box.cards.length);
+      this._db.update(boxId, box);
 
       emit(FlashCardRepositoryState.success(box.cards));
     } on Exception {

@@ -18,7 +18,7 @@ class LearningCardBoxAdapter extends TypeAdapter<LearningCardBox> {
     };
     return LearningCardBox(
       fields[0] as String,
-      (fields[1] as List)?.cast<FlashCard>(),
+      (fields[1] as List).cast<FlashCard>(),
     );
   }
 

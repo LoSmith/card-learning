@@ -1,6 +1,5 @@
 import 'package:card_learning/keys.dart';
 import 'package:card_learning/models/flash_card.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 
@@ -12,22 +11,20 @@ class AddEditScreen extends StatefulWidget {
   final FlashCard flashCard;
 
   AddEditScreen({
-    Key key,
-    @required this.onSave,
-    @required this.isEditing,
-    this.flashCard,
-  }) : super(key: key ?? Keys.addTodoScreen);
+    required this.onSave,
+    required this.isEditing,
+    required this.flashCard,
+  }) : super(key: Keys.addTodoScreen);
 
   @override
   _AddEditScreenState createState() => _AddEditScreenState();
 }
 
 class _AddEditScreenState extends State<AddEditScreen> {
-  final _uuid = Uuid();
   static final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
-  String _question;
-  String _solution;
+  late String _question;
+  late String _solution;
 
   bool get isEditing => widget.isEditing;
 
@@ -46,7 +43,7 @@ class _AddEditScreenState extends State<AddEditScreen> {
           child: ListView(
             children: [
               TextFormField(
-                initialValue: isEditing ? widget.flashCard.question : '',
+                initialValue: isEditing ? widget.flashCard.questionText : '',
                 key: Keys.questionField,
                 autofocus: !isEditing,
                 style: textTheme.headline5,
@@ -56,17 +53,17 @@ class _AddEditScreenState extends State<AddEditScreen> {
                 // validator: (val) {
                 //   return "isempty";
                 // },
-                onSaved: (value) => _question = value,
+                onSaved: (value) => _question = value.toString(),
               ),
               TextFormField(
-                initialValue: isEditing ? widget.flashCard.solution : '',
+                initialValue: isEditing ? widget.flashCard.solutionText : '',
                 key: Keys.solutionField,
                 maxLines: 10,
                 style: textTheme.subtitle1,
                 decoration: InputDecoration(
                   hintText: 'input tesxt hint',
                 ),
-                onSaved: (value) => _solution = value,
+                onSaved: (value) => _solution = value.toString(),
               )
             ],
           ),
@@ -77,10 +74,10 @@ class _AddEditScreenState extends State<AddEditScreen> {
         tooltip: isEditing ? "saveChanges" : "addTodo",
         child: Icon(isEditing ? Icons.check : Icons.add),
         onPressed: () {
-          if (_formKey.currentState.validate()) {
-            _formKey.currentState.save();
+          if (_formKey.currentState!.validate()) {
+            _formKey.currentState!.save();
 
-            widget.onSave(_uuid.v1(), _question, _solution);
+            widget.onSave(Uuid().v1(), _question, _solution);
             Navigator.pop(context);
           }
         },

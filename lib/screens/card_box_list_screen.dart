@@ -1,5 +1,3 @@
-import 'dart:io';
-import 'dart:math';
 import 'package:card_learning/blocs/card_box_list/card_box_list_cubit.dart';
 import 'package:card_learning/blocs/card_box_list/card_box_list_state.dart';
 import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
@@ -7,6 +5,7 @@ import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:uuid/uuid.dart';
 
 class CardBoxListScreen extends StatefulWidget {
   @override
@@ -29,7 +28,7 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
           ElevatedButton(
             child: const Text('create random box'),
             onPressed: () {
-              var randomId = Random().nextDouble().toString();
+              var randomId = Uuid().v4();
               context
                   .read<CardBoxListCubit>()
                   .createCardBox(LearningCardBox(randomId.toString(), []));
@@ -38,12 +37,12 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
           ElevatedButton(
             child: const Text('updateList'),
             onPressed: () {
-              var randomId = Random().nextDouble().toString();
               var firstItem = context.read<CardBoxListCubit>().state.items.first;
-              FlashCard tmp = new FlashCard('id', randomId.toString(), 'solution');
-              context
-                  .read<CardBoxListCubit>()
-                  .updateCardBox(firstItem.id, LearningCardBox(firstItem.id, [tmp, tmp]));
+              final randomId = Uuid().v4();
+              final FlashCard newFlashCard =
+                  FlashCard(randomId, 'questionText', 'solutionText', DateTime.now());
+              context.read<CardBoxListCubit>().updateCardBox(
+                  firstItem.id, LearningCardBox(firstItem.id, [newFlashCard, newFlashCard]));
             },
           ),
           ElevatedButton(
@@ -70,19 +69,13 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
         switch (state.status) {
           case CardBoxListStatus.loading:
             return Center(child: CircularProgressIndicator());
-            break;
-
           case CardBoxListStatus.hasNetworkError:
             return Text('Network error');
-            break;
-
           case CardBoxListStatus.success:
-            if (state.items?.isEmpty ?? true) {
+            if (state.items.isEmpty) {
               return Text('no card boxes');
             }
             return _dismissibleListView(context, state);
-            break;
-
           default:
             return Column(children: [Center(child: CircularProgressIndicator()), Text('test')]);
         }
@@ -90,7 +83,7 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
     );
   }
 
-  ListView _dismissibleListView(context, CardBoxListState state) {
+  ListView _dismissibleListView(BuildContext context, CardBoxListState state) {
     return ListView.separated(
       itemCount: state.items.length,
       separatorBuilder: (BuildContext context, int index) {
@@ -103,7 +96,7 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
           onTap: () => {
             context.read<SelectedCardBoxCubit>().setSelectedCardBox(item.id),
             setState(() {}),
-            // DefaultTabController.of(context).animateTo(cardListTab)
+            DefaultTabController.of(context)?.animateTo(cardListTab)
           },
           child: Dismissible(
             // Each Dismissible must contain a Key. Keys allow Flutter to
@@ -139,11 +132,11 @@ ListTile _cardBoxListTile(BuildContext context, LearningCardBox item) {
   final selectedTileColor = Colors.redAccent;
   if (!isSelectedBox) {
     return ListTile(
-      title: Text('CardBox: ${item.id} - NoItems: ${item.cards.length}'),
+      title: Text('[CardBox: ${item.id.substring(0, 13)}...] - NoItems: ${item.cards.length}'),
     );
   } else {
     return ListTile(
-      title: Text('CardBox: ${item.id} - NoItems: ${item.cards.length}'),
+      title: Text('[CardBox: ${item.id.substring(0, 13)}...] - NoItems: ${item.cards.length}'),
       tileColor: selectedTileColor,
     );
   }

@@ -12,7 +12,8 @@ import 'screens/tab_screen.dart';
 void main() async {
   Bloc.observer = SimpleBlocObserver();
   DatabaseConfig dbConfig = DatabaseConfig(true);
-  var db = Database()..init(dbConfig);
+  final db = Database();
+  await db.init(dbConfig);
 
   runApp(
     MultiBlocProvider(
@@ -24,11 +25,20 @@ void main() async {
       child: FlashCardLearningApp(),
     ),
   );
-
-  Hive.close();
 }
 
-class FlashCardLearningApp extends StatelessWidget {
+class FlashCardLearningApp extends StatefulWidget {
+  @override
+  _FlashCardLearningAppState createState() => _FlashCardLearningAppState();
+}
+
+class _FlashCardLearningAppState extends State<FlashCardLearningApp> {
+  @override
+  void dispose() async {
+    Hive.close();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return TabScreen();

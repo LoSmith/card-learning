@@ -17,7 +17,7 @@ class SelectedCardBoxCubit extends Cubit<String> {
     try {
       SharedPreferences prefs = await SharedPreferences.getInstance();
       prefs.setString(_selectedCardBoxKey, cardBoxId);
-      this._selectedCardBoxId = prefs.getString(_selectedCardBoxKey);
+      this._selectedCardBoxId = cardBoxId;
       emit(_selectedCardBoxId);
     } on Exception {
       emit("");
@@ -27,7 +27,7 @@ class SelectedCardBoxCubit extends Cubit<String> {
   Future<void> _updateSelectedCardBoxId() async {
     try {
       SharedPreferences prefs = await SharedPreferences.getInstance();
-      this._selectedCardBoxId = prefs.getString(_selectedCardBoxKey);
+      this._selectedCardBoxId = prefs.getString(_selectedCardBoxKey).toString();
       emit(this._selectedCardBoxId);
     } on Exception {
       emit("");

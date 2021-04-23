@@ -1,18 +1,13 @@
 import 'package:card_learning/keys.dart';
-import 'package:card_learning/models/flash_card.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 typedef OnSaveCallback = Function(String fetchUrl);
 
 class FetchRemoteCardsScreen extends StatefulWidget {
-  final List<FlashCard> flashCard;
   final OnSaveCallback onSave;
 
   FetchRemoteCardsScreen({
-    Key key,
-    this.onSave,
-    this.flashCard,
+    required this.onSave,
   });
 
   @override
@@ -21,7 +16,7 @@ class FetchRemoteCardsScreen extends StatefulWidget {
 
 class _FetchRemoteCardsScreenState extends State<FetchRemoteCardsScreen> {
   static final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  String _fetchUrl;
+  late String _fetchUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +40,7 @@ class _FetchRemoteCardsScreenState extends State<FetchRemoteCardsScreen> {
                 decoration: InputDecoration(
                   hintText: "paste your public google sheets url here",
                 ),
-                onSaved: (value) => _fetchUrl = value,
+                onSaved: (value) => _fetchUrl = value.toString(),
               ),
             ],
           ),
@@ -56,8 +51,8 @@ class _FetchRemoteCardsScreenState extends State<FetchRemoteCardsScreen> {
         tooltip: "fetchData",
         child: Icon(Icons.check),
         onPressed: () {
-          if (_formKey.currentState.validate()) {
-            _formKey.currentState.save();
+          if (_formKey.currentState!.validate()) {
+            _formKey.currentState!.save();
             widget.onSave(_fetchUrl);
             Navigator.pop(context);
           }

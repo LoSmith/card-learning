@@ -1,10 +1,10 @@
-import 'package:card_learning/blocs/card_box_list/card_box_list_state.dart';
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
 import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:uuid/uuid.dart';
 
 import 'fetch_remote_cards_screen.dart';
 
@@ -29,19 +29,13 @@ class _CardListScreenState extends State<CardListScreen> {
                 switch (state.status) {
                   case FlashCardRepositoryStatus.loading:
                     return Center(child: CircularProgressIndicator());
-                    break;
-
                   case FlashCardRepositoryStatus.hasNetworkError:
                     return Text('Network error');
-                    break;
-
                   case FlashCardRepositoryStatus.success:
-                    if (state.items?.isEmpty ?? true) {
+                    if (state.items.isEmpty) {
                       return Text('No flashCards');
                     }
                     return newDismissibleFlashCardView(context, state, selectedBoxId);
-                    break;
-
                   default:
                     return Column(
                         children: [Center(child: CircularProgressIndicator()), Text('test')]);
@@ -54,9 +48,12 @@ class _CardListScreenState extends State<CardListScreen> {
           ElevatedButton(
             child: const Text('createRandomCard'),
             onPressed: () {
+              final randomId = Uuid().v4();
+              final FlashCard newFlashCard = FlashCard(randomId, 'questionText', 'solutionText', DateTime.now());
               String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
-              context.read<FlashCardRepositoryCubit>().createFlashCardInCardBox(
-                  selectedBoxId, new FlashCard('id', 'question', 'solution'));
+              context
+                  .read<FlashCardRepositoryCubit>()
+                  .createFlashCardInCardBox(selectedBoxId, newFlashCard);
             },
           ),
           ElevatedButton(
@@ -86,7 +83,8 @@ class _CardListScreenState extends State<CardListScreen> {
     );
   }
 
-  ListView newDismissibleFlashCardView(context, FlashCardRepositoryState state, String cardBoxId) {
+  ListView newDismissibleFlashCardView(
+      BuildContext context, FlashCardRepositoryState state, String cardBoxId) {
     return ListView.separated(
         itemCount: state.items.length,
         itemBuilder: (context, index) {
@@ -98,7 +96,7 @@ class _CardListScreenState extends State<CardListScreen> {
               key: Key(item.id),
               // Provide a function that tells the app
               // what to do after an item has been swiped away.
-              onDismissed: (direction) {
+              onDismissed: (_) {
                 // Remove the item from the data source.
                 context.read<FlashCardRepositoryCubit>().deleteFlashCardInCardBox(cardBoxId, item);
                 // Then show a snackbar.
@@ -128,35 +126,8 @@ class _CardListScreenState extends State<CardListScreen> {
 
   ListTile _cardBoxListTile(BuildContext context, FlashCard item) {
     return ListTile(
-      
       title: Text(
-          '${item.id} - Question: ${item.question} - Solution: ${item.solution}'),
-    );
-  }
-
-  ListView _flashCardListView(FlashCardRepositoryState state) {
-    return ListView(
-      children: [
-        Text(state.items.length.toString()),
-        for (final flashCard in state.items)
-          Column(
-            children: [
-              Text(
-                flashCard.id,
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                flashCard.question,
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                flashCard.solution,
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        Spacer(),
-      ],
+          '[${item.id.substring(0, 13)}...] - Question: ${item.questionText} - Solution: ${item.solutionText}'),
     );
   }
 }
