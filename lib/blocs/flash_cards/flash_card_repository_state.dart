@@ -1,6 +1,6 @@
 import 'package:card_learning/models/flash_card.dart';
 
-enum FlashCardRepositoryStatus { loading, success, failure, hasNetworkError }
+enum FlashCardRepositoryStatus { loading, success, failure }
 
 class FlashCardRepositoryState {
   const FlashCardRepositoryState._({

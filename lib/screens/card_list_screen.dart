@@ -19,7 +19,11 @@ class _CardListScreenState extends State<CardListScreen> {
     // CardController controller; //Use this to trigger swap.
     var selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
     context.read<FlashCardRepositoryCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
+
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Card List View'),
+      ),
       body: Column(children: [
         SizedBox(height: 15),
         Container(
@@ -29,8 +33,8 @@ class _CardListScreenState extends State<CardListScreen> {
                 switch (state.status) {
                   case FlashCardRepositoryStatus.loading:
                     return Center(child: CircularProgressIndicator());
-                  case FlashCardRepositoryStatus.hasNetworkError:
-                    return Text('Network error');
+                  case FlashCardRepositoryStatus.failure:
+                    return Text('Something is wrong');
                   case FlashCardRepositoryStatus.success:
                     if (state.items.isEmpty) {
                       return Text('No flashCards');
@@ -49,7 +53,8 @@ class _CardListScreenState extends State<CardListScreen> {
             child: const Text('createRandomCard'),
             onPressed: () {
               final randomId = Uuid().v4();
-              final FlashCard newFlashCard = FlashCard(randomId, 'questionText', 'solutionText', DateTime.now());
+              final FlashCard newFlashCard =
+                  FlashCard(randomId, 'questionText', 'solutionText', DateTime.now());
               String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
               context
                   .read<FlashCardRepositoryCubit>()

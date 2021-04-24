@@ -31,7 +31,8 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
     try {
       LearningCardBox box = await this._db.read(boxId);
       emit(FlashCardRepositoryState.success(box.cards));
-    } on Exception {
+    } catch (e) {
+      print(e.toString());
       emit(const FlashCardRepositoryState.failure());
     }
   }

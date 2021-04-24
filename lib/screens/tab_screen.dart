@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../keys.dart';
 import 'card_learning_screen.dart';
 import 'card_list_screen.dart';
+import 'card_statistic_screen.dart';
 
 class TabScreen extends StatelessWidget {
   @override
@@ -20,10 +21,7 @@ class TabScreen extends StatelessWidget {
               CardBoxListScreen(),
               CardListScreen(),
               CardLearningScreen(),
-              Container(
-                child: Text('statsTab'),
-                color: Colors.lightGreen,
-              ),
+              CardBoxStatisticsScreen(),
             ],
           ),
           bottomNavigationBar: new TabBar(

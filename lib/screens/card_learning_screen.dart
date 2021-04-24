@@ -15,6 +15,9 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
     // CardController controller; //Use this to trigger swap.
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Card Learning'),
+      ),
       body: Column(children: [
         SizedBox(height: 15),
         Expanded(
@@ -23,11 +26,11 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
               switch (state.status) {
                 case FlashCardRepositoryStatus.loading:
                   return Center(child: CircularProgressIndicator());
-                case FlashCardRepositoryStatus.hasNetworkError:
-                  return Text('Network error');
+                case FlashCardRepositoryStatus.failure:
+                  return Center(child: Text('Something went wrong'));
                 case FlashCardRepositoryStatus.success:
                   if (state.items.isEmpty) {
-                    return Text('No flashCards');
+                    return Center(child: Text('No flashCards'));
                   }
                   return _learningWidget(state.items);
                 default:

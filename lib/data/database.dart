@@ -37,8 +37,13 @@ class Database {
 
   Future<LearningCardBox> read(String id) async {
     final box = await Hive.openBox(_boxName);
-    final LearningCardBox cardBox = box.get(id)!;
-    return cardBox;
+    try {
+      final LearningCardBox cardBox = box.get(id);
+      return cardBox;
+    } catch (e) {
+      log(e.toString());
+      throw e;
+    }
   }
 
   Future<void> update(String id, LearningCardBox learningCardBox) async {
@@ -60,12 +65,14 @@ class Database {
         final box = await Hive.openBox(_boxName);
         box.put(id, learningCardBox);
         log('_trySaveCardBox:' + id.toString());
-      } on Exception {
+      } catch (e) {
         log('_trySaveCardBox:' + id.toString() + " element does not exist, creating new element");
+        log(e.toString());
+        throw e;
       }
     } catch (e) {
       log('Trying to run: "_trySaveCardBox", but something went wrong.');
-      throw (e);
+      throw e;
     }
   }
 

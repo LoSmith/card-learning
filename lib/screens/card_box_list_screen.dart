@@ -70,7 +70,9 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
           case CardBoxListStatus.loading:
             return Center(child: CircularProgressIndicator());
           case CardBoxListStatus.hasNetworkError:
-            return Text('Network error');
+            return Center(child: Text('Network error'));
+          case CardBoxListStatus.failure:
+            return Center(child: Text('something went wrong'));
           case CardBoxListStatus.success:
             if (state.items.isEmpty) {
               return Text('no card boxes');
