@@ -12,10 +12,14 @@ class LearningCardBox {
   final String id;
 
   @HiveField(1)
+  final String name;
+
+  @HiveField(2)
   List<FlashCard> cards;
 
   LearningCardBox(
     this.id,
+    this.name,
     this.cards,
   );
 }

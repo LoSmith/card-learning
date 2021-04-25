@@ -63,7 +63,7 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
     }
   }
 
-  Future<void> deleteAllFlashCardsInCardBox(String boxId, FlashCard flashCard) async {
+  Future<void> deleteAllFlashCardsInCardBox(String boxId) async {
     try {
       LearningCardBox box = await this._db.read(boxId);
       box.cards.removeRange(0, box.cards.length);

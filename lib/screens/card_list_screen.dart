@@ -2,6 +2,7 @@ import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart
 import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
 import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/flash_card.dart';
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:uuid/uuid.dart';
@@ -24,37 +25,35 @@ class _CardListScreenState extends State<CardListScreen> {
       appBar: AppBar(
         title: Text('Card List View'),
       ),
-      body: Column(children: [
-        SizedBox(height: 15),
-        Container(
-          child: Expanded(
-            child: BlocBuilder<FlashCardRepositoryCubit, FlashCardRepositoryState>(
-              builder: (context, state) {
-                switch (state.status) {
-                  case FlashCardRepositoryStatus.loading:
-                    return Center(child: CircularProgressIndicator());
-                  case FlashCardRepositoryStatus.failure:
-                    return Text('Something is wrong');
-                  case FlashCardRepositoryStatus.success:
-                    if (state.items.isEmpty) {
-                      return Text('No flashCards');
-                    }
-                    return newDismissibleFlashCardView(context, state, selectedBoxId);
-                  default:
-                    return Column(
-                        children: [Center(child: CircularProgressIndicator()), Text('test')]);
-                }
-              },
-            ),
+      body: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        Expanded(
+          child: BlocBuilder<FlashCardRepositoryCubit, FlashCardRepositoryState>(
+            builder: (context, state) {
+              switch (state.status) {
+                case FlashCardRepositoryStatus.loading:
+                  return Center(child: CircularProgressIndicator());
+                case FlashCardRepositoryStatus.failure:
+                  return Text('Something is wrong');
+                case FlashCardRepositoryStatus.success:
+                  if (state.items.isEmpty) {
+                    return Text('No flashCards');
+                  }
+                  return _tableView(context, state);
+                default:
+                  return Column(
+                      children: [Center(child: CircularProgressIndicator()), Text('test')]);
+              }
+            },
           ),
         ),
         Wrap(children: [
           ElevatedButton(
             child: const Text('createRandomCard'),
             onPressed: () {
-              final randomId = Uuid().v4();
-              final FlashCard newFlashCard =
-                  FlashCard(randomId, 'questionText', 'solutionText', DateTime.now());
+              final String randomId = Uuid().v4();
+              var faker = Faker();
+              final FlashCard newFlashCard = FlashCard(
+                  randomId, faker.person.firstName(), faker.person.lastName(), DateTime.now());
               String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
               context
                   .read<FlashCardRepositoryCubit>()
@@ -62,9 +61,10 @@ class _CardListScreenState extends State<CardListScreen> {
             },
           ),
           ElevatedButton(
-            child: const Text('deleteCards'),
+            child: const Text('deleteAllCards'),
             onPressed: () {
-              // context.read<FlashCardRepositoryCubit>().deleteAllCards();
+              String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
+              context.read<FlashCardRepositoryCubit>().deleteAllFlashCardsInCardBox(selectedBoxId);
             },
           ),
           ElevatedButton(
@@ -85,6 +85,30 @@ class _CardListScreenState extends State<CardListScreen> {
           ),
         ]),
       ]),
+    );
+  }
+
+  Widget _tableView(BuildContext context, FlashCardRepositoryState state) {
+    List<DataColumn> columns = [
+      // DataColumn(label: Text('id')),
+      DataColumn(label: Text('questionText')),
+      DataColumn(label: Text('solutionText')),
+    ];
+
+    List<DataRow> rows = [];
+    for (var card in state.items) {
+      rows.add(DataRow(cells: [
+        // DataCell(Text(card.id)),
+        DataCell(Text(card.questionText)),
+        DataCell(Text(card.solutionText)),
+      ]));
+    }
+
+    return SingleChildScrollView(
+      child: DataTable(
+        columns: columns,
+        rows: rows,
+      ),
     );
   }
 

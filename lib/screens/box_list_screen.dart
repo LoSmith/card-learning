@@ -1,18 +1,18 @@
 import 'package:card_learning/blocs/card_box_list/card_box_list_cubit.dart';
 import 'package:card_learning/blocs/card_box_list/card_box_list_state.dart';
 import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
-import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:uuid/uuid.dart';
+import 'package:faker/faker.dart';
 
-class CardBoxListScreen extends StatefulWidget {
+class BoxListScreen extends StatefulWidget {
   @override
-  _CardBoxListScreenState createState() => _CardBoxListScreenState();
+  _BoxListScreenState createState() => _BoxListScreenState();
 }
 
-class _CardBoxListScreenState extends State<CardBoxListScreen> {
+class _BoxListScreenState extends State<BoxListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,21 +28,11 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
           ElevatedButton(
             child: const Text('create random box'),
             onPressed: () {
-              var randomId = Uuid().v4();
+              final String randomId = Uuid().v4();
+              final String randomBoxName = Faker().sport.name().toString();
               context
                   .read<CardBoxListCubit>()
-                  .createCardBox(LearningCardBox(randomId.toString(), []));
-            },
-          ),
-          ElevatedButton(
-            child: const Text('updateList'),
-            onPressed: () {
-              var firstItem = context.read<CardBoxListCubit>().state.items.first;
-              final randomId = Uuid().v4();
-              final FlashCard newFlashCard =
-                  FlashCard(randomId, 'questionText', 'solutionText', DateTime.now());
-              context.read<CardBoxListCubit>().updateCardBox(
-                  firstItem.id, LearningCardBox(firstItem.id, [newFlashCard, newFlashCard]));
+                  .createCardBox(LearningCardBox(randomId.toString(), randomBoxName, []));
             },
           ),
           ElevatedButton(
@@ -132,14 +122,26 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
 ListTile _cardBoxListTile(BuildContext context, LearningCardBox item) {
   final isSelectedBox = context.read<SelectedCardBoxCubit>().selectedCardBoxId == item.id;
   final selectedTileColor = Colors.redAccent;
-  if (!isSelectedBox) {
-    return ListTile(
-      title: Text('[CardBox: ${item.id.substring(0, 13)}...] - NoItems: ${item.cards.length}'),
-    );
-  } else {
-    return ListTile(
-      title: Text('[CardBox: ${item.id.substring(0, 13)}...] - NoItems: ${item.cards.length}'),
-      tileColor: selectedTileColor,
-    );
-  }
+  final unselectedTileColor = Colors.white;
+  return ListTile(
+    leading: CircleAvatar(
+      radius: 28,
+      backgroundColor: Colors.transparent,
+      backgroundImage: AssetImage('assets/images/box.png'),
+    ),
+    title: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Cards: ${item.name}'),
+        const SizedBox(height: 4),
+        Text(
+          'CardBox: [${item.id.substring(0, 13)}...]',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 4),
+        Text('Cards: ${item.cards.length}')
+      ],
+    ),
+    tileColor: isSelectedBox ? selectedTileColor : unselectedTileColor,
+  );
 }
