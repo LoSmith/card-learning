@@ -1,5 +1,7 @@
-import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
-import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
+import 'package:card_learning/blocs/card_learning/card_learning_cubit.dart';
+import 'package:card_learning/blocs/card_list/card_list_cubit.dart';
+import 'package:card_learning/blocs/card_list/card_list_state.dart';
+import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,7 +14,50 @@ class CardLearningScreen extends StatefulWidget {
 class _CardLearningScreenState extends State<CardLearningScreen> {
   @override
   Widget build(BuildContext context) {
-    // CardController controller; //Use this to trigger swap.
+    var selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
+    var currentCardIndex = context.read<CardLearningCubit>().currentCardIndex;
+    context.read<CardLearningCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
+
+    _learningWidget(String selectedBoxId, List<FlashCard> cards) {
+      FlashCard currentCard = cards[context.read<CardLearningCubit>().currentCardIndex];
+
+      return Column(
+        children: [
+          SafeArea(
+              child: Card(
+            elevation: 5,
+            child: Column(
+              children: [
+                Text(currentCard.questionText),
+                Text(currentCard.solutionText),
+                Text(''),
+                Text(currentCard.timesTested.toString()),
+                Text(currentCard.lastTimeTested.toString()),
+              ],
+            ),
+          )),
+          Center(
+            child: Wrap(
+              children: [
+                ElevatedButton(
+                  child: const Text('bad'),
+                  onPressed: () async {
+                    var tmp = context.read<CardLearningCubit>().currentCardIndex;
+                    await context.read<CardLearningCubit>().currentCardGuessedWrong(selectedBoxId);
+                    await context.read<CardLearningCubit>().switchToNextCard();
+                    setState(() {});
+                  },
+                ),
+                ElevatedButton(
+                  child: const Text('good'),
+                  onPressed: () {},
+                ),
+              ],
+            ),
+          ),
+        ],
+      );
+    }
 
     return Scaffold(
       appBar: AppBar(
@@ -21,7 +66,7 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
       body: Column(children: [
         SizedBox(height: 15),
         Expanded(
-          child: BlocBuilder<FlashCardRepositoryCubit, FlashCardRepositoryState>(
+          child: BlocBuilder<CardListCubit, CardListState>(
             builder: (context, state) {
               switch (state.status) {
                 case FlashCardRepositoryStatus.loading:
@@ -32,7 +77,7 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
                   if (state.items.isEmpty) {
                     return Center(child: Text('No flashCards'));
                   }
-                  return _learningWidget(state.items);
+                  return _learningWidget(selectedBoxId, state.items);
                 default:
                   return Column(
                       children: [Center(child: CircularProgressIndicator()), Text('test')]);
@@ -43,70 +88,4 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
       ]),
     );
   }
-
-  Widget _learningWidget(List<FlashCard> cards) {
-    var shownCard = cards[0];
-
-    return Column(
-      children: [
-        Expanded(
-          child: SafeArea(
-              child: Row(
-            children: [
-              Text('${shownCard.questionText}'),
-              Text(' - '),
-              Text('${shownCard.solutionText}'),
-            ],
-          )),
-        ),
-        Wrap(
-          children: [
-            ElevatedButton(
-              child: const Text('bad'),
-              onPressed: () {},
-            ),
-            ElevatedButton(
-              child: const Text('good'),
-              onPressed: () {},
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-
-//   Widget _tinderFlashCards(List<FlashCard> cards) {
-//     return Container(
-//         height: MediaQuery.of(context).size.height * 0.7,
-//         child: TinderSwapCard(
-//           orientation: AmassOrientation.BOTTOM,
-//           totalNum: cards.length,
-//           stackNum: 3,
-//           swipeEdge: 4.0,
-//           maxWidth: MediaQuery.of(context).size.width * 0.9,
-//           maxHeight: MediaQuery.of(context).size.width * 0.9,
-//           minWidth: MediaQuery.of(context).size.width * 0.8,
-//           minHeight: MediaQuery.of(context).size.width * 0.8,
-//           cardBuilder: (context, index) => FlipFlashCard(
-//             flashCard: cards[index],
-//           ),
-//           // cardController: controller = CardController(),
-//           swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-//             if (align.x < 0) {
-//             } else if (align.x > 0) {}
-//           },
-//           swipeCompleteCallback: (CardSwipeOrientation orientaion, int index) {
-//             if (orientaion == CardSwipeOrientation.RIGHT) {
-//               print('swiped right');
-//             } else {
-//               print('swiped left');
-//             }
-//           },
-//           swipeUp: false,
-//           swipeDown: false,
-//           allowVerticalMovement: true,
-//           animDuration: 10,
-//         ));
-//   }
-// }
 }

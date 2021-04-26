@@ -5,12 +5,12 @@ import 'package:card_learning/data/database.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 
-import 'flash_card_repository_state.dart';
+import 'card_list_state.dart';
 
-class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
+class CardListCubit extends Cubit<CardListState> {
   final Database _db;
 
-  FlashCardRepositoryCubit(this._db) : super(const FlashCardRepositoryState.loading());
+  CardListCubit(this._db) : super(const CardListState.loading());
 
   Future<void> createFlashCardInCardBox(String boxId, FlashCard flashCard) async {
     try {
@@ -18,9 +18,9 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
       box.cards.add(flashCard);
 
       await this._db.create(boxId, box);
-      emit(FlashCardRepositoryState.success(box.cards));
+      emit(CardListState.success(box.cards));
     } on Exception {
-      emit(const FlashCardRepositoryState.failure());
+      emit(const CardListState.failure());
     }
   }
 
@@ -30,10 +30,10 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
     }
     try {
       LearningCardBox box = await this._db.read(boxId);
-      emit(FlashCardRepositoryState.success(box.cards));
+      emit(CardListState.success(box.cards));
     } catch (e) {
       print(e.toString());
-      emit(const FlashCardRepositoryState.failure());
+      emit(const CardListState.failure());
     }
   }
 
@@ -44,9 +44,9 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
       box.cards.removeAt(oldFlashCardIndex);
       box.cards.add(flashCard);
 
-      emit(FlashCardRepositoryState.success(box.cards));
+      emit(CardListState.success(box.cards));
     } on Exception {
-      emit(const FlashCardRepositoryState.failure());
+      emit(const CardListState.failure());
     }
   }
 
@@ -57,9 +57,9 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
       box.cards.removeAt(cardIndex);
       this._db.update(boxId, box);
 
-      emit(FlashCardRepositoryState.success(box.cards));
+      emit(CardListState.success(box.cards));
     } on Exception {
-      emit(const FlashCardRepositoryState.failure());
+      emit(const CardListState.failure());
     }
   }
 
@@ -69,9 +69,9 @@ class FlashCardRepositoryCubit extends Cubit<FlashCardRepositoryState> {
       box.cards.removeRange(0, box.cards.length);
       this._db.update(boxId, box);
 
-      emit(FlashCardRepositoryState.success(box.cards));
+      emit(CardListState.success(box.cards));
     } on Exception {
-      emit(const FlashCardRepositoryState.failure());
+      emit(const CardListState.failure());
     }
   }
 }

@@ -1,5 +1,5 @@
-import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
-import 'package:card_learning/blocs/flash_cards/flash_card_repository_state.dart';
+import 'package:card_learning/blocs/card_list/card_list_cubit.dart';
+import 'package:card_learning/blocs/card_list/card_list_state.dart';
 import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:faker/faker.dart';
@@ -19,7 +19,7 @@ class _CardListScreenState extends State<CardListScreen> {
   Widget build(BuildContext context) {
     // CardController controller; //Use this to trigger swap.
     var selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
-    context.read<FlashCardRepositoryCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
+    context.read<CardListCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
 
     return Scaffold(
       appBar: AppBar(
@@ -27,7 +27,7 @@ class _CardListScreenState extends State<CardListScreen> {
       ),
       body: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
         Expanded(
-          child: BlocBuilder<FlashCardRepositoryCubit, FlashCardRepositoryState>(
+          child: BlocBuilder<CardListCubit, CardListState>(
             builder: (context, state) {
               switch (state.status) {
                 case FlashCardRepositoryStatus.loading:
@@ -55,16 +55,14 @@ class _CardListScreenState extends State<CardListScreen> {
               final FlashCard newFlashCard = FlashCard(
                   randomId, faker.person.firstName(), faker.person.lastName(), DateTime.now());
               String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
-              context
-                  .read<FlashCardRepositoryCubit>()
-                  .createFlashCardInCardBox(selectedBoxId, newFlashCard);
+              context.read<CardListCubit>().createFlashCardInCardBox(selectedBoxId, newFlashCard);
             },
           ),
           ElevatedButton(
             child: const Text('deleteAllCards'),
             onPressed: () {
               String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
-              context.read<FlashCardRepositoryCubit>().deleteAllFlashCardsInCardBox(selectedBoxId);
+              context.read<CardListCubit>().deleteAllFlashCardsInCardBox(selectedBoxId);
             },
           ),
           ElevatedButton(
@@ -88,7 +86,7 @@ class _CardListScreenState extends State<CardListScreen> {
     );
   }
 
-  Widget _tableView(BuildContext context, FlashCardRepositoryState state) {
+  Widget _tableView(BuildContext context, CardListState state) {
     List<DataColumn> columns = [
       // DataColumn(label: Text('id')),
       DataColumn(label: Text('questionText')),
@@ -113,7 +111,7 @@ class _CardListScreenState extends State<CardListScreen> {
   }
 
   ListView newDismissibleFlashCardView(
-      BuildContext context, FlashCardRepositoryState state, String cardBoxId) {
+      BuildContext context, CardListState state, String cardBoxId) {
     return ListView.separated(
         itemCount: state.items.length,
         itemBuilder: (context, index) {
@@ -127,7 +125,7 @@ class _CardListScreenState extends State<CardListScreen> {
               // what to do after an item has been swiped away.
               onDismissed: (_) {
                 // Remove the item from the data source.
-                context.read<FlashCardRepositoryCubit>().deleteFlashCardInCardBox(cardBoxId, item);
+                context.read<CardListCubit>().deleteFlashCardInCardBox(cardBoxId, item);
                 // Then show a snackbar.
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
@@ -136,7 +134,7 @@ class _CardListScreenState extends State<CardListScreen> {
                         label: "UNDO",
                         onPressed: () => {
                               context
-                                  .read<FlashCardRepositoryCubit>()
+                                  .read<CardListCubit>()
                                   .createFlashCardInCardBox(cardBoxId, item)
                             }),
                   ),

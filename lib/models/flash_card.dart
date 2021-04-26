@@ -10,27 +10,27 @@ class FlashCard {
   final String id; // must be uid
 
   @HiveField(1)
-  final String questionText;
+  String questionText;
   @HiveField(2)
-  final String questionAddition;
+  String questionAddition;
   @HiveField(3)
-  final String questionImage;
+  String questionImage;
 
   @HiveField(4)
-  final String solutionText;
+  String solutionText;
   @HiveField(5)
-  final String solutionAddition;
+  String solutionAddition;
   @HiveField(6)
-  final String solutionImage;
+  String solutionImage;
 
   @HiveField(7)
-  final int timesTested;
+  int timesTested;
   @HiveField(8)
-  final int timesGotRight;
+  int timesGotRight;
   @HiveField(9)
-  final int timesGotWrong;
+  int timesGotWrong;
   @HiveField(10)
-  final DateTime lastTimeTested;
+  DateTime lastTimeTested;
 
   FlashCard(
     this.id,

@@ -1,8 +1,9 @@
-import 'package:card_learning/blocs/flash_cards/flash_card_repository_cubit.dart';
+import 'package:card_learning/blocs/card_learning/card_learning_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'blocs/card_box_list/card_box_list_cubit.dart';
 import 'blocs/card_box_statistics/card_box_statistics_cubit.dart';
+import 'blocs/card_list/card_list_cubit.dart';
 import 'blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'blocs/simple_bloc_observer.dart';
 import 'data/database.dart';
@@ -20,8 +21,9 @@ void main() async {
     MultiBlocProvider(
       providers: [
         BlocProvider(create: (BuildContext context) => CardBoxListCubit(db)),
-        BlocProvider(create: (BuildContext context) => FlashCardRepositoryCubit(db)),
+        BlocProvider(create: (BuildContext context) => CardListCubit(db)),
         BlocProvider(create: (BuildContext context) => CardBoxStatisticsCubit(db)),
+        BlocProvider(create: (BuildContext context) => CardLearningCubit(db)),
         BlocProvider(create: (BuildContext context) => SelectedCardBoxCubit()),
       ],
       child: FlashCardLearningApp(),
