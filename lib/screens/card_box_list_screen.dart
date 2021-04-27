@@ -1,18 +1,18 @@
 import 'package:card_learning/blocs/card_box_list/card_box_list_cubit.dart';
 import 'package:card_learning/blocs/card_box_list/card_box_list_state.dart';
-import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/learning_card_box.dart';
+import 'package:card_learning/services/selected_card_box_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:uuid/uuid.dart';
 import 'package:faker/faker.dart';
 
-class BoxListScreen extends StatefulWidget {
+class CardBoxListScreen extends StatefulWidget {
   @override
-  _BoxListScreenState createState() => _BoxListScreenState();
+  _CardBoxListScreenState createState() => _CardBoxListScreenState();
 }
 
-class _BoxListScreenState extends State<BoxListScreen> {
+class _CardBoxListScreenState extends State<CardBoxListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -86,7 +86,7 @@ class _BoxListScreenState extends State<BoxListScreen> {
         final item = state.items[index];
         return InkWell(
           onTap: () => {
-            context.read<SelectedCardBoxCubit>().setSelectedCardBox(item.id),
+            SelectedCardBoxService().setId(item.id),
             setState(() {}),
             DefaultTabController.of(context)?.animateTo(cardListTab)
           },
@@ -120,7 +120,7 @@ class _BoxListScreenState extends State<BoxListScreen> {
 }
 
 ListTile _cardBoxListTile(BuildContext context, LearningCardBox item) {
-  final isSelectedBox = context.read<SelectedCardBoxCubit>().selectedCardBoxId == item.id;
+  final isSelectedBox = SelectedCardBoxService().getId() == item.id;
   final selectedTileColor = Colors.redAccent;
   final unselectedTileColor = Colors.white;
   return ListTile(

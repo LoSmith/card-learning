@@ -1,4 +1,4 @@
-import 'package:card_learning/screens/box_list_screen.dart';
+import 'package:card_learning/screens/card_box_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../keys.dart';
@@ -18,7 +18,7 @@ class TabScreen extends StatelessWidget {
           body: TabBarView(
             physics: NeverScrollableScrollPhysics(),
             children: [
-              BoxListScreen(),
+              CardBoxListScreen(),
               CardListScreen(),
               CardLearningScreen(),
               CardBoxStatisticsScreen(),

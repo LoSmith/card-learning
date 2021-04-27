@@ -1,7 +1,7 @@
 import 'package:card_learning/blocs/card_list/card_list_cubit.dart';
 import 'package:card_learning/blocs/card_list/card_list_state.dart';
-import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/flash_card.dart';
+import 'package:card_learning/services/selected_card_box_service.dart';
 import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -18,7 +18,7 @@ class _CardListScreenState extends State<CardListScreen> {
   @override
   Widget build(BuildContext context) {
     // CardController controller; //Use this to trigger swap.
-    var selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
+    var selectedBoxId = SelectedCardBoxService().getId();
     context.read<CardListCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
 
     return Scaffold(
@@ -54,14 +54,14 @@ class _CardListScreenState extends State<CardListScreen> {
               var faker = Faker();
               final FlashCard newFlashCard = FlashCard(
                   randomId, faker.person.firstName(), faker.person.lastName(), DateTime.now());
-              String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
+              String selectedBoxId = SelectedCardBoxService().getId();
               context.read<CardListCubit>().createFlashCardInCardBox(selectedBoxId, newFlashCard);
             },
           ),
           ElevatedButton(
             child: const Text('deleteAllCards'),
             onPressed: () {
-              String selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
+              String selectedBoxId = SelectedCardBoxService().getId();
               context.read<CardListCubit>().deleteAllFlashCardsInCardBox(selectedBoxId);
             },
           ),

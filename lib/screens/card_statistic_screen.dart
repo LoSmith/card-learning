@@ -1,5 +1,4 @@
 import 'package:card_learning/blocs/card_box_statistics/card_box_statistics_cubit.dart';
-import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/learning_card_box_statistics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -13,8 +12,7 @@ class _CardBoxStatisticsScreenState extends State<CardBoxStatisticsScreen> {
   @override
   Widget build(BuildContext context) {
     // CardController controller; //Use this to trigger swap.
-    var selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
-    context.read<CardBoxStatisticsCubit>().calculateStatistics(selectedBoxId);
+    context.read<CardBoxStatisticsCubit>().calculateCurrentStatistics();
     return Scaffold(
       appBar: AppBar(
         title: Text('Statistics View'),

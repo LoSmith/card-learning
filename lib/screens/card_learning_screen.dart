@@ -1,8 +1,8 @@
 import 'package:card_learning/blocs/card_learning/card_learning_cubit.dart';
 import 'package:card_learning/blocs/card_list/card_list_cubit.dart';
 import 'package:card_learning/blocs/card_list/card_list_state.dart';
-import 'package:card_learning/blocs/selected_card_box/selected_card_box_cubit.dart';
 import 'package:card_learning/models/flash_card.dart';
+import 'package:card_learning/services/selected_card_box_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,8 +14,7 @@ class CardLearningScreen extends StatefulWidget {
 class _CardLearningScreenState extends State<CardLearningScreen> {
   @override
   Widget build(BuildContext context) {
-    var selectedBoxId = context.read<SelectedCardBoxCubit>().selectedCardBoxId;
-    var currentCardIndex = context.read<CardLearningCubit>().currentCardIndex;
+    var selectedBoxId = SelectedCardBoxService().getId();
     context.read<CardLearningCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
 
     _learningWidget(String selectedBoxId, List<FlashCard> cards) {
