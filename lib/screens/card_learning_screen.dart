@@ -1,8 +1,6 @@
 import 'package:card_learning/blocs/card_learning/card_learning_cubit.dart';
-import 'package:card_learning/blocs/card_list/card_list_cubit.dart';
-import 'package:card_learning/blocs/card_list/card_list_state.dart';
+import 'package:card_learning/blocs/card_learning/card_learning_state.dart';
 import 'package:card_learning/models/flash_card.dart';
-import 'package:card_learning/services/selected_card_box_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,10 +12,9 @@ class CardLearningScreen extends StatefulWidget {
 class _CardLearningScreenState extends State<CardLearningScreen> {
   @override
   Widget build(BuildContext context) {
-    var selectedBoxId = SelectedCardBoxService().getId();
-    context.read<CardLearningCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
+    context.read<CardLearningCubit>().fetchLatestFlashCardsFromCardBox();
 
-    _learningWidget(String selectedBoxId, List<FlashCard> cards) {
+    _learningWidget(List<FlashCard> cards) {
       FlashCard currentCard = cards[context.read<CardLearningCubit>().currentCardIndex];
 
       return Column(
@@ -27,11 +24,13 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
             elevation: 5,
             child: Column(
               children: [
-                Text(currentCard.questionText),
+                Text(currentCard.questionText.toString()),
                 Text(currentCard.solutionText),
                 Text(''),
                 Text(currentCard.timesTested.toString()),
-                Text(currentCard.lastTimeTested.toString()),
+                Text("lastTimeTested: " + currentCard.lastTimeTested.toIso8601String().toString()),
+                Text("timestGotRight: " + currentCard.timesGotRight.toString()),
+                Text("timesGotWrong: " + currentCard.timesGotWrong.toString()),
               ],
             ),
           )),
@@ -41,15 +40,16 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
                 ElevatedButton(
                   child: const Text('bad'),
                   onPressed: () async {
-                    var tmp = context.read<CardLearningCubit>().currentCardIndex;
-                    await context.read<CardLearningCubit>().currentCardGuessedWrong(selectedBoxId);
+                    await context.read<CardLearningCubit>().currentCardGuessedWrong();
                     await context.read<CardLearningCubit>().switchToNextCard();
-                    setState(() {});
                   },
                 ),
                 ElevatedButton(
                   child: const Text('good'),
-                  onPressed: () {},
+                  onPressed: () async {
+                    await context.read<CardLearningCubit>().currentCardGuessedRight();
+                    await context.read<CardLearningCubit>().switchToNextCard();
+                  },
                 ),
               ],
             ),
@@ -65,18 +65,18 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
       body: Column(children: [
         SizedBox(height: 15),
         Expanded(
-          child: BlocBuilder<CardListCubit, CardListState>(
+          child: BlocBuilder<CardLearningCubit, CardLearningState>(
             builder: (context, state) {
               switch (state.status) {
-                case FlashCardRepositoryStatus.loading:
+                case CardLearningStatus.loading:
                   return Center(child: CircularProgressIndicator());
-                case FlashCardRepositoryStatus.failure:
+                case CardLearningStatus.failure:
                   return Center(child: Text('Something went wrong'));
-                case FlashCardRepositoryStatus.success:
+                case CardLearningStatus.success:
                   if (state.items.isEmpty) {
                     return Center(child: Text('No flashCards'));
                   }
-                  return _learningWidget(selectedBoxId, state.items);
+                  return _learningWidget(state.items);
                 default:
                   return Column(
                       children: [Center(child: CircularProgressIndicator()), Text('test')]);

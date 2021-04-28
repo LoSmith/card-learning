@@ -4,6 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:card_learning/data/database.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
+import 'package:card_learning/services/selected_card_box_service.dart';
 
 import 'card_learning_state.dart';
 
@@ -15,15 +16,18 @@ class CardLearningCubit extends Cubit<CardLearningState> {
   CardLearningCubit(this._db) : super(const CardLearningState.loading());
 
   Future<void> switchToNextCard() async {
-    this._currentCardIndex++;
+    LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
+    int maxCardIndex = box.cards.length - 1;
+    if (this.currentCardIndex < maxCardIndex) {
+      this._currentCardIndex++;
+    } else {
+      this._currentCardIndex = 0;
+    }
   }
 
-  Future<void> fetchLatestFlashCardsFromCardBox(String boxId) async {
-    if (boxId.isEmpty) {
-      throw new Error();
-    }
+  Future<void> fetchLatestFlashCardsFromCardBox() async {
     try {
-      LearningCardBox box = await this._db.read(boxId);
+      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
       emit(CardLearningState.success(box.cards));
     } catch (e) {
       print(e.toString());
@@ -31,16 +35,39 @@ class CardLearningCubit extends Cubit<CardLearningState> {
     }
   }
 
-  Future<void> currentCardGuessedWrong(String boxId) async {
+  Future<FlashCard> updateCurrentCard(LearningCardBox box, bool isGuessedRight) async {
+    FlashCard currentCard = box.cards[_currentCardIndex];
+    currentCard.timesTested++;
+    if (isGuessedRight) {
+      currentCard.timesGotRight++;
+    } else {
+      currentCard.timesGotWrong++;
+    }
+    currentCard.lastTimeTested = DateTime.now();
+    return currentCard;
+  }
+
+  Future<void> currentCardGuessedWrong() async {
     try {
-      LearningCardBox box = await this._db.read(boxId);
-      FlashCard badGuessedFlashCard = box.cards[_currentCardIndex];
-      badGuessedFlashCard.timesTested++;
-      badGuessedFlashCard.timesGotWrong++;
-      badGuessedFlashCard.lastTimeTested = DateTime.now();
+      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
+      FlashCard updatedCard = await updateCurrentCard(box, false);
 
       box.cards.removeAt(_currentCardIndex);
-      box.cards.add(badGuessedFlashCard);
+      box.cards.add(updatedCard);
+
+      emit(CardLearningState.success(box.cards));
+    } on Exception {
+      emit(const CardLearningState.failure());
+    }
+  }
+
+  Future<void> currentCardGuessedRight() async {
+    try {
+      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
+      FlashCard updatedCard = await updateCurrentCard(box, true);
+
+      box.cards.removeAt(_currentCardIndex);
+      box.cards.add(updatedCard);
 
       emit(CardLearningState.success(box.cards));
     } on Exception {

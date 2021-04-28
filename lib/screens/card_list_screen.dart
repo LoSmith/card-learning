@@ -1,7 +1,6 @@
 import 'package:card_learning/blocs/card_list/card_list_cubit.dart';
 import 'package:card_learning/blocs/card_list/card_list_state.dart';
 import 'package:card_learning/models/flash_card.dart';
-import 'package:card_learning/services/selected_card_box_service.dart';
 import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -18,8 +17,7 @@ class _CardListScreenState extends State<CardListScreen> {
   @override
   Widget build(BuildContext context) {
     // CardController controller; //Use this to trigger swap.
-    var selectedBoxId = SelectedCardBoxService().getId();
-    context.read<CardListCubit>().fetchLatestFlashCardsFromCardBox(selectedBoxId);
+    context.read<CardListCubit>().fetchCardsFromCurrentBox();
 
     return Scaffold(
       appBar: AppBar(
@@ -54,15 +52,13 @@ class _CardListScreenState extends State<CardListScreen> {
               var faker = Faker();
               final FlashCard newFlashCard = FlashCard(
                   randomId, faker.person.firstName(), faker.person.lastName(), DateTime.now());
-              String selectedBoxId = SelectedCardBoxService().getId();
-              context.read<CardListCubit>().createFlashCardInCardBox(selectedBoxId, newFlashCard);
+              context.read<CardListCubit>().createCardInCurrentBox(newFlashCard);
             },
           ),
           ElevatedButton(
             child: const Text('deleteAllCards'),
             onPressed: () {
-              String selectedBoxId = SelectedCardBoxService().getId();
-              context.read<CardListCubit>().deleteAllFlashCardsInCardBox(selectedBoxId);
+              context.read<CardListCubit>().deleteAllCardsInCurrentBox();
             },
           ),
           ElevatedButton(
@@ -125,18 +121,15 @@ class _CardListScreenState extends State<CardListScreen> {
               // what to do after an item has been swiped away.
               onDismissed: (_) {
                 // Remove the item from the data source.
-                context.read<CardListCubit>().deleteFlashCardInCardBox(cardBoxId, item);
+                context.read<CardListCubit>().deleteCardInCurrentBox(item);
                 // Then show a snackbar.
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text("Deleted ${item.id}"),
                     action: SnackBarAction(
                         label: "UNDO",
-                        onPressed: () => {
-                              context
-                                  .read<CardListCubit>()
-                                  .createFlashCardInCardBox(cardBoxId, item)
-                            }),
+                        onPressed: () =>
+                            {context.read<CardListCubit>().createCardInCurrentBox(item)}),
                   ),
                 );
               },
