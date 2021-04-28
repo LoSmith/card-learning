@@ -1,6 +1,7 @@
 import 'package:card_learning/blocs/card_list/card_list_cubit.dart';
 import 'package:card_learning/blocs/card_list/card_list_state.dart';
 import 'package:card_learning/models/flash_card.dart';
+import 'package:card_learning/screens/add_edit_screen.dart';
 import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -98,10 +99,22 @@ class _CardListScreenState extends State<CardListScreen> {
 
     List<DataRow> rows = [];
     for (var card in state.items) {
+      var editCallback = (card) => {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AddEditScreen(
+                    isEditing: true,
+                    flashCard: card,
+                    onSave: (FlashCard editedCard) {
+                      context.read<CardListCubit>().editCardInCurrentBox(editedCard);
+                    },
+                  ),
+                ))
+          };
       rows.add(DataRow(cells: [
-        // DataCell(Text(card.id)),
-        DataCell(Text(card.questionText)),
-        DataCell(Text(card.solutionText)),
+        DataCell(Text(card.questionText), onTap: () => editCallback(card)),
+        DataCell(Text(card.solutionText), onTap: () => editCallback(card)),
       ]));
     }
 
@@ -110,54 +123,6 @@ class _CardListScreenState extends State<CardListScreen> {
         columns: columns,
         rows: rows,
       ),
-    );
-  }
-
-  ListView newDismissibleFlashCardView(
-      BuildContext context, CardListState state, String cardBoxId) {
-    return ListView.separated(
-        itemCount: state.items.length,
-        itemBuilder: (context, index) {
-          final item = state.items[index];
-          return InkWell(
-            child: Dismissible(
-              // Each Dismissible must contain a Key. Keys allow Flutter to
-              // uniquely identify widgets.
-              key: Key(item.id),
-              // Provide a function that tells the app
-              // what to do after an item has been swiped away.
-              onDismissed: (_) {
-                // Remove the item from the data source.
-                context.read<CardListCubit>().deleteCardInCurrentBox(item);
-                // Then show a snackbar.
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text("Deleted ${item.id}"),
-                    action: SnackBarAction(
-                        label: "UNDO",
-                        onPressed: () => {
-                              context
-                                  .read<CardListCubit>()
-                                  .createCardInCurrentBox(item)
-                            }),
-                  ),
-                );
-              },
-              // Show a red background as the item is swiped away.
-              background: Container(color: Colors.red),
-              child: _cardBoxListTile(context, item),
-            ),
-          );
-        },
-        separatorBuilder: (BuildContext context, int index) {
-          return Divider();
-        });
-  }
-
-  ListTile _cardBoxListTile(BuildContext context, FlashCard item) {
-    return ListTile(
-      title: Text(
-          '[${item.id.substring(0, 13)}...] - Question: ${item.questionText} - Solution: ${item.solutionText}'),
     );
   }
 }

@@ -1,9 +1,8 @@
 import 'package:card_learning/keys.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:flutter/material.dart';
-import 'package:uuid/uuid.dart';
 
-typedef OnSaveCallback = Function(String id, String question, String solution);
+typedef OnSaveCallback = Function(FlashCard newCard);
 
 class AddEditScreen extends StatefulWidget {
   final bool isEditing;
@@ -22,9 +21,6 @@ class AddEditScreen extends StatefulWidget {
 
 class _AddEditScreenState extends State<AddEditScreen> {
   static final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
-  late String _question;
-  late String _solution;
 
   bool get isEditing => widget.isEditing;
 
@@ -53,7 +49,7 @@ class _AddEditScreenState extends State<AddEditScreen> {
                 // validator: (val) {
                 //   return "isempty";
                 // },
-                onSaved: (value) => _question = value.toString(),
+                onSaved: (value) => widget.flashCard.questionText = value.toString(),
               ),
               TextFormField(
                 initialValue: isEditing ? widget.flashCard.solutionText : '',
@@ -63,7 +59,7 @@ class _AddEditScreenState extends State<AddEditScreen> {
                 decoration: InputDecoration(
                   hintText: 'input tesxt hint',
                 ),
-                onSaved: (value) => _solution = value.toString(),
+                onSaved: (value) => widget.flashCard.solutionText = value.toString(),
               )
             ],
           ),
@@ -77,7 +73,7 @@ class _AddEditScreenState extends State<AddEditScreen> {
           if (_formKey.currentState!.validate()) {
             _formKey.currentState!.save();
 
-            widget.onSave(Uuid().v1(), _question, _solution);
+            widget.onSave(widget.flashCard);
             Navigator.pop(context);
           }
         },

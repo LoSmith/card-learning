@@ -46,11 +46,9 @@ class FlashCard {
     this.timesGotWrong = 0,
   });
 
-  /**
-   * Tests if the card is matured.
-   * if minimum times tested is not met yet => false
-   * if maturedThreshold is met => true
-   */
+  /// Tests if the card is matured.
+  /// if minimum times tested is not met yet => false
+  /// if maturedThreshold is met => true
   bool isMatured(double maturedThreshold, int minimumTimesTested) {
     if (this.timesTested <= minimumTimesTested) {
       return false;
