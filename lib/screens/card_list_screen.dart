@@ -31,15 +31,17 @@ class _CardListScreenState extends State<CardListScreen> {
                 case FlashCardRepositoryStatus.loading:
                   return Center(child: CircularProgressIndicator());
                 case FlashCardRepositoryStatus.failure:
-                  return Text('Something is wrong');
+                  return Center(child: Text('Something is wrong'));
                 case FlashCardRepositoryStatus.success:
                   if (state.items.isEmpty) {
-                    return Text('No flashCards');
+                    return Center(child: Text('No flashCards'));
                   }
                   return _tableView(context, state);
                 default:
-                  return Column(
-                      children: [Center(child: CircularProgressIndicator()), Text('test')]);
+                  return Column(children: [
+                    Center(child: CircularProgressIndicator()),
+                    Text('test')
+                  ]);
               }
             },
           ),
@@ -51,8 +53,13 @@ class _CardListScreenState extends State<CardListScreen> {
               final String randomId = Uuid().v4();
               var faker = Faker();
               final FlashCard newFlashCard = FlashCard(
-                  randomId, faker.person.firstName(), faker.person.lastName(), DateTime.now());
-              context.read<CardListCubit>().createCardInCurrentBox(newFlashCard);
+                  randomId,
+                  faker.person.firstName(),
+                  faker.person.lastName(),
+                  DateTime.now());
+              context
+                  .read<CardListCubit>()
+                  .createCardInCurrentBox(newFlashCard);
             },
           ),
           ElevatedButton(
@@ -128,8 +135,11 @@ class _CardListScreenState extends State<CardListScreen> {
                     content: Text("Deleted ${item.id}"),
                     action: SnackBarAction(
                         label: "UNDO",
-                        onPressed: () =>
-                            {context.read<CardListCubit>().createCardInCurrentBox(item)}),
+                        onPressed: () => {
+                              context
+                                  .read<CardListCubit>()
+                                  .createCardInCurrentBox(item)
+                            }),
                   ),
                 );
               },

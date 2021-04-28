@@ -46,6 +46,22 @@ class FlashCard {
     this.timesGotWrong = 0,
   });
 
+  /**
+   * Tests if the card is matured.
+   * if minimum times tested is not met yet => false
+   * if maturedThreshold is met => true
+   */
+  bool isMatured(double maturedThreshold, int minimumTimesTested) {
+    if (this.timesTested <= minimumTimesTested) {
+      return false;
+    }
+    if (this.timesTested == 0) {
+      return false;
+    }
+    double maturingRating = (this.timesGotRight / this.timesTested);
+    return maturingRating >= maturedThreshold;
+  }
+
   FlashCard.fromJson(Map<String, dynamic> jsonMap)
       : id = jsonMap['id'].toString(),
         questionText = jsonMap['questionText'].toString(),

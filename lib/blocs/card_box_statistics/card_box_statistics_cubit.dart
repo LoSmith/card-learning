@@ -16,6 +16,10 @@ class CardBoxStatisticsCubit extends Cubit<CardBoxStatistics> {
       List<FlashCard> cards = selectedCardBox.cards;
       CardBoxStatistics statistics = CardBoxStatistics();
       statistics.numberOfCards = await this._calculateNumberOfCards(cards);
+      statistics.numberOfCardsStudied = await this._countNumberOfCardsStudied(cards);
+      statistics.numberOfCardsMatured = await this._countNumberOfMaturedCards(cards);
+      statistics.percentageOfCardsStudied = await this._calculatePercentageOfCardsStudied(cards.length, statistics.numberOfCardsStudied);
+
       statistics.isValid = await this._validateStatistics();
       emit(statistics);
     } catch (e) {
@@ -30,5 +34,33 @@ class CardBoxStatisticsCubit extends Cubit<CardBoxStatistics> {
 
   Future<bool> _validateStatistics() async {
     return true;
+  }
+
+  Future<int> _countNumberOfMaturedCards(List<FlashCard> cards) async {
+    var numberOfMaturedCards = 0;
+    cards.forEach((element) {
+      if (element.isMatured(
+          CardBoxStatistics.matureThreshold, CardBoxStatistics.minimumTimesTested)) {
+        numberOfMaturedCards++;
+      }
+    });
+    return numberOfMaturedCards;
+  }
+
+  Future<int> _countNumberOfCardsStudied(List<FlashCard> cards) async {
+    var numberOfTestedCards = 0;
+    cards.forEach((element) {
+      if (element.timesTested > 0) {
+        numberOfTestedCards++;
+      }
+    });
+    return numberOfTestedCards;
+  }
+
+  Future<double> _calculatePercentageOfCardsStudied(int length, int numberOfCardsStudied) async {
+    if (length == 0) {
+      return 0.0;
+    }
+    return (numberOfCardsStudied / length) * 100;
   }
 }

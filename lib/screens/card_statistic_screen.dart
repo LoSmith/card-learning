@@ -34,11 +34,12 @@ class _CardBoxStatisticsScreenState extends State<CardBoxStatisticsScreen> {
       child: Column(
         children: [
           Text('isValid: ${statistics.isValid}'),
-          Text('matureThreshold: ${statistics.matureThreshold}'),
           Text(''),
           Text('numberOfCards: ${statistics.numberOfCards}'),
           Text('numberOfCardsStudied: ${statistics.numberOfCardsStudied}'),
           Text('numberOfCardsMatured: ${statistics.numberOfCardsMatured}'),
+          Text(''),
+          Text('percentageOfCardsStudied: ${statistics.percentageOfCardsStudied}%'),
         ],
       ),
     );
