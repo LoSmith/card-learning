@@ -1,11 +1,15 @@
 import 'package:card_learning/blocs/card_box_list/card_box_list_cubit.dart';
 import 'package:card_learning/blocs/card_box_list/card_box_list_state.dart';
+import 'package:card_learning/keys.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 import 'package:card_learning/services/selected_card_box_service.dart';
+import 'package:card_learning/widgets/verification_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:uuid/uuid.dart';
 import 'package:faker/faker.dart';
+
+import 'fetch_remote_cards_screen.dart';
 
 class CardBoxListScreen extends StatefulWidget {
   @override
@@ -13,44 +17,71 @@ class CardBoxListScreen extends StatefulWidget {
 }
 
 class _CardBoxListScreenState extends State<CardBoxListScreen> {
+  static const List<String> settingsItems = <String>[
+    Keys.Settings,
+    Keys.DeleteAll
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('CardListSelection'),
-      ),
+      appBar: AppBar(title: Text('CardListSelection'), actions: [
+        IconButton(
+          icon: const Icon(Icons.add),
+          tooltip: 'Create random card',
+          onPressed: () {
+            final String randomId = Uuid().v4();
+            final String randomBoxName = Faker().sport.name().toString();
+            context.read<CardBoxListCubit>().createCardBox(
+                LearningCardBox(randomId.toString(), randomBoxName, []));
+          },
+        ),
+        PopupMenuButton<String>(
+          onSelected: choiceAction,
+          itemBuilder: (BuildContext context) {
+            return settingsItems.map((String choice) {
+              return PopupMenuItem<String>(
+                value: choice,
+                child: Text(choice),
+              );
+            }).toList();
+          },
+        )
+      ]),
       body: Column(children: [
         SizedBox(height: 15),
         Expanded(
           child: _cardBoxList(context),
         ),
-        Wrap(children: [
-          ElevatedButton(
-            child: const Text('create random box'),
-            onPressed: () {
-              final String randomId = Uuid().v4();
-              final String randomBoxName = Faker().sport.name().toString();
-              context
-                  .read<CardBoxListCubit>()
-                  .createCardBox(LearningCardBox(randomId.toString(), randomBoxName, []));
-            },
-          ),
-          ElevatedButton(
-            child: const Text('delete first box'),
-            onPressed: () {
-              var firstItem = context.read<CardBoxListCubit>().state.items.first;
-              context.read<CardBoxListCubit>().deleteCardBox(firstItem.id);
-            },
-          ),
-          ElevatedButton(
-            child: const Text('deleteAllBoxes'),
-            onPressed: () {
-              context.read<CardBoxListCubit>().deleteAllCardBoxes();
-            },
-          ),
-        ]),
       ]),
     );
+  }
+
+  void choiceAction(String choice) async {
+    if (choice == Keys.Settings) {
+      print('Settings');
+    } else if (choice == Keys.LoadRemote) {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+                FetchRemoteCardsScreen(
+                  onSave: (fetchUrl) {
+                    // context
+                    //     .read<FlashCardRepositoryCubit>()
+                    //     .importJsonDataFromRemoteUrl(fetchUrl);
+                  },
+                ),
+          ));
+    } else if (choice == Keys.DeleteAll) {
+      Function deleteAllCardsAction = () async =>
+      {await context.read<CardBoxListCubit>().deleteAllCardBoxes()};
+      await verifyActionWithPopUpDialog(
+          context,
+          deleteAllCardsAction,
+          'Do you want to delete all card boxes?',
+          'This action cant be undone.');
+    }
   }
 
   Widget _cardBoxList(BuildContext context) {
@@ -65,11 +96,14 @@ class _CardBoxListScreenState extends State<CardBoxListScreen> {
             return Center(child: Text('something went wrong'));
           case CardBoxListStatus.success:
             if (state.items.isEmpty) {
-              return Text('no card boxes');
+              return Center(child: Text('no card boxes'));
             }
             return _dismissibleListView(context, state);
           default:
-            return Column(children: [Center(child: CircularProgressIndicator()), Text('test')]);
+            return Column(children: [
+              Center(child: CircularProgressIndicator()),
+              Text('test')
+            ]);
         }
       },
     );
