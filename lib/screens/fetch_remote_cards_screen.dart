@@ -20,11 +20,9 @@ class _FetchRemoteCardsScreenState extends State<FetchRemoteCardsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
-
     return Scaffold(
       appBar: AppBar(
-        title: Text('fetchRemote'),
+        title: Text('Load from Remote URL'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -36,11 +34,18 @@ class _FetchRemoteCardsScreenState extends State<FetchRemoteCardsScreen> {
                 initialValue:
                     'https://raw.githubusercontent.com/LoSmith/card-learning/main/assets/flashCardsLists/ES_EN.json',
                 key: Keys.questionField,
-                style: textTheme.headline5,
+                keyboardType: TextInputType.multiline,
+                maxLines: null,
                 decoration: InputDecoration(
-                  hintText: "paste your public google sheets url here",
+                  hintText: "Paste your import file location here.",
                 ),
                 onSaved: (value) => _fetchUrl = value.toString(),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter some text';
+                  }
+                  return null;
+                },
               ),
             ],
           ),

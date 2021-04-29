@@ -4,6 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:card_learning/data/database.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
+import 'package:card_learning/services/fetch_remote_data_from_json.dart';
 import 'package:card_learning/services/selected_card_box_service.dart';
 
 import 'card_list_state.dart';
@@ -72,6 +73,22 @@ class CardListCubit extends Cubit<CardListState> {
       box.cards.removeRange(0, box.cards.length);
       this._db.update(boxId, box);
 
+      emit(CardListState.success(box.cards));
+    } on Exception {
+      emit(const CardListState.failure());
+    }
+  }
+
+  Future<void> fetchAndAddCardsFromRemoteUrl(String url) async {
+    try {
+      var currentBoxId = SelectedCardBoxService().getId();
+      LearningCardBox box = await this._db.read(currentBoxId);
+
+      List<FlashCard> fetchedFlashCards = await FetchRemoteService.fetchRemoteDataFromJson(url);
+      for (var newFetchedCard in fetchedFlashCards) {
+        box.cards.add(newFetchedCard);
+      }
+      this._db.update(currentBoxId, box);
       emit(CardListState.success(box.cards));
     } on Exception {
       emit(const CardListState.failure());

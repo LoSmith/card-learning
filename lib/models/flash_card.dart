@@ -1,5 +1,7 @@
 import 'package:hive/hive.dart';
 
+import '../util_functions.dart';
+
 part 'flash_card.g.dart';
 
 // build with:
@@ -65,16 +67,16 @@ class FlashCard {
   }
 
   FlashCard.fromJson(Map<String, dynamic> jsonMap)
-      : id = jsonMap['id'].toString(),
-        questionText = jsonMap['questionText'].toString(),
-        questionAddition = jsonMap['questionAddition'].toString(),
-        questionImage = jsonMap['questionImage'].toString(),
-        solutionText = jsonMap['solutionText'].toString(),
-        solutionAddition = jsonMap['solutionAddition'].toString(),
-        solutionImage = jsonMap['solutionImage'].toString(),
-        timesTested = jsonMap['timesTested'],
-        timesGotRight = jsonMap['timesGotRight'],
-        timesGotWrong = jsonMap['timesGotWrong'],
-        lastTimeTested = jsonMap['lastTimeTested'],
-        sortNumber = jsonMap['sortNumber'];
+      : id = tryFromJson<String>('id', jsonMap, ''),
+        questionText = tryFromJson<String>('questionText', jsonMap, ''),
+        questionAddition = tryFromJson<String>('questionAddition', jsonMap, ''),
+        questionImage = tryFromJson<String>('questionImage', jsonMap, ''),
+        solutionText = tryFromJson<String>('solutionText', jsonMap, ''),
+        solutionAddition = tryFromJson<String>('solutionAddition', jsonMap, ''),
+        solutionImage = tryFromJson<String>('solutionImage', jsonMap, ''),
+        timesTested = tryFromJson<int>('timesTested', jsonMap, 0),
+        timesGotRight = tryFromJson<int>('timesGotRight', jsonMap, 0),
+        timesGotWrong = tryFromJson<int>('timesGotWrong', jsonMap, 0),
+        lastTimeTested = tryFromJson<DateTime>('lastTimeTested', jsonMap, DateTime.now()),
+        sortNumber = tryFromJson<int>('sortNumber', jsonMap, 0);
 }

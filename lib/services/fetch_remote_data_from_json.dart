@@ -3,9 +3,8 @@ import 'dart:convert';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:http/http.dart' as http;
 
-class FetchGsheetsService {
-  Future<List<FlashCard>> fetchRemoteDataFromJson(String url) async {
-    // final client = new http.Client();
+class FetchRemoteService {
+  static Future<List<FlashCard>> fetchRemoteDataFromJson(String url) async {
     var response = await http.get(Uri.parse(url));
 
     List<FlashCard> importedFlashCards = [];

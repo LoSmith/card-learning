@@ -96,9 +96,7 @@ class _CardListScreenState extends State<CardListScreen> {
           MaterialPageRoute(
             builder: (context) => FetchRemoteCardsScreen(
               onSave: (fetchUrl) {
-                // context
-                //     .read<FlashCardRepositoryCubit>()
-                //     .importJsonDataFromRemoteUrl(fetchUrl);
+                context.read<CardListCubit>().fetchAndAddCardsFromRemoteUrl(fetchUrl);
               },
             ),
           ));
