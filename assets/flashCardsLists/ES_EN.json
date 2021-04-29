@@ -3,6000 +3,6000 @@
     "version": "0.2",
     "data": [
       {
-          "sortNumber": "1",
+          "sortNumber": 1,
           "questionText": "de",
           "solutionText": "from",
           "solutionAddition": "of"
       },
       {
-          "sortNumber": "2",
+          "sortNumber": 2,
           "questionText": "la",
           "solutionText": "the",
           "solutionAddition": "the"
       },
       {
-          "sortNumber": "3",
+          "sortNumber": 3,
           "questionText": "que",
           "solutionText": "that",
           "solutionAddition": "which"
       },
       {
-          "sortNumber": "4",
+          "sortNumber": 4,
           "questionText": "el",
           "solutionText": "the",
           "solutionAddition": "the"
       },
       {
-          "sortNumber": "5",
+          "sortNumber": 5,
           "questionText": "en",
           "solutionText": "in",
           "solutionAddition": "at"
       },
       {
-          "sortNumber": "6",
+          "sortNumber": 6,
           "questionText": "y",
           "solutionText": "and",
           "solutionAddition": "y"
       },
       {
-          "sortNumber": "7",
+          "sortNumber": 7,
           "questionText": "a",
           "solutionText": "to",
           "solutionAddition": "a"
       },
       {
-          "sortNumber": "8",
+          "sortNumber": 8,
           "questionText": "los",
           "solutionText": "the",
           "solutionAddition": "the"
       },
       {
-          "sortNumber": "9",
+          "sortNumber": 9,
           "questionText": "se",
           "solutionText": "I know",
           "solutionAddition": "se"
       },
       {
-          "sortNumber": "10",
+          "sortNumber": 10,
           "questionText": "del",
           "solutionText": "of the",
           "solutionAddition": "from"
       },
       {
-          "sortNumber": "11",
+          "sortNumber": 11,
           "questionText": "las",
           "solutionText": "the",
           "solutionAddition": "the"
       },
       {
-          "sortNumber": "12",
+          "sortNumber": 12,
           "questionText": "un",
           "solutionText": "a",
           "solutionAddition": "a"
       },
       {
-          "sortNumber": "13",
+          "sortNumber": 13,
           "questionText": "por",
           "solutionText": "by",
           "solutionAddition": "by"
       },
       {
-          "sortNumber": "14",
+          "sortNumber": 14,
           "questionText": "con",
           "solutionText": "with",
           "solutionAddition": "with"
       },
       {
-          "sortNumber": "15",
+          "sortNumber": 15,
           "questionText": "no",
           "solutionText": "no",
           "solutionAddition": "no"
       },
       {
-          "sortNumber": "16",
+          "sortNumber": 16,
           "questionText": "una",
           "solutionText": "a",
           "solutionAddition": "a"
       },
       {
-          "sortNumber": "17",
+          "sortNumber": 17,
           "questionText": "su",
           "solutionText": "its",
           "solutionAddition": "your"
       },
       {
-          "sortNumber": "18",
+          "sortNumber": 18,
           "questionText": "para",
           "solutionText": "for",
           "solutionAddition": "for"
       },
       {
-          "sortNumber": "19",
+          "sortNumber": 19,
           "questionText": "es",
           "solutionText": "is",
           "solutionAddition": "es"
       },
       {
-          "sortNumber": "20",
+          "sortNumber": 20,
           "questionText": "al",
           "solutionText": "to the",
           "solutionAddition": "at"
       },
       {
-          "sortNumber": "21",
+          "sortNumber": 21,
           "questionText": "lo",
           "solutionText": "it",
           "solutionAddition": "lo"
       },
       {
-          "sortNumber": "22",
+          "sortNumber": 22,
           "questionText": "como",
           "solutionText": "What",
           "solutionAddition": "as"
       },
       {
-          "sortNumber": "23",
+          "sortNumber": 23,
           "questionText": "más",
           "solutionText": "plus",
           "solutionAddition": "more"
       },
       {
-          "sortNumber": "24",
+          "sortNumber": 24,
           "questionText": "o",
           "solutionText": "or",
           "solutionAddition": "o"
       },
       {
-          "sortNumber": "25",
+          "sortNumber": 25,
           "questionText": "pero",
           "solutionText": "but",
           "solutionAddition": "but"
       },
       {
-          "sortNumber": "26",
+          "sortNumber": 26,
           "questionText": "sus",
           "solutionText": "their",
           "solutionAddition": "your"
       },
       {
-          "sortNumber": "27",
+          "sortNumber": 27,
           "questionText": "le",
           "solutionText": "you",
           "solutionAddition": "le"
       },
       {
-          "sortNumber": "28",
+          "sortNumber": 28,
           "questionText": "ha",
           "solutionText": "ha",
           "solutionAddition": "has"
       },
       {
-          "sortNumber": "29",
+          "sortNumber": 29,
           "questionText": "me",
           "solutionText": "I",
           "solutionAddition": "me"
       },
       {
-          "sortNumber": "30",
+          "sortNumber": 30,
           "questionText": "si",
           "solutionText": "Yes",
           "solutionAddition": "if"
       },
       {
-          "sortNumber": "31",
+          "sortNumber": 31,
           "questionText": "sin",
           "solutionText": "without",
           "solutionAddition": "without"
       },
       {
-          "sortNumber": "32",
+          "sortNumber": 32,
           "questionText": "sobre",
           "solutionText": "on",
           "solutionAddition": "about"
       },
       {
-          "sortNumber": "33",
+          "sortNumber": 33,
           "questionText": "este",
           "solutionText": "East",
           "solutionAddition": "this"
       },
       {
-          "sortNumber": "34",
+          "sortNumber": 34,
           "questionText": "ya",
           "solutionText": "already",
           "solutionAddition": "already"
       },
       {
-          "sortNumber": "35",
+          "sortNumber": 35,
           "questionText": "entre",
           "solutionText": "Come in",
           "solutionAddition": "between"
       },
       {
-          "sortNumber": "36",
+          "sortNumber": 36,
           "questionText": "cuando",
           "solutionText": "when",
           "solutionAddition": "when"
       },
       {
-          "sortNumber": "37",
+          "sortNumber": 37,
           "questionText": "todo",
           "solutionText": "all",
           "solutionAddition": "all"
       },
       {
-          "sortNumber": "38",
+          "sortNumber": 38,
           "questionText": "esta",
           "solutionText": "is",
           "solutionAddition": "is"
       },
       {
-          "sortNumber": "39",
+          "sortNumber": 39,
           "questionText": "ser",
           "solutionText": "be",
           "solutionAddition": "be"
       },
       {
-          "sortNumber": "40",
+          "sortNumber": 40,
           "questionText": "son",
           "solutionText": "are",
           "solutionAddition": "are"
       },
       {
-          "sortNumber": "41",
+          "sortNumber": 41,
           "questionText": "dos",
           "solutionText": "two",
           "solutionAddition": "two"
       },
       {
-          "sortNumber": "42",
+          "sortNumber": 42,
           "questionText": "también",
           "solutionText": "too",
           "solutionAddition": "also"
       },
       {
-          "sortNumber": "43",
+          "sortNumber": 43,
           "questionText": "fue",
           "solutionText": "it was",
           "solutionAddition": "was"
       },
       {
-          "sortNumber": "44",
+          "sortNumber": 44,
           "questionText": "había",
           "solutionText": "there was",
           "solutionAddition": "there was"
       },
       {
-          "sortNumber": "45",
+          "sortNumber": 45,
           "questionText": "era",
           "solutionText": "it was",
           "solutionAddition": "was"
       },
       {
-          "sortNumber": "46",
+          "sortNumber": 46,
           "questionText": "muy",
           "solutionText": "very",
           "solutionAddition": "very"
       },
       {
-          "sortNumber": "47",
+          "sortNumber": 47,
           "questionText": "años",
           "solutionText": "years",
           "solutionAddition": "years"
       },
       {
-          "sortNumber": "48",
+          "sortNumber": 48,
           "questionText": "hasta",
           "solutionText": "until",
           "solutionAddition": "to"
       },
       {
-          "sortNumber": "49",
+          "sortNumber": 49,
           "questionText": "desde",
           "solutionText": "since",
           "solutionAddition": "since"
       },
       {
-          "sortNumber": "50",
+          "sortNumber": 50,
           "questionText": "está",
           "solutionText": "this",
           "solutionAddition": "is"
       },
       {
-          "sortNumber": "51",
+          "sortNumber": 51,
           "questionText": "mi",
           "solutionText": "me",
           "solutionAddition": "my"
       },
       {
-          "sortNumber": "52",
+          "sortNumber": 52,
           "questionText": "porque",
           "solutionText": "because",
           "solutionAddition": "because"
       },
       {
-          "sortNumber": "53",
+          "sortNumber": 53,
           "questionText": "qué",
           "solutionText": "that",
           "solutionAddition": "what"
       },
       {
-          "sortNumber": "54",
+          "sortNumber": 54,
           "questionText": "sólo",
           "solutionText": "alone",
           "solutionAddition": "only"
       },
       {
-          "sortNumber": "55",
+          "sortNumber": 55,
           "questionText": "han",
           "solutionText": "they have",
           "solutionAddition": "have"
       },
       {
-          "sortNumber": "56",
+          "sortNumber": 56,
           "questionText": "yo",
           "solutionText": "I",
           "solutionAddition": "me"
       },
       {
-          "sortNumber": "57",
+          "sortNumber": 57,
           "questionText": "hay",
           "solutionText": "there are",
           "solutionAddition": "there is"
       },
       {
-          "sortNumber": "58",
+          "sortNumber": 58,
           "questionText": "vez",
           "solutionText": "time",
           "solutionAddition": "time"
       },
       {
-          "sortNumber": "59",
+          "sortNumber": 59,
           "questionText": "puede",
           "solutionText": "can",
           "solutionAddition": "can"
       },
       {
-          "sortNumber": "60",
+          "sortNumber": 60,
           "questionText": "todos",
           "solutionText": "everybody",
           "solutionAddition": "all"
       },
       {
-          "sortNumber": "61",
+          "sortNumber": 61,
           "questionText": "así",
           "solutionText": "So",
           "solutionAddition": "so"
       },
       {
-          "sortNumber": "62",
+          "sortNumber": 62,
           "questionText": "nos",
           "solutionText": "us",
           "solutionAddition": "us"
       },
       {
-          "sortNumber": "63",
+          "sortNumber": 63,
           "questionText": "ni",
           "solutionText": "neither",
           "solutionAddition": "nor"
       },
       {
-          "sortNumber": "64",
+          "sortNumber": 64,
           "questionText": "parte",
           "solutionText": "part",
           "solutionAddition": "part"
       },
       {
-          "sortNumber": "65",
+          "sortNumber": 65,
           "questionText": "tiene",
           "solutionText": "It has",
           "solutionAddition": "has"
       },
       {
-          "sortNumber": "66",
+          "sortNumber": 66,
           "questionText": "él",
           "solutionText": "he",
           "solutionAddition": "he"
       },
       {
-          "sortNumber": "67",
+          "sortNumber": 67,
           "questionText": "uno",
           "solutionText": "one",
           "solutionAddition": "one"
       },
       {
-          "sortNumber": "68",
+          "sortNumber": 68,
           "questionText": "donde",
           "solutionText": "where",
           "solutionAddition": "where"
       },
       {
-          "sortNumber": "69",
+          "sortNumber": 69,
           "questionText": "bien",
           "solutionText": "all right",
           "solutionAddition": "well"
       },
       {
-          "sortNumber": "70",
+          "sortNumber": 70,
           "questionText": "tiempo",
           "solutionText": "weather",
           "solutionAddition": "time"
       },
       {
-          "sortNumber": "71",
+          "sortNumber": 71,
           "questionText": "mismo",
           "solutionText": "same",
           "solutionAddition": "itself"
       },
       {
-          "sortNumber": "72",
+          "sortNumber": 72,
           "questionText": "ese",
           "solutionText": "that",
           "solutionAddition": "that"
       },
       {
-          "sortNumber": "73",
+          "sortNumber": 73,
           "questionText": "ahora",
           "solutionText": "now",
           "solutionAddition": "now"
       },
       {
-          "sortNumber": "74",
+          "sortNumber": 74,
           "questionText": "cada",
           "solutionText": "each",
           "solutionAddition": "each"
       },
       {
-          "sortNumber": "75",
+          "sortNumber": 75,
           "questionText": "e",
           "solutionText": "and",
           "solutionAddition": "e"
       },
       {
-          "sortNumber": "76",
+          "sortNumber": 76,
           "questionText": "vida",
           "solutionText": "life",
           "solutionAddition": "life"
       },
       {
-          "sortNumber": "77",
+          "sortNumber": 77,
           "questionText": "otro",
           "solutionText": "other",
           "solutionAddition": "another"
       },
       {
-          "sortNumber": "78",
+          "sortNumber": 78,
           "questionText": "después",
           "solutionText": "after",
           "solutionAddition": "then"
       },
       {
-          "sortNumber": "79",
+          "sortNumber": 79,
           "questionText": "te",
           "solutionText": "tea",
           "solutionAddition": "you"
       },
       {
-          "sortNumber": "80",
+          "sortNumber": 80,
           "questionText": "otros",
           "solutionText": "others",
           "solutionAddition": "others"
       },
       {
-          "sortNumber": "81",
+          "sortNumber": 81,
           "questionText": "aunque",
           "solutionText": "even though",
           "solutionAddition": "even if"
       },
       {
-          "sortNumber": "82",
+          "sortNumber": 82,
           "questionText": "esa",
           "solutionText": "that",
           "solutionAddition": "that"
       },
       {
-          "sortNumber": "83",
+          "sortNumber": 83,
           "questionText": "eso",
           "solutionText": "that",
           "solutionAddition": "that"
       },
       {
-          "sortNumber": "84",
+          "sortNumber": 84,
           "questionText": "hace",
           "solutionText": "make",
           "solutionAddition": "makes"
       },
       {
-          "sortNumber": "85",
+          "sortNumber": 85,
           "questionText": "otra",
           "solutionText": "other",
           "solutionAddition": "another"
       },
       {
-          "sortNumber": "86",
+          "sortNumber": 86,
           "questionText": "gobierno",
           "solutionText": "government",
           "solutionAddition": "government"
       },
       {
-          "sortNumber": "87",
+          "sortNumber": 87,
           "questionText": "tan",
           "solutionText": "so",
           "solutionAddition": "so"
       },
       {
-          "sortNumber": "88",
+          "sortNumber": 88,
           "questionText": "durante",
           "solutionText": "during",
           "solutionAddition": "during"
       },
       {
-          "sortNumber": "89",
+          "sortNumber": 89,
           "questionText": "siempre",
           "solutionText": "forever",
           "solutionAddition": "always"
       },
       {
-          "sortNumber": "90",
+          "sortNumber": 90,
           "questionText": "día",
           "solutionText": "day",
           "solutionAddition": "day"
       },
       {
-          "sortNumber": "91",
+          "sortNumber": 91,
           "questionText": "tanto",
           "solutionText": "so much",
           "solutionAddition": "so much"
       },
       {
-          "sortNumber": "92",
+          "sortNumber": 92,
           "questionText": "ella",
           "solutionText": "she",
           "solutionAddition": "she"
       },
       {
-          "sortNumber": "93",
+          "sortNumber": 93,
           "questionText": "tres",
           "solutionText": "three",
           "solutionAddition": "three"
       },
       {
-          "sortNumber": "94",
+          "sortNumber": 94,
           "questionText": "sí",
           "solutionText": "Yes",
           "solutionAddition": "yes"
       },
       {
-          "sortNumber": "95",
+          "sortNumber": 95,
           "questionText": "dijo",
           "solutionText": "He said",
           "solutionAddition": "said"
       },
       {
-          "sortNumber": "96",
+          "sortNumber": 96,
           "questionText": "sido",
           "solutionText": "been",
           "solutionAddition": "been"
       },
       {
-          "sortNumber": "97",
+          "sortNumber": 97,
           "questionText": "gran",
           "solutionText": "big",
           "solutionAddition": "great"
       },
       {
-          "sortNumber": "98",
+          "sortNumber": 98,
           "questionText": "país",
           "solutionText": "country",
           "solutionAddition": "country"
       },
       {
-          "sortNumber": "99",
+          "sortNumber": 99,
           "questionText": "según",
           "solutionText": "according to",
           "solutionAddition": "according to"
       },
       {
-          "sortNumber": "100",
+          "sortNumber": 100,
           "questionText": "menos",
           "solutionText": "less",
           "solutionAddition": "less"
       },
       {
-          "sortNumber": "101",
+          "sortNumber": 101,
           "questionText": "mundo",
           "solutionText": "world",
           "solutionAddition": "world"
       },
       {
-          "sortNumber": "102",
+          "sortNumber": 102,
           "questionText": "año",
           "solutionText": "year",
           "solutionAddition": "year"
       },
       {
-          "sortNumber": "103",
+          "sortNumber": 103,
           "questionText": "antes",
           "solutionText": "before",
           "solutionAddition": "before"
       },
       {
-          "sortNumber": "104",
+          "sortNumber": 104,
           "questionText": "estado",
           "solutionText": "condition",
           "solutionAddition": "state"
       },
       {
-          "sortNumber": "105",
+          "sortNumber": 105,
           "questionText": "contra",
           "solutionText": "against",
           "solutionAddition": "against"
       },
       {
-          "sortNumber": "106",
+          "sortNumber": 106,
           "questionText": "sino",
           "solutionText": "otherwise",
           "solutionAddition": "but"
       },
       {
-          "sortNumber": "107",
+          "sortNumber": 107,
           "questionText": "forma",
           "solutionText": "form",
           "solutionAddition": "form"
       },
       {
-          "sortNumber": "108",
+          "sortNumber": 108,
           "questionText": "caso",
           "solutionText": "case",
           "solutionAddition": "case"
       },
       {
-          "sortNumber": "109",
+          "sortNumber": 109,
           "questionText": "nada",
           "solutionText": "nothing",
           "solutionAddition": "nothing"
       },
       {
-          "sortNumber": "110",
+          "sortNumber": 110,
           "questionText": "hacer",
           "solutionText": "do",
           "solutionAddition": "do"
       },
       {
-          "sortNumber": "111",
+          "sortNumber": 111,
           "questionText": "general",
           "solutionText": "general",
           "solutionAddition": "general"
       },
       {
-          "sortNumber": "112",
+          "sortNumber": 112,
           "questionText": "estaba",
           "solutionText": "I was",
           "solutionAddition": "was"
       },
       {
-          "sortNumber": "113",
+          "sortNumber": 113,
           "questionText": "poco",
           "solutionText": "little bit",
           "solutionAddition": "little"
       },
       {
-          "sortNumber": "114",
+          "sortNumber": 114,
           "questionText": "estos",
           "solutionText": "these",
           "solutionAddition": "these"
       },
       {
-          "sortNumber": "115",
+          "sortNumber": 115,
           "questionText": "presidente",
           "solutionText": "President",
           "solutionAddition": "president"
       },
       {
-          "sortNumber": "116",
+          "sortNumber": 116,
           "questionText": "mayor",
           "solutionText": "higher",
           "solutionAddition": "major"
       },
       {
-          "sortNumber": "117",
+          "sortNumber": 117,
           "questionText": "ante",
           "solutionText": "in view of",
           "solutionAddition": "to"
       },
       {
-          "sortNumber": "118",
+          "sortNumber": 118,
           "questionText": "unos",
           "solutionText": "some",
           "solutionAddition": "some"
       },
       {
-          "sortNumber": "119",
+          "sortNumber": 119,
           "questionText": "les",
           "solutionText": "them",
           "solutionAddition": "them"
       },
       {
-          "sortNumber": "120",
+          "sortNumber": 120,
           "questionText": "algo",
           "solutionText": "something",
           "solutionAddition": "somewhat"
       },
       {
-          "sortNumber": "121",
+          "sortNumber": 121,
           "questionText": "hacia",
           "solutionText": "toward",
           "solutionAddition": "to"
       },
       {
-          "sortNumber": "122",
+          "sortNumber": 122,
           "questionText": "casa",
           "solutionText": "home",
           "solutionAddition": "home"
       },
       {
-          "sortNumber": "123",
+          "sortNumber": 123,
           "questionText": "ellos",
           "solutionText": "they",
           "solutionAddition": "they"
       },
       {
-          "sortNumber": "124",
+          "sortNumber": 124,
           "questionText": "ayer",
           "solutionText": "Yesterday",
           "solutionAddition": "yesterday"
       },
       {
-          "sortNumber": "125",
+          "sortNumber": 125,
           "questionText": "hecho",
           "solutionText": "done",
           "solutionAddition": "fact"
       },
       {
-          "sortNumber": "126",
+          "sortNumber": 126,
           "questionText": "primera",
           "solutionText": "first",
           "solutionAddition": "first"
       },
       {
-          "sortNumber": "127",
+          "sortNumber": 127,
           "questionText": "mucho",
           "solutionText": "a lot",
           "solutionAddition": "much"
       },
       {
-          "sortNumber": "128",
+          "sortNumber": 128,
           "questionText": "mientras",
           "solutionText": "While",
           "solutionAddition": "while"
       },
       {
-          "sortNumber": "129",
+          "sortNumber": 129,
           "questionText": "además",
           "solutionText": "what's more",
           "solutionAddition": "moreover"
       },
       {
-          "sortNumber": "130",
+          "sortNumber": 130,
           "questionText": "quien",
           "solutionText": "who",
           "solutionAddition": "who"
       },
       {
-          "sortNumber": "131",
+          "sortNumber": 131,
           "questionText": "momento",
           "solutionText": "moment",
           "solutionAddition": "time"
       },
       {
-          "sortNumber": "132",
+          "sortNumber": 132,
           "questionText": "millones",
           "solutionText": "millions",
           "solutionAddition": "millions"
       },
       {
-          "sortNumber": "133",
+          "sortNumber": 133,
           "questionText": "esto",
           "solutionText": "this",
           "solutionAddition": "this"
       },
       {
-          "sortNumber": "134",
+          "sortNumber": 134,
           "questionText": "españa",
           "solutionText": "Spain",
           "solutionAddition": "spain"
       },
       {
-          "sortNumber": "135",
+          "sortNumber": 135,
           "questionText": "hombre",
           "solutionText": "man",
           "solutionAddition": "man"
       },
       {
-          "sortNumber": "136",
+          "sortNumber": 136,
           "questionText": "están",
           "solutionText": "is it so",
           "solutionAddition": "are"
       },
       {
-          "sortNumber": "137",
+          "sortNumber": 137,
           "questionText": "pues",
           "solutionText": "well",
           "solutionAddition": "because"
       },
       {
-          "sortNumber": "138",
+          "sortNumber": 138,
           "questionText": "hoy",
           "solutionText": "today",
           "solutionAddition": "today"
       },
       {
-          "sortNumber": "139",
+          "sortNumber": 139,
           "questionText": "lugar",
           "solutionText": "place",
           "solutionAddition": "place"
       },
       {
-          "sortNumber": "140",
+          "sortNumber": 140,
           "questionText": "madrid",
           "solutionText": "Madrid",
           "solutionAddition": "madrid"
       },
       {
-          "sortNumber": "141",
+          "sortNumber": 141,
           "questionText": "nacional",
           "solutionText": "national",
           "solutionAddition": "national"
       },
       {
-          "sortNumber": "142",
+          "sortNumber": 142,
           "questionText": "trabajo",
           "solutionText": "job",
           "solutionAddition": "job"
       },
       {
-          "sortNumber": "143",
+          "sortNumber": 143,
           "questionText": "otras",
           "solutionText": "other",
           "solutionAddition": "other"
       },
       {
-          "sortNumber": "144",
+          "sortNumber": 144,
           "questionText": "mejor",
           "solutionText": "better",
           "solutionAddition": "best"
       },
       {
-          "sortNumber": "145",
+          "sortNumber": 145,
           "questionText": "nuevo",
           "solutionText": "new",
           "solutionAddition": "new"
       },
       {
-          "sortNumber": "146",
+          "sortNumber": 146,
           "questionText": "decir",
           "solutionText": "tell",
           "solutionAddition": "say"
       },
       {
-          "sortNumber": "147",
+          "sortNumber": 147,
           "questionText": "algunos",
           "solutionText": "Some",
           "solutionAddition": "some"
       },
       {
-          "sortNumber": "148",
+          "sortNumber": 148,
           "questionText": "entonces",
           "solutionText": "then",
           "solutionAddition": "then"
       },
       {
-          "sortNumber": "149",
+          "sortNumber": 149,
           "questionText": "todas",
           "solutionText": "all",
           "solutionAddition": "all"
       },
       {
-          "sortNumber": "150",
+          "sortNumber": 150,
           "questionText": "días",
           "solutionText": "days",
           "solutionAddition": "days"
       },
       {
-          "sortNumber": "151",
+          "sortNumber": 151,
           "questionText": "debe",
           "solutionText": "has to",
           "solutionAddition": "should"
       },
       {
-          "sortNumber": "152",
+          "sortNumber": 152,
           "questionText": "política",
           "solutionText": "politics",
           "solutionAddition": "policy"
       },
       {
-          "sortNumber": "153",
+          "sortNumber": 153,
           "questionText": "cómo",
           "solutionText": "excuse me",
           "solutionAddition": "how"
       },
       {
-          "sortNumber": "154",
+          "sortNumber": 154,
           "questionText": "casi",
           "solutionText": "almost",
           "solutionAddition": "almost"
       },
       {
-          "sortNumber": "155",
+          "sortNumber": 155,
           "questionText": "toda",
           "solutionText": "all",
           "solutionAddition": "all"
       },
       {
-          "sortNumber": "156",
+          "sortNumber": 156,
           "questionText": "tal",
           "solutionText": "such",
           "solutionAddition": "such"
       },
       {
-          "sortNumber": "157",
+          "sortNumber": 157,
           "questionText": "luego",
           "solutionText": "later",
           "solutionAddition": "then"
       },
       {
-          "sortNumber": "158",
+          "sortNumber": 158,
           "questionText": "pasado",
           "solutionText": "last",
           "solutionAddition": "past"
       },
       {
-          "sortNumber": "159",
+          "sortNumber": 159,
           "questionText": "primer",
           "solutionText": "first",
           "solutionAddition": "first"
       },
       {
-          "sortNumber": "160",
+          "sortNumber": 160,
           "questionText": "medio",
           "solutionText": "half",
           "solutionAddition": "half"
       },
       {
-          "sortNumber": "161",
+          "sortNumber": 161,
           "questionText": "va",
           "solutionText": "he",
           "solutionAddition": "goes"
       },
       {
-          "sortNumber": "162",
+          "sortNumber": 162,
           "questionText": "estas",
           "solutionText": "are",
           "solutionAddition": "these"
       },
       {
-          "sortNumber": "163",
+          "sortNumber": 163,
           "questionText": "sea",
           "solutionText": "be",
           "solutionAddition": "be"
       },
       {
-          "sortNumber": "164",
+          "sortNumber": 164,
           "questionText": "tenía",
           "solutionText": "I had",
           "solutionAddition": "had"
       },
       {
-          "sortNumber": "165",
+          "sortNumber": 165,
           "questionText": "nunca",
           "solutionText": "never",
           "solutionAddition": "never"
       },
       {
-          "sortNumber": "166",
+          "sortNumber": 166,
           "questionText": "poder",
           "solutionText": "can",
           "solutionAddition": "power"
       },
       {
-          "sortNumber": "167",
+          "sortNumber": 167,
           "questionText": "aquí",
           "solutionText": "here",
           "solutionAddition": "here"
       },
       {
-          "sortNumber": "168",
+          "sortNumber": 168,
           "questionText": "ver",
           "solutionText": "watch",
           "solutionAddition": "see"
       },
       {
-          "sortNumber": "169",
+          "sortNumber": 169,
           "questionText": "veces",
           "solutionText": "times",
           "solutionAddition": "times"
       },
       {
-          "sortNumber": "170",
+          "sortNumber": 170,
           "questionText": "embargo",
           "solutionText": "embargo",
           "solutionAddition": "embargo"
       },
       {
-          "sortNumber": "171",
+          "sortNumber": 171,
           "questionText": "partido",
           "solutionText": "match",
           "solutionAddition": "party"
       },
       {
-          "sortNumber": "172",
+          "sortNumber": 172,
           "questionText": "personas",
           "solutionText": "persons",
           "solutionAddition": "people"
       },
       {
-          "sortNumber": "173",
+          "sortNumber": 173,
           "questionText": "grupo",
           "solutionText": "group",
           "solutionAddition": "group"
       },
       {
-          "sortNumber": "174",
+          "sortNumber": 174,
           "questionText": "cuenta",
           "solutionText": "bill",
           "solutionAddition": "account"
       },
       {
-          "sortNumber": "175",
+          "sortNumber": 175,
           "questionText": "pueden",
           "solutionText": "they can",
           "solutionAddition": "can"
       },
       {
-          "sortNumber": "176",
+          "sortNumber": 176,
           "questionText": "tienen",
           "solutionText": "have",
           "solutionAddition": "have"
       },
       {
-          "sortNumber": "177",
+          "sortNumber": 177,
           "questionText": "misma",
           "solutionText": "same",
           "solutionAddition": "same"
       },
       {
-          "sortNumber": "178",
+          "sortNumber": 178,
           "questionText": "nueva",
           "solutionText": "new",
           "solutionAddition": "new"
       },
       {
-          "sortNumber": "179",
+          "sortNumber": 179,
           "questionText": "cual",
           "solutionText": "which",
           "solutionAddition": "which"
       },
       {
-          "sortNumber": "180",
+          "sortNumber": 180,
           "questionText": "fueron",
           "solutionText": "They were",
           "solutionAddition": "were"
       },
       {
-          "sortNumber": "181",
+          "sortNumber": 181,
           "questionText": "mujer",
           "solutionText": "woman",
           "solutionAddition": "woman"
       },
       {
-          "sortNumber": "182",
+          "sortNumber": 182,
           "questionText": "frente",
           "solutionText": "forehead",
           "solutionAddition": "front"
       },
       {
-          "sortNumber": "183",
+          "sortNumber": 183,
           "questionText": "josé",
           "solutionText": "Joseph",
           "solutionAddition": "joseph"
       },
       {
-          "sortNumber": "184",
+          "sortNumber": 184,
           "questionText": "tras",
           "solutionText": "after",
           "solutionAddition": "behind"
       },
       {
-          "sortNumber": "185",
+          "sortNumber": 185,
           "questionText": "cosas",
           "solutionText": "things",
           "solutionAddition": "things"
       },
       {
-          "sortNumber": "186",
+          "sortNumber": 186,
           "questionText": "fin",
           "solutionText": "finish",
           "solutionAddition": "end"
       },
       {
-          "sortNumber": "187",
+          "sortNumber": 187,
           "questionText": "ciudad",
           "solutionText": "city",
           "solutionAddition": "city"
       },
       {
-          "sortNumber": "188",
+          "sortNumber": 188,
           "questionText": "he",
           "solutionText": "I",
           "solutionAddition": "he"
       },
       {
-          "sortNumber": "189",
+          "sortNumber": 189,
           "questionText": "social",
           "solutionText": "Social",
           "solutionAddition": "social"
       },
       {
-          "sortNumber": "190",
+          "sortNumber": 190,
           "questionText": "manera",
           "solutionText": "way",
           "solutionAddition": "way"
       },
       {
-          "sortNumber": "191",
+          "sortNumber": 191,
           "questionText": "tener",
           "solutionText": "have",
           "solutionAddition": "have"
       },
       {
-          "sortNumber": "192",
+          "sortNumber": 192,
           "questionText": "sistema",
           "solutionText": "system",
           "solutionAddition": "system"
       },
       {
-          "sortNumber": "193",
+          "sortNumber": 193,
           "questionText": "será",
           "solutionText": "be",
           "solutionAddition": "will be"
       },
       {
-          "sortNumber": "194",
+          "sortNumber": 194,
           "questionText": "historia",
           "solutionText": "history",
           "solutionAddition": "history"
       },
       {
-          "sortNumber": "195",
+          "sortNumber": 195,
           "questionText": "muchos",
           "solutionText": "Many",
           "solutionAddition": "many"
       },
       {
-          "sortNumber": "196",
+          "sortNumber": 196,
           "questionText": "juan",
           "solutionText": "John",
           "solutionAddition": "juan"
       },
       {
-          "sortNumber": "197",
+          "sortNumber": 197,
           "questionText": "tipo",
           "solutionText": "kind",
           "solutionAddition": "type"
       },
       {
-          "sortNumber": "198",
+          "sortNumber": 198,
           "questionText": "cuatro",
           "solutionText": "four",
           "solutionAddition": "four"
       },
       {
-          "sortNumber": "199",
+          "sortNumber": 199,
           "questionText": "dentro",
           "solutionText": "inside",
           "solutionAddition": "inside"
       },
       {
-          "sortNumber": "200",
+          "sortNumber": 200,
           "questionText": "nuestro",
           "solutionText": "our",
           "solutionAddition": "our"
       },
       {
-          "sortNumber": "201",
+          "sortNumber": 201,
           "questionText": "punto",
           "solutionText": "point",
           "solutionAddition": "dot"
       },
       {
-          "sortNumber": "202",
+          "sortNumber": 202,
           "questionText": "dice",
           "solutionText": "He says",
           "solutionAddition": "it says"
       },
       {
-          "sortNumber": "203",
+          "sortNumber": 203,
           "questionText": "ello",
           "solutionText": "it",
           "solutionAddition": "it"
       },
       {
-          "sortNumber": "204",
+          "sortNumber": 204,
           "questionText": "cualquier",
           "solutionText": "any",
           "solutionAddition": "any"
       },
       {
-          "sortNumber": "205",
+          "sortNumber": 205,
           "questionText": "noche",
           "solutionText": "night",
           "solutionAddition": "night"
       },
       {
-          "sortNumber": "206",
+          "sortNumber": 206,
           "questionText": "aún",
           "solutionText": "still",
           "solutionAddition": "even"
       },
       {
-          "sortNumber": "207",
+          "sortNumber": 207,
           "questionText": "agua",
           "solutionText": "Water",
           "solutionAddition": "water"
       },
       {
-          "sortNumber": "208",
+          "sortNumber": 208,
           "questionText": "parece",
           "solutionText": "It seems",
           "solutionAddition": "it seems"
       },
       {
-          "sortNumber": "209",
+          "sortNumber": 209,
           "questionText": "haber",
           "solutionText": "to have",
           "solutionAddition": "to have"
       },
       {
-          "sortNumber": "210",
+          "sortNumber": 210,
           "questionText": "situación",
           "solutionText": "situation",
           "solutionAddition": "situation"
       },
       {
-          "sortNumber": "211",
+          "sortNumber": 211,
           "questionText": "fuera",
           "solutionText": "outside",
           "solutionAddition": "outside"
       },
       {
-          "sortNumber": "212",
+          "sortNumber": 212,
           "questionText": "bajo",
           "solutionText": "under",
           "solutionAddition": "under"
       },
       {
-          "sortNumber": "213",
+          "sortNumber": 213,
           "questionText": "grandes",
           "solutionText": "big",
           "solutionAddition": "great"
       },
       {
-          "sortNumber": "214",
+          "sortNumber": 214,
           "questionText": "nuestra",
           "solutionText": "our",
           "solutionAddition": "our"
       },
       {
-          "sortNumber": "215",
+          "sortNumber": 215,
           "questionText": "ejemplo",
           "solutionText": "example",
           "solutionAddition": "example"
       },
       {
-          "sortNumber": "216",
+          "sortNumber": 216,
           "questionText": "acuerdo",
           "solutionText": "agreement",
           "solutionAddition": "agreement"
       },
       {
-          "sortNumber": "217",
+          "sortNumber": 217,
           "questionText": "habían",
           "solutionText": "they had",
           "solutionAddition": "you had"
       },
       {
-          "sortNumber": "218",
+          "sortNumber": 218,
           "questionText": "usted",
           "solutionText": "you",
           "solutionAddition": "you"
       },
       {
-          "sortNumber": "219",
+          "sortNumber": 219,
           "questionText": "estados",
           "solutionText": "state",
           "solutionAddition": "states"
       },
       {
-          "sortNumber": "220",
+          "sortNumber": 220,
           "questionText": "hizo",
           "solutionText": "made",
           "solutionAddition": "made"
       },
       {
-          "sortNumber": "221",
+          "sortNumber": 221,
           "questionText": "nadie",
           "solutionText": "nobody",
           "solutionAddition": "no one"
       },
       {
-          "sortNumber": "222",
+          "sortNumber": 222,
           "questionText": "países",
           "solutionText": "countries",
           "solutionAddition": "countries"
       },
       {
-          "sortNumber": "223",
+          "sortNumber": 223,
           "questionText": "horas",
           "solutionText": "hours",
           "solutionAddition": "hours"
       },
       {
-          "sortNumber": "224",
+          "sortNumber": 224,
           "questionText": "posible",
           "solutionText": "possible",
           "solutionAddition": "possible"
       },
       {
-          "sortNumber": "225",
+          "sortNumber": 225,
           "questionText": "tarde",
           "solutionText": "late",
           "solutionAddition": "afternoon"
       },
       {
-          "sortNumber": "226",
+          "sortNumber": 226,
           "questionText": "ley",
           "solutionText": "law",
           "solutionAddition": "law"
       },
       {
-          "sortNumber": "227",
+          "sortNumber": 227,
           "questionText": "importante",
           "solutionText": "important",
           "solutionAddition": "important"
       },
       {
-          "sortNumber": "228",
+          "sortNumber": 228,
           "questionText": "guerra",
           "solutionText": "war",
           "solutionAddition": "war"
       },
       {
-          "sortNumber": "229",
+          "sortNumber": 229,
           "questionText": "desarrollo",
           "solutionText": "developing",
           "solutionAddition": "development"
       },
       {
-          "sortNumber": "230",
+          "sortNumber": 230,
           "questionText": "proceso",
           "solutionText": "process",
           "solutionAddition": "process"
       },
       {
-          "sortNumber": "231",
+          "sortNumber": 231,
           "questionText": "realidad",
           "solutionText": "reality",
           "solutionAddition": "reality"
       },
       {
-          "sortNumber": "232",
+          "sortNumber": 232,
           "questionText": "sentido",
           "solutionText": "sense",
           "solutionAddition": "meaning"
       },
       {
-          "sortNumber": "233",
+          "sortNumber": 233,
           "questionText": "lado",
           "solutionText": "side",
           "solutionAddition": "side"
       },
       {
-          "sortNumber": "234",
+          "sortNumber": 234,
           "questionText": "mí",
           "solutionText": "my",
           "solutionAddition": "me"
       },
       {
-          "sortNumber": "235",
+          "sortNumber": 235,
           "questionText": "tu",
           "solutionText": "you",
           "solutionAddition": "your"
       },
       {
-          "sortNumber": "236",
+          "sortNumber": 236,
           "questionText": "cambio",
           "solutionText": "change",
           "solutionAddition": "change"
       },
       {
-          "sortNumber": "237",
+          "sortNumber": 237,
           "questionText": "allí",
           "solutionText": "there",
           "solutionAddition": "there"
       },
       {
-          "sortNumber": "238",
+          "sortNumber": 238,
           "questionText": "mano",
           "solutionText": "hand",
           "solutionAddition": "hand"
       },
       {
-          "sortNumber": "239",
+          "sortNumber": 239,
           "questionText": "eran",
           "solutionText": "were",
           "solutionAddition": "were"
       },
       {
-          "sortNumber": "240",
+          "sortNumber": 240,
           "questionText": "estar",
           "solutionText": "to be",
           "solutionAddition": "be"
       },
       {
-          "sortNumber": "241",
+          "sortNumber": 241,
           "questionText": "san",
           "solutionText": "saint",
           "solutionAddition": "saint"
       },
       {
-          "sortNumber": "242",
+          "sortNumber": 242,
           "questionText": "número",
           "solutionText": "number",
           "solutionAddition": "number"
       },
       {
-          "sortNumber": "243",
+          "sortNumber": 243,
           "questionText": "sociedad",
           "solutionText": "society",
           "solutionAddition": "company"
       },
       {
-          "sortNumber": "244",
+          "sortNumber": 244,
           "questionText": "unas",
           "solutionText": "nails",
           "solutionAddition": "about"
       },
       {
-          "sortNumber": "245",
+          "sortNumber": 245,
           "questionText": "centro",
           "solutionText": "center",
           "solutionAddition": "center"
       },
       {
-          "sortNumber": "246",
+          "sortNumber": 246,
           "questionText": "padre",
           "solutionText": "dad",
           "solutionAddition": "father"
       },
       {
-          "sortNumber": "247",
+          "sortNumber": 247,
           "questionText": "gente",
           "solutionText": "people",
           "solutionAddition": "people"
       },
       {
-          "sortNumber": "248",
+          "sortNumber": 248,
           "questionText": "final",
           "solutionText": "final",
           "solutionAddition": "end"
       },
       {
-          "sortNumber": "249",
+          "sortNumber": 249,
           "questionText": "relación",
           "solutionText": "relationship",
           "solutionAddition": "relationship"
       },
       {
-          "sortNumber": "250",
+          "sortNumber": 250,
           "questionText": "cuerpo",
           "solutionText": "body",
           "solutionAddition": "body"
       },
       {
-          "sortNumber": "251",
+          "sortNumber": 251,
           "questionText": "obra",
           "solutionText": "construction site",
           "solutionAddition": "work"
       },
       {
-          "sortNumber": "252",
+          "sortNumber": 252,
           "questionText": "incluso",
           "solutionText": "even",
           "solutionAddition": "including"
       },
       {
-          "sortNumber": "253",
+          "sortNumber": 253,
           "questionText": "través",
           "solutionText": "through",
           "solutionAddition": "through"
       },
       {
-          "sortNumber": "254",
+          "sortNumber": 254,
           "questionText": "último",
           "solutionText": "latest",
           "solutionAddition": "last"
       },
       {
-          "sortNumber": "255",
+          "sortNumber": 255,
           "questionText": "madre",
           "solutionText": "mother",
           "solutionAddition": "mother"
       },
       {
-          "sortNumber": "256",
+          "sortNumber": 256,
           "questionText": "mis",
           "solutionText": "my",
           "solutionAddition": "my"
       },
       {
-          "sortNumber": "257",
+          "sortNumber": 257,
           "questionText": "modo",
           "solutionText": "mode",
           "solutionAddition": "mode"
       },
       {
-          "sortNumber": "258",
+          "sortNumber": 258,
           "questionText": "problemas",
           "solutionText": "problems",
           "solutionAddition": "problems"
       },
       {
-          "sortNumber": "259",
+          "sortNumber": 259,
           "questionText": "cinco",
           "solutionText": "five",
           "solutionAddition": "five"
       },
       {
-          "sortNumber": "260",
+          "sortNumber": 260,
           "questionText": "carlos",
           "solutionText": "Carlos",
           "solutionAddition": "carlos"
       },
       {
-          "sortNumber": "261",
+          "sortNumber": 261,
           "questionText": "hombres",
           "solutionText": "mens",
           "solutionAddition": "men"
       },
       {
-          "sortNumber": "262",
+          "sortNumber": 262,
           "questionText": "información",
           "solutionText": "information",
           "solutionAddition": "information"
       },
       {
-          "sortNumber": "263",
+          "sortNumber": 263,
           "questionText": "ojos",
           "solutionText": "eyes",
           "solutionAddition": "eyes"
       },
       {
-          "sortNumber": "264",
+          "sortNumber": 264,
           "questionText": "muerte",
           "solutionText": "death",
           "solutionAddition": "death"
       },
       {
-          "sortNumber": "265",
+          "sortNumber": 265,
           "questionText": "nombre",
           "solutionText": "Name",
           "solutionAddition": "name"
       },
       {
-          "sortNumber": "266",
+          "sortNumber": 266,
           "questionText": "algunas",
           "solutionText": "some",
           "solutionAddition": "some"
       },
       {
-          "sortNumber": "267",
+          "sortNumber": 267,
           "questionText": "público",
           "solutionText": "public",
           "solutionAddition": "public"
       },
       {
-          "sortNumber": "268",
+          "sortNumber": 268,
           "questionText": "mujeres",
           "solutionText": "women",
           "solutionAddition": "women"
       },
       {
-          "sortNumber": "269",
+          "sortNumber": 269,
           "questionText": "siglo",
           "solutionText": "century",
           "solutionAddition": "century"
       },
       {
-          "sortNumber": "270",
+          "sortNumber": 270,
           "questionText": "todavía",
           "solutionText": "yet",
           "solutionAddition": "still"
       },
       {
-          "sortNumber": "271",
+          "sortNumber": 271,
           "questionText": "meses",
           "solutionText": "months",
           "solutionAddition": "months"
       },
       {
-          "sortNumber": "272",
+          "sortNumber": 272,
           "questionText": "mañana",
           "solutionText": "morning",
           "solutionAddition": "tomorrow"
       },
       {
-          "sortNumber": "273",
+          "sortNumber": 273,
           "questionText": "esos",
           "solutionText": "those",
           "solutionAddition": "those"
       },
       {
-          "sortNumber": "274",
+          "sortNumber": 274,
           "questionText": "nosotros",
           "solutionText": "We",
           "solutionAddition": "we"
       },
       {
-          "sortNumber": "275",
+          "sortNumber": 275,
           "questionText": "hora",
           "solutionText": "hour",
           "solutionAddition": "time"
       },
       {
-          "sortNumber": "276",
+          "sortNumber": 276,
           "questionText": "muchas",
           "solutionText": "many",
           "solutionAddition": "many"
       },
       {
-          "sortNumber": "277",
+          "sortNumber": 277,
           "questionText": "pueblo",
           "solutionText": "town",
           "solutionAddition": "people"
       },
       {
-          "sortNumber": "278",
+          "sortNumber": 278,
           "questionText": "alguna",
           "solutionText": "some",
           "solutionAddition": "some"
       },
       {
-          "sortNumber": "279",
+          "sortNumber": 279,
           "questionText": "dar",
           "solutionText": "give",
           "solutionAddition": "give"
       },
       {
-          "sortNumber": "280",
+          "sortNumber": 280,
           "questionText": "problema",
           "solutionText": "issue",
           "solutionAddition": "problem"
       },
       {
-          "sortNumber": "281",
+          "sortNumber": 281,
           "questionText": "don",
           "solutionText": "Don",
           "solutionAddition": "don"
       },
       {
-          "sortNumber": "282",
+          "sortNumber": 282,
           "questionText": "da",
           "solutionText": "gives",
           "solutionAddition": "da"
       },
       {
-          "sortNumber": "283",
+          "sortNumber": 283,
           "questionText": "tú",
           "solutionText": "your",
           "solutionAddition": "you"
       },
       {
-          "sortNumber": "284",
+          "sortNumber": 284,
           "questionText": "derecho",
           "solutionText": "right",
           "solutionAddition": "right"
       },
       {
-          "sortNumber": "285",
+          "sortNumber": 285,
           "questionText": "verdad",
           "solutionText": "truth",
           "solutionAddition": "truth"
       },
       {
-          "sortNumber": "286",
+          "sortNumber": 286,
           "questionText": "maría",
           "solutionText": "Mary",
           "solutionAddition": "mary"
       },
       {
-          "sortNumber": "287",
+          "sortNumber": 287,
           "questionText": "unidos",
           "solutionText": "joined",
           "solutionAddition": "united"
       },
       {
-          "sortNumber": "288",
+          "sortNumber": 288,
           "questionText": "podría",
           "solutionText": "might",
           "solutionAddition": "could"
       },
       {
-          "sortNumber": "289",
+          "sortNumber": 289,
           "questionText": "sería",
           "solutionText": "would",
           "solutionAddition": "would be"
       },
       {
-          "sortNumber": "290",
+          "sortNumber": 290,
           "questionText": "junto",
           "solutionText": "together",
           "solutionAddition": "together"
       },
       {
-          "sortNumber": "291",
+          "sortNumber": 291,
           "questionText": "cabeza",
           "solutionText": "head",
           "solutionAddition": "head"
       },
       {
-          "sortNumber": "292",
+          "sortNumber": 292,
           "questionText": "aquel",
           "solutionText": "that",
           "solutionAddition": "that"
       },
       {
-          "sortNumber": "293",
+          "sortNumber": 293,
           "questionText": "luis",
           "solutionText": "Lewis",
           "solutionAddition": "luis"
       },
       {
-          "sortNumber": "294",
+          "sortNumber": 294,
           "questionText": "cuanto",
           "solutionText": "how much",
           "solutionAddition": "how much"
       },
       {
-          "sortNumber": "295",
+          "sortNumber": 295,
           "questionText": "tierra",
           "solutionText": "land",
           "solutionAddition": "earth"
       },
       {
-          "sortNumber": "296",
+          "sortNumber": 296,
           "questionText": "equipo",
           "solutionText": "team",
           "solutionAddition": "team"
       },
       {
-          "sortNumber": "297",
+          "sortNumber": 297,
           "questionText": "segundo",
           "solutionText": "second",
           "solutionAddition": "second"
       },
       {
-          "sortNumber": "298",
+          "sortNumber": 298,
           "questionText": "director",
           "solutionText": "director",
           "solutionAddition": "director"
       },
       {
-          "sortNumber": "299",
+          "sortNumber": 299,
           "questionText": "dicho",
           "solutionText": "saying",
           "solutionAddition": "said"
       },
       {
-          "sortNumber": "300",
+          "sortNumber": 300,
           "questionText": "cierto",
           "solutionText": "certain",
           "solutionAddition": "TRUE"
       },
       {
-          "sortNumber": "301",
+          "sortNumber": 301,
           "questionText": "casos",
           "solutionText": "cases",
           "solutionAddition": "cases"
       },
       {
-          "sortNumber": "302",
+          "sortNumber": 302,
           "questionText": "manos",
           "solutionText": "hands",
           "solutionAddition": "hands"
       },
       {
-          "sortNumber": "303",
+          "sortNumber": 303,
           "questionText": "nivel",
           "solutionText": "level",
           "solutionAddition": "level"
       },
       {
-          "sortNumber": "304",
+          "sortNumber": 304,
           "questionText": "podía",
           "solutionText": "I could",
           "solutionAddition": "could"
       },
       {
-          "sortNumber": "305",
+          "sortNumber": 305,
           "questionText": "familia",
           "solutionText": "family",
           "solutionAddition": "family"
       },
       {
-          "sortNumber": "306",
+          "sortNumber": 306,
           "questionText": "largo",
           "solutionText": "length",
           "solutionAddition": "long"
       },
       {
-          "sortNumber": "307",
+          "sortNumber": 307,
           "questionText": "partir",
           "solutionText": "from",
           "solutionAddition": "split"
       },
       {
-          "sortNumber": "308",
+          "sortNumber": 308,
           "questionText": "falta",
           "solutionText": "lack",
           "solutionAddition": "missing"
       },
       {
-          "sortNumber": "309",
+          "sortNumber": 309,
           "questionText": "llegar",
           "solutionText": "reach",
           "solutionAddition": "arrive"
       },
       {
-          "sortNumber": "310",
+          "sortNumber": 310,
           "questionText": "propio",
           "solutionText": "own",
           "solutionAddition": "own"
       },
       {
-          "sortNumber": "311",
+          "sortNumber": 311,
           "questionText": "ministro",
           "solutionText": "Minister",
           "solutionAddition": "minister"
       },
       {
-          "sortNumber": "312",
+          "sortNumber": 312,
           "questionText": "cosa",
           "solutionText": "thing",
           "solutionAddition": "thing"
       },
       {
-          "sortNumber": "313",
+          "sortNumber": 313,
           "questionText": "primero",
           "solutionText": "first",
           "solutionAddition": "first"
       },
       {
-          "sortNumber": "314",
+          "sortNumber": 314,
           "questionText": "seguridad",
           "solutionText": "security",
           "solutionAddition": "security"
       },
       {
-          "sortNumber": "315",
+          "sortNumber": 315,
           "questionText": "hemos",
           "solutionText": "we have",
           "solutionAddition": "we have"
       },
       {
-          "sortNumber": "316",
+          "sortNumber": 316,
           "questionText": "mal",
           "solutionText": "wrong",
           "solutionAddition": "wrong"
       },
       {
-          "sortNumber": "317",
+          "sortNumber": 317,
           "questionText": "trata",
           "solutionText": "about",
           "solutionAddition": "try"
       },
       {
-          "sortNumber": "318",
+          "sortNumber": 318,
           "questionText": "algún",
           "solutionText": "some",
           "solutionAddition": "some"
       },
       {
-          "sortNumber": "319",
+          "sortNumber": 319,
           "questionText": "tuvo",
           "solutionText": "had",
           "solutionAddition": "had"
       },
       {
-          "sortNumber": "320",
+          "sortNumber": 320,
           "questionText": "respecto",
           "solutionText": "respect",
           "solutionAddition": "about"
       },
       {
-          "sortNumber": "321",
+          "sortNumber": 321,
           "questionText": "semana",
           "solutionText": "week",
           "solutionAddition": "week"
       },
       {
-          "sortNumber": "322",
+          "sortNumber": 322,
           "questionText": "varios",
           "solutionText": "several",
           "solutionAddition": "several"
       },
       {
-          "sortNumber": "323",
+          "sortNumber": 323,
           "questionText": "real",
           "solutionText": "real",
           "solutionAddition": "real"
       },
       {
-          "sortNumber": "324",
+          "sortNumber": 324,
           "questionText": "sé",
           "solutionText": "he",
           "solutionAddition": "I know"
       },
       {
-          "sortNumber": "325",
+          "sortNumber": 325,
           "questionText": "voz",
           "solutionText": "voice",
           "solutionAddition": "voice"
       },
       {
-          "sortNumber": "326",
+          "sortNumber": 326,
           "questionText": "paso",
           "solutionText": "He passed",
           "solutionAddition": "step"
       },
       {
-          "sortNumber": "327",
+          "sortNumber": 327,
           "questionText": "señor",
           "solutionText": "Sir",
           "solutionAddition": "Mr."
       },
       {
-          "sortNumber": "328",
+          "sortNumber": 328,
           "questionText": "mil",
           "solutionText": "one thousand",
           "solutionAddition": "one thousand"
       },
       {
-          "sortNumber": "329",
+          "sortNumber": 329,
           "questionText": "quienes",
           "solutionText": "Who",
           "solutionAddition": "who"
       },
       {
-          "sortNumber": "330",
+          "sortNumber": 330,
           "questionText": "proyecto",
           "solutionText": "draft",
           "solutionAddition": "project"
       },
       {
-          "sortNumber": "331",
+          "sortNumber": 331,
           "questionText": "mercado",
           "solutionText": "market",
           "solutionAddition": "market"
       },
       {
-          "sortNumber": "332",
+          "sortNumber": 332,
           "questionText": "mayoría",
           "solutionText": "most",
           "solutionAddition": "majority"
       },
       {
-          "sortNumber": "333",
+          "sortNumber": 333,
           "questionText": "luz",
           "solutionText": "light",
           "solutionAddition": "light"
       },
       {
-          "sortNumber": "334",
+          "sortNumber": 334,
           "questionText": "claro",
           "solutionText": "Sure",
           "solutionAddition": "clear"
       },
       {
-          "sortNumber": "335",
+          "sortNumber": 335,
           "questionText": "iba",
           "solutionText": "I was going",
           "solutionAddition": "iba"
       },
       {
-          "sortNumber": "336",
+          "sortNumber": 336,
           "questionText": "éste",
           "solutionText": "East",
           "solutionAddition": "this one"
       },
       {
-          "sortNumber": "337",
+          "sortNumber": 337,
           "questionText": "pesetas",
           "solutionText": "pesetas",
           "solutionAddition": "pesetas"
       },
       {
-          "sortNumber": "338",
+          "sortNumber": 338,
           "questionText": "orden",
           "solutionText": "order",
           "solutionAddition": "order"
       },
       {
-          "sortNumber": "339",
+          "sortNumber": 339,
           "questionText": "español",
           "solutionText": "Spanish",
           "solutionAddition": "Spanish"
       },
       {
-          "sortNumber": "340",
+          "sortNumber": 340,
           "questionText": "buena",
           "solutionText": "good",
           "solutionAddition": "good"
       },
       {
-          "sortNumber": "341",
+          "sortNumber": 341,
           "questionText": "quiere",
           "solutionText": "wants",
           "solutionAddition": "wants"
       },
       {
-          "sortNumber": "342",
+          "sortNumber": 342,
           "questionText": "aquella",
           "solutionText": "that",
           "solutionAddition": "that"
       },
       {
-          "sortNumber": "343",
+          "sortNumber": 343,
           "questionText": "programa",
           "solutionText": "Program",
           "solutionAddition": "program"
       },
       {
-          "sortNumber": "344",
+          "sortNumber": 344,
           "questionText": "palabras",
           "solutionText": "words",
           "solutionAddition": "words"
       },
       {
-          "sortNumber": "345",
+          "sortNumber": 345,
           "questionText": "internacional",
           "solutionText": "international",
           "solutionAddition": "international"
       },
       {
-          "sortNumber": "346",
+          "sortNumber": 346,
           "questionText": "van",
           "solutionText": "go",
           "solutionAddition": "go"
       },
       {
-          "sortNumber": "347",
+          "sortNumber": 347,
           "questionText": "esas",
           "solutionText": "those",
           "solutionAddition": "those"
       },
       {
-          "sortNumber": "348",
+          "sortNumber": 348,
           "questionText": "segunda",
           "solutionText": "second",
           "solutionAddition": "second"
       },
       {
-          "sortNumber": "349",
+          "sortNumber": 349,
           "questionText": "empresa",
           "solutionText": "business",
           "solutionAddition": "company"
       },
       {
-          "sortNumber": "350",
+          "sortNumber": 350,
           "questionText": "puesto",
           "solutionText": "Market Stall"
       },
       {
-          "sortNumber": "351",
+          "sortNumber": 351,
           "questionText": "ahí",
           "solutionText": "there",
           "solutionAddition": "there"
       },
       {
-          "sortNumber": "352",
+          "sortNumber": 352,
           "questionText": "propia",
           "solutionText": "own",
           "solutionAddition": "own"
       },
       {
-          "sortNumber": "353",
+          "sortNumber": 353,
           "questionText": "m",
           "solutionText": "m",
           "solutionAddition": "m"
       },
       {
-          "sortNumber": "354",
+          "sortNumber": 354,
           "questionText": "libro",
           "solutionText": "book",
           "solutionAddition": "book"
       },
       {
-          "sortNumber": "355",
+          "sortNumber": 355,
           "questionText": "igual",
           "solutionText": "same",
           "solutionAddition": "same"
       },
       {
-          "sortNumber": "356",
+          "sortNumber": 356,
           "questionText": "político",
           "solutionText": "politician",
           "solutionAddition": "politician"
       },
       {
-          "sortNumber": "357",
+          "sortNumber": 357,
           "questionText": "persona",
           "solutionText": "person",
           "solutionAddition": "person"
       },
       {
-          "sortNumber": "358",
+          "sortNumber": 358,
           "questionText": "últimos",
           "solutionText": "latest",
           "solutionAddition": "last"
       },
       {
-          "sortNumber": "359",
+          "sortNumber": 359,
           "questionText": "ellas",
           "solutionText": "they",
           "solutionAddition": "they"
       },
       {
-          "sortNumber": "360",
+          "sortNumber": 360,
           "questionText": "total",
           "solutionText": "total",
           "solutionAddition": "total"
       },
       {
-          "sortNumber": "361",
+          "sortNumber": 361,
           "questionText": "creo",
           "solutionText": "I think",
           "solutionAddition": "I think"
       },
       {
-          "sortNumber": "362",
+          "sortNumber": 362,
           "questionText": "tengo",
           "solutionText": "have",
           "solutionAddition": "I have"
       },
       {
-          "sortNumber": "363",
+          "sortNumber": 363,
           "questionText": "dios",
           "solutionText": "God",
           "solutionAddition": "god"
       },
       {
-          "sortNumber": "364",
+          "sortNumber": 364,
           "questionText": "c",
           "solutionText": "c",
           "solutionAddition": "c"
       },
       {
-          "sortNumber": "365",
+          "sortNumber": 365,
           "questionText": "española",
           "solutionText": "Spanish",
           "solutionAddition": "spanish"
       },
       {
-          "sortNumber": "366",
+          "sortNumber": 366,
           "questionText": "condiciones",
           "solutionText": "terms",
           "solutionAddition": "conditions"
       },
       {
-          "sortNumber": "367",
+          "sortNumber": 367,
           "questionText": "méxico",
           "solutionText": "Mexico",
           "solutionAddition": "mexico"
       },
       {
-          "sortNumber": "368",
+          "sortNumber": 368,
           "questionText": "fuerza",
           "solutionText": "force",
           "solutionAddition": "force"
       },
       {
-          "sortNumber": "369",
+          "sortNumber": 369,
           "questionText": "solo",
           "solutionText": "only",
           "solutionAddition": "only"
       },
       {
-          "sortNumber": "370",
+          "sortNumber": 370,
           "questionText": "único",
           "solutionText": "unique",
           "solutionAddition": "only"
       },
       {
-          "sortNumber": "371",
+          "sortNumber": 371,
           "questionText": "acción",
           "solutionText": "action",
           "solutionAddition": "action"
       },
       {
-          "sortNumber": "372",
+          "sortNumber": 372,
           "questionText": "amor",
           "solutionText": "love",
           "solutionAddition": "love"
       },
       {
-          "sortNumber": "373",
+          "sortNumber": 373,
           "questionText": "policía",
           "solutionText": "policeman",
           "solutionAddition": "police"
       },
       {
-          "sortNumber": "374",
+          "sortNumber": 374,
           "questionText": "puerta",
           "solutionText": "door",
           "solutionAddition": "door"
       },
       {
-          "sortNumber": "375",
+          "sortNumber": 375,
           "questionText": "pesar",
           "solutionText": "to weigh",
           "solutionAddition": "regret"
       },
       {
-          "sortNumber": "376",
+          "sortNumber": 376,
           "questionText": "zona",
           "solutionText": "zone",
           "solutionAddition": "zone"
       },
       {
-          "sortNumber": "377",
+          "sortNumber": 377,
           "questionText": "sabe",
           "solutionText": "knows",
           "solutionAddition": "you know"
       },
       {
-          "sortNumber": "378",
+          "sortNumber": 378,
           "questionText": "calle",
           "solutionText": "Street",
           "solutionAddition": "street"
       },
       {
-          "sortNumber": "379",
+          "sortNumber": 379,
           "questionText": "interior",
           "solutionText": "inside",
           "solutionAddition": "inside"
       },
       {
-          "sortNumber": "380",
+          "sortNumber": 380,
           "questionText": "tampoco",
           "solutionText": "either",
           "solutionAddition": "also"
       },
       {
-          "sortNumber": "381",
+          "sortNumber": 381,
           "questionText": "música",
           "solutionText": "music",
           "solutionAddition": "music"
       },
       {
-          "sortNumber": "382",
+          "sortNumber": 382,
           "questionText": "ningún",
           "solutionText": "any",
           "solutionAddition": "no"
       },
       {
-          "sortNumber": "383",
+          "sortNumber": 383,
           "questionText": "vista",
           "solutionText": "sight",
           "solutionAddition": "view"
       },
       {
-          "sortNumber": "384",
+          "sortNumber": 384,
           "questionText": "campo",
           "solutionText": "countryside",
           "solutionAddition": "field"
       },
       {
-          "sortNumber": "385",
+          "sortNumber": 385,
           "questionText": "buen",
           "solutionText": "good",
           "solutionAddition": "good"
       },
       {
-          "sortNumber": "386",
+          "sortNumber": 386,
           "questionText": "hubiera",
           "solutionText": "had",
           "solutionAddition": "would have"
       },
       {
-          "sortNumber": "387",
+          "sortNumber": 387,
           "questionText": "saber",
           "solutionText": "to know",
           "solutionAddition": "know"
       },
       {
-          "sortNumber": "388",
+          "sortNumber": 388,
           "questionText": "obras",
           "solutionText": "plays",
           "solutionAddition": "works"
       },
       {
-          "sortNumber": "389",
+          "sortNumber": 389,
           "questionText": "razón",
           "solutionText": "reason",
           "solutionAddition": "reason"
       },
       {
-          "sortNumber": "390",
+          "sortNumber": 390,
           "questionText": "ex",
           "solutionText": "former",
           "solutionAddition": "ex"
       },
       {
-          "sortNumber": "391",
+          "sortNumber": 391,
           "questionText": "niños",
           "solutionText": "children",
           "solutionAddition": "children"
       },
       {
-          "sortNumber": "392",
+          "sortNumber": 392,
           "questionText": "presencia",
           "solutionText": "presence",
           "solutionAddition": "presence"
       },
       {
-          "sortNumber": "393",
+          "sortNumber": 393,
           "questionText": "tema",
           "solutionText": "theme",
           "solutionAddition": "theme"
       },
       {
-          "sortNumber": "394",
+          "sortNumber": 394,
           "questionText": "dinero",
           "solutionText": "money",
           "solutionAddition": "money"
       },
       {
-          "sortNumber": "395",
+          "sortNumber": 395,
           "questionText": "comisión",
           "solutionText": "commission",
           "solutionAddition": "commission"
       },
       {
-          "sortNumber": "396",
+          "sortNumber": 396,
           "questionText": "antonio",
           "solutionText": "Anthony",
           "solutionAddition": "antonio"
       },
       {
-          "sortNumber": "397",
+          "sortNumber": 397,
           "questionText": "servicio",
           "solutionText": "service",
           "solutionAddition": "service"
       },
       {
-          "sortNumber": "398",
+          "sortNumber": 398,
           "questionText": "hijo",
           "solutionText": "son",
           "solutionAddition": "son"
       },
       {
-          "sortNumber": "399",
+          "sortNumber": 399,
           "questionText": "última",
           "solutionText": "last",
           "solutionAddition": "last"
       },
       {
-          "sortNumber": "400",
+          "sortNumber": 400,
           "questionText": "ciento",
           "solutionText": "hundred",
           "solutionAddition": "one hundred"
       },
       {
-          "sortNumber": "401",
+          "sortNumber": 401,
           "questionText": "estoy",
           "solutionText": "I'm",
           "solutionAddition": "I am"
       },
       {
-          "sortNumber": "402",
+          "sortNumber": 402,
           "questionText": "hablar",
           "solutionText": "speak",
           "solutionAddition": "speak"
       },
       {
-          "sortNumber": "403",
+          "sortNumber": 403,
           "questionText": "dio",
           "solutionText": "it gave",
           "solutionAddition": "gave"
       },
       {
-          "sortNumber": "404",
+          "sortNumber": 404,
           "questionText": "minutos",
           "solutionText": "minutes",
           "solutionAddition": "minutes"
       },
       {
-          "sortNumber": "405",
+          "sortNumber": 405,
           "questionText": "producción",
           "solutionText": "production",
           "solutionAddition": "production"
       },
       {
-          "sortNumber": "406",
+          "sortNumber": 406,
           "questionText": "camino",
           "solutionText": "road",
           "solutionAddition": "way"
       },
       {
-          "sortNumber": "407",
+          "sortNumber": 407,
           "questionText": "seis",
           "solutionText": "six",
           "solutionAddition": "six"
       },
       {
-          "sortNumber": "408",
+          "sortNumber": 408,
           "questionText": "quién",
           "solutionText": "who",
           "solutionAddition": "who"
       },
       {
-          "sortNumber": "409",
+          "sortNumber": 409,
           "questionText": "fondo",
           "solutionText": "background",
           "solutionAddition": "background"
       },
       {
-          "sortNumber": "410",
+          "sortNumber": 410,
           "questionText": "dirección",
           "solutionText": "address",
           "solutionAddition": "address"
       },
       {
-          "sortNumber": "411",
+          "sortNumber": 411,
           "questionText": "papel",
           "solutionText": "paper",
           "solutionAddition": "role"
       },
       {
-          "sortNumber": "412",
+          "sortNumber": 412,
           "questionText": "demás",
           "solutionText": "the rest",
           "solutionAddition": "other"
       },
       {
-          "sortNumber": "413",
+          "sortNumber": 413,
           "questionText": "barcelona",
           "solutionText": "Barcelona",
           "solutionAddition": "barcelona"
       },
       {
-          "sortNumber": "414",
+          "sortNumber": 414,
           "questionText": "idea",
           "solutionText": "idea",
           "solutionAddition": "idea"
       },
       {
-          "sortNumber": "415",
+          "sortNumber": 415,
           "questionText": "especial",
           "solutionText": "special",
           "solutionAddition": "special"
       },
       {
-          "sortNumber": "416",
+          "sortNumber": 416,
           "questionText": "diferentes",
           "solutionText": "different",
           "solutionAddition": "different"
       },
       {
-          "sortNumber": "417",
+          "sortNumber": 417,
           "questionText": "dado",
           "solutionText": "dice",
           "solutionAddition": "die"
       },
       {
-          "sortNumber": "418",
+          "sortNumber": 418,
           "questionText": "base",
           "solutionText": "base",
           "solutionAddition": "base"
       },
       {
-          "sortNumber": "419",
+          "sortNumber": 419,
           "questionText": "capital",
           "solutionText": "capital",
           "solutionAddition": "capital"
       },
       {
-          "sortNumber": "420",
+          "sortNumber": 420,
           "questionText": "ambos",
           "solutionText": "both of them",
           "solutionAddition": "both"
       },
       {
-          "sortNumber": "421",
+          "sortNumber": 421,
           "questionText": "europa",
           "solutionText": "Europe",
           "solutionAddition": "europe"
       },
       {
-          "sortNumber": "422",
+          "sortNumber": 422,
           "questionText": "libertad",
           "solutionText": "freedom",
           "solutionAddition": "freedom"
       },
       {
-          "sortNumber": "423",
+          "sortNumber": 423,
           "questionText": "relaciones",
           "solutionText": "relations",
           "solutionAddition": "relations"
       },
       {
-          "sortNumber": "424",
+          "sortNumber": 424,
           "questionText": "espacio",
           "solutionText": "space",
           "solutionAddition": "space"
       },
       {
-          "sortNumber": "425",
+          "sortNumber": 425,
           "questionText": "medios",
           "solutionText": "media",
           "solutionAddition": "media"
       },
       {
-          "sortNumber": "426",
+          "sortNumber": 426,
           "questionText": "ir",
           "solutionText": "to go",
           "solutionAddition": "go"
       },
       {
-          "sortNumber": "427",
+          "sortNumber": 427,
           "questionText": "actual",
           "solutionText": "current",
           "solutionAddition": "current"
       },
       {
-          "sortNumber": "428",
+          "sortNumber": 428,
           "questionText": "población",
           "solutionText": "population",
           "solutionAddition": "population"
       },
       {
-          "sortNumber": "429",
+          "sortNumber": 429,
           "questionText": "empresas",
           "solutionText": "Business",
           "solutionAddition": "companies"
       },
       {
-          "sortNumber": "430",
+          "sortNumber": 430,
           "questionText": "estudio",
           "solutionText": "study",
           "solutionAddition": "study"
       },
       {
-          "sortNumber": "431",
+          "sortNumber": 431,
           "questionText": "salud",
           "solutionText": "Health",
           "solutionAddition": "health"
       },
       {
-          "sortNumber": "432",
+          "sortNumber": 432,
           "questionText": "servicios",
           "solutionText": "services",
           "solutionAddition": "services"
       },
       {
-          "sortNumber": "433",
+          "sortNumber": 433,
           "questionText": "haya",
           "solutionText": "is",
           "solutionAddition": "beech"
       },
       {
-          "sortNumber": "434",
+          "sortNumber": 434,
           "questionText": "principio",
           "solutionText": "beginning",
           "solutionAddition": "principle"
       },
       {
-          "sortNumber": "435",
+          "sortNumber": 435,
           "questionText": "siendo",
           "solutionText": "being",
           "solutionAddition": "being"
       },
       {
-          "sortNumber": "436",
+          "sortNumber": 436,
           "questionText": "cultura",
           "solutionText": "culture",
           "solutionAddition": "culture"
       },
       {
-          "sortNumber": "437",
+          "sortNumber": 437,
           "questionText": "anterior",
           "solutionText": "previous",
           "solutionAddition": "previous"
       },
       {
-          "sortNumber": "438",
+          "sortNumber": 438,
           "questionText": "alto",
           "solutionText": "high",
           "solutionAddition": "high"
       },
       {
-          "sortNumber": "439",
+          "sortNumber": 439,
           "questionText": "media",
           "solutionText": "half",
           "solutionAddition": "average"
       },
       {
-          "sortNumber": "440",
+          "sortNumber": 440,
           "questionText": "mediante",
           "solutionText": "through",
           "solutionAddition": "via"
       },
       {
-          "sortNumber": "441",
+          "sortNumber": 441,
           "questionText": "primeros",
           "solutionText": "first",
           "solutionAddition": "early"
       },
       {
-          "sortNumber": "442",
+          "sortNumber": 442,
           "questionText": "arte",
           "solutionText": "art",
           "solutionAddition": "art"
       },
       {
-          "sortNumber": "443",
+          "sortNumber": 443,
           "questionText": "paz",
           "solutionText": "peace",
           "solutionAddition": "peace"
       },
       {
-          "sortNumber": "444",
+          "sortNumber": 444,
           "questionText": "sector",
           "solutionText": "sector",
           "solutionAddition": "sector"
       },
       {
-          "sortNumber": "445",
+          "sortNumber": 445,
           "questionText": "imagen",
           "solutionText": "image",
           "solutionAddition": "image"
       },
       {
-          "sortNumber": "446",
+          "sortNumber": 446,
           "questionText": "medida",
           "solutionText": "measure",
           "solutionAddition": "measure"
       },
       {
-          "sortNumber": "447",
+          "sortNumber": 447,
           "questionText": "deben",
           "solutionText": "should",
           "solutionAddition": "you must"
       },
       {
-          "sortNumber": "448",
+          "sortNumber": 448,
           "questionText": "datos",
           "solutionText": "data",
           "solutionAddition": "data"
       },
       {
-          "sortNumber": "449",
+          "sortNumber": 449,
           "questionText": "consejo",
           "solutionText": "tip",
           "solutionAddition": "board"
       },
       {
-          "sortNumber": "450",
+          "sortNumber": 450,
           "questionText": "personal",
           "solutionText": "personal",
           "solutionAddition": "staff"
       },
       {
-          "sortNumber": "451",
+          "sortNumber": 451,
           "questionText": "interés",
           "solutionText": "interest",
           "solutionAddition": "interest"
       },
       {
-          "sortNumber": "452",
+          "sortNumber": 452,
           "questionText": "julio",
           "solutionText": "July",
           "solutionAddition": "july"
       },
       {
-          "sortNumber": "453",
+          "sortNumber": 453,
           "questionText": "grupos",
           "solutionText": "groups",
           "solutionAddition": "groups"
       },
       {
-          "sortNumber": "454",
+          "sortNumber": 454,
           "questionText": "miembros",
           "solutionText": "members",
           "solutionAddition": "members"
       },
       {
-          "sortNumber": "455",
+          "sortNumber": 455,
           "questionText": "ninguna",
           "solutionText": "none",
           "solutionAddition": "none"
       },
       {
-          "sortNumber": "456",
+          "sortNumber": 456,
           "questionText": "existe",
           "solutionText": "exists",
           "solutionAddition": "exists"
       },
       {
-          "sortNumber": "457",
+          "sortNumber": 457,
           "questionText": "cara",
           "solutionText": "face",
           "solutionAddition": "face"
       },
       {
-          "sortNumber": "458",
+          "sortNumber": 458,
           "questionText": "edad",
           "solutionText": "age",
           "solutionAddition": "age"
       },
       {
-          "sortNumber": "459",
+          "sortNumber": 459,
           "questionText": "etc",
           "solutionText": "etc",
           "solutionAddition": "etc"
       },
       {
-          "sortNumber": "460",
+          "sortNumber": 460,
           "questionText": "movimiento",
           "solutionText": "movement",
           "solutionAddition": "movement"
       },
       {
-          "sortNumber": "461",
+          "sortNumber": 461,
           "questionText": "visto",
           "solutionText": "viewed",
           "solutionAddition": "seen"
       },
       {
-          "sortNumber": "462",
+          "sortNumber": 462,
           "questionText": "llegó",
           "solutionText": "arrive",
           "solutionAddition": "reached"
       },
       {
-          "sortNumber": "463",
+          "sortNumber": 463,
           "questionText": "puntos",
           "solutionText": "points",
           "solutionAddition": "points"
       },
       {
-          "sortNumber": "464",
+          "sortNumber": 464,
           "questionText": "actividad",
           "solutionText": "activity",
           "solutionAddition": "activity"
       },
       {
-          "sortNumber": "465",
+          "sortNumber": 465,
           "questionText": "bueno",
           "solutionText": "Okay",
           "solutionAddition": "good"
       },
       {
-          "sortNumber": "466",
+          "sortNumber": 466,
           "questionText": "uso",
           "solutionText": "use",
           "solutionAddition": "use"
       },
       {
-          "sortNumber": "467",
+          "sortNumber": 467,
           "questionText": "niño",
           "solutionText": "kid",
           "solutionAddition": "child"
       },
       {
-          "sortNumber": "468",
+          "sortNumber": 468,
           "questionText": "difícil",
           "solutionText": "hard",
           "solutionAddition": "difficult"
       },
       {
-          "sortNumber": "469",
+          "sortNumber": 469,
           "questionText": "joven",
           "solutionText": "young man",
           "solutionAddition": "young"
       },
       {
-          "sortNumber": "470",
+          "sortNumber": 470,
           "questionText": "futuro",
           "solutionText": "future",
           "solutionAddition": "future"
       },
       {
-          "sortNumber": "471",
+          "sortNumber": 471,
           "questionText": "aquellos",
           "solutionText": "those",
           "solutionAddition": "those"
       },
       {
-          "sortNumber": "472",
+          "sortNumber": 472,
           "questionText": "mes",
           "solutionText": "month",
           "solutionAddition": "month"
       },
       {
-          "sortNumber": "473",
+          "sortNumber": 473,
           "questionText": "pronto",
           "solutionText": "early",
           "solutionAddition": "soon"
       },
       {
-          "sortNumber": "474",
+          "sortNumber": 474,
           "questionText": "soy",
           "solutionText": "am",
           "solutionAddition": "I am"
       },
       {
-          "sortNumber": "475",
+          "sortNumber": 475,
           "questionText": "hacía",
           "solutionText": "toward",
           "solutionAddition": "to"
       },
       {
-          "sortNumber": "476",
+          "sortNumber": 476,
           "questionText": "nuevos",
           "solutionText": "new",
           "solutionAddition": "new"
       },
       {
-          "sortNumber": "477",
+          "sortNumber": 477,
           "questionText": "nuestros",
           "solutionText": "our",
           "solutionAddition": "our"
       },
       {
-          "sortNumber": "478",
+          "sortNumber": 478,
           "questionText": "estaban",
           "solutionText": "were",
           "solutionAddition": "were"
       },
       {
-          "sortNumber": "479",
+          "sortNumber": 479,
           "questionText": "posibilidad",
           "solutionText": "possibility",
           "solutionAddition": "possibility"
       },
       {
-          "sortNumber": "480",
+          "sortNumber": 480,
           "questionText": "sigue",
           "solutionText": "go on",
           "solutionAddition": "follow"
       },
       {
-          "sortNumber": "481",
+          "sortNumber": 481,
           "questionText": "cerca",
           "solutionText": "near",
           "solutionAddition": "close"
       },
       {
-          "sortNumber": "482",
+          "sortNumber": 482,
           "questionText": "resultados",
           "solutionText": "results",
           "solutionAddition": "results"
       },
       {
-          "sortNumber": "483",
+          "sortNumber": 483,
           "questionText": "educación",
           "solutionText": "education",
           "solutionAddition": "education"
       },
       {
-          "sortNumber": "484",
+          "sortNumber": 484,
           "questionText": "atención",
           "solutionText": "attention",
           "solutionAddition": "attention"
       },
       {
-          "sortNumber": "485",
+          "sortNumber": 485,
           "questionText": "gonzález",
           "solutionText": "gonzález",
           "solutionAddition": "gonzalez"
       },
       {
-          "sortNumber": "486",
+          "sortNumber": 486,
           "questionText": "capacidad",
           "solutionText": "capacity",
           "solutionAddition": "capacity"
       },
       {
-          "sortNumber": "487",
+          "sortNumber": 487,
           "questionText": "efecto",
           "solutionText": "effect",
           "solutionAddition": "effect"
       },
       {
-          "sortNumber": "488",
+          "sortNumber": 488,
           "questionText": "necesario",
           "solutionText": "necessary",
           "solutionAddition": "necessary"
       },
       {
-          "sortNumber": "489",
+          "sortNumber": 489,
           "questionText": "valor",
           "solutionText": "value",
           "solutionAddition": "value"
       },
       {
-          "sortNumber": "490",
+          "sortNumber": 490,
           "questionText": "aire",
           "solutionText": "air",
           "solutionAddition": "air"
       },
       {
-          "sortNumber": "491",
+          "sortNumber": 491,
           "questionText": "investigación",
           "solutionText": "investigation",
           "solutionAddition": "research"
       },
       {
-          "sortNumber": "492",
+          "sortNumber": 492,
           "questionText": "siguiente",
           "solutionText": "following",
           "solutionAddition": "next"
       },
       {
-          "sortNumber": "493",
+          "sortNumber": 493,
           "questionText": "figura",
           "solutionText": "figure",
           "solutionAddition": "figure"
       },
       {
-          "sortNumber": "494",
+          "sortNumber": 494,
           "questionText": "central",
           "solutionText": "central",
           "solutionAddition": "plant"
       },
       {
-          "sortNumber": "495",
+          "sortNumber": 495,
           "questionText": "comunidad",
           "solutionText": "community",
           "solutionAddition": "community"
       },
       {
-          "sortNumber": "496",
+          "sortNumber": 496,
           "questionText": "necesidad",
           "solutionText": "need",
           "solutionAddition": "need"
       },
       {
-          "sortNumber": "497",
+          "sortNumber": 497,
           "questionText": "serie",
           "solutionText": "Serie",
           "solutionAddition": "series"
       },
       {
-          "sortNumber": "498",
+          "sortNumber": 498,
           "questionText": "organización",
           "solutionText": "organization",
           "solutionAddition": "organization"
       },
       {
-          "sortNumber": "499",
+          "sortNumber": 499,
           "questionText": "nuevas",
           "solutionText": "news",
           "solutionAddition": "new"
       },
       {
-          "sortNumber": "500",
+          "sortNumber": 500,
           "questionText": "calidad",
           "solutionText": "quality",
           "solutionAddition": "quality"
       },
       {
-          "sortNumber": "501",
+          "sortNumber": 501,
           "questionText": "economía",
           "solutionText": "economy",
           "solutionAddition": "economy"
       },
       {
-          "sortNumber": "502",
+          "sortNumber": 502,
           "questionText": "carácter",
           "solutionText": "character",
           "solutionAddition": "character"
       },
       {
-          "sortNumber": "503",
+          "sortNumber": 503,
           "questionText": "jefe",
           "solutionText": "boss",
           "solutionAddition": "boss"
       },
       {
-          "sortNumber": "504",
+          "sortNumber": 504,
           "questionText": "estamos",
           "solutionText": "we're",
           "solutionAddition": "we are"
       },
       {
-          "sortNumber": "505",
+          "sortNumber": 505,
           "questionText": "prensa",
           "solutionText": "press",
           "solutionAddition": "press"
       },
       {
-          "sortNumber": "506",
+          "sortNumber": 506,
           "questionText": "control",
           "solutionText": "control",
           "solutionAddition": "control"
       },
       {
-          "sortNumber": "507",
+          "sortNumber": 507,
           "questionText": "sociales",
           "solutionText": "social",
           "solutionAddition": "social"
       },
       {
-          "sortNumber": "508",
+          "sortNumber": 508,
           "questionText": "universidad",
           "solutionText": "college",
           "solutionAddition": "university"
       },
       {
-          "sortNumber": "509",
+          "sortNumber": 509,
           "questionText": "militar",
           "solutionText": "military",
           "solutionAddition": "military"
       },
       {
-          "sortNumber": "510",
+          "sortNumber": 510,
           "questionText": "cabo",
           "solutionText": "cape",
           "solutionAddition": "corporal"
       },
       {
-          "sortNumber": "511",
+          "sortNumber": 511,
           "questionText": "diez",
           "solutionText": "ten",
           "solutionAddition": "ten"
       },
       {
-          "sortNumber": "512",
+          "sortNumber": 512,
           "questionText": "fuerzas",
           "solutionText": "forces",
           "solutionAddition": "forces"
       },
       {
-          "sortNumber": "513",
+          "sortNumber": 513,
           "questionText": "congreso",
           "solutionText": "congress",
           "solutionAddition": "congress"
       },
       {
-          "sortNumber": "514",
+          "sortNumber": 514,
           "questionText": "ésta",
           "solutionText": "is",
           "solutionAddition": "this"
       },
       {
-          "sortNumber": "515",
+          "sortNumber": 515,
           "questionText": "hijos",
           "solutionText": "sons",
           "solutionAddition": "children"
       },
       {
-          "sortNumber": "516",
+          "sortNumber": 516,
           "questionText": "justicia",
           "solutionText": "Justice",
           "solutionAddition": "justice"
       },
       {
-          "sortNumber": "517",
+          "sortNumber": 517,
           "questionText": "mundial",
           "solutionText": "world",
           "solutionAddition": "world"
       },
       {
-          "sortNumber": "518",
+          "sortNumber": 518,
           "questionText": "dólares",
           "solutionText": "Dollars",
           "solutionAddition": "dollars"
       },
       {
-          "sortNumber": "519",
+          "sortNumber": 519,
           "questionText": "juego",
           "solutionText": "play",
           "solutionAddition": "gambling"
       },
       {
-          "sortNumber": "520",
+          "sortNumber": 520,
           "questionText": "económica",
           "solutionText": "economic",
           "solutionAddition": "economic"
       },
       {
-          "sortNumber": "521",
+          "sortNumber": 521,
           "questionText": "políticos",
           "solutionText": "politicians",
           "solutionAddition": "politicians"
       },
       {
-          "sortNumber": "522",
+          "sortNumber": 522,
           "questionText": "duda",
           "solutionText": "doubt",
           "solutionAddition": "doubt"
       },
       {
-          "sortNumber": "523",
+          "sortNumber": 523,
           "questionText": "recursos",
           "solutionText": "resources",
           "solutionAddition": "resources"
       },
       {
-          "sortNumber": "524",
+          "sortNumber": 524,
           "questionText": "pública",
           "solutionText": "public",
           "solutionAddition": "public"
       },
       {
-          "sortNumber": "525",
+          "sortNumber": 525,
           "questionText": "crisis",
           "solutionText": "crisis",
           "solutionAddition": "crisis"
       },
       {
-          "sortNumber": "526",
+          "sortNumber": 526,
           "questionText": "próximo",
           "solutionText": "next",
           "solutionAddition": "next"
       },
       {
-          "sortNumber": "527",
+          "sortNumber": 527,
           "questionText": "tenemos",
           "solutionText": "we have",
           "solutionAddition": "we have"
       },
       {
-          "sortNumber": "528",
+          "sortNumber": 528,
           "questionText": "decisión",
           "solutionText": "decision",
           "solutionAddition": "decision"
       },
       {
-          "sortNumber": "529",
+          "sortNumber": 529,
           "questionText": "varias",
           "solutionText": "several",
           "solutionAddition": "several"
       },
       {
-          "sortNumber": "530",
+          "sortNumber": 530,
           "questionText": "popular",
           "solutionText": "popular",
           "solutionAddition": "popular"
       },
       {
-          "sortNumber": "531",
+          "sortNumber": 531,
           "questionText": "tenido",
           "solutionText": "Dyed",
           "solutionAddition": "had"
       },
       {
-          "sortNumber": "532",
+          "sortNumber": 532,
           "questionText": "apenas",
           "solutionText": "barely",
           "solutionAddition": "just"
       },
       {
-          "sortNumber": "533",
+          "sortNumber": 533,
           "questionText": "época",
           "solutionText": "epoch",
           "solutionAddition": "time"
       },
       {
-          "sortNumber": "534",
+          "sortNumber": 534,
           "questionText": "banco",
           "solutionText": "Bank",
           "solutionAddition": "bank"
       },
       {
-          "sortNumber": "535",
+          "sortNumber": 535,
           "questionText": "presente",
           "solutionText": "Present",
           "solutionAddition": "present"
       },
       {
-          "sortNumber": "536",
+          "sortNumber": 536,
           "questionText": "menor",
           "solutionText": "less",
           "solutionAddition": "minor"
       },
       {
-          "sortNumber": "537",
+          "sortNumber": 537,
           "questionText": "quiero",
           "solutionText": "I want",
           "solutionAddition": "I want"
       },
       {
-          "sortNumber": "538",
+          "sortNumber": 538,
           "questionText": "pasar",
           "solutionText": "happen",
           "solutionAddition": "pass"
       },
       {
-          "sortNumber": "539",
+          "sortNumber": 539,
           "questionText": "resultado",
           "solutionText": "result",
           "solutionAddition": "result"
       },
       {
-          "sortNumber": "540",
+          "sortNumber": 540,
           "questionText": "televisión",
           "solutionText": "TV",
           "solutionAddition": "television"
       },
       {
-          "sortNumber": "541",
+          "sortNumber": 541,
           "questionText": "encuentra",
           "solutionText": "finds",
           "solutionAddition": "find"
       },
       {
-          "sortNumber": "542",
+          "sortNumber": 542,
           "questionText": "gracias",
           "solutionText": "Thank you",
           "solutionAddition": "thank you"
       },
       {
-          "sortNumber": "543",
+          "sortNumber": 543,
           "questionText": "ministerio",
           "solutionText": "ministry",
           "solutionAddition": "ministry"
       },
       {
-          "sortNumber": "544",
+          "sortNumber": 544,
           "questionText": "conjunto",
           "solutionText": "set",
           "solutionAddition": "set"
       },
       {
-          "sortNumber": "545",
+          "sortNumber": 545,
           "questionText": "defensa",
           "solutionText": "defending",
           "solutionAddition": "defense"
       },
       {
-          "sortNumber": "546",
+          "sortNumber": 546,
           "questionText": "alguien",
           "solutionText": "someone",
           "solutionAddition": "someone"
       },
       {
-          "sortNumber": "547",
+          "sortNumber": 547,
           "questionText": "queda",
           "solutionText": "remains",
           "solutionAddition": "is"
       },
       {
-          "sortNumber": "548",
+          "sortNumber": 548,
           "questionText": "hacen",
           "solutionText": "make",
           "solutionAddition": "make"
       },
       {
-          "sortNumber": "549",
+          "sortNumber": 549,
           "questionText": "pasa",
           "solutionText": "happens",
           "solutionAddition": "pass"
       },
       {
-          "sortNumber": "550",
+          "sortNumber": 550,
           "questionText": "resto",
           "solutionText": "rest",
           "solutionAddition": "rest"
       },
       {
-          "sortNumber": "551",
+          "sortNumber": 551,
           "questionText": "causa",
           "solutionText": "cause",
           "solutionAddition": "cause"
       },
       {
-          "sortNumber": "552",
+          "sortNumber": 552,
           "questionText": "seguir",
           "solutionText": "follow, continue",
           "solutionAddition": "follow"
       },
       {
-          "sortNumber": "553",
+          "sortNumber": 553,
           "questionText": "allá",
           "solutionText": "there",
           "solutionAddition": "there"
       },
       {
-          "sortNumber": "554",
+          "sortNumber": 554,
           "questionText": "palabra",
           "solutionText": "word",
           "solutionAddition": "word"
       },
       {
-          "sortNumber": "555",
+          "sortNumber": 555,
           "questionText": "voy",
           "solutionText": "go",
           "solutionAddition": "go"
       },
       {
-          "sortNumber": "556",
+          "sortNumber": 556,
           "questionText": "cuya",
           "solutionText": "which",
           "solutionAddition": "whose"
       },
       {
-          "sortNumber": "557",
+          "sortNumber": 557,
           "questionText": "vamos",
           "solutionText": "come on",
           "solutionAddition": "go"
       },
       {
-          "sortNumber": "558",
+          "sortNumber": 558,
           "questionText": "mar",
           "solutionText": "sea",
           "solutionAddition": "sea"
       },
       {
-          "sortNumber": "559",
+          "sortNumber": 559,
           "questionText": "estudios",
           "solutionText": "studies",
           "solutionAddition": "studies"
       },
       {
-          "sortNumber": "560",
+          "sortNumber": 560,
           "questionText": "derechos",
           "solutionText": "Rights",
           "solutionAddition": "rights"
       },
       {
-          "sortNumber": "561",
+          "sortNumber": 561,
           "questionText": "importancia",
           "solutionText": "importance",
           "solutionAddition": "importance"
       },
       {
-          "sortNumber": "562",
+          "sortNumber": 562,
           "questionText": "cuales",
           "solutionText": "which",
           "solutionAddition": "which"
       },
       {
-          "sortNumber": "563",
+          "sortNumber": 563,
           "questionText": "contrario",
           "solutionText": "contrary",
           "solutionAddition": "contrary"
       },
       {
-          "sortNumber": "564",
+          "sortNumber": 564,
           "questionText": "manuel",
           "solutionText": "Manuel",
           "solutionAddition": "manuel"
       },
       {
-          "sortNumber": "565",
+          "sortNumber": 565,
           "questionText": "garcía",
           "solutionText": "garcía",
           "solutionAddition": "garcia"
       },
       {
-          "sortNumber": "566",
+          "sortNumber": 566,
           "questionText": "fuerte",
           "solutionText": "strong",
           "solutionAddition": "strong"
       },
       {
-          "sortNumber": "567",
+          "sortNumber": 567,
           "questionText": "sol",
           "solutionText": "Sun",
           "solutionAddition": "sun"
       },
       {
-          "sortNumber": "568",
+          "sortNumber": 568,
           "questionText": "jóvenes",
           "solutionText": "youths",
           "solutionAddition": "young people"
       },
       {
-          "sortNumber": "569",
+          "sortNumber": 569,
           "questionText": "apoyo",
           "solutionText": "support for",
           "solutionAddition": "support"
       },
       {
-          "sortNumber": "570",
+          "sortNumber": 570,
           "questionText": "habría",
           "solutionText": "there would be",
           "solutionAddition": "there would be"
       },
       {
-          "sortNumber": "571",
+          "sortNumber": 571,
           "questionText": "civil",
           "solutionText": "civil",
           "solutionAddition": "civil"
       },
       {
-          "sortNumber": "572",
+          "sortNumber": 572,
           "questionText": "miguel",
           "solutionText": "Michael",
           "solutionAddition": "miguel"
       },
       {
-          "sortNumber": "573",
+          "sortNumber": 573,
           "questionText": "pedro",
           "solutionText": "Peter",
           "solutionAddition": "pedro"
       },
       {
-          "sortNumber": "574",
+          "sortNumber": 574,
           "questionText": "partidos",
           "solutionText": "matches",
           "solutionAddition": "parties"
       },
       {
-          "sortNumber": "575",
+          "sortNumber": 575,
           "questionText": "libre",
           "solutionText": "free",
           "solutionAddition": "free"
       },
       {
-          "sortNumber": "576",
+          "sortNumber": 576,
           "questionText": "fuentes",
           "solutionText": "sources",
           "solutionAddition": "sources"
       },
       {
-          "sortNumber": "577",
+          "sortNumber": 577,
           "questionText": "administración",
           "solutionText": "management",
           "solutionAddition": "administration"
       },
       {
-          "sortNumber": "578",
+          "sortNumber": 578,
           "questionText": "común",
           "solutionText": "common",
           "solutionAddition": "common"
       },
       {
-          "sortNumber": "579",
+          "sortNumber": 579,
           "questionText": "dejar",
           "solutionText": "let",
           "solutionAddition": "leave"
       },
       {
-          "sortNumber": "580",
+          "sortNumber": 580,
           "questionText": "cine",
           "solutionText": "movies",
           "solutionAddition": "cinema"
       },
       {
-          "sortNumber": "581",
+          "sortNumber": 581,
           "questionText": "salir",
           "solutionText": "get out",
           "solutionAddition": "leave"
       },
       {
-          "sortNumber": "582",
+          "sortNumber": 582,
           "questionText": "comunicación",
           "solutionText": "communication",
           "solutionAddition": "communication"
       },
       {
-          "sortNumber": "583",
+          "sortNumber": 583,
           "questionText": "b",
           "solutionText": "b",
           "solutionAddition": "b"
       },
       {
-          "sortNumber": "584",
+          "sortNumber": 584,
           "questionText": "experiencia",
           "solutionText": "experience",
           "solutionAddition": "experience"
       },
       {
-          "sortNumber": "585",
+          "sortNumber": 585,
           "questionText": "demasiado",
           "solutionText": "too",
           "solutionAddition": "too much"
       },
       {
-          "sortNumber": "586",
+          "sortNumber": 586,
           "questionText": "plan",
           "solutionText": "plan",
           "solutionAddition": "plan"
       },
       {
-          "sortNumber": "587",
+          "sortNumber": 587,
           "questionText": "respuesta",
           "solutionText": "answer",
           "solutionAddition": "response"
       },
       {
-          "sortNumber": "588",
+          "sortNumber": 588,
           "questionText": "energía",
           "solutionText": "Energy",
           "solutionAddition": "energy"
       },
       {
-          "sortNumber": "589",
+          "sortNumber": 589,
           "questionText": "izquierda",
           "solutionText": "left",
           "solutionAddition": "left"
       },
       {
-          "sortNumber": "590",
+          "sortNumber": 590,
           "questionText": "función",
           "solutionText": "function",
           "solutionAddition": "function"
       },
       {
-          "sortNumber": "591",
+          "sortNumber": 591,
           "questionText": "principal",
           "solutionText": "principal",
           "solutionAddition": "main"
       },
       {
-          "sortNumber": "592",
+          "sortNumber": 592,
           "questionText": "superior",
           "solutionText": "higher",
           "solutionAddition": "top"
       },
       {
-          "sortNumber": "593",
+          "sortNumber": 593,
           "questionText": "naturaleza",
           "solutionText": "nature",
           "solutionAddition": "nature"
       },
       {
-          "sortNumber": "594",
+          "sortNumber": 594,
           "questionText": "podemos",
           "solutionText": "we can",
           "solutionAddition": "we can"
       },
       {
-          "sortNumber": "595",
+          "sortNumber": 595,
           "questionText": "unión",
           "solutionText": "Union",
           "solutionAddition": "link"
       },
       {
-          "sortNumber": "596",
+          "sortNumber": 596,
           "questionText": "especialmente",
           "solutionText": "especially",
           "solutionAddition": "especially"
       },
       {
-          "sortNumber": "597",
+          "sortNumber": 597,
           "questionText": "rey",
           "solutionText": "King",
           "solutionAddition": "king"
       },
       {
-          "sortNumber": "598",
+          "sortNumber": 598,
           "questionText": "domingo",
           "solutionText": "Sunday",
           "solutionAddition": "Sunday"
       },
       {
-          "sortNumber": "599",
+          "sortNumber": 599,
           "questionText": "favor",
           "solutionText": "favor",
           "solutionAddition": "please"
       },
       {
-          "sortNumber": "600",
+          "sortNumber": 600,
           "questionText": "cantidad",
           "solutionText": "amount",
           "solutionAddition": "amount"
       },
       {
-          "sortNumber": "601",
+          "sortNumber": 601,
           "questionText": "elecciones",
           "solutionText": "elections",
           "solutionAddition": "elections"
       },
       {
-          "sortNumber": "602",
+          "sortNumber": 602,
           "questionText": "clase",
           "solutionText": "class",
           "solutionAddition": "class"
       },
       {
-          "sortNumber": "603",
+          "sortNumber": 603,
           "questionText": "productos",
           "solutionText": "products",
           "solutionAddition": "products"
       },
       {
-          "sortNumber": "604",
+          "sortNumber": 604,
           "questionText": "españoles",
           "solutionText": "Spanish people",
           "solutionAddition": "Spanish"
       },
       {
-          "sortNumber": "605",
+          "sortNumber": 605,
           "questionText": "conocer",
           "solutionText": "know",
           "solutionAddition": "visit"
       },
       {
-          "sortNumber": "606",
+          "sortNumber": 606,
           "questionText": "teatro",
           "solutionText": "theater",
           "solutionAddition": "theater"
       },
       {
-          "sortNumber": "607",
+          "sortNumber": 607,
           "questionText": "importantes",
           "solutionText": "important",
           "solutionAddition": "important"
       },
       {
-          "sortNumber": "608",
+          "sortNumber": 608,
           "questionText": "evitar",
           "solutionText": "to avoid",
           "solutionAddition": "avoid"
       },
       {
-          "sortNumber": "609",
+          "sortNumber": 609,
           "questionText": "color",
           "solutionText": "colour",
           "solutionAddition": "color"
       },
       {
-          "sortNumber": "610",
+          "sortNumber": 610,
           "questionText": "actividades",
           "solutionText": "activities",
           "solutionAddition": "activities"
       },
       {
-          "sortNumber": "611",
+          "sortNumber": 611,
           "questionText": "mesa",
           "solutionText": "desk",
           "solutionAddition": "table"
       },
       {
-          "sortNumber": "612",
+          "sortNumber": 612,
           "questionText": "p",
           "solutionText": "p",
           "solutionAddition": "p"
       },
       {
-          "sortNumber": "613",
+          "sortNumber": 613,
           "questionText": "decía",
           "solutionText": "He said",
           "solutionAddition": "said"
       },
       {
-          "sortNumber": "614",
+          "sortNumber": 614,
           "questionText": "cuyo",
           "solutionText": "whose",
           "solutionAddition": "whose"
       },
       {
-          "sortNumber": "615",
+          "sortNumber": 615,
           "questionText": "debido",
           "solutionText": "due",
           "solutionAddition": "due"
       },
       {
-          "sortNumber": "616",
+          "sortNumber": 616,
           "questionText": "alta",
           "solutionText": "high",
           "solutionAddition": "high"
       },
       {
-          "sortNumber": "617",
+          "sortNumber": 617,
           "questionText": "francisco",
           "solutionText": "Francisco",
           "solutionAddition": "francisco"
       },
       {
-          "sortNumber": "618",
+          "sortNumber": 618,
           "questionText": "secretario",
           "solutionText": "secretary",
           "solutionAddition": "secretary"
       },
       {
-          "sortNumber": "619",
+          "sortNumber": 619,
           "questionText": "objeto",
           "solutionText": "object",
           "solutionAddition": "object"
       },
       {
-          "sortNumber": "620",
+          "sortNumber": 620,
           "questionText": "quizá",
           "solutionText": "maybe",
           "solutionAddition": "maybe"
       },
       {
-          "sortNumber": "621",
+          "sortNumber": 621,
           "questionText": "posición",
           "solutionText": "position",
           "solutionAddition": "position"
       },
       {
-          "sortNumber": "622",
+          "sortNumber": 622,
           "questionText": "parecía",
           "solutionText": "looked like",
           "solutionAddition": "it seemed"
       },
       {
-          "sortNumber": "623",
+          "sortNumber": 623,
           "questionText": "natural",
           "solutionText": "natural",
           "solutionAddition": "natural"
       },
       {
-          "sortNumber": "624",
+          "sortNumber": 624,
           "questionText": "elementos",
           "solutionText": "elements",
           "solutionAddition": "elements"
       },
       {
-          "sortNumber": "625",
+          "sortNumber": 625,
           "questionText": "hubo",
           "solutionText": "was",
           "solutionAddition": "there was"
       },
       {
-          "sortNumber": "626",
+          "sortNumber": 626,
           "questionText": "objetivo",
           "solutionText": "target",
           "solutionAddition": "target"
       },
       {
-          "sortNumber": "627",
+          "sortNumber": 627,
           "questionText": "formas",
           "solutionText": "shapes",
           "solutionAddition": "forms"
       },
       {
-          "sortNumber": "628",
+          "sortNumber": 628,
           "questionText": "única",
           "solutionText": "only",
           "solutionAddition": "only"
       },
       {
-          "sortNumber": "629",
+          "sortNumber": 629,
           "questionText": "pueda",
           "solutionText": "can",
           "solutionAddition": "can"
       },
       {
-          "sortNumber": "630",
+          "sortNumber": 630,
           "questionText": "origen",
           "solutionText": "source",
           "solutionAddition": "origin"
       },
       {
-          "sortNumber": "631",
+          "sortNumber": 631,
           "questionText": "blanco",
           "solutionText": "White",
           "solutionAddition": "target"
       },
       {
-          "sortNumber": "632",
+          "sortNumber": 632,
           "questionText": "mismos",
           "solutionText": "same",
           "solutionAddition": "same"
       },
       {
-          "sortNumber": "633",
+          "sortNumber": 633,
           "questionText": "lleva",
           "solutionText": "carries",
           "solutionAddition": "carries"
       },
       {
-          "sortNumber": "634",
+          "sortNumber": 634,
           "questionText": "económico",
           "solutionText": "economic",
           "solutionAddition": "economic"
       },
       {
-          "sortNumber": "635",
+          "sortNumber": 635,
           "questionText": "opinión",
           "solutionText": "opinion",
           "solutionAddition": "opinion"
       },
       {
-          "sortNumber": "636",
+          "sortNumber": 636,
           "questionText": "ayuda",
           "solutionText": "help",
           "solutionAddition": "help"
       },
       {
-          "sortNumber": "637",
+          "sortNumber": 637,
           "questionText": "oficial",
           "solutionText": "official",
           "solutionAddition": "official"
       },
       {
-          "sortNumber": "638",
+          "sortNumber": 638,
           "questionText": "silencio",
           "solutionText": "silence",
           "solutionAddition": "silence"
       },
       {
-          "sortNumber": "639",
+          "sortNumber": 639,
           "questionText": "buenos",
           "solutionText": "good",
           "solutionAddition": "good"
       },
       {
-          "sortNumber": "640",
+          "sortNumber": 640,
           "questionText": "pensar",
           "solutionText": "to think",
           "solutionAddition": "think"
       },
       {
-          "sortNumber": "641",
+          "sortNumber": 641,
           "questionText": "república",
           "solutionText": "republic",
           "solutionAddition": "republic"
       },
       {
-          "sortNumber": "642",
+          "sortNumber": 642,
           "questionText": "dónde",
           "solutionText": "where",
           "solutionAddition": "where"
       },
       {
-          "sortNumber": "643",
+          "sortNumber": 643,
           "questionText": "sangre",
           "solutionText": "blood",
           "solutionAddition": "blood"
       },
       {
-          "sortNumber": "644",
+          "sortNumber": 644,
           "questionText": "encuentro",
           "solutionText": "meeting",
           "solutionAddition": "I find"
       },
       {
-          "sortNumber": "645",
+          "sortNumber": 645,
           "questionText": "siquiera",
           "solutionText": "at least",
           "solutionAddition": "even"
       },
       {
-          "sortNumber": "646",
+          "sortNumber": 646,
           "questionText": "autor",
           "solutionText": "Author",
           "solutionAddition": "author"
       },
       {
-          "sortNumber": "647",
+          "sortNumber": 647,
           "questionText": "reunión",
           "solutionText": "meeting",
           "solutionAddition": "meeting"
       },
       {
-          "sortNumber": "648",
+          "sortNumber": 648,
           "questionText": "haciendo",
           "solutionText": "doing",
           "solutionAddition": "making"
       },
       {
-          "sortNumber": "649",
+          "sortNumber": 649,
           "questionText": "suelo",
           "solutionText": "floor",
           "solutionAddition": "ground"
       },
       {
-          "sortNumber": "650",
+          "sortNumber": 650,
           "questionText": "muestra",
           "solutionText": "sample",
           "solutionAddition": "sample"
       },
       {
-          "sortNumber": "651",
+          "sortNumber": 651,
           "questionText": "viejo",
           "solutionText": "old",
           "solutionAddition": "old"
       },
       {
-          "sortNumber": "652",
+          "sortNumber": 652,
           "questionText": "encima",
           "solutionText": "above",
           "solutionAddition": "over"
       },
       {
-          "sortNumber": "653",
+          "sortNumber": 653,
           "questionText": "resulta",
           "solutionText": "result",
           "solutionAddition": "turns out"
       },
       {
-          "sortNumber": "654",
+          "sortNumber": 654,
           "questionText": "tomar",
           "solutionText": "take",
           "solutionAddition": "take"
       },
       {
-          "sortNumber": "655",
+          "sortNumber": 655,
           "questionText": "bastante",
           "solutionText": "Quite",
           "solutionAddition": "quite a lot"
       },
       {
-          "sortNumber": "656",
+          "sortNumber": 656,
           "questionText": "siete",
           "solutionText": "seven",
           "solutionAddition": "seven"
       },
       {
-          "sortNumber": "657",
+          "sortNumber": 657,
           "questionText": "lucha",
           "solutionText": "struggle",
           "solutionAddition": "fight"
       },
       {
-          "sortNumber": "658",
+          "sortNumber": 658,
           "questionText": "pudo",
           "solutionText": "could",
           "solutionAddition": "could"
       },
       {
-          "sortNumber": "659",
+          "sortNumber": 659,
           "questionText": "amigos",
           "solutionText": "friends",
           "solutionAddition": "friends"
       },
       {
-          "sortNumber": "660",
+          "sortNumber": 660,
           "questionText": "línea",
           "solutionText": "line",
           "solutionAddition": "line"
       },
       {
-          "sortNumber": "661",
+          "sortNumber": 661,
           "questionText": "sur",
           "solutionText": "south",
           "solutionAddition": "south"
       },
       {
-          "sortNumber": "662",
+          "sortNumber": 662,
           "questionText": "pocos",
           "solutionText": "few",
           "solutionAddition": "few"
       },
       {
-          "sortNumber": "663",
+          "sortNumber": 663,
           "questionText": "medidas",
           "solutionText": "measures",
           "solutionAddition": "measures"
       },
       {
-          "sortNumber": "664",
+          "sortNumber": 664,
           "questionText": "norte",
           "solutionText": "North",
           "solutionAddition": "north"
       },
       {
-          "sortNumber": "665",
+          "sortNumber": 665,
           "questionText": "partes",
           "solutionText": "parts",
           "solutionAddition": "parts"
       },
       {
-          "sortNumber": "666",
+          "sortNumber": 666,
           "questionText": "iglesia",
           "solutionText": "church",
           "solutionAddition": "church"
       },
       {
-          "sortNumber": "667",
+          "sortNumber": 667,
           "questionText": "tratamiento",
           "solutionText": "treatment",
           "solutionAddition": "treatment"
       },
       {
-          "sortNumber": "668",
+          "sortNumber": 668,
           "questionText": "existencia",
           "solutionText": "existence",
           "solutionAddition": "existence"
       },
       {
-          "sortNumber": "669",
+          "sortNumber": 669,
           "questionText": "cargo",
           "solutionText": "position",
           "solutionAddition": "charge"
       },
       {
-          "sortNumber": "670",
+          "sortNumber": 670,
           "questionText": "grande",
           "solutionText": "big",
           "solutionAddition": "grande"
       },
       {
-          "sortNumber": "671",
+          "sortNumber": 671,
           "questionText": "américa",
           "solutionText": "America",
           "solutionAddition": "america"
       },
       {
-          "sortNumber": "672",
+          "sortNumber": 672,
           "questionText": "boca",
           "solutionText": "mouth",
           "solutionAddition": "boca"
       },
       {
-          "sortNumber": "673",
+          "sortNumber": 673,
           "questionText": "plaza",
           "solutionText": "Plaza",
           "solutionAddition": "plaza"
       },
       {
-          "sortNumber": "674",
+          "sortNumber": 674,
           "questionText": "pie",
           "solutionText": "foot",
           "solutionAddition": "pie"
       },
       {
-          "sortNumber": "675",
+          "sortNumber": 675,
           "questionText": "trabajadores",
           "solutionText": "workers",
           "solutionAddition": "workers"
       },
       {
-          "sortNumber": "676",
+          "sortNumber": 676,
           "questionText": "poner",
           "solutionText": "put",
           "solutionAddition": "put"
       },
       {
-          "sortNumber": "677",
+          "sortNumber": 677,
           "questionText": "existen",
           "solutionText": "exist",
           "solutionAddition": "there are"
       },
       {
-          "sortNumber": "678",
+          "sortNumber": 678,
           "questionText": "viene",
           "solutionText": "comes",
           "solutionAddition": "comes"
       },
       {
-          "sortNumber": "679",
+          "sortNumber": 679,
           "questionText": "permite",
           "solutionText": "It allows",
           "solutionAddition": "allows"
       },
       {
-          "sortNumber": "680",
+          "sortNumber": 680,
           "questionText": "análisis",
           "solutionText": "analysis",
           "solutionAddition": "analysis"
       },
       {
-          "sortNumber": "681",
+          "sortNumber": 681,
           "questionText": "argentina",
           "solutionText": "Argentina",
           "solutionAddition": "argentina"
       },
       {
-          "sortNumber": "682",
+          "sortNumber": 682,
           "questionText": "acto",
           "solutionText": "act",
           "solutionAddition": "act"
       },
       {
-          "sortNumber": "683",
+          "sortNumber": 683,
           "questionText": "hechos",
           "solutionText": "facts",
           "solutionAddition": "facts"
       },
       {
-          "sortNumber": "684",
+          "sortNumber": 684,
           "questionText": "tiempos",
           "solutionText": "time",
           "solutionAddition": "times"
       },
       {
-          "sortNumber": "685",
+          "sortNumber": 685,
           "questionText": "políticas",
           "solutionText": "policies",
           "solutionAddition": "policies"
       },
       {
-          "sortNumber": "686",
+          "sortNumber": 686,
           "questionText": "radio",
           "solutionText": "radio",
           "solutionAddition": "radio"
       },
       {
-          "sortNumber": "687",
+          "sortNumber": 687,
           "questionText": "puedo",
           "solutionText": "may l",
           "solutionAddition": "I can"
       },
       {
-          "sortNumber": "688",
+          "sortNumber": 688,
           "questionText": "crecimiento",
           "solutionText": "growth",
           "solutionAddition": "growth"
       },
       {
-          "sortNumber": "689",
+          "sortNumber": 689,
           "questionText": "francia",
           "solutionText": "France",
           "solutionAddition": "france"
       },
       {
-          "sortNumber": "690",
+          "sortNumber": 690,
           "questionText": "compañía",
           "solutionText": "company",
           "solutionAddition": "company"
       },
       {
-          "sortNumber": "691",
+          "sortNumber": 691,
           "questionText": "amigo",
           "solutionText": "friend",
           "solutionAddition": "friend"
       },
       {
-          "sortNumber": "692",
+          "sortNumber": 692,
           "questionText": "autoridades",
           "solutionText": "authorities",
           "solutionAddition": "authorities"
       },
       {
-          "sortNumber": "693",
+          "sortNumber": 693,
           "questionText": "realizar",
           "solutionText": "perform",
           "solutionAddition": "conduct"
       },
       {
-          "sortNumber": "694",
+          "sortNumber": 694,
           "questionText": "acciones",
           "solutionText": "Actions",
           "solutionAddition": "actions"
       },
       {
-          "sortNumber": "695",
+          "sortNumber": 695,
           "questionText": "padres",
           "solutionText": "fathers",
           "solutionAddition": "parents"
       },
       {
-          "sortNumber": "696",
+          "sortNumber": 696,
           "questionText": "diario",
           "solutionText": "daily",
           "solutionAddition": "diary"
       },
       {
-          "sortNumber": "697",
+          "sortNumber": 697,
           "questionText": "ve",
           "solutionText": "go",
           "solutionAddition": "see"
       },
       {
-          "sortNumber": "698",
+          "sortNumber": 698,
           "questionText": "derecha",
           "solutionText": "right",
           "solutionAddition": "right"
       },
       {
-          "sortNumber": "699",
+          "sortNumber": 699,
           "questionText": "ambiente",
           "solutionText": "ambient",
           "solutionAddition": "environment"
       },
       {
-          "sortNumber": "700",
+          "sortNumber": 700,
           "questionText": "i",
           "solutionText": "i",
           "solutionAddition": "i"
       },
       {
-          "sortNumber": "701",
+          "sortNumber": 701,
           "questionText": "habrá",
           "solutionText": "there will be",
           "solutionAddition": "there will be"
       },
       {
-          "sortNumber": "702",
+          "sortNumber": 702,
           "questionText": "precisamente",
           "solutionText": "precisely",
           "solutionAddition": "precisely"
       },
       {
-          "sortNumber": "703",
+          "sortNumber": 703,
           "questionText": "enfermedad",
           "solutionText": "disease",
           "solutionAddition": "disease"
       },
       {
-          "sortNumber": "704",
+          "sortNumber": 704,
           "questionText": "especie",
           "solutionText": "species",
           "solutionAddition": "species"
       },
       {
-          "sortNumber": "705",
+          "sortNumber": 705,
           "questionText": "ejército",
           "solutionText": "army",
           "solutionAddition": "army"
       },
       {
-          "sortNumber": "706",
+          "sortNumber": 706,
           "questionText": "santa",
           "solutionText": "St.",
           "solutionAddition": "holy"
       },
       {
-          "sortNumber": "707",
+          "sortNumber": 707,
           "questionText": "cambios",
           "solutionText": "changes",
           "solutionAddition": "changes"
       },
       {
-          "sortNumber": "708",
+          "sortNumber": 708,
           "questionText": "río",
           "solutionText": "River",
           "solutionAddition": "river"
       },
       {
-          "sortNumber": "709",
+          "sortNumber": 709,
           "questionText": "sabía",
           "solutionText": "I knew",
           "solutionAddition": "knew"
       },
       {
-          "sortNumber": "710",
+          "sortNumber": 710,
           "questionText": "seguro",
           "solutionText": "insurance",
           "solutionAddition": "insurance"
       },
       {
-          "sortNumber": "711",
+          "sortNumber": 711,
           "questionText": "espera",
           "solutionText": "waiting",
           "solutionAddition": "wait"
       },
       {
-          "sortNumber": "712",
+          "sortNumber": 712,
           "questionText": "momentos",
           "solutionText": "moments",
           "solutionAddition": "moments"
       },
       {
-          "sortNumber": "713",
+          "sortNumber": 713,
           "questionText": "viaje",
           "solutionText": "travel",
           "solutionAddition": "trip"
       },
       {
-          "sortNumber": "714",
+          "sortNumber": 714,
           "questionText": "quería",
           "solutionText": "wanted",
           "solutionAddition": "wanted"
       },
       {
-          "sortNumber": "715",
+          "sortNumber": 715,
           "questionText": "ocho",
           "solutionText": "eight",
           "solutionAddition": "eight"
       },
       {
-          "sortNumber": "716",
+          "sortNumber": 716,
           "questionText": "vivir",
           "solutionText": "to live",
           "solutionAddition": "live"
       },
       {
-          "sortNumber": "717",
+          "sortNumber": 717,
           "questionText": "región",
           "solutionText": "region",
           "solutionAddition": "region"
       },
       {
-          "sortNumber": "718",
+          "sortNumber": 718,
           "questionText": "formación",
           "solutionText": "training",
           "solutionAddition": "training"
       },
       {
-          "sortNumber": "719",
+          "sortNumber": 719,
           "questionText": "escuela",
           "solutionText": "school",
           "solutionAddition": "school"
       },
       {
-          "sortNumber": "720",
+          "sortNumber": 720,
           "questionText": "cuarto",
           "solutionText": "room",
           "solutionAddition": "fourth"
       },
       {
-          "sortNumber": "721",
+          "sortNumber": 721,
           "questionText": "valores",
           "solutionText": "values",
           "solutionAddition": "values"
       },
       {
-          "sortNumber": "722",
+          "sortNumber": 722,
           "questionText": "quedó",
           "solutionText": "it was",
           "solutionAddition": "remained"
       },
       {
-          "sortNumber": "723",
+          "sortNumber": 723,
           "questionText": "participación",
           "solutionText": "participation",
           "solutionAddition": "participation"
       },
       {
-          "sortNumber": "724",
+          "sortNumber": 724,
           "questionText": "éxito",
           "solutionText": "success",
           "solutionAddition": "success"
       },
       {
-          "sortNumber": "725",
+          "sortNumber": 725,
           "questionText": "baja",
           "solutionText": "low",
           "solutionAddition": "low"
       },
       {
-          "sortNumber": "726",
+          "sortNumber": 726,
           "questionText": "artículo",
           "solutionText": "Article",
           "solutionAddition": "article"
       },
       {
-          "sortNumber": "727",
+          "sortNumber": 727,
           "questionText": "principales",
           "solutionText": "main",
           "solutionAddition": "main"
       },
       {
-          "sortNumber": "728",
+          "sortNumber": 728,
           "questionText": "fernando",
           "solutionText": "fernando",
           "solutionAddition": "fernando"
       },
       {
-          "sortNumber": "729",
+          "sortNumber": 729,
           "questionText": "metros",
           "solutionText": "meters",
           "solutionAddition": "meters"
       },
       {
-          "sortNumber": "730",
+          "sortNumber": 730,
           "questionText": "marcha",
           "solutionText": "March",
           "solutionAddition": "march"
       },
       {
-          "sortNumber": "731",
+          "sortNumber": 731,
           "questionText": "régimen",
           "solutionText": "regime",
           "solutionAddition": "regime"
       },
       {
-          "sortNumber": "732",
+          "sortNumber": 732,
           "questionText": "consecuencia",
           "solutionText": "consequence",
           "solutionAddition": "consequence"
       },
       {
-          "sortNumber": "733",
+          "sortNumber": 733,
           "questionText": "conocimiento",
           "solutionText": "knowledge",
           "solutionAddition": "awareness"
       },
       {
-          "sortNumber": "734",
+          "sortNumber": 734,
           "questionText": "corazón",
           "solutionText": "heart",
           "solutionAddition": "heart"
       },
       {
-          "sortNumber": "735",
+          "sortNumber": 735,
           "questionText": "campaña",
           "solutionText": "Bell",
           "solutionAddition": "campaign"
       },
       {
-          "sortNumber": "736",
+          "sortNumber": 736,
           "questionText": "estructura",
           "solutionText": "structure",
           "solutionAddition": "structure"
       },
       {
-          "sortNumber": "737",
+          "sortNumber": 737,
           "questionText": "efectos",
           "solutionText": "effects",
           "solutionAddition": "effects"
       },
       {
-          "sortNumber": "738",
+          "sortNumber": 738,
           "questionText": "finalmente",
           "solutionText": "Finally",
           "solutionAddition": "finally"
       },
       {
-          "sortNumber": "739",
+          "sortNumber": 739,
           "questionText": "modelo",
           "solutionText": "model",
           "solutionAddition": "template"
       },
       {
-          "sortNumber": "740",
+          "sortNumber": 740,
           "questionText": "carta",
           "solutionText": "letter",
           "solutionAddition": "charter"
       },
       {
-          "sortNumber": "741",
+          "sortNumber": 741,
           "questionText": "construcción",
           "solutionText": "construction",
           "solutionAddition": "constr"
       },
       {
-          "sortNumber": "742",
+          "sortNumber": 742,
           "questionText": "médico",
           "solutionText": "doctor",
           "solutionAddition": "doctor"
       },
       {
-          "sortNumber": "743",
+          "sortNumber": 743,
           "questionText": "miedo",
           "solutionText": "afraid",
           "solutionAddition": "fear"
       },
       {
-          "sortNumber": "744",
+          "sortNumber": 744,
           "questionText": "mayores",
           "solutionText": "greater",
           "solutionAddition": "seniors"
       },
       {
-          "sortNumber": "745",
+          "sortNumber": 745,
           "questionText": "entrada",
           "solutionText": "entrance",
           "solutionAddition": "entry"
       },
       {
-          "sortNumber": "746",
+          "sortNumber": 746,
           "questionText": "humanos",
           "solutionText": "humans",
           "solutionAddition": "humans"
       },
       {
-          "sortNumber": "747",
+          "sortNumber": 747,
           "questionText": "sean",
           "solutionText": "are",
           "solutionAddition": "be"
       },
       {
-          "sortNumber": "748",
+          "sortNumber": 748,
           "questionText": "actitud",
           "solutionText": "attitude",
           "solutionAddition": "attitude"
       },
       {
-          "sortNumber": "749",
+          "sortNumber": 749,
           "questionText": "deja",
           "solutionText": "leaves",
           "solutionAddition": "leave"
       },
       {
-          "sortNumber": "750",
+          "sortNumber": 750,
           "questionText": "dejó",
           "solutionText": "let",
           "solutionAddition": "let"
       },
       {
-          "sortNumber": "751",
+          "sortNumber": 751,
           "questionText": "d",
           "solutionText": "d",
           "solutionAddition": "d"
       },
       {
-          "sortNumber": "752",
+          "sortNumber": 752,
           "questionText": "llevar",
           "solutionText": "bring",
           "solutionAddition": "wear"
       },
       {
-          "sortNumber": "753",
+          "sortNumber": 753,
           "questionText": "negro",
           "solutionText": "black",
           "solutionAddition": "black"
       },
       {
-          "sortNumber": "754",
+          "sortNumber": 754,
           "questionText": "texto",
           "solutionText": "text",
           "solutionAddition": "text"
       },
       {
-          "sortNumber": "755",
+          "sortNumber": 755,
           "questionText": "mitad",
           "solutionText": "half",
           "solutionAddition": "half"
       },
       {
-          "sortNumber": "756",
+          "sortNumber": 756,
           "questionText": "estuvo",
           "solutionText": "he was",
           "solutionAddition": "was"
       },
       {
-          "sortNumber": "757",
+          "sortNumber": 757,
           "questionText": "alrededor",
           "solutionText": "around",
           "solutionAddition": "about"
       },
       {
-          "sortNumber": "758",
+          "sortNumber": 758,
           "questionText": "acerca",
           "solutionText": "about",
           "solutionAddition": "about"
       },
       {
-          "sortNumber": "759",
+          "sortNumber": 759,
           "questionText": "peso",
           "solutionText": "weight",
           "solutionAddition": "weight"
       },
       {
-          "sortNumber": "760",
+          "sortNumber": 760,
           "questionText": "humano",
           "solutionText": "human",
           "solutionAddition": "human"
       },
       {
-          "sortNumber": "761",
+          "sortNumber": 761,
           "questionText": "pequeño",
           "solutionText": "little",
           "solutionAddition": "small"
       },
       {
-          "sortNumber": "762",
+          "sortNumber": 762,
           "questionText": "fecha",
           "solutionText": "date",
           "solutionAddition": "date"
       },
       {
-          "sortNumber": "763",
+          "sortNumber": 763,
           "questionText": "serán",
           "solutionText": "will be",
           "solutionAddition": "will be"
       },
       {
-          "sortNumber": "764",
+          "sortNumber": 764,
           "questionText": "doctor",
           "solutionText": "doctor",
           "solutionAddition": "doctor"
       },
       {
-          "sortNumber": "765",
+          "sortNumber": 765,
           "questionText": "ideas",
           "solutionText": "Ideas",
           "solutionAddition": "ideas"
       },
       {
-          "sortNumber": "766",
+          "sortNumber": 766,
           "questionText": "vino",
           "solutionText": "wine",
           "solutionAddition": "wine"
       },
       {
-          "sortNumber": "767",
+          "sortNumber": 767,
           "questionText": "materia",
           "solutionText": "subject",
           "solutionAddition": "matter"
       },
       {
-          "sortNumber": "768",
+          "sortNumber": 768,
           "questionText": "llega",
           "solutionText": "arrives",
           "solutionAddition": "arrives"
       },
       {
-          "sortNumber": "769",
+          "sortNumber": 769,
           "questionText": "carrera",
           "solutionText": "career",
           "solutionAddition": "career"
       },
       {
-          "sortNumber": "770",
+          "sortNumber": 770,
           "questionText": "cierta",
           "solutionText": "some",
           "solutionAddition": "certain"
       },
       {
-          "sortNumber": "771",
+          "sortNumber": 771,
           "questionText": "sola",
           "solutionText": "alone",
           "solutionAddition": "only"
       },
       {
-          "sortNumber": "772",
+          "sortNumber": 772,
           "questionText": "psoe",
           "solutionText": "psoe",
           "solutionAddition": "psoe"
       },
       {
-          "sortNumber": "773",
+          "sortNumber": 773,
           "questionText": "lejos",
           "solutionText": "far",
           "solutionAddition": "far"
       },
       {
-          "sortNumber": "774",
+          "sortNumber": 774,
           "questionText": "juez",
           "solutionText": "judge",
           "solutionAddition": "judge"
       },
       {
-          "sortNumber": "775",
+          "sortNumber": 775,
           "questionText": "características",
           "solutionText": "characteristics",
           "solutionAddition": "characteristics"
       },
       {
-          "sortNumber": "776",
+          "sortNumber": 776,
           "questionText": "riesgo",
           "solutionText": "risk",
           "solutionAddition": "risk"
       },
       {
-          "sortNumber": "777",
+          "sortNumber": 777,
           "questionText": "fácil",
           "solutionText": "easy",
           "solutionAddition": "easy"
       },
       {
-          "sortNumber": "778",
+          "sortNumber": 778,
           "questionText": "diferencia",
           "solutionText": "difference",
           "solutionAddition": "difference"
       },
       {
-          "sortNumber": "779",
+          "sortNumber": 779,
           "questionText": "cultural",
           "solutionText": "cultural",
           "solutionAddition": "cultural"
       },
       {
-          "sortNumber": "780",
+          "sortNumber": 780,
           "questionText": "libros",
           "solutionText": "books",
           "solutionAddition": "books"
       },
       {
-          "sortNumber": "781",
+          "sortNumber": 781,
           "questionText": "práctica",
           "solutionText": "practice",
           "solutionAddition": "practice"
       },
       {
-          "sortNumber": "782",
+          "sortNumber": 782,
           "questionText": "mayo",
           "solutionText": "May",
           "solutionAddition": "may"
       },
       {
-          "sortNumber": "783",
+          "sortNumber": 783,
           "questionText": "nuestras",
           "solutionText": "our",
           "solutionAddition": "our"
       },
       {
-          "sortNumber": "784",
+          "sortNumber": 784,
           "questionText": "programas",
           "solutionText": "programs",
           "solutionAddition": "programs"
       },
       {
-          "sortNumber": "785",
+          "sortNumber": 785,
           "questionText": "memoria",
           "solutionText": "memory",
           "solutionAddition": "memory"
       },
       {
-          "sortNumber": "786",
+          "sortNumber": 786,
           "questionText": "llegado",
           "solutionText": "arrived",
           "solutionAddition": "arrived"
       },
       {
-          "sortNumber": "787",
+          "sortNumber": 787,
           "questionText": "plazo",
           "solutionText": "term",
           "solutionAddition": "deadline"
       },
       {
-          "sortNumber": "788",
+          "sortNumber": 788,
           "questionText": "expresión",
           "solutionText": "expression",
           "solutionAddition": "expression"
       },
       {
-          "sortNumber": "789",
+          "sortNumber": 789,
           "questionText": "diciembre",
           "solutionText": "December",
           "solutionAddition": "december"
       },
       {
-          "sortNumber": "790",
+          "sortNumber": 790,
           "questionText": "mantener",
           "solutionText": "keep",
           "solutionAddition": "maintain"
       },
       {
-          "sortNumber": "791",
+          "sortNumber": 791,
           "questionText": "enero",
           "solutionText": "January",
           "solutionAddition": "January"
       },
       {
-          "sortNumber": "792",
+          "sortNumber": 792,
           "questionText": "volver",
           "solutionText": "return",
           "solutionAddition": "go back to"
       },
       {
-          "sortNumber": "793",
+          "sortNumber": 793,
           "questionText": "cuadro",
           "solutionText": "picture",
           "solutionAddition": "table"
       },
       {
-          "sortNumber": "794",
+          "sortNumber": 794,
           "questionText": "producto",
           "solutionText": "product",
           "solutionAddition": "product"
       },
       {
-          "sortNumber": "795",
+          "sortNumber": 795,
           "questionText": "produce",
           "solutionText": "produces",
           "solutionAddition": "produced"
       },
       {
-          "sortNumber": "796",
+          "sortNumber": 796,
           "questionText": "europea",
           "solutionText": "European",
           "solutionAddition": "european"
       },
       {
-          "sortNumber": "797",
+          "sortNumber": 797,
           "questionText": "conciencia",
           "solutionText": "conscience",
           "solutionAddition": "conscience"
       },
       {
-          "sortNumber": "798",
+          "sortNumber": 798,
           "questionText": "tenían",
           "solutionText": "They had",
           "solutionAddition": "had"
       },
       {
-          "sortNumber": "799",
+          "sortNumber": 799,
           "questionText": "atrás",
           "solutionText": "behind",
           "solutionAddition": "back"
       },
       {
-          "sortNumber": "800",
+          "sortNumber": 800,
           "questionText": "felipe",
           "solutionText": "felipe",
           "solutionAddition": "Philip"
       },
       {
-          "sortNumber": "801",
+          "sortNumber": 801,
           "questionText": "creación",
           "solutionText": "creation",
           "solutionAddition": "creation"
       },
       {
-          "sortNumber": "802",
+          "sortNumber": 802,
           "questionText": "chile",
           "solutionText": "Chile",
           "solutionAddition": "chile"
       },
       {
-          "sortNumber": "803",
+          "sortNumber": 803,
           "questionText": "precio",
           "solutionText": "price",
           "solutionAddition": "price"
       },
       {
-          "sortNumber": "804",
+          "sortNumber": 804,
           "questionText": "película",
           "solutionText": "movie",
           "solutionAddition": "film"
       },
       {
-          "sortNumber": "805",
+          "sortNumber": 805,
           "questionText": "puerto",
           "solutionText": "port",
           "solutionAddition": "port"
       },
       {
-          "sortNumber": "806",
+          "sortNumber": 806,
           "questionText": "fuego",
           "solutionText": "fire",
           "solutionAddition": "fire"
       },
       {
-          "sortNumber": "807",
+          "sortNumber": 807,
           "questionText": "cuestión",
           "solutionText": "questionText",
           "solutionAddition": "issue"
       },
       {
-          "sortNumber": "808",
+          "sortNumber": 808,
           "questionText": "pasó",
           "solutionText": "I pass",
           "solutionAddition": "happened"
       },
       {
-          "sortNumber": "809",
+          "sortNumber": 809,
           "questionText": "costa",
           "solutionText": "coast",
           "solutionAddition": "coast"
       },
       {
-          "sortNumber": "810",
+          "sortNumber": 810,
           "questionText": "supuesto",
           "solutionText": "supposed",
           "solutionAddition": "alleged"
       },
       {
-          "sortNumber": "811",
+          "sortNumber": 811,
           "questionText": "local",
           "solutionText": "local",
           "solutionAddition": "local"
       },
       {
-          "sortNumber": "812",
+          "sortNumber": 812,
           "questionText": "habla",
           "solutionText": "speaks",
           "solutionAddition": "speech"
       },
       {
-          "sortNumber": "813",
+          "sortNumber": 813,
           "questionText": "aspectos",
           "solutionText": "aspects",
           "solutionAddition": "aspects"
       },
       {
-          "sortNumber": "814",
+          "sortNumber": 814,
           "questionText": "cuba",
           "solutionText": "Cuba",
           "solutionAddition": "cuba"
       },
       {
-          "sortNumber": "815",
+          "sortNumber": 815,
           "questionText": "sala",
           "solutionText": "living room",
           "solutionAddition": "room"
       },
       {
-          "sortNumber": "816",
+          "sortNumber": 816,
           "questionText": "cámara",
           "solutionText": "camera",
           "solutionAddition": "camera"
       },
       {
-          "sortNumber": "817",
+          "sortNumber": 817,
           "questionText": "vuelta",
           "solutionText": "return",
           "solutionAddition": "return"
       },
       {
-          "sortNumber": "818",
+          "sortNumber": 818,
           "questionText": "vía",
           "solutionText": "via",
           "solutionAddition": "via"
       },
       {
-          "sortNumber": "819",
+          "sortNumber": 819,
           "questionText": "mirada",
           "solutionText": "look",
           "solutionAddition": "look"
       },
       {
-          "sortNumber": "820",
+          "sortNumber": 820,
           "questionText": "mejores",
           "solutionText": "top",
           "solutionAddition": "best"
       },
       {
-          "sortNumber": "821",
+          "sortNumber": 821,
           "questionText": "informe",
           "solutionText": "report",
           "solutionAddition": "report"
       },
       {
-          "sortNumber": "822",
+          "sortNumber": 822,
           "questionText": "unidad",
           "solutionText": "Unit",
           "solutionAddition": "unit"
       },
       {
-          "sortNumber": "823",
+          "sortNumber": 823,
           "questionText": "distintos",
           "solutionText": "different",
           "solutionAddition": "different"
       },
       {
-          "sortNumber": "824",
+          "sortNumber": 824,
           "questionText": "suerte",
           "solutionText": "lucky",
           "solutionAddition": "luck"
       },
       {
-          "sortNumber": "825",
+          "sortNumber": 825,
           "questionText": "tales",
           "solutionText": "such",
           "solutionAddition": "such"
       },
       {
-          "sortNumber": "826",
+          "sortNumber": 826,
           "questionText": "mira",
           "solutionText": "sight",
           "solutionAddition": "see"
       },
       {
-          "sortNumber": "827",
+          "sortNumber": 827,
           "questionText": "llamado",
           "solutionText": "called",
           "solutionAddition": "called"
       },
       {
-          "sortNumber": "828",
+          "sortNumber": 828,
           "questionText": "técnica",
           "solutionText": "technique",
           "solutionAddition": "technique"
       },
       {
-          "sortNumber": "829",
+          "sortNumber": 829,
           "questionText": "título",
           "solutionText": "qualification",
           "solutionAddition": "title"
       },
       {
-          "sortNumber": "830",
+          "sortNumber": 830,
           "questionText": "s",
           "solutionText": "s",
           "solutionAddition": "s"
       },
       {
-          "sortNumber": "831",
+          "sortNumber": 831,
           "questionText": "principios",
           "solutionText": "beginning",
           "solutionAddition": "principles"
       },
       {
-          "sortNumber": "832",
+          "sortNumber": 832,
           "questionText": "octubre",
           "solutionText": "October",
           "solutionAddition": "October"
       },
       {
-          "sortNumber": "833",
+          "sortNumber": 833,
           "questionText": "volvió",
           "solutionText": "went back",
           "solutionAddition": "returned"
       },
       {
-          "sortNumber": "834",
+          "sortNumber": 834,
           "questionText": "período",
           "solutionText": "period",
           "solutionAddition": "period"
       },
       {
-          "sortNumber": "835",
+          "sortNumber": 835,
           "questionText": "g",
           "solutionText": "g",
           "solutionAddition": "g"
       },
       {
-          "sortNumber": "836",
+          "sortNumber": 836,
           "questionText": "encontrar",
           "solutionText": "meet",
           "solutionAddition": "find"
       },
       {
-          "sortNumber": "837",
+          "sortNumber": 837,
           "questionText": "democracia",
           "solutionText": "democracy",
           "solutionAddition": "democracy"
       },
       {
-          "sortNumber": "838",
+          "sortNumber": 838,
           "questionText": "aumento",
           "solutionText": "increase",
           "solutionAddition": "increase"
       },
       {
-          "sortNumber": "839",
+          "sortNumber": 839,
           "questionText": "fútbol",
           "solutionText": "soccer",
           "solutionAddition": "soccer"
       },
       {
-          "sortNumber": "840",
+          "sortNumber": 840,
           "questionText": "prueba",
           "solutionText": "proof",
           "solutionAddition": "test"
       },
       {
-          "sortNumber": "841",
+          "sortNumber": 841,
           "questionText": "consumo",
           "solutionText": "consumption",
           "solutionAddition": "consumption"
       },
       {
-          "sortNumber": "842",
+          "sortNumber": 842,
           "questionText": "pese",
           "solutionText": "I weighed",
           "solutionAddition": "despite"
       },
       {
-          "sortNumber": "843",
+          "sortNumber": 843,
           "questionText": "ocasiones",
           "solutionText": "occasions",
           "solutionAddition": "occasions"
       },
       {
-          "sortNumber": "844",
+          "sortNumber": 844,
           "questionText": "exterior",
           "solutionText": "Exterior",
           "solutionAddition": "outside"
       },
       {
-          "sortNumber": "845",
+          "sortNumber": 845,
           "questionText": "solución",
           "solutionText": "solutionText",
           "solutionAddition": "solutionText"
       },
       {
-          "sortNumber": "846",
+          "sortNumber": 846,
           "questionText": "u",
           "solutionText": "or",
           "solutionAddition": "u"
       },
       {
-          "sortNumber": "847",
+          "sortNumber": 847,
           "questionText": "hija",
           "solutionText": "daughter",
           "solutionAddition": "daughter"
       },
       {
-          "sortNumber": "848",
+          "sortNumber": 848,
           "questionText": "sueño",
           "solutionText": "dream",
           "solutionAddition": "dream"
       },
       {
-          "sortNumber": "849",
+          "sortNumber": 849,
           "questionText": "parís",
           "solutionText": "Paris",
           "solutionAddition": "paris"
       },
       {
-          "sortNumber": "850",
+          "sortNumber": 850,
           "questionText": "capaz",
           "solutionText": "capable",
           "solutionAddition": "able"
       },
       {
-          "sortNumber": "851",
+          "sortNumber": 851,
           "questionText": "ocasión",
           "solutionText": "chance",
           "solutionAddition": "occasion"
       },
       {
-          "sortNumber": "852",
+          "sortNumber": 852,
           "questionText": "industria",
           "solutionText": "industry",
           "solutionAddition": "industry"
       },
       {
-          "sortNumber": "853",
+          "sortNumber": 853,
           "questionText": "adelante",
           "solutionText": "ahead",
           "solutionAddition": "forward"
       },
       {
-          "sortNumber": "854",
+          "sortNumber": 854,
           "questionText": "salida",
           "solutionText": "Exit",
           "solutionAddition": "exit"
       },
       {
-          "sortNumber": "855",
+          "sortNumber": 855,
           "questionText": "ciencia",
           "solutionText": "science",
           "solutionAddition": "science"
       },
       {
-          "sortNumber": "856",
+          "sortNumber": 856,
           "questionText": "asunto",
           "solutionText": "business",
           "solutionAddition": "subject"
       },
       {
-          "sortNumber": "857",
+          "sortNumber": 857,
           "questionText": "asociación",
           "solutionText": "association",
           "solutionAddition": "association"
       },
       {
-          "sortNumber": "858",
+          "sortNumber": 858,
           "questionText": "puso",
           "solutionText": "put",
           "solutionAddition": "put"
       },
       {
-          "sortNumber": "859",
+          "sortNumber": 859,
           "questionText": "intereses",
           "solutionText": "interests",
           "solutionAddition": "interests"
       },
       {
-          "sortNumber": "860",
+          "sortNumber": 860,
           "questionText": "oro",
           "solutionText": "gold",
           "solutionAddition": "gold"
       },
       {
-          "sortNumber": "861",
+          "sortNumber": 861,
           "questionText": "podrá",
           "solutionText": "you can",
           "solutionAddition": "you may"
       },
       {
-          "sortNumber": "862",
+          "sortNumber": 862,
           "questionText": "pregunta",
           "solutionText": "questionText",
           "solutionAddition": "questionText"
       },
       {
-          "sortNumber": "863",
+          "sortNumber": 863,
           "questionText": "oposición",
           "solutionText": "opposition",
           "solutionAddition": "opposition"
       },
       {
-          "sortNumber": "864",
+          "sortNumber": 864,
           "questionText": "entrar",
           "solutionText": "get in",
           "solutionAddition": "enter"
       },
       {
-          "sortNumber": "865",
+          "sortNumber": 865,
           "questionText": "señora",
           "solutionText": "Lady",
           "solutionAddition": "Mrs."
       },
       {
-          "sortNumber": "866",
+          "sortNumber": 866,
           "questionText": "señaló",
           "solutionText": "he pointed",
           "solutionAddition": "pointed out"
       },
       {
-          "sortNumber": "867",
+          "sortNumber": 867,
           "questionText": "santiago",
           "solutionText": "Santiago",
           "solutionAddition": "santiago"
       },
       {
-          "sortNumber": "868",
+          "sortNumber": 868,
           "questionText": "dolor",
           "solutionText": "pain",
           "solutionAddition": "pain"
       },
       {
-          "sortNumber": "869",
+          "sortNumber": 869,
           "questionText": "zonas",
           "solutionText": "areas",
           "solutionAddition": "zones"
       },
       {
-          "sortNumber": "870",
+          "sortNumber": 870,
           "questionText": "comercio",
           "solutionText": "trade",
           "solutionAddition": "commerce"
       },
       {
-          "sortNumber": "871",
+          "sortNumber": 871,
           "questionText": "operación",
           "solutionText": "operation",
           "solutionAddition": "operation"
       },
       {
-          "sortNumber": "872",
+          "sortNumber": 872,
           "questionText": "tribunal",
           "solutionText": "court",
           "solutionAddition": "court"
       },
       {
-          "sortNumber": "873",
+          "sortNumber": 873,
           "questionText": "instituciones",
           "solutionText": "institutions",
           "solutionAddition": "institutions"
       },
       {
-          "sortNumber": "874",
+          "sortNumber": 874,
           "questionText": "temas",
           "solutionText": "topics",
           "solutionAddition": "issues"
       },
       {
-          "sortNumber": "875",
+          "sortNumber": 875,
           "questionText": "militares",
           "solutionText": "military",
           "solutionAddition": "military"
       },
       {
-          "sortNumber": "876",
+          "sortNumber": 876,
           "questionText": "junio",
           "solutionText": "June",
           "solutionAddition": "June"
       },
       {
-          "sortNumber": "877",
+          "sortNumber": 877,
           "questionText": "marco",
           "solutionText": "framework",
           "solutionAddition": "framework"
       },
       {
-          "sortNumber": "878",
+          "sortNumber": 878,
           "questionText": "sectores",
           "solutionText": "sectors",
           "solutionAddition": "sectors"
       },
       {
-          "sortNumber": "879",
+          "sortNumber": 879,
           "questionText": "hacerlo",
           "solutionText": "do it",
           "solutionAddition": "make it"
       },
       {
-          "sortNumber": "880",
+          "sortNumber": 880,
           "questionText": "aspecto",
           "solutionText": "appearance",
           "solutionAddition": "aspect"
       },
       {
-          "sortNumber": "881",
+          "sortNumber": 881,
           "questionText": "razones",
           "solutionText": "reasons",
           "solutionAddition": "reasons"
       },
       {
-          "sortNumber": "882",
+          "sortNumber": 882,
           "questionText": "contenido",
           "solutionText": "contents",
           "solutionAddition": "content"
       },
       {
-          "sortNumber": "883",
+          "sortNumber": 883,
           "questionText": "juicio",
           "solutionText": "judgment",
           "solutionAddition": "judgment"
       },
       {
-          "sortNumber": "884",
+          "sortNumber": 884,
           "questionText": "electoral",
           "solutionText": "electoral",
           "solutionAddition": "electoral"
       },
       {
-          "sortNumber": "885",
+          "sortNumber": 885,
           "questionText": "considera",
           "solutionText": "considers",
           "solutionAddition": "considers"
       },
       {
-          "sortNumber": "886",
+          "sortNumber": 886,
           "questionText": "tendrá",
           "solutionText": "will have",
           "solutionAddition": "will have"
       },
       {
-          "sortNumber": "887",
+          "sortNumber": 887,
           "questionText": "mucha",
           "solutionText": "a lot",
           "solutionAddition": "much"
       },
       {
-          "sortNumber": "888",
+          "sortNumber": 888,
           "questionText": "voluntad",
           "solutionText": "Will",
           "solutionAddition": "will"
       },
       {
-          "sortNumber": "889",
+          "sortNumber": 889,
           "questionText": "dicen",
           "solutionText": "say",
           "solutionAddition": "say"
       },
       {
-          "sortNumber": "890",
+          "sortNumber": 890,
           "questionText": "recuerdo",
           "solutionText": "memory",
           "solutionAddition": "reminder"
       },
       {
-          "sortNumber": "891",
+          "sortNumber": 891,
           "questionText": "socialista",
           "solutionText": "socialist",
           "solutionAddition": "socialist"
       },
       {
-          "sortNumber": "892",
+          "sortNumber": 892,
           "questionText": "área",
           "solutionText": "area",
           "solutionAddition": "area"
       },
       {
-          "sortNumber": "893",
+          "sortNumber": 893,
           "questionText": "aparece",
           "solutionText": "appear",
           "solutionAddition": "appears"
       },
       {
-          "sortNumber": "894",
+          "sortNumber": 894,
           "questionText": "vio",
           "solutionText": "saw",
           "solutionAddition": "saw"
       },
       {
-          "sortNumber": "895",
+          "sortNumber": 895,
           "questionText": "cama",
           "solutionText": "bed",
           "solutionAddition": "bed"
       },
       {
-          "sortNumber": "896",
+          "sortNumber": 896,
           "questionText": "aun",
           "solutionText": "yet",
           "solutionAddition": "even"
       },
       {
-          "sortNumber": "897",
+          "sortNumber": 897,
           "questionText": "presenta",
           "solutionText": "presents",
           "solutionAddition": "presents"
       },
       {
-          "sortNumber": "898",
+          "sortNumber": 898,
           "questionText": "pp",
           "solutionText": "pp",
           "solutionAddition": "pp"
       },
       {
-          "sortNumber": "899",
+          "sortNumber": 899,
           "questionText": "revolución",
           "solutionText": "revolution",
           "solutionAddition": "revolution"
       },
       {
-          "sortNumber": "900",
+          "sortNumber": 900,
           "questionText": "busca",
           "solutionText": "search",
           "solutionAddition": "search"
       },
       {
-          "sortNumber": "901",
+          "sortNumber": 901,
           "questionText": "abril",
           "solutionText": "April",
           "solutionAddition": "april"
       },
       {
-          "sortNumber": "902",
+          "sortNumber": 902,
           "questionText": "rodríguez",
           "solutionText": "rodríguez",
           "solutionAddition": "rodriguez"
       },
       {
-          "sortNumber": "903",
+          "sortNumber": 903,
           "questionText": "fiscal",
           "solutionText": "fiscal",
           "solutionAddition": "prosecutor"
       },
       {
-          "sortNumber": "904",
+          "sortNumber": 904,
           "questionText": "lópez",
           "solutionText": "lópez",
           "solutionAddition": "lópez"
       },
       {
-          "sortNumber": "905",
+          "sortNumber": 905,
           "questionText": "victoria",
           "solutionText": "victory",
           "solutionAddition": "victoria"
       },
       {
-          "sortNumber": "906",
+          "sortNumber": 906,
           "questionText": "violencia",
           "solutionText": "violence",
           "solutionAddition": "violence"
       },
       {
-          "sortNumber": "907",
+          "sortNumber": 907,
           "questionText": "primeras",
           "solutionText": "first",
           "solutionAddition": "first"
       },
       {
-          "sortNumber": "908",
+          "sortNumber": 908,
           "questionText": "pequeña",
           "solutionText": "little",
           "solutionAddition": "small"
       },
       {
-          "sortNumber": "909",
+          "sortNumber": 909,
           "questionText": "armas",
           "solutionText": "weapons",
           "solutionAddition": "weapons"
       },
       {
-          "sortNumber": "910",
+          "sortNumber": 910,
           "questionText": "debía",
           "solutionText": "should",
           "solutionAddition": "should"
       },
       {
-          "sortNumber": "911",
+          "sortNumber": 911,
           "questionText": "ii",
           "solutionText": "ii",
           "solutionAddition": "ii"
       },
       {
-          "sortNumber": "912",
+          "sortNumber": 912,
           "questionText": "esfuerzo",
           "solutionText": "effort",
           "solutionAddition": "effort"
       },
       {
-          "sortNumber": "913",
+          "sortNumber": 913,
           "questionText": "humana",
           "solutionText": "human",
           "solutionAddition": "human"
       },
       {
-          "sortNumber": "914",
+          "sortNumber": 914,
           "questionText": "posibilidades",
           "solutionText": "possibilities",
           "solutionAddition": "possibilities"
       },
       {
-          "sortNumber": "915",
+          "sortNumber": 915,
           "questionText": "centros",
           "solutionText": "centers",
           "solutionAddition": "centers"
       },
       {
-          "sortNumber": "916",
+          "sortNumber": 916,
           "questionText": "profesional",
           "solutionText": "professional",
           "solutionAddition": "professional"
       },
       {
-          "sortNumber": "917",
+          "sortNumber": 917,
           "questionText": "asimismo",
           "solutionText": "in addition",
           "solutionAddition": "also"
       },
       {
-          "sortNumber": "918",
+          "sortNumber": 918,
           "questionText": "grado",
           "solutionText": "grade",
           "solutionAddition": "degree"
       },
       {
-          "sortNumber": "919",
+          "sortNumber": 919,
           "questionText": "has",
           "solutionText": "you",
           "solutionAddition": "has"
       },
       {
-          "sortNumber": "920",
+          "sortNumber": 920,
           "questionText": "toma",
           "solutionText": "taking",
           "solutionAddition": "take"
       },
       {
-          "sortNumber": "921",
+          "sortNumber": 921,
           "questionText": "distintas",
           "solutionText": "different",
           "solutionAddition": "different"
       },
       {
-          "sortNumber": "922",
+          "sortNumber": 922,
           "questionText": "material",
           "solutionText": "material",
           "solutionAddition": "material"
       },
       {
-          "sortNumber": "923",
+          "sortNumber": 923,
           "questionText": "carne",
           "solutionText": "meat",
           "solutionAddition": "meat"
       },
       {
-          "sortNumber": "924",
+          "sortNumber": 924,
           "questionText": "llama",
           "solutionText": "call",
           "solutionAddition": "flame"
       },
       {
-          "sortNumber": "925",
+          "sortNumber": 925,
           "questionText": "particular",
           "solutionText": "particular",
           "solutionAddition": "particular"
       },
       {
-          "sortNumber": "926",
+          "sortNumber": 926,
           "questionText": "jorge",
           "solutionText": "Jorge",
           "solutionAddition": "jorge"
       },
       {
-          "sortNumber": "927",
+          "sortNumber": 927,
           "questionText": "trabajar",
           "solutionText": "to work",
           "solutionAddition": "work"
       },
       {
-          "sortNumber": "928",
+          "sortNumber": 928,
           "questionText": "propuesta",
           "solutionText": "proposal",
           "solutionAddition": "proposal"
       },
       {
-          "sortNumber": "929",
+          "sortNumber": 929,
           "questionText": "muerto",
           "solutionText": "dead",
           "solutionAddition": "dead"
       },
       {
-          "sortNumber": "930",
+          "sortNumber": 930,
           "questionText": "precios",
           "solutionText": "prices",
           "solutionAddition": "prices"
       },
       {
-          "sortNumber": "931",
+          "sortNumber": 931,
           "questionText": "reforma",
           "solutionText": "reform",
           "solutionAddition": "reform"
       },
       {
-          "sortNumber": "932",
+          "sortNumber": 932,
           "questionText": "hermano",
           "solutionText": "brother",
           "solutionAddition": "brother"
       },
       {
-          "sortNumber": "933",
+          "sortNumber": 933,
           "questionText": "corte",
           "solutionText": "court",
           "solutionAddition": "court"
       },
       {
-          "sortNumber": "934",
+          "sortNumber": 934,
           "questionText": "comenzó",
           "solutionText": "started",
           "solutionAddition": "started"
       },
       {
-          "sortNumber": "935",
+          "sortNumber": 935,
           "questionText": "etapa",
           "solutionText": "stage",
           "solutionAddition": "stage"
       },
       {
-          "sortNumber": "936",
+          "sortNumber": 936,
           "questionText": "obstante",
           "solutionText": "However",
           "solutionAddition": "however"
       },
       {
-          "sortNumber": "937",
+          "sortNumber": 937,
           "questionText": "pone",
           "solutionText": "places",
           "solutionAddition": "put"
       },
       {
-          "sortNumber": "938",
+          "sortNumber": 938,
           "questionText": "diversos",
           "solutionText": "different",
           "solutionAddition": "various"
       },
       {
-          "sortNumber": "939",
+          "sortNumber": 939,
           "questionText": "visita",
           "solutionText": "visit",
           "solutionAddition": "visit"
       },
       {
-          "sortNumber": "940",
+          "sortNumber": 940,
           "questionText": "concepto",
           "solutionText": "concept",
           "solutionAddition": "concept"
       },
       {
-          "sortNumber": "941",
+          "sortNumber": 941,
           "questionText": "pacientes",
           "solutionText": "patients",
           "solutionAddition": "patients"
       },
       {
-          "sortNumber": "942",
+          "sortNumber": 942,
           "questionText": "semanas",
           "solutionText": "weeks",
           "solutionAddition": "weeks"
       },
       {
-          "sortNumber": "943",
+          "sortNumber": 943,
           "questionText": "tipos",
           "solutionText": "types",
           "solutionAddition": "types"
       },
       {
-          "sortNumber": "944",
+          "sortNumber": 944,
           "questionText": "solamente",
           "solutionText": "only",
           "solutionAddition": "only"
       },
       {
-          "sortNumber": "945",
+          "sortNumber": 945,
           "questionText": "deseo",
           "solutionText": "desire",
           "solutionAddition": "wish"
       },
       {
-          "sortNumber": "946",
+          "sortNumber": 946,
           "questionText": "sistemas",
           "solutionText": "systems",
           "solutionAddition": "systems"
       },
       {
-          "sortNumber": "947",
+          "sortNumber": 947,
           "questionText": "encuentran",
           "solutionText": "found",
           "solutionAddition": "find"
       },
       {
-          "sortNumber": "948",
+          "sortNumber": 948,
           "questionText": "siguientes",
           "solutionText": "following",
           "solutionAddition": "following"
       },
       {
-          "sortNumber": "949",
+          "sortNumber": 949,
           "questionText": "martín",
           "solutionText": "Martin",
           "solutionAddition": "martin"
       },
       {
-          "sortNumber": "950",
+          "sortNumber": 950,
           "questionText": "suficiente",
           "solutionText": "enough",
           "solutionAddition": "enough"
       },
       {
-          "sortNumber": "951",
+          "sortNumber": 951,
           "questionText": "marzo",
           "solutionText": "March",
           "solutionAddition": "March"
       },
       {
-          "sortNumber": "952",
+          "sortNumber": 952,
           "questionText": "propios",
           "solutionText": "own",
           "solutionAddition": "own"
       },
       {
-          "sortNumber": "953",
+          "sortNumber": 953,
           "questionText": "jamás",
           "solutionText": "Never",
           "solutionAddition": "never"
       },
       {
-          "sortNumber": "954",
+          "sortNumber": 954,
           "questionText": "dan",
           "solutionText": "give",
           "solutionAddition": "give"
       },
       {
-          "sortNumber": "955",
+          "sortNumber": 955,
           "questionText": "club",
           "solutionText": "club",
           "solutionAddition": "club"
       },
       {
-          "sortNumber": "956",
+          "sortNumber": 956,
           "questionText": "instituto",
           "solutionText": "Institute",
           "solutionAddition": "institute"
       },
       {
-          "sortNumber": "957",
+          "sortNumber": 957,
           "questionText": "constitución",
           "solutionText": "Constitution",
           "solutionAddition": "constitution"
       },
       {
-          "sortNumber": "958",
+          "sortNumber": 958,
           "questionText": "curso",
           "solutionText": "course",
           "solutionAddition": "course"
       },
       {
-          "sortNumber": "959",
+          "sortNumber": 959,
           "questionText": "lenguaje",
           "solutionText": "language",
           "solutionAddition": "language"
       },
       {
-          "sortNumber": "960",
+          "sortNumber": 960,
           "questionText": "estilo",
           "solutionText": "style",
           "solutionAddition": "style"
       },
       {
-          "sortNumber": "961",
+          "sortNumber": 961,
           "questionText": "rosa",
           "solutionText": "rose",
           "solutionAddition": "rose"
       },
       {
-          "sortNumber": "962",
+          "sortNumber": 962,
           "questionText": "imposible",
           "solutionText": "impossible",
           "solutionAddition": "impossible"
       },
       {
-          "sortNumber": "963",
+          "sortNumber": 963,
           "questionText": "pablo",
           "solutionText": "Pablo",
           "solutionAddition": "pablo"
       },
       {
-          "sortNumber": "964",
+          "sortNumber": 964,
           "questionText": "buscar",
           "solutionText": "search",
           "solutionAddition": "search"
       },
       {
-          "sortNumber": "965",
+          "sortNumber": 965,
           "questionText": "peor",
           "solutionText": "worse",
           "solutionAddition": "worst"
       },
       {
-          "sortNumber": "966",
+          "sortNumber": 966,
           "questionText": "piel",
           "solutionText": "skin",
           "solutionAddition": "skin"
       },
       {
-          "sortNumber": "967",
+          "sortNumber": 967,
           "questionText": "arriba",
           "solutionText": "above",
           "solutionAddition": "up"
       },
       {
-          "sortNumber": "968",
+          "sortNumber": 968,
           "questionText": "generales",
           "solutionText": "general",
           "solutionAddition": "generals"
       },
       {
-          "sortNumber": "969",
+          "sortNumber": 969,
           "questionText": "septiembre",
           "solutionText": "September",
           "solutionAddition": "september"
       },
       {
-          "sortNumber": "970",
+          "sortNumber": 970,
           "questionText": "blanca",
           "solutionText": "White",
           "solutionAddition": "white"
       },
       {
-          "sortNumber": "971",
+          "sortNumber": 971,
           "questionText": "r",
           "solutionText": "r",
           "solutionAddition": "r"
       },
       {
-          "sortNumber": "972",
+          "sortNumber": 972,
           "questionText": "aquellas",
           "solutionText": "those",
           "solutionAddition": "those"
       },
       {
-          "sortNumber": "973",
+          "sortNumber": 973,
           "questionText": "teoría",
           "solutionText": "theory",
           "solutionAddition": "theory"
       },
       {
-          "sortNumber": "974",
+          "sortNumber": 974,
           "questionText": "animales",
           "solutionText": "animals",
           "solutionAddition": "animals"
       },
       {
-          "sortNumber": "975",
+          "sortNumber": 975,
           "questionText": "hicieron",
           "solutionText": "they made",
           "solutionAddition": "made"
       },
       {
-          "sortNumber": "976",
+          "sortNumber": 976,
           "questionText": "larga",
           "solutionText": "long",
           "solutionAddition": "long"
       },
       {
-          "sortNumber": "977",
+          "sortNumber": 977,
           "questionText": "perdido",
           "solutionText": "lost",
           "solutionAddition": "lost"
       },
       {
-          "sortNumber": "978",
+          "sortNumber": 978,
           "questionText": "imágenes",
           "solutionText": "images",
           "solutionAddition": "images"
       },
       {
-          "sortNumber": "979",
+          "sortNumber": 979,
           "questionText": "paciente",
           "solutionText": "patient",
           "solutionAddition": "patient"
       },
       {
-          "sortNumber": "980",
+          "sortNumber": 980,
           "questionText": "conseguir",
           "solutionText": "to get",
           "solutionAddition": "get"
       },
       {
-          "sortNumber": "981",
+          "sortNumber": 981,
           "questionText": "máximo",
           "solutionText": "maximum",
           "solutionAddition": "maximum"
       },
       {
-          "sortNumber": "982",
+          "sortNumber": 982,
           "questionText": "noviembre",
           "solutionText": "November",
           "solutionAddition": "November"
       },
       {
-          "sortNumber": "983",
+          "sortNumber": 983,
           "questionText": "j",
           "solutionText": "j",
           "solutionAddition": "j"
       },
       {
-          "sortNumber": "984",
+          "sortNumber": 984,
           "questionText": "líder",
           "solutionText": "Leader",
           "solutionAddition": "leader"
       },
       {
-          "sortNumber": "985",
+          "sortNumber": 985,
           "questionText": "hospital",
           "solutionText": "hospital",
           "solutionAddition": "hospital"
       },
       {
-          "sortNumber": "986",
+          "sortNumber": 986,
           "questionText": "diversas",
           "solutionText": "different",
           "solutionAddition": "various"
       },
       {
-          "sortNumber": "987",
+          "sortNumber": 987,
           "questionText": "rafael",
           "solutionText": "rafael",
           "solutionAddition": "rafael"
       },
       {
-          "sortNumber": "988",
+          "sortNumber": 988,
           "questionText": "vuelve",
           "solutionText": "returns",
           "solutionAddition": "return"
       },
       {
-          "sortNumber": "989",
+          "sortNumber": 989,
           "questionText": "destino",
           "solutionText": "destination",
           "solutionAddition": "destination"
       },
       {
-          "sortNumber": "990",
+          "sortNumber": 990,
           "questionText": "torno",
           "solutionText": "turnstile",
           "solutionAddition": "lathe"
       },
       {
-          "sortNumber": "991",
+          "sortNumber": 991,
           "questionText": "proyectos",
           "solutionText": "Projects",
           "solutionAddition": "projects"
       },
       {
-          "sortNumber": "992",
+          "sortNumber": 992,
           "questionText": "flores",
           "solutionText": "flowers",
           "solutionAddition": "flowers"
       },
       {
-          "sortNumber": "993",
+          "sortNumber": 993,
           "questionText": "niveles",
           "solutionText": "levels",
           "solutionAddition": "levels"
       },
       {
-          "sortNumber": "994",
+          "sortNumber": 994,
           "questionText": "afirmó",
           "solutionText": "he claimed",
           "solutionAddition": "stated"
       },
       {
-          "sortNumber": "995",
+          "sortNumber": 995,
           "questionText": "explicó",
           "solutionText": "he explained",
           "solutionAddition": "explained"
       },
       {
-          "sortNumber": "996",
+          "sortNumber": 996,
           "questionText": "n",
           "solutionText": "n",
           "solutionAddition": "n"
       },
       {
-          "sortNumber": "997",
+          "sortNumber": 997,
           "questionText": "somos",
           "solutionText": "are",
           "solutionAddition": "we are"
       },
       {
-          "sortNumber": "998",
+          "sortNumber": 998,
           "questionText": "términos",
           "solutionText": "Terms",
           "solutionAddition": "terms"
       },
       {
-          "sortNumber": "999",
+          "sortNumber": 999,
           "questionText": "premio",
           "solutionText": "prize",
           "solutionAddition": "award"
       },
       {
-          "sortNumber": "1000",
+          "sortNumber": 1000,
           "questionText": "tercera",
           "solutionText": "third",
           "solutionAddition": "third"

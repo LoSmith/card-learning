@@ -68,16 +68,16 @@ class FlashCard {
   }
 
   FlashCard.fromJson(Map<String, dynamic> jsonMap)
-      : id = tryImportFromJson<String>('id', jsonMap, Uuid().v4().toString()),
-        questionText = tryImportFromJson<String>('questionText', jsonMap, ''),
-        questionAddition = tryImportFromJson<String>('questionAddition', jsonMap, ''),
-        questionImage = tryImportFromJson<String>('questionImage', jsonMap, ''),
-        solutionText = tryImportFromJson<String>('solutionText', jsonMap, ''),
-        solutionAddition = tryImportFromJson<String>('solutionAddition', jsonMap, ''),
-        solutionImage = tryImportFromJson<String>('solutionImage', jsonMap, ''),
-        timesTested = tryImportFromJson<int>('timesTested', jsonMap, 0),
-        timesGotRight = tryImportFromJson<int>('timesGotRight', jsonMap, 0),
-        timesGotWrong = tryImportFromJson<int>('timesGotWrong', jsonMap, 0),
-        lastTimeTested = tryImportFromJson<DateTime>('lastTimeTested', jsonMap, DateTime.now()),
-        sortNumber = tryImportFromJson<int>('sortNumber', jsonMap, 0);
+      : id = Utils.tryImportFromJson<String>('id', jsonMap, Uuid().v4().toString()),
+        questionText = Utils.tryImportFromJson<String>('questionText', jsonMap, ''),
+        questionAddition = Utils.tryImportFromJson<String>('questionAddition', jsonMap, ''),
+        questionImage = Utils.tryImportFromJson<String>('questionImage', jsonMap, ''),
+        solutionText = Utils.tryImportFromJson<String>('solutionText', jsonMap, ''),
+        solutionAddition = Utils.tryImportFromJson<String>('solutionAddition', jsonMap, ''),
+        solutionImage = Utils.tryImportFromJson<String>('solutionImage', jsonMap, ''),
+        timesTested = Utils.tryImportFromJson<int>('timesTested', jsonMap, 0),
+        timesGotRight = Utils.tryImportFromJson<int>('timesGotRight', jsonMap, 0),
+        timesGotWrong = Utils.tryImportFromJson<int>('timesGotWrong', jsonMap, 0),
+        lastTimeTested = Utils.tryImportFromJson<DateTime>('lastTimeTested', jsonMap, DateTime.now()),
+        sortNumber = Utils.tryImportFromJson<int>('sortNumber', jsonMap, 0);
 }
