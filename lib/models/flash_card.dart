@@ -1,4 +1,5 @@
 import 'package:hive/hive.dart';
+import 'package:uuid/uuid.dart';
 
 import '../util_functions.dart';
 
@@ -67,16 +68,16 @@ class FlashCard {
   }
 
   FlashCard.fromJson(Map<String, dynamic> jsonMap)
-      : id = tryFromJson<String>('id', jsonMap, ''),
-        questionText = tryFromJson<String>('questionText', jsonMap, ''),
-        questionAddition = tryFromJson<String>('questionAddition', jsonMap, ''),
-        questionImage = tryFromJson<String>('questionImage', jsonMap, ''),
-        solutionText = tryFromJson<String>('solutionText', jsonMap, ''),
-        solutionAddition = tryFromJson<String>('solutionAddition', jsonMap, ''),
-        solutionImage = tryFromJson<String>('solutionImage', jsonMap, ''),
-        timesTested = tryFromJson<int>('timesTested', jsonMap, 0),
-        timesGotRight = tryFromJson<int>('timesGotRight', jsonMap, 0),
-        timesGotWrong = tryFromJson<int>('timesGotWrong', jsonMap, 0),
-        lastTimeTested = tryFromJson<DateTime>('lastTimeTested', jsonMap, DateTime.now()),
-        sortNumber = tryFromJson<int>('sortNumber', jsonMap, 0);
+      : id = tryImportFromJson<String>('id', jsonMap, Uuid().v4().toString()),
+        questionText = tryImportFromJson<String>('questionText', jsonMap, ''),
+        questionAddition = tryImportFromJson<String>('questionAddition', jsonMap, ''),
+        questionImage = tryImportFromJson<String>('questionImage', jsonMap, ''),
+        solutionText = tryImportFromJson<String>('solutionText', jsonMap, ''),
+        solutionAddition = tryImportFromJson<String>('solutionAddition', jsonMap, ''),
+        solutionImage = tryImportFromJson<String>('solutionImage', jsonMap, ''),
+        timesTested = tryImportFromJson<int>('timesTested', jsonMap, 0),
+        timesGotRight = tryImportFromJson<int>('timesGotRight', jsonMap, 0),
+        timesGotWrong = tryImportFromJson<int>('timesGotWrong', jsonMap, 0),
+        lastTimeTested = tryImportFromJson<DateTime>('lastTimeTested', jsonMap, DateTime.now()),
+        sortNumber = tryImportFromJson<int>('sortNumber', jsonMap, 0);
 }

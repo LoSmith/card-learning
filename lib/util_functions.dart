@@ -1,4 +1,4 @@
-tryFromJson<T>(String key, Map<String, dynamic> json, T fallback) {
+tryImportFromJson<T>(String key, Map<String, dynamic> json, T fallback) {
   try{
     return json[key];
   } catch (e) {
