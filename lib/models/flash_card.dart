@@ -32,6 +32,9 @@ class FlashCard {
   @HiveField(10)
   DateTime lastTimeTested;
 
+  @HiveField(11)
+  int sortNumber;
+
   FlashCard(
     this.id,
     this.questionText,
@@ -44,6 +47,7 @@ class FlashCard {
     this.timesTested = 0,
     this.timesGotRight = 0,
     this.timesGotWrong = 0,
+    this.sortNumber = 0,
   });
 
   /// Tests if the card is matured.
@@ -71,5 +75,6 @@ class FlashCard {
         timesTested = jsonMap['timesTested'],
         timesGotRight = jsonMap['timesGotRight'],
         timesGotWrong = jsonMap['timesGotWrong'],
-        lastTimeTested = jsonMap['lastTimeTested'];
+        lastTimeTested = jsonMap['lastTimeTested'],
+        sortNumber = jsonMap['sortNumber'];
 }

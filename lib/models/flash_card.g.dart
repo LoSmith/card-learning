@@ -28,13 +28,14 @@ class FlashCardAdapter extends TypeAdapter<FlashCard> {
       timesTested: fields[7] as int,
       timesGotRight: fields[8] as int,
       timesGotWrong: fields[9] as int,
+      sortNumber: fields[11] as int,
     );
   }
 
   @override
   void write(BinaryWriter writer, FlashCard obj) {
     writer
-      ..writeByte(11)
+      ..writeByte(12)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -56,7 +57,9 @@ class FlashCardAdapter extends TypeAdapter<FlashCard> {
       ..writeByte(9)
       ..write(obj.timesGotWrong)
       ..writeByte(10)
-      ..write(obj.lastTimeTested);
+      ..write(obj.lastTimeTested)
+      ..writeByte(11)
+      ..write(obj.sortNumber);
   }
 
   @override

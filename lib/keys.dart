@@ -20,4 +20,8 @@ class Keys {
 
   // Fetch new Data Screen
   static final fetchNewData = const Key('__fetchNewData__');
+
+  static const String LoadRemote = 'Load from remote source';
+  static const String Settings = 'Settings';
+  static const String DeleteAll = 'Delete all';
 }
