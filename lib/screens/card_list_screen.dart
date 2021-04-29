@@ -75,13 +75,14 @@ class _CardListScreenState extends State<CardListScreen> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => FetchRemoteCardsScreen(
-                      onSave: (fetchUrl) {
-                        // context
-                        //     .read<FlashCardRepositoryCubit>()
-                        //     .importJsonDataFromRemoteUrl(fetchUrl);
-                      },
-                    ),
+                    builder: (context) =>
+                        FetchRemoteCardsScreen(
+                          onSave: (fetchUrl) {
+                            // context
+                            //     .read<FlashCardRepositoryCubit>()
+                            //     .importJsonDataFromRemoteUrl(fetchUrl);
+                          },
+                        ),
                   ));
             },
           ),
@@ -95,26 +96,52 @@ class _CardListScreenState extends State<CardListScreen> {
       // DataColumn(label: Text('id')),
       DataColumn(label: Text('questionText')),
       DataColumn(label: Text('solutionText')),
+      DataColumn(label: Text('')),
     ];
 
     List<DataRow> rows = [];
     for (var card in state.items) {
-      var editCallback = (card) => {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => AddEditScreen(
+      var editCallback = (card) =>
+      {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) =>
+                  AddEditScreen(
                     isEditing: true,
                     flashCard: card,
                     onSave: (FlashCard editedCard) {
-                      context.read<CardListCubit>().editCardInCurrentBox(editedCard);
+                      context
+                          .read<CardListCubit>()
+                          .editCardInCurrentBox(editedCard);
                     },
                   ),
-                ))
-          };
+            ))
+      };
+      var deleteCallback = (card) => {
+        context.read<CardListCubit>().deleteCardInCurrentBox(card),
+        // Then show a snackbar.
+        ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+        content: Text("Deleted ${card.id}"),
+        action: SnackBarAction(
+        label: "UNDO",
+        onPressed: () => {context.read<CardListCubit>().createCardInCurrentBox(card)}),
+        ),
+        )
+    };
       rows.add(DataRow(cells: [
-        DataCell(Text(card.questionText), onTap: () => editCallback(card)),
-        DataCell(Text(card.solutionText), onTap: () => editCallback(card)),
+        DataCell(Text(card.questionText)),
+        DataCell(Text(card.solutionText)),
+        DataCell(Row(
+          children: [
+            IconButton(
+                icon: const Icon(Icons.edit),
+                onPressed: () => editCallback(card)),
+            IconButton(
+                icon: const Icon(Icons.delete), onPressed: () => deleteCallback(card)),
+          ],
+        )),
       ]));
     }
 
