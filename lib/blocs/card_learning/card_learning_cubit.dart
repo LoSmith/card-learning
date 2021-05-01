@@ -25,7 +25,17 @@ class CardLearningCubit extends Cubit<CardLearningState> {
     }
   }
 
-  Future<void> fetchLatestFlashCardsFromCardBox() async {
+  Future<void> fetchAllCurrentFlashCards() async {
+    try {
+      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
+      emit(CardLearningState.success(box.cards));
+    } catch (e) {
+      print(e.toString());
+      emit(const CardLearningState.failure());
+    }
+  }
+
+  Future<void> fetchCardsForNewLearningSession(int numberOfCardsToLearn) async {
     try {
       LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
       emit(CardLearningState.success(box.cards));
