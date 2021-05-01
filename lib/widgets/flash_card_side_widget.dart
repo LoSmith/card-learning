@@ -10,15 +10,25 @@ class FlashCardSide extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      width: 250,
+      width: 350,
       color: Colors.green,
       child: Card(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Text(this.mainText),
-            Text(this.additionText),
-            Text(this.image),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(this.mainText),
+                  Text(this.additionText),
+                ],
+              ),
+            ),
+            FittedBox(
+              child: Image.asset(
+                'assets/images/bg.png',
+              ),
+            ),
           ],
         ),
       ),
