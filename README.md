@@ -9,5 +9,6 @@ Install all dependencies with dart pub get
 
 ## TODO List
 
-* selected card box zu einer shared pref machen und dann weniger argument schubsen einbauen
-* card learning screen weiterbauen
+* make own flipview
+* create simple learningUnit logic to fetch only x amount of cards for a session, and only non-matured
+* integrate tinder swipe
