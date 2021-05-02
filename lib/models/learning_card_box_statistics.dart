@@ -10,8 +10,6 @@ class CardBoxStatistics {
 
   double percentageOfCardsStudied = 0;
   // threshold when a cards rank is matured
-  static final double matureThreshold = 0.8;
-
-  static final int minimumTimesTested = 2;
-
+  static const double matureThreshold = 0.8;
+  static const int minimumTimesTested = 2;
 }

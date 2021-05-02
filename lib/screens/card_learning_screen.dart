@@ -17,7 +17,7 @@ class CardLearningScreen extends StatefulWidget {
 class _CardLearningScreenState extends State<CardLearningScreen> {
   @override
   Widget build(BuildContext context) {
-    context.read<CardLearningCubit>().fetchAllCurrentFlashCards();
+    context.read<CardLearningCubit>().fetchCardsForDailySession(5);
 
     return Scaffold(
       appBar: AppBar(
@@ -52,9 +52,14 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
   }
 
   _learningWidget(List<FlashCard> cards) {
-    FlashCard currentCard =
-        cards[context.read<CardLearningCubit>().currentCardIndex];
-    // Key flipCardKey = Key('jfdiso');
+    var currentCardIndex = context.read<CardLearningCubit>().currentCardIndex;
+    FlashCard currentCard;
+    if (currentCardIndex >= cards.length) {
+      currentCard = cards.elementAt(0);
+    } else {
+      currentCard = cards.elementAt(currentCardIndex);
+    }
+
     GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
 
     var test = FlipCard(

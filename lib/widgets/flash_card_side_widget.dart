@@ -25,8 +25,9 @@ class FlashCardSide extends StatelessWidget {
               ),
             ),
             FittedBox(
+              fit: BoxFit.fill,
               child: Image.asset(
-                'assets/images/bg.png',
+                'assets/images/box.png',
               ),
             ),
           ],

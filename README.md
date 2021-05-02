@@ -12,3 +12,4 @@ Install all dependencies with dart pub get
 * make own flipview
 * create simple learningUnit logic to fetch only x amount of cards for a session, and only non-matured
 * integrate tinder swipe
+* question zuerst oder solution zuerst anzeigen

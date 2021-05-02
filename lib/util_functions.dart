@@ -6,3 +6,13 @@ class Utils {
     return result;
   }
 }
+
+List<T> getFirstPossibleNumberOfItems<T>(
+    List<T> listOfItems, int numberOfItemsToGet) {
+  final numberOfItemsAvailable = listOfItems.length;
+  var numberOfPossibleItems = numberOfItemsAvailable <= numberOfItemsToGet
+      ? numberOfItemsAvailable
+      : numberOfItemsToGet;
+
+  return listOfItems.sublist(0, numberOfPossibleItems);
+}

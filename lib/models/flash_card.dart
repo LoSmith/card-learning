@@ -1,3 +1,4 @@
+import 'package:card_learning/models/learning_card_box_statistics.dart';
 import 'package:hive/hive.dart';
 import 'package:uuid/uuid.dart';
 
@@ -36,7 +37,7 @@ class FlashCard {
   DateTime lastTimeTested;
 
   @HiveField(11)
-  int sortNumber;
+  num sortNumber;
 
   FlashCard(
     this.id,
@@ -47,24 +48,33 @@ class FlashCard {
     this.questionImage = "",
     this.solutionAddition = "",
     this.solutionImage = "",
+
     this.timesTested = 0,
     this.timesGotRight = 0,
     this.timesGotWrong = 0,
     this.sortNumber = 0,
   });
 
+  double performanceRating() {
+    if (this.timesTested == 0) {
+      return 0;
+    }
+
+    return this.timesGotRight / this.timesTested;
+  }
+
   /// Tests if the card is matured.
   /// if minimum times tested is not met yet => false
   /// if maturedThreshold is met => true
-  bool isMatured(double maturedThreshold, int minimumTimesTested) {
-    if (this.timesTested <= minimumTimesTested) {
-      return false;
-    }
+  bool isMatured({double performanceThreshold = CardBoxStatistics.matureThreshold, int minimumTimesTested = CardBoxStatistics.minimumTimesTested}) {
+    // if (this.timesTested <= minimumTimesTested) {
+    //   return false;
+    // }
     if (this.timesTested == 0) {
       return false;
     }
-    double maturingRating = (this.timesGotRight / this.timesTested);
-    return maturingRating >= maturedThreshold;
+
+    return this.performanceRating() > performanceThreshold;
   }
 
   FlashCard.fromJson(Map<String, dynamic> jsonMap)

@@ -4,6 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:card_learning/data/database.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
+import 'package:card_learning/services/card_filter_service.dart';
 import 'package:card_learning/services/selected_card_box_service.dart';
 
 import 'card_learning_state.dart';
@@ -35,10 +36,10 @@ class CardLearningCubit extends Cubit<CardLearningState> {
     }
   }
 
-  Future<void> fetchCardsForNewLearningSession(int numberOfCardsToLearn) async {
+  Future<void> fetchCardsForDailySession(int numberOfCardsToLearn) async {
     try {
-      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
-      emit(CardLearningState.success(box.cards));
+      List<FlashCard> cards = await CardFilterService(this._db).getCardsForTodaySession(numberOfCardsToLearn);
+      emit(CardLearningState.success(cards));
     } catch (e) {
       print(e.toString());
       emit(const CardLearningState.failure());

@@ -39,8 +39,7 @@ class CardBoxStatisticsCubit extends Cubit<CardBoxStatistics> {
   Future<int> _countNumberOfMaturedCards(List<FlashCard> cards) async {
     var numberOfMaturedCards = 0;
     cards.forEach((element) {
-      if (element.isMatured(
-          CardBoxStatistics.matureThreshold, CardBoxStatistics.minimumTimesTested)) {
+      if (element.isMatured()) {
         numberOfMaturedCards++;
       }
     });
