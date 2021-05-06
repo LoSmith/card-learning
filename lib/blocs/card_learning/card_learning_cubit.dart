@@ -5,6 +5,7 @@ import 'package:card_learning/data/database.dart';
 import 'package:card_learning/models/flash_card.dart';
 import 'package:card_learning/models/learning_card_box.dart';
 import 'package:card_learning/services/card_filter_service.dart';
+import 'package:card_learning/services/learning_session_service.dart';
 import 'package:card_learning/services/selected_card_box_service.dart';
 
 import 'card_learning_state.dart';
@@ -42,8 +43,8 @@ class CardLearningCubit extends Cubit<CardLearningState> {
 
   Future<void> fetchSessionCards(int numberOfCardsToLearn) async {
     try {
-      // bool isCurrentSessionCardsLoaded = await LearningSessionService().isCurrentSessionLoaded();
-      bool isCurrentSessionCardsLoaded = false;
+      bool isCurrentSessionCardsLoaded = await LearningSessionService().isCurrentSessionLoaded();
+      // bool isCurrentSessionCardsLoaded = false;
       if (isCurrentSessionCardsLoaded) {
         print('session already loaded');
         return;
