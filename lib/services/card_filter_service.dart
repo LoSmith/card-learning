@@ -9,28 +9,29 @@ class CardFilterService {
 
   CardFilterService(this._db);
 
-  Future<List<FlashCard>> getCardsForTodaySession(int numberOfCardsForSession,
-      [double percentageOfOldCards = 0.5]) async {
-    final int maxOldCards =
-        (numberOfCardsForSession * percentageOfOldCards).ceil();
-    final int maxNewCards = numberOfCardsForSession - maxOldCards;
+  Future<List<FlashCard>> getCardsForTodaySession(
+      [int numberOfCardsForSession = 20,
+      double percentageOfOldCards = 0.5]) async {
+    final int maxOldCards = (numberOfCardsForSession * percentageOfOldCards).ceil();
 
     List<FlashCard> oldCards = await this.getOldCards(numberOfCardsForSession);
     List<FlashCard> newCards = await this.getNewCards(numberOfCardsForSession);
 
-    //
     if (oldCards.length >= maxOldCards) {
       oldCards = oldCards.sublist(0, maxOldCards);
     }
-    var stillOpenSlots = numberOfCardsForSession - oldCards.length;
-    if (newCards.length >= maxNewCards + stillOpenSlots) {
+    final int maxNewCards = numberOfCardsForSession - oldCards.length;
+    if (newCards.length >= maxNewCards) {
       newCards = newCards.sublist(0, maxNewCards);
     }
 
+    print("oldCards:" + oldCards.length.toString());
+    print("newCards:" + newCards.length.toString());
+    print("---------");
     return [...oldCards, ...newCards];
   }
 
-  Future<List<FlashCard>> getCurrentAllCards() async {
+  Future<List<FlashCard>> getAllCurrentCards() async {
     LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
     return box.cards;
   }
@@ -40,11 +41,10 @@ class CardFilterService {
       throw new Error();
     }
 
-    List<FlashCard> allCards = await this.getCurrentAllCards();
+    List<FlashCard> allCards = await this.getAllCurrentCards();
     final newCards =
         allCards.where((element) => element.timesTested == 0).toList();
-    newCards
-        .sort((a, b) => a.performanceRating().compareTo(b.performanceRating()));
+    newCards.sort((a, b) => a.sortNumber.compareTo(b.sortNumber));
     return getFirstPossibleNumberOfItems<FlashCard>(newCards, numberOfCards);
   }
 
@@ -53,8 +53,11 @@ class CardFilterService {
       throw new Error();
     }
 
-    List<FlashCard> allCards = await this.getCurrentAllCards();
-    final oldCards = allCards.where((element) => element.timesTested != 0).toList();
+    List<FlashCard> allCards = await this.getAllCurrentCards();
+    final oldCards =
+        allCards.where((element) => element.timesTested != 0).toList();
+    oldCards
+        .sort((a, b) => a.performanceRating().compareTo(b.performanceRating()));
     return getFirstPossibleNumberOfItems<FlashCard>(oldCards, numberOfCards);
   }
 }

@@ -17,7 +17,7 @@ class CardLearningScreen extends StatefulWidget {
 class _CardLearningScreenState extends State<CardLearningScreen> {
   @override
   Widget build(BuildContext context) {
-    context.read<CardLearningCubit>().fetchCardsForDailySession(5);
+    context.read<CardLearningCubit>().fetchSessionCards(10);
 
     return Scaffold(
       appBar: AppBar(
@@ -28,21 +28,19 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
         Expanded(
           child: BlocBuilder<CardLearningCubit, CardLearningState>(
             builder: (context, state) {
-              switch (state.status) {
-                case CardLearningStatus.loading:
-                  return Center(child: CircularProgressIndicator());
-                case CardLearningStatus.failure:
-                  return Center(child: Text('Something went wrong'));
-                case CardLearningStatus.success:
-                  if (state.items.isEmpty) {
-                    return Center(child: Text('No flashCards'));
-                  }
-                  return _learningWidget(state.items);
-                default:
-                  return Column(children: [
-                    Center(child: CircularProgressIndicator()),
-                    Text('test')
-                  ]);
+              if (state is CardLearningStateInitial) {
+                return Column(
+                  children: [
+                    Text('initial'),
+                    _loadingWidget(),
+                  ],
+                );
+              } else if (state is CardLearningStateLoading) {
+                return _loadingWidget();
+              } else if (state is CardLearningStateSuccess) {
+                return _learningWidget(state.currentCard);
+              } else {
+                return _loadingWidget();
               }
             },
           ),
@@ -51,24 +49,12 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
     );
   }
 
-  _learningWidget(List<FlashCard> cards) {
-    var currentCardIndex = context.read<CardLearningCubit>().currentCardIndex;
-    FlashCard currentCard;
-    if (currentCardIndex >= cards.length) {
-      currentCard = cards.elementAt(0);
-    } else {
-      currentCard = cards.elementAt(currentCardIndex);
-    }
+  Widget _loadingWidget() {
+    return Center(child: CircularProgressIndicator());
+  }
 
-    GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
-
-    var test = FlipCard(
-        key: cardKey,
-        direction: FlipDirection.VERTICAL, // default
-        front: FlashCardSide(currentCard.questionText,
-            currentCard.questionAddition, 'front'),
-        back: FlashCardSide(currentCard.solutionText, currentCard.solutionText,
-            'back'));
+  _learningWidget(FlashCard card) {
+    GlobalKey<FlipCardState> flipCardKey = GlobalKey<FlipCardState>();
 
     return Column(
       children: [
@@ -82,7 +68,8 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
                       .read<CardLearningCubit>()
                       .currentCardGuessedWrong();
                   await context.read<CardLearningCubit>().switchToNextCard();
-                  cardKey.currentState!.isFront = true;
+                  flipCardKey.currentState!.isFront = true;
+                  print('pressed bad');
                 },
               ),
               ElevatedButton(
@@ -92,13 +79,14 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
                       .read<CardLearningCubit>()
                       .currentCardGuessedRight();
                   await context.read<CardLearningCubit>().switchToNextCard();
-                  cardKey.currentState!.isFront = true;
+                  flipCardKey.currentState!.isFront = true;
+                  print('pressed good');
                 },
               ),
             ],
           ),
         ),
-        test
+        test(card, flipCardKey),
         // FlipView(
         //         key: flipCardKey,
         //         front: FlashCardSide(currentCard.questionText,
@@ -108,4 +96,10 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
       ],
     );
   }
+
+  Widget test(FlashCard card, Key flipCardKey) => FlipCard(
+      key: flipCardKey,
+      direction: FlipDirection.VERTICAL, // default
+      front: FlashCardSide(card.questionText, card.questionAddition, 'front'),
+      back: FlashCardSide(card.solutionText, card.solutionText, 'back'));
 }

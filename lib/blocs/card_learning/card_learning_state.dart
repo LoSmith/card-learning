@@ -1,20 +1,16 @@
 import 'package:card_learning/models/flash_card.dart';
+import 'package:flutter/material.dart';
 
-enum CardLearningStatus { loading, success, failure }
+@immutable
+abstract class CardLearningState {}
 
-class CardLearningState {
-  const CardLearningState._({
-    this.status = CardLearningStatus.loading,
-    this.items = const <FlashCard>[],
-  });
-
-  const CardLearningState.loading() : this._();
-
-  const CardLearningState.success(List<FlashCard> items)
-      : this._(status: CardLearningStatus.success, items: items);
-
-  const CardLearningState.failure() : this._(status: CardLearningStatus.failure);
-
-  final CardLearningStatus status;
-  final List<FlashCard> items;
+class CardLearningStateInitial extends CardLearningState {}
+class CardLearningStateLoading extends CardLearningState {}
+class CardLearningStateError extends CardLearningState {}
+class CardLearningStateSuccess extends CardLearningState {
+  CardLearningStateSuccess(this.currentCard);
+  final FlashCard currentCard;
 }
+
+
+
