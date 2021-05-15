@@ -13,39 +13,35 @@ import 'card_learning_state.dart';
 class CardLearningCubit extends Cubit<CardLearningState> {
   final Database _db;
   int _currentCardIndex = 0;
-
-  int get currentCardIndex => this._currentCardIndex;
-
   final List<FlashCard> _currentSessionCards = [];
 
-  CardLearningCubit(this._db) : super(CardLearningStateInitial());
+  String get numberOfSessionCards => _currentSessionCards.length.toString();
 
-  Future<FlashCard> getCurrentCard() async {
-    try {
-      return this._currentSessionCards.elementAt(currentCardIndex);
-    } catch (e) {
-      return this._currentSessionCards.elementAt(0);
-    }
-  }
+  List<FlashCard> get cards => _currentSessionCards;
+
+  CardLearningCubit(this._db) : super(CardLearningStateInitial());
 
   Future<void> switchToNextCard() async {
     if (this._currentSessionCards.isEmpty) {
       this._currentCardIndex = 0;
+      emit(CardLearningStateError());
+      // early exit, can't load cards, because no cards are available
       return;
     }
 
-    if (this.currentCardIndex < this._currentSessionCards.length) {
+    if (this._currentCardIndex < this._currentSessionCards.length) {
       this._currentCardIndex++;
     } else {
       this._currentCardIndex = 0;
     }
+    emit(CardLearningStateSuccess(await this._getCurrentCard()));
   }
 
   Future<void> fetchSessionCards(int numberOfCardsToLearn) async {
     try {
-      bool isCurrentSessionCardsLoaded = await LearningSessionService().isCurrentSessionLoaded();
-      // bool isCurrentSessionCardsLoaded = false;
-      if (isCurrentSessionCardsLoaded) {
+      bool isCurrentSessionUpToDate = await LearningSessionService().isCurrentSessionUpToDate();
+      // bool isCurrentSessionUpToDate = false;
+      if (isCurrentSessionUpToDate) {
         print('session already loaded');
         return;
       }
@@ -55,7 +51,7 @@ class CardLearningCubit extends Cubit<CardLearningState> {
           await CardFilterService(this._db).getCardsForTodaySession(numberOfCardsToLearn);
       if (cardsForCurrentSession.isNotEmpty) {
         this._currentSessionCards.addAll(cardsForCurrentSession);
-        emit(CardLearningStateSuccess(await this.getCurrentCard()));
+        emit(CardLearningStateSuccess(await this._getCurrentCard()));
       } else {
         emit(CardLearningStateLoading());
       }
@@ -65,9 +61,53 @@ class CardLearningCubit extends Cubit<CardLearningState> {
     }
   }
 
-  Future<FlashCard> updateCurrentCard(bool isGuessedRight) async {
-    FlashCard currentCard = await this.getCurrentCard();
+  Future<void> currentCardGuessedWrong() async {
+    try {
+      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
+      FlashCard updatedCard = await _setCurrentCardGuessed(isGuessedRight: false);
+
+      box.cards.removeWhere((element) => element.id == updatedCard.id);
+      box.cards.add(updatedCard);
+      emit(CardLearningStateSuccess(await _getCurrentCard()));
+    } on Exception {
+      emit(CardLearningStateError());
+    }
+  }
+
+  Future<void> currentCardGuessedRight() async {
+    try {
+      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
+      FlashCard updatedCard = await _setCurrentCardGuessed(isGuessedRight: true);
+
+      box.cards.removeWhere((element) => element.id == updatedCard.id);
+      box.cards.add(updatedCard);
+
+      // if card is matured, remove from current session
+      if (this._isCardTestHistoryXTimesRight(await this._getCurrentCard(), 3)) {
+        this._currentSessionCards.removeWhere((element) => element.id == updatedCard.id);
+      }
+      if (this._currentSessionCards.isEmpty) {
+        emit(CardLearningStateLoading());
+      } else {
+        emit(CardLearningStateSuccess(await _getCurrentCard()));
+      }
+    } on Exception {
+      emit(CardLearningStateError());
+    }
+  }
+
+  Future<FlashCard> _getCurrentCard() async {
+    try {
+      return this._currentSessionCards.elementAt(this._currentCardIndex);
+    } catch (e) {
+      return this._currentSessionCards.elementAt(0);
+    }
+  }
+
+  Future<FlashCard> _setCurrentCardGuessed({required bool isGuessedRight}) async {
+    FlashCard currentCard = await this._getCurrentCard();
     currentCard.timesTested++;
+    currentCard.testHistory.add(isGuessedRight);
     if (isGuessedRight) {
       currentCard.timesGotRight++;
     } else {
@@ -77,38 +117,7 @@ class CardLearningCubit extends Cubit<CardLearningState> {
     return currentCard;
   }
 
-  Future<void> currentCardGuessedWrong() async {
-    try {
-      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
-      FlashCard updatedCard = await updateCurrentCard(false);
-
-      box.cards.removeWhere((element) => element.id == updatedCard.id);
-      box.cards.add(updatedCard);
-      emit(CardLearningStateSuccess(await getCurrentCard()));
-    } on Exception {
-      emit(CardLearningStateError());
-    }
-  }
-
-  Future<void> currentCardGuessedRight() async {
-    try {
-      LearningCardBox box = await this._db.read(SelectedCardBoxService().getId());
-      FlashCard updatedCard = await updateCurrentCard(true);
-
-      box.cards.removeWhere((element) => element.id == updatedCard.id);
-      box.cards.add(updatedCard);
-
-      // if card is matured, remove from current session
-      if (updatedCard.isMatured()) {
-        this._currentSessionCards.removeWhere((element) => element.id == updatedCard.id);
-      }
-      if(this._currentSessionCards.isEmpty){
-        emit(CardLearningStateLoading());
-      } else {
-        emit(CardLearningStateSuccess(await getCurrentCard()));
-      }
-    } on Exception {
-      emit(CardLearningStateError());
-    }
+  bool _isCardTestHistoryXTimesRight(FlashCard card, int timesRightThreshold) {
+    return card.numberOfGuessesRightInARow() >= timesRightThreshold;
   }
 }

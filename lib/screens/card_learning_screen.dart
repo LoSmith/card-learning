@@ -17,7 +17,7 @@ class CardLearningScreen extends StatefulWidget {
 class _CardLearningScreenState extends State<CardLearningScreen> {
   @override
   Widget build(BuildContext context) {
-    context.read<CardLearningCubit>().fetchSessionCards(10);
+    context.read<CardLearningCubit>().fetchSessionCards(5);
 
     return Scaffold(
       appBar: AppBar(
@@ -64,9 +64,7 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
               ElevatedButton(
                 child: const Text('bad'),
                 onPressed: () async {
-                  await context
-                      .read<CardLearningCubit>()
-                      .currentCardGuessedWrong();
+                  await context.read<CardLearningCubit>().currentCardGuessedWrong();
                   await context.read<CardLearningCubit>().switchToNextCard();
                   flipCardKey.currentState!.isFront = true;
                   print('pressed bad');
@@ -75,9 +73,7 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
               ElevatedButton(
                 child: const Text('good'),
                 onPressed: () async {
-                  await context
-                      .read<CardLearningCubit>()
-                      .currentCardGuessedRight();
+                  await context.read<CardLearningCubit>().currentCardGuessedRight();
                   await context.read<CardLearningCubit>().switchToNextCard();
                   flipCardKey.currentState!.isFront = true;
                   print('pressed good');
@@ -87,6 +83,24 @@ class _CardLearningScreenState extends State<CardLearningScreen> {
           ),
         ),
         test(card, flipCardKey),
+        Text('numberOfCurrentCards' + context.read<CardLearningCubit>().numberOfSessionCards),
+        DataTable(
+            columns: [
+              DataColumn(label: Text('q')),
+              DataColumn(label: Text('#')),
+              DataColumn(label: Text('#rightChain')),
+              DataColumn(label: Text('matured'))
+            ],
+            rows: context
+                .read<CardLearningCubit>()
+                .cards
+                .map((elem) => DataRow(cells: [
+                      DataCell(Text(elem.questionText)),
+                      DataCell(Text(elem.timesTested.toString())),
+                      DataCell(Text(elem.numberOfGuessesRightInARow().toString())),
+                      DataCell(Text(elem.isMatured().toString()))
+                    ]))
+                .toList()),
         // FlipView(
         //         key: flipCardKey,
         //         front: FlashCardSide(currentCard.questionText,

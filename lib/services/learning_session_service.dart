@@ -1,38 +1,30 @@
 import 'package:card_learning/data/shared_prefs.dart';
-import 'package:card_learning/models/flash_card.dart';
 
 class LearningSessionService {
   final _lastSessionDatetimeKey = "__LAST_SESSION_DATETIME_KEY__";
 
-  Future<List<FlashCard>> getCardsForCurrentSession() async {
-    return [];
-  }
-
-  Future<void> setLastSessionDateTime() async {
-    try {
-      DateTime nowDayBeginning = DateTime.now();
-      SharedPrefs.instance.setString(_lastSessionDatetimeKey, nowDayBeginning.toString());
-    } catch (e) {
-      print('cant set SharedPrefs');
-      throw(e);
-    }
+  Future<void> setLastSessionDateTime(DateTime setDateTime) async {
+      await SharedPrefs.instance.setString(_lastSessionDatetimeKey, setDateTime.toString());
   }
 
   Future<DateTime> getLastSessionDateTime() async {
-    try {
-        return DateTime.parse(SharedPrefs.instance.getString(_lastSessionDatetimeKey).toString());
-    } catch (e) {
-        await this.setLastSessionDateTime();
-        return DateTime.parse(SharedPrefs.instance.getString(_lastSessionDatetimeKey).toString());
+    String lastSessionDateTime = SharedPrefs.instance.getString(_lastSessionDatetimeKey).toString();
+    if (lastSessionDateTime.isEmpty) {
+      DateTime now = DateTime.now();
+      await this.setLastSessionDateTime(now);
+      lastSessionDateTime = now.toString();
     }
+
+    return DateTime.parse(lastSessionDateTime);
   }
 
-  Future<bool> isCurrentSessionLoaded() async {
+  Future<bool> isCurrentSessionUpToDate() async {
     DateTime lastTimeLoaded = await getLastSessionDateTime();
-    DateTime now = DateTime.now();
+    DateTime dateNow = DateTime.now();
+    Duration sessionTimeInterval = Duration(seconds: 10);
 
-    Duration sessionTimeInterval = Duration(days: 1);
-    bool shouldNewSessionBeLoaded = lastTimeLoaded.add(sessionTimeInterval).isAfter(now);
-    return !shouldNewSessionBeLoaded;
+    DateTime dateAtWhichANewSessionNeedsToBeLoaded = lastTimeLoaded.add(sessionTimeInterval);
+    bool sessionIsUpToDate = dateAtWhichANewSessionNeedsToBeLoaded.isAfter(dateNow);
+    return sessionIsUpToDate;
   }
 }

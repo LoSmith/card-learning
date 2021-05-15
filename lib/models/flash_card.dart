@@ -39,6 +39,9 @@ class FlashCard {
   @HiveField(11)
   num sortNumber;
 
+  @HiveField(12)
+  List<bool> testHistory = [];
+
   FlashCard(
     this.id,
     this.questionText,
@@ -77,6 +80,24 @@ class FlashCard {
     return this.performanceRating() > performanceThreshold;
   }
 
+  int numberOfGuessesRightInARow() {
+    if (this.testHistory.length == 0) {
+      return 0;
+    }
+
+    int timesRight = 0;
+    for (int i = 0 ; i < this.testHistory.length ; i++) {
+      bool iIsGuessedRight = this.testHistory.reversed.elementAt(i);
+      if (iIsGuessedRight) {
+        timesRight++;
+      } else {
+        break;
+      }
+    }
+
+    return timesRight;
+  }
+
   FlashCard.fromJson(Map<String, dynamic> jsonMap)
       : id = Utils.tryImportFromJson<String>('id', jsonMap, Uuid().v4().toString()),
         questionText = Utils.tryImportFromJson<String>('questionText', jsonMap, ''),
@@ -89,5 +110,6 @@ class FlashCard {
         timesGotRight = Utils.tryImportFromJson<int>('timesGotRight', jsonMap, 0),
         timesGotWrong = Utils.tryImportFromJson<int>('timesGotWrong', jsonMap, 0),
         lastTimeTested = Utils.tryImportFromJson<DateTime>('lastTimeTested', jsonMap, DateTime.now()),
-        sortNumber = Utils.tryImportFromJson<int>('sortNumber', jsonMap, 0);
+        sortNumber = Utils.tryImportFromJson<int>('sortNumber', jsonMap, 0),
+        testHistory = Utils.tryImportFromJson<List<bool>>('lastTests', jsonMap, []);
 }
